@@ -7,7 +7,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Layout } from "@/components/Layout";
 import NotFound from "@/pages/not-found";
+import HomePage from "@/pages/HomePage";
 import ExplorePage from "@/pages/ExplorePage";
+import ArticlePage from "@/pages/ArticlePage";
 import PlayerProfilePage from "@/pages/PlayerProfilePage";
 import ComparePage from "@/pages/ComparePage";
 import MatchesPage from "@/pages/MatchesPage";
@@ -18,7 +20,9 @@ function AppRouter() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={ExplorePage} />
+        <Route path="/" component={HomePage} />
+        <Route path="/explore" component={ExplorePage} />
+        <Route path="/article/:slug" component={ArticlePage} />
         <Route path="/player/:id" component={PlayerProfilePage} />
         <Route path="/compare" component={ComparePage} />
         <Route path="/matches" component={MatchesPage} />

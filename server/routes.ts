@@ -6,6 +6,7 @@ import { schedule } from "./data/schedule";
 import { matchPreviews } from "./data/matchPreviews";
 import { matchups } from "./data/matchups";
 import { deepInsights } from "./data/deepInsights";
+import { articles } from "./data/articles";
 import { proIntelligence1 } from "./data/proIntelligence1";
 import { proIntelligence2 } from "./data/proIntelligence2";
 
@@ -263,6 +264,39 @@ export async function registerRoutes(
     }
 
     res.json(xi);
+  });
+
+  // ─── Article routes ──────────────────────────────────────────────────────
+
+  // GET /api/articles — all articles with optional category and limit filters
+  app.get("/api/articles", (req, res) => {
+    const { category, limit } = req.query as Record<string, string>;
+    let result = [...articles];
+    if (category) {
+      result = result.filter((a) => a.category === category);
+    }
+    if (limit) {
+      result = result.slice(0, parseInt(limit, 10));
+    }
+    res.json(result);
+  });
+
+  // GET /api/articles/featured — the single featured article
+  app.get("/api/articles/featured", (_req, res) => {
+    const featured = articles.find((a) => a.featured);
+    if (!featured) {
+      return res.status(404).json({ error: "No featured article found" });
+    }
+    res.json(featured);
+  });
+
+  // GET /api/articles/:slug — single article by slug
+  app.get("/api/articles/:slug", (req, res) => {
+    const article = articles.find((a) => a.slug === req.params.slug);
+    if (!article) {
+      return res.status(404).json({ error: "Article not found" });
+    }
+    res.json(article);
   });
 
   return httpServer;

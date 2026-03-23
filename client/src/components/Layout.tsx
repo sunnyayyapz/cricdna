@@ -47,7 +47,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
 
   const navLinks = [
-    { href: "/", label: "Explore" },
+    { href: "/", label: "Home" },
+    { href: "/explore", label: "Explore" },
     { href: "/matches", label: "Matches" },
     { href: "/compare", label: "Compare" },
   ];
@@ -64,7 +65,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <CricketDNALogo size={26} />
               </span>
               <span className="font-display font-bold text-base tracking-tight text-foreground">
-                CricketDNA
+                CricDNA
               </span>
             </a>
           </Link>
@@ -75,7 +76,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               const isActive =
                 link.href === "/"
                   ? location === "/" || location === ""
-                  : location.startsWith(link.href);
+                  : location === link.href || location.startsWith(link.href + "/");
               return (
                 <Link key={link.href} href={link.href}>
                   <a
