@@ -66,16 +66,33 @@ export async function registerRoutes(
     res.json(result);
   });
 
-  // GET /api/players/:id — full player data + deep insights
+  // GET /api/players/:id — full player data + deep insights (falls back to squad data)
   app.get("/api/players/:id", (req, res) => {
     const id = parseInt(req.params.id, 10);
     const player = players.find((p) => p.id === id);
-    if (!player) {
+    if (player) {
+      const insights = deepInsights[id];
+      const proIntel = proIntelligence[id];
+      return res.json({ ...player, isRichProfile: true, deepInsights: insights || null, proIntelligence: proIntel || null });
+    }
+    // Fallback to squad player data
+    const squadPlayer = allPlayers.find((p) => p.id === id);
+    if (!squadPlayer) {
       return res.status(404).json({ error: "Player not found" });
     }
-    const insights = deepInsights[id];
-    const proIntel = proIntelligence[id];
-    res.json({ ...player, deepInsights: insights || null, proIntelligence: proIntel || null });
+    // Return squad player with a flag indicating it's not a rich profile
+    res.json({
+      ...squadPlayer,
+      isRichProfile: false,
+      radarData: [],
+      careerTimeline: [],
+      driftEvents: [],
+      recentInnings: [],
+      phaseData: [],
+      dismissalPatterns: {},
+      deepInsights: null,
+      proIntelligence: null,
+    });
   });
 
   // GET /api/players/:id/drifts — player drift events
