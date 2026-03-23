@@ -137,40 +137,60 @@ function CategoryBadge({ category }: { category: string }) {
 
 // ─── A) Score Ticker ───────────────────────────────────────────────────────────
 
+function istToPst(istTime: string) {
+  // Convert IST time to PST (IST is UTC+5:30, PST is UTC-8, so PST = IST - 13:30)
+  const match = istTime.match(/(\d+):(\d+)/);
+  if (!match) return istTime;
+  let hours = parseInt(match[1], 10);
+  let minutes = parseInt(match[2], 10);
+  // Subtract 13 hours 30 minutes
+  minutes -= 30;
+  if (minutes < 0) { minutes += 60; hours -= 1; }
+  hours -= 13;
+  if (hours < 0) hours += 24;
+  const period = hours >= 12 ? "PM" : "AM";
+  const displayHour = hours === 0 ? 12 : hours > 12 ? hours - 12 : hours;
+  return `${displayHour}:${minutes.toString().padStart(2, "0")} ${period} PST`;
+}
+
+function formatTickerDate(date: string, day: string, time: string) {
+  const d = new Date(date + "T00:00:00");
+  const short = shortDays[day] || day.slice(0, 3);
+  const monthDay = `${d.getDate()} ${d.toLocaleDateString("en-US", { month: "short" })}`;
+  return `${short} ${monthDay}, ${istToPst(time)}`;
+}
+
 function ScoreTicker() {
   const { data: matches, isLoading } = useQuery<ScheduleMatch[]>({ queryKey: ["/api/schedule/upcoming"] });
 
   if (isLoading) {
     return (
-      <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border overflow-hidden">
-        <div className="flex items-center gap-0 overflow-hidden">
-          <div className="flex-shrink-0 px-3 flex items-center gap-1.5 border-r border-border h-10">
-            <Skeleton className="w-2 h-2 rounded-full" />
-            <Skeleton className="w-8 h-3" />
-          </div>
-          {[...Array(6)].map((_, i) => <Skeleton key={i} className="flex-shrink-0 h-10 w-[180px]" />)}
+      <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="max-w-7xl mx-auto flex items-center gap-3 px-4 py-2 overflow-hidden">
+          {[...Array(5)].map((_, i) => <Skeleton key={i} className="flex-shrink-0 h-12 w-[160px] rounded-lg" />)}
         </div>
       </div>
     );
   }
 
-  const upcoming = (matches || []).slice(0, 12);
+  const upcoming = (matches || []).slice(0, 20);
 
   return (
     <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border" data-testid="score-ticker">
-      <div className="max-w-7xl mx-auto flex items-center gap-0 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
-        <div className="flex-shrink-0 px-3 flex items-center gap-1.5 border-r border-border h-10">
+      <div className="max-w-7xl mx-auto flex items-center gap-0 overflow-x-auto px-4" style={{ scrollbarWidth: "thin" }}>
+        <div className="flex-shrink-0 pr-3 flex items-center gap-1.5 border-r border-border py-2">
           <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
           <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">IPL</span>
         </div>
         {upcoming.map((m) => (
           <Link key={m.id} href={`/matches/${m.id}`}>
-            <a className="flex-shrink-0 flex items-center gap-2 px-3 h-10 border-r border-border/50 hover:bg-accent/50 transition-colors" data-testid={`ticker-match-${m.id}`}>
-              <span className="font-semibold text-xs" style={{ color: teamColors[m.homeTeam] }}>{m.homeTeam}</span>
-              <span className="text-muted-foreground text-[10px]">vs</span>
-              <span className="font-semibold text-xs" style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
-              <span className="text-[10px] text-amber-600 dark:text-amber-400">{formatMatchDate(m.date, m.day)}</span>
+            <a className="flex-shrink-0 flex flex-col items-center px-4 py-2 border-r border-border/50 hover:bg-accent/50 transition-colors min-w-[150px]" data-testid={`ticker-match-${m.id}`}>
+              <div className="flex items-center gap-1.5">
+                <span className="font-bold text-xs" style={{ color: teamColors[m.homeTeam] }}>{m.homeTeam}</span>
+                <span className="text-muted-foreground text-[10px]">vs</span>
+                <span className="font-bold text-xs" style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
+              </div>
+              <span className="text-[10px] text-muted-foreground mt-0.5">{formatTickerDate(m.date, m.day, m.time)}</span>
             </a>
           </Link>
         ))}
