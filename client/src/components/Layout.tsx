@@ -56,7 +56,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Top Navigation Bar */}
-      <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-50 border-b border-border bg-gray-950 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           {/* Left: Logo + Brand */}
           <Link href="/">
@@ -64,7 +64,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <span className="text-primary transition-transform group-hover:scale-105">
                 <CricketDNALogo size={26} />
               </span>
-              <span className="font-display font-bold text-base tracking-tight text-foreground">
+              <span className="font-display font-bold text-base tracking-tight text-white">
                 CricDNA
               </span>
             </a>
@@ -84,8 +84,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     className={cn(
                       "px-3 py-1.5 rounded-md text-sm font-medium transition-colors",
                       isActive
-                        ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                        ? "text-emerald-400 bg-emerald-500/15"
+                        : "text-gray-400 hover:text-white hover:bg-white/10"
                     )}
                   >
                     {link.label}
@@ -101,7 +101,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             size="icon"
             onClick={toggleTheme}
             data-testid="theme-toggle"
-            className="h-8 w-8 text-muted-foreground hover:text-foreground"
+            className="h-8 w-8 text-gray-400 hover:text-white"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}

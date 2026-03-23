@@ -176,7 +176,7 @@ function ScoreTicker() {
   const upcoming = (matches || []).slice(0, 20);
 
   return (
-    <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border" data-testid="score-ticker">
+    <div className="sticky top-14 z-40 bg-white dark:bg-gray-900 border-b border-border" data-testid="score-ticker">
       <div className="max-w-7xl mx-auto flex items-center gap-0 overflow-x-auto px-4" style={{ scrollbarWidth: "thin" }}>
         <div className="flex-shrink-0 pr-3 flex items-center gap-1.5 border-r border-border py-2">
           <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
@@ -250,7 +250,7 @@ function AnalyticsDashboardHeader({
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground font-display leading-tight mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
               {featuredArticle.title}
             </h1>
-            <p className="text-muted-foreground text-sm sm:text-base leading-relaxed max-w-3xl line-clamp-2 mb-4">
+            <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
               {featuredArticle.subtitle}
             </p>
 
@@ -464,7 +464,7 @@ function Sidebar({
     queryKey: ["/api/schedule/upcoming"],
   });
 
-  const nextMatches = (upcomingMatches || []).slice(0, 3);
+  const nextMatches = (upcomingMatches || []).slice(0, 6);
 
   const cardConfig: Record<string, { border: string; badge: string; icon: React.ReactNode }> = {
     player: { border: "border-l-emerald-500", badge: "bg-emerald-100 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400", icon: <Dna size={12} /> },
@@ -491,10 +491,10 @@ function Sidebar({
             {[...Array(5)].map((_, i) => <Skeleton key={i} className="h-8 rounded" />)}
           </div>
         ) : (
-          <div className="divide-y divide-border/30">
+          <div>
             {(topPlayers || []).slice(0, 5).map((player, idx) => (
               <Link key={player.id} href={`/player/${player.id}`}>
-                <a className="flex items-center justify-between py-2 px-1 hover:bg-accent/40 transition-colors group rounded">
+                <a className={cn("flex items-center justify-between py-2 px-2 hover:bg-accent/40 transition-colors group rounded", idx % 2 === 1 && "bg-muted/30")}>
                   <div className="flex items-center gap-2.5">
                     <span className={cn(
                       "text-xs font-bold w-4 text-center flex-shrink-0",
