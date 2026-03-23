@@ -186,9 +186,9 @@ function ScoreTicker() {
           <Link key={m.id} href={`/matches/${m.id}`}>
             <a className="flex-shrink-0 flex flex-col items-center px-4 py-2 border-r border-border/50 hover:bg-accent/50 transition-colors min-w-[150px]" data-testid={`ticker-match-${m.id}`}>
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-xs" style={{ color: teamColors[m.homeTeam] }}>{m.homeTeam}</span>
+                <span className="font-bold text-xs text-foreground">{m.homeTeam}</span>
                 <span className="text-muted-foreground text-[10px]">vs</span>
-                <span className="font-bold text-xs" style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
+                <span className="font-bold text-xs text-foreground">{m.awayTeam}</span>
               </div>
               <span className="text-[10px] text-muted-foreground mt-0.5">{formatTickerDate(m.date, m.day, m.time)}</span>
             </a>
@@ -379,17 +379,14 @@ function ArticleFeedRow({ article }: { article: Article }) {
 }
 
 function MatchGroupHeader({ match }: { match: ScheduleMatch }) {
-  const homeColor = teamColors[match.homeTeam] || "#71717a";
-  const awayColor = teamColors[match.awayTeam] || "#71717a";
-
   return (
     <div className="flex items-center gap-3 py-2 px-2 -mx-2 bg-accent/30 rounded-md mb-1">
       <div className="flex items-center gap-1.5">
-        <span className="w-2 h-2 rounded-full" style={{ background: homeColor }} />
-        <span className="font-bold text-xs" style={{ color: homeColor }}>{match.homeTeam}</span>
+        <span className="w-2 h-2 rounded-full bg-foreground/40" />
+        <span className="font-bold text-xs text-foreground">{match.homeTeam}</span>
         <span className="text-muted-foreground text-[10px]">vs</span>
-        <span className="font-bold text-xs" style={{ color: awayColor }}>{match.awayTeam}</span>
-        <span className="w-2 h-2 rounded-full" style={{ background: awayColor }} />
+        <span className="font-bold text-xs text-foreground">{match.awayTeam}</span>
+        <span className="w-2 h-2 rounded-full bg-foreground/40" />
       </div>
       <span className="text-[10px] text-muted-foreground">Match #{match.matchNumber} · {formatMatchDate(match.date, match.day)}</span>
       <Link href={`/matches/${match.id}`}>
@@ -496,52 +493,21 @@ function Sidebar({
               <Link key={player.id} href={`/player/${player.id}`}>
                 <a className={cn("flex items-center justify-between py-2 px-2 hover:bg-accent/40 transition-colors group rounded", idx % 2 === 1 && "bg-muted/30")}>
                   <div className="flex items-center gap-2.5">
-                    <span className={cn(
-                      "text-xs font-bold w-4 text-center flex-shrink-0",
-                      idx === 0 ? "text-amber-600 dark:text-amber-400" : idx === 1 ? "text-gray-400" : idx === 2 ? "text-orange-400" : "text-muted-foreground"
-                    )}>
+                    <span className="text-xs font-bold w-4 text-center flex-shrink-0 text-muted-foreground">
                       {idx + 1}
                     </span>
                     <div className="min-w-0">
-                      <span className="text-sm font-semibold text-foreground group-hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors truncate block">{player.name}</span>
+                      <span className="text-sm font-semibold text-foreground group-hover:underline transition-colors truncate block">{player.name}</span>
                       <span className="text-[10px] text-muted-foreground">{player.teamShort}</span>
                     </div>
                   </div>
-                  <span className="text-sm font-bold text-foreground dark:text-emerald-400 font-mono tabular-nums flex-shrink-0">{player.dnaScore}</span>
+                  <span className="text-sm font-bold text-foreground font-mono tabular-nums flex-shrink-0">{player.dnaScore}</span>
                 </a>
               </Link>
             ))}
           </div>
         )}
       </Card>
-
-      {/* Analytics Cards stacked */}
-      {analyticsCards.length > 0 && (
-        <div className="space-y-2">
-          {analyticsCards.map((card, idx) => {
-            const cfg = cardConfig[card.type] || cardConfig.stat;
-            return (
-              <div
-                key={idx}
-                className={cn("bg-card border border-border rounded-xl p-3 border-l-4", cfg.border)}
-                data-testid={`sidebar-analytics-${card.type}`}
-              >
-                <span className={cn("inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit mb-1.5", cfg.badge)}>
-                  {cfg.icon}
-                  {card.title}
-                </span>
-                <span className={cn(
-                  "text-xl font-bold font-mono tabular-nums block",
-                  card.type === "player" ? "text-emerald-600 dark:text-emerald-400" : card.type === "matchup" ? "text-blue-600 dark:text-blue-400" : "text-purple-600 dark:text-purple-400"
-                )}>
-                  {card.value}
-                </span>
-                <p className="text-muted-foreground text-[11px] mt-1 leading-snug line-clamp-2">{card.description}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
 
       {/* Upcoming Matches */}
       <Card className="p-4 bg-card border-border" data-testid="upcoming-matches-sidebar">
@@ -566,11 +532,11 @@ function Sidebar({
                 <a className="block py-2 hover:bg-accent/40 transition-colors rounded px-1">
                   <div className="flex items-center justify-between mb-0.5">
                     <span className="font-bold text-sm text-foreground">
-                      <span style={{ color: teamColors[m.homeTeam] }}>{m.homeTeam}</span>
+                      <span className="text-foreground">{m.homeTeam}</span>
                       {" vs "}
-                      <span style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
+                      <span className="text-foreground">{m.awayTeam}</span>
                     </span>
-                    <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">{formatMatchDate(m.date, m.day)}</span>
+                    <span className="text-[10px] text-muted-foreground font-medium">{formatMatchDate(m.date, m.day)}</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
                     <MapPin size={10} />
