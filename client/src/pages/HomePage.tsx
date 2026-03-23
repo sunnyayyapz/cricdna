@@ -157,8 +157,8 @@ function ScoreTicker() {
   const upcoming = (matches || []).slice(0, 12);
 
   return (
-    <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border overflow-hidden" data-testid="score-ticker">
-      <div className="flex items-center gap-0 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
+    <div className="sticky top-14 z-40 bg-background/95 backdrop-blur-sm border-b border-border" data-testid="score-ticker">
+      <div className="max-w-7xl mx-auto flex items-center gap-0 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
         <div className="flex-shrink-0 px-3 flex items-center gap-1.5 border-r border-border h-10">
           <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
           <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">IPL</span>
@@ -198,91 +198,49 @@ function AnalyticsDashboardHeader({
     );
   }
 
+  // Use the featured article as the hero — single coherent piece
+  if (!featuredArticle) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 pt-4">
+        <Skeleton className="h-[280px] rounded-xl" />
+      </div>
+    );
+  }
+
   return (
     <section className="max-w-7xl mx-auto px-4 pt-4" data-testid="analytics-dashboard-header">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 min-h-[300px]">
-
-        {/* LEFT: Data Insight + Featured article headline — 7 columns */}
-        <div className="lg:col-span-7 bg-gradient-to-br from-card to-background rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border border-border lg:border-r-0 p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/20 to-transparent pointer-events-none" />
-
-          <div className="flex items-center gap-2 mb-3 relative">
-            <span className="flex items-center gap-1.5 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
-              <Zap size={12} />
-              Data Insight of the Day
-            </span>
-            <span className="text-muted-foreground/50 text-[10px]">Updated today</span>
-          </div>
-
-          {analyticsCard && (
-            <div className="relative flex-1 flex flex-col justify-center">
-              <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground font-display leading-tight mb-3">
-                {analyticsCard.title}
-              </h1>
-
-              <div className="bg-background/60 rounded-xl p-4 mb-3 border border-border">
-                <span className="text-4xl sm:text-5xl font-bold text-foreground dark:text-emerald-400 font-mono tabular-nums">
-                  {analyticsCard.value}
+      <Link href={`/article/${featuredArticle.slug}`}>
+        <a className="group block rounded-xl border border-border bg-card hover:border-emerald-500/40 dark:hover:border-emerald-500/40 hover:shadow-lg transition-all overflow-hidden" data-testid="hero-article-link">
+          <div className="p-5 sm:p-6 lg:p-8">
+            <div className="flex items-center gap-2 mb-3">
+              <CategoryBadge category={featuredArticle.category} />
+              <span className="text-muted-foreground text-[11px]">{featuredArticle.readTime}</span>
+              {featuredArticle.chartData && (
+                <span className="flex items-center gap-1 text-cyan-600 dark:text-cyan-400 text-[11px] font-medium">
+                  <BarChart3 size={11} /> Charts
                 </span>
-                <p className="text-muted-foreground text-sm mt-3 leading-relaxed line-clamp-2">
-                  {analyticsCard.description}
-                </p>
-              </div>
-
-              {featuredArticle && (
-                <Link href={`/article/${featuredArticle.slug}`}>
-                  <a className="inline-flex items-center gap-2 text-emerald-600 dark:text-emerald-400 text-sm font-semibold hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors group self-start" data-testid="hero-featured-link">
-                    Read: {featuredArticle.title.slice(0, 60)}…
-                    <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                  </a>
-                </Link>
+              )}
+              {featuredArticle.dataTable && (
+                <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 text-[11px] font-medium">
+                  <Table2 size={11} /> {featuredArticle.dataTable.rows.length} rows
+                </span>
               )}
             </div>
-          )}
-        </div>
 
-        {/* RIGHT: Quick Stats Panel — 5 columns */}
-        <div className="lg:col-span-5 rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none border border-border lg:border-l-0 bg-card p-5 flex flex-col justify-between" data-testid="quick-stats-panel">
-          {featuredArticle ? (
-            <>
-              <div>
-                <CategoryBadge category={featuredArticle.category} />
-                <h2 className="text-lg font-bold text-foreground font-display leading-snug mt-2 mb-2">
-                  {featuredArticle.title}
-                </h2>
-                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
-                  {featuredArticle.subtitle}
-                </p>
-              </div>
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground font-display leading-tight mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+              {featuredArticle.title}
+            </h1>
+            <p className="text-muted-foreground text-sm sm:text-base leading-relaxed max-w-3xl line-clamp-2 mb-4">
+              {featuredArticle.subtitle}
+            </p>
 
-              {/* Content badges */}
-              <div className="flex items-center gap-3 mt-3">
-                {featuredArticle.chartData && (
-                  <span className="flex items-center gap-1.5 text-cyan-600 dark:text-cyan-400 text-[11px] font-medium">
-                    <BarChart3 size={12} />
-                    Includes charts
-                  </span>
-                )}
-                {featuredArticle.dataTable && (
-                  <span className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 text-[11px] font-medium">
-                    <Table2 size={12} />
-                    {featuredArticle.dataTable.rows.length} rows of data
-                  </span>
-                )}
-              </div>
-
-              <div className="flex items-center justify-between mt-3">
-                <span className="text-muted-foreground/60 text-xs">{featuredArticle.author} · {timeAgo(featuredArticle.publishedAt)}</span>
-                <Link href={`/article/${featuredArticle.slug}`}>
-                  <a className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold" data-testid="hero-read-link">Read →</a>
-                </Link>
-              </div>
-            </>
-          ) : (
-            <Skeleton className="h-full" />
-          )}
-        </div>
-      </div>
+            <div className="flex items-center gap-3">
+              <span className="text-muted-foreground/60 text-xs">{featuredArticle.author} · {timeAgo(featuredArticle.publishedAt)}</span>
+              <span className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold group-hover:underline">Read article →</span>
+            </div>
+          </div>
+        </a>
+      </Link>
     </section>
   );
 }
@@ -675,19 +633,13 @@ export default function HomePage() {
       {/* A) Score Ticker */}
       <ScoreTicker />
 
-      {/* B) Analytics Dashboard Header */}
+      {/* B) Featured Article Hero */}
       <AnalyticsDashboardHeader
         featuredArticle={featuredArticle}
         analyticsCard={analyticsCardsData?.[0]}
       />
 
-      {/* C) Match Analytics Cards */}
-      <MatchAnalyticsCards
-        articlesByMatch={articlesByMatch}
-        schedule={scheduleData || []}
-      />
-
-      {/* D + E) Article Feed + Sidebar in 12-col grid */}
+      {/* C) Article Feed + Sidebar */}
       <main className="max-w-7xl mx-auto px-4 pt-5" data-testid="main-content">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-8">
