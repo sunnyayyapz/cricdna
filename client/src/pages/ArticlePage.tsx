@@ -200,20 +200,22 @@ export default function ArticlePage() {
               <BarChart3 size={14} className="text-cyan-600 dark:text-cyan-400" />
               <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Data Visualization</span>
             </div>
-            <div className="h-48 sm:h-56">
+            <div className="h-56 sm:h-64">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={article.chartData} margin={{ top: 5, right: 5, bottom: 5, left: 5 }}>
+                <BarChart data={article.chartData} margin={{ top: 10, right: 15, bottom: 25, left: 15 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
                   <XAxis
                     dataKey="label"
                     tick={{ fontSize: 11, fill: "#a1a1aa" }}
                     axisLine={{ stroke: "#3f3f46" }}
                     tickLine={false}
+                    label={{ value: article.chartData.some(d => /^\d{4}$/.test(d.label)) ? "Season" : "", position: "insideBottom", offset: -15, fontSize: 11, fill: "#71717a" }}
                   />
                   <YAxis
                     tick={{ fontSize: 11, fill: "#a1a1aa" }}
                     axisLine={{ stroke: "#3f3f46" }}
                     tickLine={false}
+                    label={{ value: article.chartData.some(d => d.value > 50) ? "Avg Score / Runs" : "Percentage / Rate", angle: -90, position: "insideLeft", offset: 5, fontSize: 11, fill: "#71717a", style: { textAnchor: "middle" } }}
                   />
                   <Tooltip
                     contentStyle={{
