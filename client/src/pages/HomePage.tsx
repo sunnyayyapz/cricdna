@@ -90,11 +90,11 @@ const teamColors: Record<string, string> = {
 };
 
 const categoryColors: Record<string, string> = {
-  "pitch-report": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-  "toss-report": "bg-amber-500/20 text-amber-400 border-amber-500/30",
-  "match-preview": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  rankings: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  analysis: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+  "pitch-report": "bg-cyan-100 dark:bg-cyan-500/20 text-cyan-700 dark:text-cyan-400 border-cyan-200 dark:border-cyan-500/30",
+  "toss-report": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/30",
+  "match-preview": "bg-blue-100 dark:bg-blue-500/20 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-500/30",
+  rankings: "bg-purple-100 dark:bg-purple-500/20 text-purple-700 dark:text-purple-400 border-purple-200 dark:border-purple-500/30",
+  analysis: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-500/30",
 };
 
 // ─── Helpers ───────────────────────────────────────────────────────────────────
@@ -161,7 +161,7 @@ function ScoreTicker() {
       <div className="flex items-center gap-0 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
         <div className="flex-shrink-0 px-3 flex items-center gap-1.5 border-r border-border h-10">
           <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
-          <span className="text-[10px] font-bold text-amber-400 uppercase tracking-wider">IPL</span>
+          <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">IPL</span>
         </div>
         {upcoming.map((m) => (
           <Link key={m.id} href={`/matches/${m.id}`}>
@@ -170,7 +170,7 @@ function ScoreTicker() {
               <span className="text-muted-foreground text-[10px]">vs</span>
               <span className="font-semibold text-xs" style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
               <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
-              <span className="text-[10px] text-amber-400">{formatMatchDate(m.date, m.day)}</span>
+              <span className="text-[10px] text-amber-600 dark:text-amber-400">{formatMatchDate(m.date, m.day)}</span>
             </a>
           </Link>
         ))}
@@ -207,7 +207,7 @@ function AnalyticsDashboardHeader({
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/20 to-transparent pointer-events-none" />
 
           <div className="flex items-center gap-2 mb-3 relative">
-            <span className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+            <span className="flex items-center gap-1.5 bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
               <Zap size={12} />
               Data Insight of the Day
             </span>
@@ -221,7 +221,7 @@ function AnalyticsDashboardHeader({
               </h1>
 
               <div className="bg-background/60 rounded-xl p-4 mb-3 border border-border">
-                <span className="text-4xl sm:text-5xl font-bold text-emerald-400 font-mono tabular-nums">
+                <span className="text-4xl sm:text-5xl font-bold text-foreground dark:text-emerald-400 font-mono tabular-nums">
                   {analyticsCard.value}
                 </span>
                 <p className="text-muted-foreground text-sm mt-3 leading-relaxed line-clamp-2">
@@ -231,7 +231,7 @@ function AnalyticsDashboardHeader({
 
               {featuredArticle && (
                 <Link href={`/article/${featuredArticle.slug}`}>
-                  <a className="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold hover:text-emerald-300 transition-colors group self-start" data-testid="hero-featured-link">
+                  <a className="inline-flex items-center gap-2 text-emerald-600 dark:text-emerald-400 text-sm font-semibold hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors group self-start" data-testid="hero-featured-link">
                     Read: {featuredArticle.title.slice(0, 60)}…
                     <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                   </a>
@@ -258,13 +258,13 @@ function AnalyticsDashboardHeader({
               {/* Content badges */}
               <div className="flex items-center gap-3 mt-3">
                 {featuredArticle.chartData && (
-                  <span className="flex items-center gap-1.5 text-cyan-400 text-[11px] font-medium">
+                  <span className="flex items-center gap-1.5 text-cyan-600 dark:text-cyan-400 text-[11px] font-medium">
                     <BarChart3 size={12} />
                     Includes charts
                   </span>
                 )}
                 {featuredArticle.dataTable && (
-                  <span className="flex items-center gap-1.5 text-amber-400 text-[11px] font-medium">
+                  <span className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 text-[11px] font-medium">
                     <Table2 size={12} />
                     {featuredArticle.dataTable.rows.length} rows of data
                   </span>
@@ -274,7 +274,7 @@ function AnalyticsDashboardHeader({
               <div className="flex items-center justify-between mt-3">
                 <span className="text-muted-foreground/60 text-xs">{featuredArticle.author} · {timeAgo(featuredArticle.publishedAt)}</span>
                 <Link href={`/article/${featuredArticle.slug}`}>
-                  <a className="text-sm text-emerald-400 font-semibold" data-testid="hero-read-link">Read →</a>
+                  <a className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold" data-testid="hero-read-link">Read →</a>
                 </Link>
               </div>
             </>
@@ -326,7 +326,7 @@ function MatchAnalyticsCards({
                   <span className="text-muted-foreground text-[10px]">vs</span>
                   <span className="font-bold text-sm" style={{ color: awayColor }}>{match.awayTeam}</span>
                 </div>
-                <span className="text-[10px] text-amber-400 font-medium">{formatMatchDate(match.date, match.day)}</span>
+                <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">{formatMatchDate(match.date, match.day)}</span>
               </div>
 
               {/* Article pills */}
@@ -335,11 +335,11 @@ function MatchAnalyticsCards({
                   <Link key={article.id} href={`/article/${article.slug}`}>
                     <a className="group flex items-start gap-2 py-1 hover:bg-accent/40 rounded px-1 -mx-1 transition-colors" data-testid={`match-article-pill-${article.id}`}>
                       <CategoryBadge category={article.category} />
-                      <span className="text-xs text-foreground leading-snug line-clamp-1 group-hover:text-emerald-400 transition-colors flex-1">
+                      <span className="text-xs text-foreground leading-snug line-clamp-1 group-hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex-1">
                         {article.title}
                       </span>
-                      {article.chartData && <BarChart3 size={10} className="text-cyan-400 flex-shrink-0 mt-0.5" />}
-                      {article.dataTable && <Table2 size={10} className="text-amber-400 flex-shrink-0 mt-0.5" />}
+                      {article.chartData && <BarChart3 size={10} className="text-cyan-600 dark:text-cyan-400 flex-shrink-0 mt-0.5" />}
+                      {article.dataTable && <Table2 size={10} className="text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />}
                     </a>
                   </Link>
                 ))}
@@ -347,7 +347,7 @@ function MatchAnalyticsCards({
 
               {/* Link to match */}
               <Link href={`/matches/${matchId}`}>
-                <a className="flex items-center gap-1 text-[11px] text-emerald-400 font-semibold mt-2 hover:text-emerald-300 transition-colors">
+                <a className="flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-2 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors">
                   Full match analysis
                   <ArrowRight size={10} />
                 </a>
@@ -371,19 +371,19 @@ function ArticleFeedRow({ article }: { article: Article }) {
           <div className="flex items-center gap-2 mb-1">
             <CategoryBadge category={article.category} />
             {article.chartData && (
-              <span className="flex items-center gap-1 text-cyan-400">
+              <span className="flex items-center gap-1 text-cyan-600 dark:text-cyan-400">
                 <BarChart3 size={10} />
                 <span className="text-[9px] font-bold uppercase">Chart</span>
               </span>
             )}
             {article.dataTable && (
-              <span className="flex items-center gap-1 text-amber-400">
+              <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
                 <Table2 size={10} />
                 <span className="text-[9px] font-bold uppercase">{article.dataTable.rows.length} rows</span>
               </span>
             )}
           </div>
-          <h3 className="text-sm font-semibold text-foreground leading-snug group-hover:text-emerald-400 transition-colors line-clamp-2">
+          <h3 className="text-sm font-semibold text-foreground leading-snug group-hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors line-clamp-2">
             {article.title}
           </h3>
           <p className="text-muted-foreground/70 text-xs leading-relaxed line-clamp-1 mt-0.5">
@@ -415,7 +415,7 @@ function MatchGroupHeader({ match }: { match: ScheduleMatch }) {
       </div>
       <span className="text-[10px] text-muted-foreground">Match #{match.matchNumber} · {formatMatchDate(match.date, match.day)}</span>
       <Link href={`/matches/${match.id}`}>
-        <a className="ml-auto text-[10px] text-emerald-400 font-semibold hover:text-emerald-300">View →</a>
+        <a className="ml-auto text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold hover:text-emerald-500 dark:hover:text-emerald-300">View →</a>
       </Link>
     </div>
   );
@@ -455,7 +455,7 @@ function ArticleFeed({
       {ungroupedArticles.length > 0 && (
         <div>
           <div className="flex items-center gap-2 py-2 px-2 -mx-2 bg-accent/30 rounded-md mb-1">
-            <Activity size={12} className="text-emerald-400" />
+            <Activity size={12} className="text-emerald-600 dark:text-emerald-400" />
             <span className="text-xs font-bold text-foreground uppercase tracking-wider">Season Analysis</span>
           </div>
           {ungroupedArticles.map((a) => (
@@ -489,9 +489,9 @@ function Sidebar({
   const nextMatches = (upcomingMatches || []).slice(0, 3);
 
   const cardConfig: Record<string, { border: string; badge: string; icon: React.ReactNode }> = {
-    player: { border: "border-l-emerald-500", badge: "bg-emerald-500/15 text-emerald-400", icon: <Dna size={12} /> },
-    matchup: { border: "border-l-blue-500", badge: "bg-blue-500/15 text-blue-400", icon: <Swords size={12} /> },
-    stat: { border: "border-l-purple-500", badge: "bg-purple-500/15 text-purple-400", icon: <BarChart3 size={12} /> },
+    player: { border: "border-l-emerald-500", badge: "bg-emerald-100 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400", icon: <Dna size={12} /> },
+    matchup: { border: "border-l-blue-500", badge: "bg-blue-100 dark:bg-blue-500/15 text-blue-400", icon: <Swords size={12} /> },
+    stat: { border: "border-l-purple-500", badge: "bg-purple-100 dark:bg-purple-500/15 text-purple-400", icon: <BarChart3 size={12} /> },
   };
 
   return (
@@ -505,7 +505,7 @@ function Sidebar({
             DNA Leaderboard
           </h3>
           <Link href="/explore">
-            <a className="text-xs text-emerald-400 hover:text-emerald-300">See all →</a>
+            <a className="text-xs text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300">See all →</a>
           </Link>
         </div>
         {playersLoading ? (
@@ -520,16 +520,16 @@ function Sidebar({
                   <div className="flex items-center gap-2.5">
                     <span className={cn(
                       "text-xs font-bold w-4 text-center flex-shrink-0",
-                      idx === 0 ? "text-amber-400" : idx === 1 ? "text-gray-400" : idx === 2 ? "text-orange-400" : "text-muted-foreground"
+                      idx === 0 ? "text-amber-600 dark:text-amber-400" : idx === 1 ? "text-gray-400" : idx === 2 ? "text-orange-400" : "text-muted-foreground"
                     )}>
                       {idx + 1}
                     </span>
                     <div className="min-w-0">
-                      <span className="text-sm font-semibold text-foreground group-hover:text-emerald-400 transition-colors truncate block">{player.name}</span>
+                      <span className="text-sm font-semibold text-foreground group-hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors truncate block">{player.name}</span>
                       <span className="text-[10px] text-muted-foreground">{player.teamShort}</span>
                     </div>
                   </div>
-                  <span className="text-sm font-bold text-emerald-400 font-mono tabular-nums flex-shrink-0">{player.dnaScore}</span>
+                  <span className="text-sm font-bold text-foreground dark:text-emerald-400 font-mono tabular-nums flex-shrink-0">{player.dnaScore}</span>
                 </a>
               </Link>
             ))}
@@ -554,7 +554,7 @@ function Sidebar({
                 </span>
                 <span className={cn(
                   "text-xl font-bold font-mono tabular-nums block",
-                  card.type === "player" ? "text-emerald-400" : card.type === "matchup" ? "text-blue-400" : "text-purple-400"
+                  card.type === "player" ? "text-emerald-600 dark:text-emerald-400" : card.type === "matchup" ? "text-blue-600 dark:text-blue-400" : "text-purple-600 dark:text-purple-400"
                 )}>
                   {card.value}
                 </span>
@@ -574,7 +574,7 @@ function Sidebar({
             Upcoming
           </h3>
           <Link href="/matches">
-            <a className="text-xs text-emerald-400 hover:text-emerald-300">All →</a>
+            <a className="text-xs text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 dark:hover:text-emerald-300">All →</a>
           </Link>
         </div>
         {matchesLoading ? (
@@ -592,7 +592,7 @@ function Sidebar({
                       {" vs "}
                       <span style={{ color: teamColors[m.awayTeam] }}>{m.awayTeam}</span>
                     </span>
-                    <span className="text-[10px] text-amber-400 font-medium">{formatMatchDate(m.date, m.day)}</span>
+                    <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">{formatMatchDate(m.date, m.day)}</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
                     <MapPin size={10} />

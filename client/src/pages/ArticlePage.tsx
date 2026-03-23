@@ -60,11 +60,11 @@ interface Player {
 // ─── Helpers ───────────────────────────────────────────────────────────────────
 
 const categoryColors: Record<string, string> = {
-  "pitch-report": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-  "toss-report": "bg-amber-500/20 text-amber-400 border-amber-500/30",
-  "match-preview": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  rankings: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  analysis: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+  "pitch-report": "bg-cyan-100 dark:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 border-cyan-500/30",
+  "toss-report": "bg-amber-100 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 border-amber-500/30",
+  "match-preview": "bg-blue-100 dark:bg-blue-500/20 text-blue-400 border-blue-500/30",
+  rankings: "bg-purple-100 dark:bg-purple-500/20 text-purple-400 border-purple-500/30",
+  analysis: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border-emerald-500/30",
 };
 
 function categoryLabel(cat: string) {
@@ -129,7 +129,7 @@ export default function ArticlePage() {
         <p className="text-muted-foreground text-lg">Article not found.</p>
         <button
           onClick={() => navigate("/")}
-          className="mt-4 text-emerald-400 hover:underline"
+          className="mt-4 text-emerald-600 dark:text-emerald-400 hover:underline"
         >
           Back to Home
         </button>
@@ -152,7 +152,7 @@ export default function ArticlePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 pb-4">
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-emerald-400 transition-colors"
+          className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-emerald-600 dark:text-emerald-400 transition-colors"
           data-testid="back-button"
         >
           <ArrowLeft size={16} />
@@ -197,7 +197,7 @@ export default function ArticlePage() {
         {article.chartData && article.chartData.length > 0 && (
           <div className="bg-card border border-border rounded-xl p-4 mb-6" data-testid="article-chart">
             <div className="flex items-center gap-2 mb-3">
-              <BarChart3 size={14} className="text-cyan-400" />
+              <BarChart3 size={14} className="text-cyan-600 dark:text-cyan-400" />
               <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Data Visualization</span>
             </div>
             <div className="h-48 sm:h-56">
@@ -240,7 +240,7 @@ export default function ArticlePage() {
         {article.dataTable && article.dataTable.rows.length > 0 && (
           <div className="bg-card border border-border rounded-xl overflow-hidden mb-6" data-testid="article-data-table">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-accent/30">
-              <Table2 size={14} className="text-amber-400" />
+              <Table2 size={14} className="text-amber-600 dark:text-amber-400" />
               <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Data Table</span>
               <span className="text-[10px] text-muted-foreground/60 ml-auto">{article.dataTable.rows.length} rows</span>
             </div>
@@ -355,14 +355,14 @@ export default function ArticlePage() {
                   data-testid={`related-player-${player.id}`}
                 >
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-semibold text-foreground truncate group-hover:text-emerald-400 transition-colors">
+                    <p className="text-sm font-semibold text-foreground truncate group-hover:text-emerald-600 dark:text-emerald-400 transition-colors">
                       {player.name}
                     </p>
                     <p className="text-xs text-muted-foreground">{player.teamShort}</p>
                   </div>
                   <Badge
                     variant="outline"
-                    className="text-emerald-400 border-emerald-500/30 font-bold text-xs flex-shrink-0"
+                    className="text-emerald-600 dark:text-emerald-400 border-emerald-500/30 font-bold text-xs flex-shrink-0"
                   >
                     {player.dnaScore}
                   </Badge>
@@ -394,7 +394,7 @@ export default function ArticlePage() {
                   >
                     {categoryLabel(a.category)}
                   </span>
-                  <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-emerald-600 dark:text-emerald-400 transition-colors">
                     {a.title}
                   </h3>
                   <p className="text-muted-foreground/60 text-[11px] mt-1.5">{a.author} · {a.readTime}</p>
