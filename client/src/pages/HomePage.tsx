@@ -18,15 +18,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { useMemo } from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-  Cell,
-  Tooltip,
-} from "recharts";
+// Recharts removed from homepage — charts only render inside articles
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
 
@@ -141,21 +133,7 @@ function CategoryBadge({ category }: { category: string }) {
   );
 }
 
-// ─── Mini Sparkline Chart ──────────────────────────────────────────────────────
 
-function SparklineChart({ data, height = 40 }: { data: ChartData[]; height?: number }) {
-  return (
-    <ResponsiveContainer width="100%" height={height}>
-      <BarChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-        <Bar dataKey="value" radius={[2, 2, 0, 0]}>
-          {data.map((entry, idx) => (
-            <Cell key={idx} fill={entry.color || "#10b981"} fillOpacity={0.8} />
-          ))}
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
-  );
-}
 
 // ─── A) Score Ticker ───────────────────────────────────────────────────────────
 
@@ -243,19 +221,9 @@ function AnalyticsDashboardHeader({
               </h1>
 
               <div className="bg-background/60 rounded-xl p-4 mb-3 border border-border">
-                <div className="flex items-end gap-4">
-                  <div>
-                    <span className="text-4xl sm:text-5xl font-bold text-emerald-400 font-mono tabular-nums">
-                      {analyticsCard.value}
-                    </span>
-                  </div>
-                  {/* Mini Recharts sparkline from featured article's chartData */}
-                  {featuredArticle?.chartData && (
-                    <div className="flex-1 h-14 hidden sm:block">
-                      <SparklineChart data={featuredArticle.chartData} height={56} />
-                    </div>
-                  )}
-                </div>
+                <span className="text-4xl sm:text-5xl font-bold text-emerald-400 font-mono tabular-nums">
+                  {analyticsCard.value}
+                </span>
                 <p className="text-muted-foreground text-sm mt-3 leading-relaxed line-clamp-2">
                   {analyticsCard.description}
                 </p>
@@ -287,40 +255,21 @@ function AnalyticsDashboardHeader({
                 </p>
               </div>
 
-              {/* Inline chart from featured article */}
-              {featuredArticle.chartData && (
-                <div className="mt-3 bg-background/60 rounded-lg p-3 border border-border">
-                  <div className="flex items-center gap-1.5 mb-2">
-                    <BarChart3 size={12} className="text-cyan-400" />
-                    <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Chart Data</span>
-                  </div>
-                  <div className="h-20">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <BarChart data={featuredArticle.chartData}>
-                        <XAxis dataKey="label" tick={{ fontSize: 9, fill: "#71717a" }} axisLine={false} tickLine={false} />
-                        <YAxis hide />
-                        <Tooltip
-                          contentStyle={{ background: "#18181b", border: "1px solid #27272a", borderRadius: "8px", fontSize: "11px" }}
-                          labelStyle={{ color: "#a1a1aa" }}
-                        />
-                        <Bar dataKey="value" radius={[3, 3, 0, 0]}>
-                          {featuredArticle.chartData.map((entry, idx) => (
-                            <Cell key={idx} fill={entry.color || "#10b981"} />
-                          ))}
-                        </Bar>
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </div>
-                </div>
-              )}
-
-              {/* Data table badge */}
-              {featuredArticle.dataTable && (
-                <div className="flex items-center gap-1.5 mt-2 text-cyan-400">
-                  <Table2 size={12} />
-                  <span className="text-[10px] font-semibold">{featuredArticle.dataTable.rows.length} rows of venue data</span>
-                </div>
-              )}
+              {/* Content badges */}
+              <div className="flex items-center gap-3 mt-3">
+                {featuredArticle.chartData && (
+                  <span className="flex items-center gap-1.5 text-cyan-400 text-[11px] font-medium">
+                    <BarChart3 size={12} />
+                    Includes charts
+                  </span>
+                )}
+                {featuredArticle.dataTable && (
+                  <span className="flex items-center gap-1.5 text-amber-400 text-[11px] font-medium">
+                    <Table2 size={12} />
+                    {featuredArticle.dataTable.rows.length} rows of data
+                  </span>
+                )}
+              </div>
 
               <div className="flex items-center justify-between mt-3">
                 <span className="text-muted-foreground/60 text-xs">{featuredArticle.author} · {timeAgo(featuredArticle.publishedAt)}</span>
@@ -353,7 +302,7 @@ function MatchAnalyticsCards({
 
   return (
     <section className="max-w-7xl mx-auto px-4 pt-4" data-testid="match-analytics-cards">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {matchIds.map((matchId) => {
           const articles = articlesByMatch.get(matchId) || [];
           const match = schedule.find((s) => s.id === matchId);
@@ -361,9 +310,6 @@ function MatchAnalyticsCards({
 
           const homeColor = teamColors[match.homeTeam] || "#71717a";
           const awayColor = teamColors[match.awayTeam] || "#71717a";
-
-          // Find an article with chart data for the sparkline
-          const chartArticle = articles.find((a) => a.chartData);
 
           return (
             <Card key={matchId} className="p-4 bg-card border-border relative overflow-hidden" data-testid={`match-card-${matchId}`}>
@@ -374,7 +320,7 @@ function MatchAnalyticsCards({
               </div>
 
               {/* Match header */}
-              <div className="flex items-center justify-between mb-2 pt-1">
+              <div className="flex items-center justify-between mb-3 pt-1">
                 <div className="flex items-center gap-1.5">
                   <span className="font-bold text-sm" style={{ color: homeColor }}>{match.homeTeam}</span>
                   <span className="text-muted-foreground text-[10px]">vs</span>
@@ -382,13 +328,6 @@ function MatchAnalyticsCards({
                 </div>
                 <span className="text-[10px] text-amber-400 font-medium">{formatMatchDate(match.date, match.day)}</span>
               </div>
-
-              {/* Tiny sparkline */}
-              {chartArticle?.chartData && (
-                <div className="h-8 mb-2">
-                  <SparklineChart data={chartArticle.chartData} height={32} />
-                </div>
-              )}
 
               {/* Article pills */}
               <div className="space-y-1.5">
@@ -455,12 +394,7 @@ function ArticleFeedRow({ article }: { article: Article }) {
           </span>
         </div>
 
-        {/* Right: inline sparkline if chartData */}
-        {article.chartData && (
-          <div className="flex-shrink-0 w-24 h-12 self-center hidden sm:block">
-            <SparklineChart data={article.chartData} height={48} />
-          </div>
-        )}
+
       </a>
     </Link>
   );
