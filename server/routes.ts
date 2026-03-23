@@ -6,7 +6,7 @@ import { schedule } from "./data/schedule";
 import { matchPreviews } from "./data/matchPreviews";
 import { matchups } from "./data/matchups";
 import { deepInsights } from "./data/deepInsights";
-import { articles } from "./data/articles";
+import { articles, analyticsCards } from "./data/articles";
 import { proIntelligence1 } from "./data/proIntelligence1";
 import { proIntelligence2 } from "./data/proIntelligence2";
 
@@ -279,6 +279,11 @@ export async function registerRoutes(
       result = result.slice(0, parseInt(limit, 10));
     }
     res.json(result);
+  });
+
+  // GET /api/articles/analytics-cards — analytics cards for homepage
+  app.get("/api/articles/analytics-cards", (_req, res) => {
+    res.json(analyticsCards);
   });
 
   // GET /api/articles/featured — the single featured article
