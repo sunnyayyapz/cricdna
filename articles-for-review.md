@@ -1,79 +1,37 @@
-export interface ChartData {
-  label: string;
-  value: number;
-  color?: string;
-}
+# CricDNA Analytics Articles — IPL 2026 Opening Week
 
-export interface DataTable {
-  headers: string[];
-  rows: string[][];
-}
+---
 
-export interface Article {
-  id: number;
-  slug: string;
-  title: string;
-  subtitle: string;
-  category: "pitch-report" | "toss-report" | "match-preview" | "rankings" | "analysis";
-  author: string;
-  publishedAt: string;
-  readTime: string;
-  tags: string[];
-  featured: boolean;
-  content: string;
-  relatedPlayerIds: number[];
-  chartData?: ChartData[];
-  dataTable?: DataTable;
-  matchId?: number;
-}
+## Article 1: Chinnaswamy Pitch Report: Why 200 Is the New Par and What History Says About RCB vs SRH
 
-export interface AnalyticsCard {
-  type: "player" | "matchup" | "stat";
-  title: string;
-  value: string;
-  description: string;
-  playerIds?: number[];
-  teamColors?: string[];
-}
+**Category:** pitch-report
+**Read time:** 4 min
+**Tags:** pitch-report, chinnaswamy, rcb, srh, ipl-2026, venue-analysis, batting-conditions
 
-export const articles: Article[] = [
-  {
-    id: 1,
-    slug: "chinnaswamy-pitch-report-rcb-vs-srh",
-    title: "Chinnaswamy Pitch Report: Why 200 Is the New Par and What History Says About RCB vs SRH",
-    subtitle: "The M. Chinnaswamy Stadium has undergone a statistical transformation — from a 170-par venue to a place where 200 feels like the bare minimum.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T09:00:00.000Z",
-    readTime: "4 min read",
-    tags: ["pitch-report", "chinnaswamy", "rcb", "srh", "ipl-2026", "venue-analysis", "batting-conditions"],
-    featured: true,
-    matchId: 1,
-    relatedPlayerIds: [1, 8, 9, 16],
-    chartData: [
-      { label: "2020", value: 168, color: "#3b82f6" },
-      { label: "2021", value: 172, color: "#3b82f6" },
-      { label: "2022", value: 178, color: "#3b82f6" },
-      { label: "2023", value: 182, color: "#3b82f6" },
-      { label: "2024", value: 196, color: "#ef4444" },
-      { label: "2025", value: 204, color: "#ef4444" },
-    ],
-    dataTable: {
-      headers: ["#", "Season", "Match", "1st Innings", "2nd Innings", "Winner", "Chaser Won?"],
-      rows: [
-        ["1", "2025", "RCB vs GT", "201/5", "187/8", "RCB", "No"],
-        ["2", "2025", "RCB vs DC", "194/6", "198/4", "DC", "Yes"],
-        ["3", "2025", "RCB vs MI", "213/4", "196/9", "RCB", "No"],
-        ["4", "2024", "RCB vs SRH", "262/7", "287/3", "SRH", "Yes"],
-        ["5", "2024", "RCB vs CSK", "218/5", "202/7", "RCB", "No"],
-        ["6", "2024", "RCB vs PBKS", "241/7", "208/6", "RCB", "No"],
-        ["7", "2024", "RCB vs DC", "187/9", "191/4", "DC", "Yes"],
-        ["8", "2024", "RCB vs GT", "200/3", "168/8", "RCB", "No"],
-        ["9", "2024", "RCB vs KKR", "182/6", "186/5", "KKR", "Yes"],
-        ["10", "2023", "RCB vs MI", "199/6", "203/5", "MI", "Yes"],
-      ],
-    },
-    content: `The M. Chinnaswamy Stadium in Bengaluru has undergone a statistical transformation that makes it the most dangerous batting ground in IPL history. What was once a 170-par venue is now a place where 200 feels like the bare minimum — and the numbers tell an extraordinary story.
+### Chart/Table Data
+
+**Table 1: Last 10 IPL Matches at M. Chinnaswamy Stadium**
+
+| # | Season | Match | 1st Innings | 2nd Innings | Winner | Chaser Won? |
+|---|--------|-------|-------------|-------------|--------|-------------|
+| 1 | 2025 | RCB vs GT | 201/5 | 187/8 | RCB | No |
+| 2 | 2025 | RCB vs DC | 194/6 | 198/4 | DC | Yes |
+| 3 | 2025 | RCB vs MI | 213/4 | 196/9 | RCB | No |
+| 4 | 2024 | RCB vs SRH | 262/7 | 287/3 | SRH | Yes |
+| 5 | 2024 | RCB vs CSK | 218/5 | 202/7 | RCB | No |
+| 6 | 2024 | RCB vs PBKS | 241/7 | 208/6 | RCB | No |
+| 7 | 2024 | RCB vs DC | 187/9 | 191/4 | DC | Yes |
+| 8 | 2024 | RCB vs GT | 200/3 | 168/8 | RCB | No |
+| 9 | 2024 | RCB vs KKR | 182/6 | 186/5 | KKR | Yes |
+| 10 | 2023 | RCB vs MI | 199/6 | 203/5 | MI | Yes |
+
+**Chart: Average First-Innings Scores at Chinnaswamy by Year (2019–2025)** — Line chart showing progression from ~170 average to 200+ in recent years.
+
+**Chart: Pace vs Spin Economy Rates at Chinnaswamy (2022–2025)** — Grouped bar chart comparing pace economy (~8.9) vs spin economy (~9.6) across powerplay, middle, and death overs.
+
+### Content
+
+The M. Chinnaswamy Stadium in Bengaluru has undergone a statistical transformation that makes it the most dangerous batting ground in IPL history. What was once a 170-par venue is now a place where 200 feels like the bare minimum — and the numbers tell an extraordinary story.
 
 **Altitude and dimensions: physics working against bowlers.** Chinnaswamy sits at an elevation of 920 metres above sea level — the highest of any IPL venue. That altitude reduces air resistance, meaning the ball carries 8-12% further off the bat compared to sea-level grounds like Wankhede. Combine this with boundaries measuring just 56-62 metres on the square and approximately 66 metres on the straight, and you have a venue that punishes anything marginally short or full. For context, the MCG's boundary is 82 metres straight — nearly 25% longer.
 
@@ -85,26 +43,23 @@ export const articles: Article[] = [
 
 **What the last 10 matches reveal.** Of the last 10 IPL matches at this venue (see table above), the chasing team has won 5 — a 50% success rate that rises to 62% in evening matches when dew is factored in. First-innings totals below 195 have been chased in every instance. The only successful defences came when the batting side posted 200+ and the pitch offered early movement under lights.
 
-**The verdict for March 28.** With a 92°F high, clear skies, and humidity set to climb after sunset, expect a classic Chinnaswamy belter. Both RCB and SRH have lineups stacked with power hitters — Phil Salt, Virat Kohli, Travis Head, and Heinrich Klaasen make this a 200+ game on paper. Any captain batting first should target 210 as a competitive total. Anything below 195 will be chased comfortably under dew.`,
-  },
-  {
-    id: 2,
-    slug: "toss-analysis-rcb-vs-srh-chinnaswamy",
-    title: "Toss Analysis: Why Chasing at Chinnaswamy Under Lights Is a 62% Advantage",
-    subtitle: "The coin toss on March 28 isn't just ceremonial — it's a quantifiable advantage worth approximately 12 percentage points in win probability.",
-    category: "toss-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T09:30:00.000Z",
-    readTime: "3 min read",
-    tags: ["toss-report", "chinnaswamy", "dew-factor", "rcb", "srh", "ipl-2026", "chase-advantage"],
-    featured: false,
-    matchId: 1,
-    relatedPlayerIds: [1, 8, 9, 29],
-    chartData: [
-      { label: "Bat First Win %", value: 38, color: "#f59e0b" },
-      { label: "Bat Second Win %", value: 62, color: "#10b981" },
-    ],
-    content: `The coin toss at M. Chinnaswamy Stadium on March 28 isn't just a ceremonial formality — it's a quantifiable advantage worth approximately 12 percentage points in win probability. Here's why the captain who wins it should choose to field without hesitation.
+**The verdict for March 28.** With a 92°F high, clear skies, and humidity set to climb after sunset, expect a classic Chinnaswamy belter. Both RCB and SRH have lineups stacked with power hitters — Phil Salt, Virat Kohli, Travis Head, and Heinrich Klaasen make this a 200+ game on paper. Any captain batting first should target 210 as a competitive total. Anything below 195 will be chased comfortably under dew.
+
+---
+
+## Article 2: Toss Analysis: Why Chasing at Chinnaswamy Under Lights Is a 62% Advantage
+
+**Category:** toss-report
+**Read time:** 3 min
+**Tags:** toss-report, chinnaswamy, dew-factor, rcb, srh, ipl-2026, chase-advantage
+
+### Chart/Table Data
+
+**Chart: Win % When Batting First vs Second in Evening Matches at Chinnaswamy (2020–2025)** — Stacked bar chart by year showing batting-first win % vs batting-second win %. Overall: 38% bat-first, 62% bat-second.
+
+### Content
+
+The coin toss at M. Chinnaswamy Stadium on March 28 isn't just a ceremonial formality — it's a quantifiable advantage worth approximately 12 percentage points in win probability. Here's why the captain who wins it should choose to field without hesitation.
 
 **Dew: the invisible 12th player.** Bengaluru's dew pattern is predictable and punishing for bowling teams. Moisture begins settling on the outfield at approximately 8:30 PM IST — roughly 70 minutes into a 7:30 PM start. For the team batting first, this means their bowlers will defend a total on a wet outfield with a damp ball. Grip deteriorates measurably: wrist spinners lose 15-20% of their revolutions when the ball is wet, and seam bowlers struggle to execute yorkers. Since 2020, the team batting second at Chinnaswamy in evening matches has won 62% of the time — a margin that grows to 67% when humidity exceeds 70% at toss time.
 
@@ -116,32 +71,67 @@ export const articles: Article[] = [
 
 **The exception that proves the rule.** There is one scenario where batting first makes sense: if the captain believes the pitch will deteriorate significantly by the second innings. At Chinnaswamy, this almost never happens — the surface is clay-based and holds firm. The only recent example of a successful first-innings defence below 210 required an exceptional bowling performance (3+ wickets in the powerplay). Relying on that is a gamble; chasing under dew is the higher-probability play.
 
-**Bottom line:** The toss winner on March 28 gains a 62% historical win probability by choosing to chase. In a match between two teams separated by thin margins, that edge is too significant to ignore.`,
-  },
-  {
-    id: 3,
-    slug: "rcb-vs-srh-match-preview-5-key-matchups",
-    title: "RCB vs SRH Match Preview: 5 Key Matchups That Will Decide the IPL 2026 Opener",
-    subtitle: "Two teams who produced the most jaw-dropping match in IPL history meet again — this time without Cummins, without Hazlewood, and with everything to prove.",
-    category: "match-preview",
-    author: "CricDNA Insights",
-    publishedAt: "2026-03-23T10:00:00.000Z",
-    readTime: "5 min read",
-    tags: ["match-preview", "rcb", "srh", "ipl-2026", "matchups", "probable-xi", "head-to-head"],
-    featured: false,
-    matchId: 1,
-    relatedPlayerIds: [1, 8, 9, 16, 12, 29],
-    dataTable: {
-      headers: ["Matchup", "Batter", "Bowler", "Career T20 Data", "Edge"],
-      rows: [
-        ["1", "Kohli", "Harshal Patel", "187 balls faced, avg 31.2, SR 128", "Harshal — deep knowledge of Kohli's weaknesses"],
-        ["2", "Travis Head", "Yash Dayal", "Head averages 22.4 vs left-arm pace in T20s, SR 118", "Dayal — Head's weakness against left-arm swing"],
-        ["3", "Klaasen", "Krunal Pandya", "Klaasen SR 112 vs left-arm spin (well below his 162 career SR)", "Krunal — containment potential"],
-        ["4", "Phil Salt", "Brydon Carse", "England training partners; Carse has dismissed Salt 3 times in practice matches", "Carse — familiarity advantage"],
-        ["5", "Abhishek Sharma", "Bhuvneshwar Kumar", "Avg 18.6, SR 109 vs Bhuvi in domestic T20s", "Bhuvi — swing in powerplay will test Abhishek"],
-      ],
-    },
-    content: `The IPL 2026 season opener pits two teams who produced the most jaw-dropping match in IPL history against each other — and this time, both squads look fundamentally different from the sides that combined for 549 runs at this very ground in 2024.
+**Bottom line:** The toss winner on March 28 gains a 62% historical win probability by choosing to chase. In a match between two teams separated by thin margins, that edge is too significant to ignore.
+
+---
+
+## Article 3: RCB vs SRH Match Preview: 5 Key Matchups That Will Decide the IPL 2026 Opener
+
+**Category:** match-preview
+**Read time:** 5 min
+**Tags:** match-preview, rcb, srh, ipl-2026, matchups, probable-xi, head-to-head
+
+### Chart/Table Data
+
+**Table: RCB Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Virat Kohli | Batter | No |
+| 2 | Phil Salt (wk) | Batter-WK | Yes |
+| 3 | Rajat Patidar (c) | Batter | No |
+| 4 | Devdutt Padikkal | Batter | No |
+| 5 | Jacob Bethell | All-rounder | Yes |
+| 6 | Krunal Pandya | All-rounder | No |
+| 7 | Tim David | Finisher | Yes |
+| 8 | Bhuvneshwar Kumar | Pacer | No |
+| 9 | Yash Dayal | Pacer | No |
+| 10 | Nuwan Thushara | Pacer | Yes |
+| 11 | Rasikh Salam | Pacer | No |
+
+*Impact Player Option: Venkatesh Iyer or Suyash Sharma*
+
+**Table: SRH Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Travis Head | Batter | Yes |
+| 2 | Abhishek Sharma | All-rounder | No |
+| 3 | Ishan Kishan (c, wk) | Batter-WK | No |
+| 4 | Heinrich Klaasen | Batter-WK | Yes |
+| 5 | Nitish Kumar Reddy | All-rounder | No |
+| 6 | Liam Livingstone | All-rounder | Yes |
+| 7 | Aniket Verma | All-rounder | No |
+| 8 | Harshal Patel | Pacer | No |
+| 9 | Brydon Carse | Pacer | Yes |
+| 10 | Jaydev Unadkat | Pacer | No |
+| 11 | Kamindu Mendis | Spinner | Yes* |
+
+*Impact Player Option: Shivam Mavi or Harsh Dubey*
+
+**Table: 5 Key Matchups**
+
+| Matchup | Batter | Bowler | Career T20 Data | Edge |
+|---------|--------|--------|-----------------|------|
+| 1 | Kohli | Harshal Patel | 187 balls faced, avg 31.2, SR 128 | Harshal — deep knowledge of Kohli's weaknesses |
+| 2 | Travis Head | Yash Dayal | Head averages 22.4 vs left-arm pace in T20s, SR 118 | Dayal — Head's weakness against left-arm swing |
+| 3 | Klaasen | Krunal Pandya | Klaasen SR 112 vs left-arm spin (well below his 162 career SR) | Krunal — containment potential |
+| 4 | Phil Salt | Brydon Carse | England training partners; Carse has dismissed Salt 3 times in practice matches | Carse — familiarity advantage |
+| 5 | Abhishek Sharma | Bhuvneshwar Kumar | Avg 18.6, SR 109 vs Bhuvi in domestic T20s | Bhuvi — swing in powerplay will test Abhishek |
+
+### Content
+
+The IPL 2026 season opener pits two teams who produced the most jaw-dropping match in IPL history against each other — and this time, both squads look fundamentally different from the sides that combined for 549 runs at this very ground in 2024.
 
 **The headline absences.** RCB are without Josh Hazlewood (Achilles injury, missing the first 2 games), removing their most reliable death bowler from 2024 who took 16 wickets at an economy of 8.2 in the final 4 overs. SRH have lost Pat Cummins (back injury) — their captain from last season, their most experienced campaigner, and a bowler who took 14 wickets at 7.8 economy in the powerplay since 2023. Both teams also lose leadership: Cummins was SRH's captain, while Hazlewood was RCB's bowling strategist. The replacement-level drop is significant: Jaydev Unadkat (career T20 economy 8.8) steps in for Cummins, while Rasikh Salam or Nuwan Thushara (combined career T20 economy of 9.1) replace Hazlewood's overs.
 
@@ -157,40 +147,38 @@ export const articles: Article[] = [
 
 **Matchup 5: Abhishek vs Bhuvneshwar.** Abhishek Sharma's T20 record against Bhuvneshwar Kumar is modest — an average of 18.6 at a strike rate of 109. Bhuvi's ability to swing the ball both ways at 130-135 kph in the powerplay is the antidote to Abhishek's aggressive intent. In domestic T20 cricket, Abhishek has been dismissed LBW or bowled 61% of the time against Bhuvi — a rate that suggests a fundamental technical mismatch against inswing.
 
-**Prediction.** This is a match where the toss could be worth 12 win-probability points. Setting aside the toss, SRH's deeper batting lineup (Head, Klaasen, Livingstone, Nitish Kumar Reddy) gives them a 53-47 edge. But RCB at home, under Patidar's captaincy, with Kohli motivated by a new era — this is a genuine 50-50 contest.`,
-  },
-  {
-    id: 4,
-    slug: "wankhede-pitch-report-mi-vs-kkr",
-    title: "Wankhede Pitch Report: 9.3 RPO Powerplay Average and What MI's Home Fortress Means for KKR",
-    subtitle: "Wankhede is the IPL's most balanced ground — but getting there involves powerplay carnage at 9.3 RPO, the highest of any venue.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T10:30:00.000Z",
-    readTime: "4 min read",
-    tags: ["pitch-report", "wankhede", "mi", "kkr", "ipl-2026", "venue-analysis", "powerplay-data"],
-    featured: false,
-    matchId: 2,
-    relatedPlayerIds: [13, 2, 3, 23, 27],
-    chartData: [
-      { label: "Powerplay", value: 9.3, color: "#ef4444" },
-      { label: "Middle Overs", value: 8.1, color: "#f59e0b" },
-      { label: "Death Overs", value: 10.6, color: "#8b5cf6" },
-    ],
-    dataTable: {
-      headers: ["#", "Season", "Match", "1st Innings", "2nd Innings", "Winner", "Chaser Won?"],
-      rows: [
-        ["1", "2025", "MI vs KKR", "188/5", "146/10", "MI", "No"],
-        ["2", "2025", "MI vs CSK", "169/7", "172/4", "CSK", "Yes"],
-        ["3", "2025", "MI vs RR", "206/4", "181/8", "MI", "No"],
-        ["4", "2024", "MI vs DC", "193/5", "197/3", "DC", "Yes"],
-        ["5", "2024", "MI vs RCB", "196/8", "199/6", "RCB", "Yes"],
-        ["6", "2024", "MI vs PBKS", "192/5", "158/9", "MI", "No"],
-        ["7", "2024", "MI vs SRH", "173/6", "176/4", "SRH", "Yes"],
-        ["8", "2024", "MI vs GT", "168/6", "148/10", "MI", "No"],
-      ],
-    },
-    content: `Wankhede Stadium in Mumbai occupies a unique position in IPL analytics: it's a venue where the numbers tell you the powerplay decides everything, but the result itself remains genuinely unpredictable. That 50-50 split between batting first and second makes it the most balanced ground in the tournament — but the journey to that balance is anything but boring.
+**Prediction.** This is a match where the toss could be worth 12 win-probability points. Setting aside the toss, SRH's deeper batting lineup (Head, Klaasen, Livingstone, Nitish Kumar Reddy) gives them a 53-47 edge. But RCB at home, under Patidar's captaincy, with Kohli motivated by a new era — this is a genuine 50-50 contest.
+
+---
+
+## Article 4: Wankhede Pitch Report: 9.3 RPO Powerplay Average and What MI's Home Fortress Means for KKR
+
+**Category:** pitch-report
+**Read time:** 4 min
+**Tags:** pitch-report, wankhede, mi, kkr, ipl-2026, venue-analysis, powerplay-data
+
+### Chart/Table Data
+
+**Table: Last 8 IPL Matches at Wankhede Stadium**
+
+| # | Season | Match | 1st Innings | 2nd Innings | Winner | Chaser Won? |
+|---|--------|-------|-------------|-------------|--------|-------------|
+| 1 | 2025 | MI vs KKR | 188/5 | 146/10 | MI | No |
+| 2 | 2025 | MI vs CSK | 169/7 | 172/4 | CSK | Yes |
+| 3 | 2025 | MI vs RR | 206/4 | 181/8 | MI | No |
+| 4 | 2024 | MI vs DC | 193/5 | 197/3 | DC | Yes |
+| 5 | 2024 | MI vs RCB | 196/8 | 199/6 | RCB | Yes |
+| 6 | 2024 | MI vs PBKS | 192/5 | 158/9 | MI | No |
+| 7 | 2024 | MI vs SRH | 173/6 | 176/4 | SRH | Yes |
+| 8 | 2024 | MI vs GT | 168/6 | 148/10 | MI | No |
+
+**Chart: Average Powerplay Run Rate at Wankhede vs Other IPL Venues (2023–2025)** — Horizontal bar chart ranking venues by powerplay RPO, with Wankhede at 9.3 highlighted at the top.
+
+**Chart: Pace vs Spin Economy at Wankhede, Overs 1-20** — Line chart showing economy rates by over number, with pace and spin on separate lines.
+
+### Content
+
+Wankhede Stadium in Mumbai occupies a unique position in IPL analytics: it's a venue where the numbers tell you the powerplay decides everything, but the result itself remains genuinely unpredictable. That 50-50 split between batting first and second makes it the most balanced ground in the tournament — but the journey to that balance is anything but boring.
 
 **The powerplay premium.** Wankhede's powerplay run rate of 9.3 RPO is the highest of any IPL venue, a full 1.2 runs per over above the league average of 8.1. The reason is structural: the pitch offers consistent bounce and carry, which paradoxically helps batters more than bowlers because the ball comes onto the bat at a predictable height. Unlike Chinnaswamy where altitude does the work, Wankhede's batting friendliness comes from the surface itself — a red-soil base that produces pace and bounce without lateral movement after the first 3-4 overs.
 
@@ -202,26 +190,23 @@ export const articles: Article[] = [
 
 **Boundary dimensions and wind factor.** Wankhede's boundaries measure 64-70 metres — notably larger than Chinnaswamy's 56-62m. The straight boundary of 70m is one of the longest in the IPL, which means lofted straight drives need genuine power to clear the rope. However, the sea breeze from the Arabian Sea, which picks up in the evening, can assist shots hit toward the western boundary, reducing the effective distance by an estimated 3-5 metres. Teams that understand this asymmetry — and target the shorter wind-assisted boundary — gain a measurable advantage.
 
-**What this means for MI vs KKR.** MI's batting lineup is engineered for Wankhede's conditions: Rohit Sharma (powerplay SR 156 at Wankhede), Ryan Rickelton (left-handed, targets the shorter square boundary), and Suryakumar Yadav (career SR 167 at this ground, highest of any current player). KKR's response depends on Finn Allen's aggression in the powerplay and whether Cameron Green can exploit the bounce at 140+ kph. The venue is neutral on paper — but MI's understanding of its quirks gives them an intangible edge.`,
-  },
-  {
-    id: 5,
-    slug: "toss-analysis-mi-vs-kkr-wankhede",
-    title: "Toss Analysis: Wankhede's Perfect 50-50 Split — Why the Coin Flip Won't Decide This Match",
-    subtitle: "At most IPL venues, the toss is worth 55-65% win probability. At Wankhede, the data makes a compelling case that the coin flip is genuinely irrelevant.",
-    category: "toss-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T11:00:00.000Z",
-    readTime: "3 min read",
-    tags: ["toss-report", "wankhede", "mi", "kkr", "ipl-2026", "dew-factor", "toss-analysis"],
-    featured: false,
-    matchId: 2,
-    relatedPlayerIds: [13, 2, 3, 11, 23],
-    chartData: [
-      { label: "Bat First Win %", value: 50, color: "#f59e0b" },
-      { label: "Bat Second Win %", value: 50, color: "#10b981" },
-    ],
-    content: `At most IPL venues, the toss analysis is straightforward: win the toss, chase, and enjoy a 55-65% historical win rate. Wankhede defies that convention entirely, and the data makes a compelling case that the coin flip on March 29 is genuinely irrelevant to the outcome.
+**What this means for MI vs KKR.** MI's batting lineup is engineered for Wankhede's conditions: Rohit Sharma (powerplay SR 156 at Wankhede), Ryan Rickelton (left-handed, targets the shorter square boundary), and Suryakumar Yadav (career SR 167 at this ground, highest of any current player). KKR's response depends on Finn Allen's aggression in the powerplay and whether Cameron Green can exploit the bounce at 140+ kph. The venue is neutral on paper — but MI's understanding of its quirks gives them an intangible edge.
+
+---
+
+## Article 5: Toss Analysis: Wankhede's Perfect 50-50 Split — Why the Coin Flip Won't Decide This Match
+
+**Category:** toss-report
+**Read time:** 3 min
+**Tags:** toss-report, wankhede, mi, kkr, ipl-2026, dew-factor, toss-analysis
+
+### Chart/Table Data
+
+**Chart: Batting First vs Batting Second Win % at Wankhede (2020–2025)** — Stacked bar chart by year showing near-equal splits, with 2024's perfect 50-50 highlighted.
+
+### Content
+
+At most IPL venues, the toss analysis is straightforward: win the toss, chase, and enjoy a 55-65% historical win rate. Wankhede defies that convention entirely, and the data makes a compelling case that the coin flip on March 29 is genuinely irrelevant to the outcome.
 
 **The 50-50 equilibrium.** Since 2024, the record at Wankhede reads 4 wins batting first and 4 wins batting second — a perfect equilibrium that no other IPL venue can match. Expanding to 2020-2025, the split widens only marginally: batting second has won 52% of evening matches, a figure that falls within the margin of statistical noise. Compare this to Chinnaswamy's 62% chase advantage or Eden Gardens' 58%, and Wankhede emerges as the most balanced venue in the tournament.
 
@@ -235,35 +220,72 @@ export const articles: Article[] = [
 
 *Death bowling.* The team with the better death bowling economy at Wankhede has won 68% of matches since 2023. MI have Jasprit Bumrah, whose death-over economy of 7.2 is the lowest among frontline pacers in IPL history. He alone is worth approximately 15-18 runs saved in the final 4 overs compared to an average death bowler. KKR, without Harshit Rana (season-ending knee injury) and Matheesha Pathirana (calf, out until mid-April), have a gaping hole in their death bowling that no toss result can fill.
 
-**The verdict.** Both captains can bat or bowl first at Wankhede without significantly altering their win probability. If Hardik Pandya wins the toss, expect him to back his batting lineup and bat first to set a total; if Ajinkya Rahane calls correctly, he may bowl first to exploit any early moisture. Either way, the toss-win advantage here is statistically negligible — this match will be decided by execution, not a coin.`,
-  },
-  {
-    id: 6,
-    slug: "mi-vs-kkr-match-preview-wankhede-curse",
-    title: "MI vs KKR Match Preview: Can KKR Break Their 8-Year Wankhede Curse?",
-    subtitle: "KKR have not won at Wankhede since April 2016 — 6 consecutive defeats, an average losing margin of 22 runs, and a depleted bowling attack facing MI's fortress.",
-    category: "match-preview",
-    author: "CricDNA Insights",
-    publishedAt: "2026-03-23T11:30:00.000Z",
-    readTime: "5 min read",
-    tags: ["match-preview", "mi", "kkr", "ipl-2026", "wankhede-curse", "bumrah", "narine", "cameron-green"],
-    featured: false,
-    matchId: 2,
-    relatedPlayerIds: [13, 2, 3, 11, 15, 23, 27],
-    dataTable: {
-      headers: ["Season", "Match Date", "MI Score", "KKR Score", "Result", "Margin"],
-      rows: [
-        ["2025", "Mar 31", "188/5", "146/10", "MI won", "42 runs"],
-        ["2024", "Apr 12", "210/6", "180/8", "MI won", "30 runs"],
-        ["2023", "Apr 16", "185/5", "167/9", "MI won", "18 runs"],
-        ["2022", "Apr 6", "161/4", "152/7", "MI won", "9 runs"],
-        ["2019", "May 5", "175/5", "159/10", "MI won", "16 runs"],
-        ["2018", "Apr 8", "210/6", "186/8", "MI won", "24 runs"],
-        ["2017", "May 14", "178/4", "168/7", "MI won", "10 runs"],
-        ["2016", "Apr 28", "189/5", "162/9", "MI won", "27 runs"],
-      ],
-    },
-    content: `Some numbers in cricket are so overwhelming they feel like destiny. MI's 10-2 overall record against KKR at Wankhede is one of them. KKR's 0 wins in 6 visits since 2016 is another. This is the most one-sided venue-specific rivalry in IPL history, and KKR's depleted squad faces the unenviable task of breaking an 8-year curse against what may be the tournament's strongest home team.
+**The verdict.** Both captains can bat or bowl first at Wankhede without significantly altering their win probability. If Hardik Pandya wins the toss, expect him to back his batting lineup and bat first to set a total; if Ajinkya Rahane calls correctly, he may bowl first to exploit any early moisture. Either way, the toss-win advantage here is statistically negligible — this match will be decided by execution, not a coin.
+
+---
+
+## Article 6: MI vs KKR Match Preview: Can KKR Break Their 8-Year Wankhede Curse?
+
+**Category:** match-preview
+**Read time:** 5 min
+**Tags:** match-preview, mi, kkr, ipl-2026, wankhede-curse, bumrah, narine, cameron-green
+
+### Chart/Table Data
+
+**Table: MI vs KKR at Wankhede Since 2016**
+
+| Season | Match Date | MI Score | KKR Score | Result | Margin |
+|--------|-----------|----------|-----------|--------|--------|
+| 2025 | Mar 31 | 188/5 | 146/10 | MI won | 42 runs |
+| 2024 | Apr 12 | 210/6 | 180/8 | MI won | 30 runs |
+| 2023 | Apr 16 | 185/5 | 167/9 | MI won | 18 runs |
+| 2022 | Apr 6 | 161/4 | 152/7 | MI won | 9 runs |
+| 2019 | May 5 | 175/5 | 159/10 | MI won | 16 runs |
+| 2018 | Apr 8 | 210/6 | 186/8 | MI won | 24 runs |
+| 2017 | May 14 | 178/4 | 168/7 | MI won | 10 runs |
+| 2016 | Apr 28 | 189/5 | 162/9 | MI won | 27 runs |
+
+*KKR's last win at Wankhede: April 2016 — 0 wins in their last 6 visits across 8 years.*
+
+**Table: MI Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Rohit Sharma | Batter | No |
+| 2 | Ryan Rickelton | Batter | Yes |
+| 3 | Suryakumar Yadav | Batter | No |
+| 4 | Tilak Varma | Batter | No |
+| 5 | Hardik Pandya (c) | All-rounder | No |
+| 6 | Naman Dhir | All-rounder | No |
+| 7 | Robin Minz (wk) | WK-Batter | No |
+| 8 | Mitchell Santner | All-rounder | Yes |
+| 9 | Deepak Chahar | Pacer | No |
+| 10 | Jasprit Bumrah | Pacer | No |
+| 11 | Trent Boult | Pacer | Yes |
+
+*Impact Player Option: Will Jacks or Sherfane Rutherford*
+
+**Table: KKR Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Finn Allen | Batter | Yes |
+| 2 | Ajinkya Rahane (c) | Batter | No |
+| 3 | Rinku Singh | Batter | No |
+| 4 | Sunil Narine | All-rounder | Yes |
+| 5 | Ramandeep Singh | All-rounder | No |
+| 6 | Cameron Green | All-rounder | Yes |
+| 7 | Rachin Ravindra | All-rounder | Yes |
+| 8 | Tim Seifert (wk) | WK-Batter | Yes* |
+| 9 | Varun Chakravarthy | Spinner | No |
+| 10 | Umran Malik | Pacer | No |
+| 11 | Vaibhav Arora | Pacer | No |
+
+*Impact Player Option: Manish Pandey or Rovman Powell*
+
+### Content
+
+Some numbers in cricket are so overwhelming they feel like destiny. MI's 10-2 overall record against KKR at Wankhede is one of them. KKR's 0 wins in 6 visits since 2016 is another. This is the most one-sided venue-specific rivalry in IPL history, and KKR's depleted squad faces the unenviable task of breaking an 8-year curse against what may be the tournament's strongest home team.
 
 **The Wankhede curse in numbers.** KKR have not won a single match at Wankhede Stadium since April 2016 — a drought spanning 6 consecutive defeats across 8 years. The average margin of defeat is telling: MI have won by an average of 22 runs (or 5.8 wickets in chase scenarios) during this period. Even in KKR's best showing — a 9-run loss in 2022 — they were never truly in control after the 16th over. MI's Wankhede dominance against KKR specifically (10-2, 83% win rate) far exceeds their overall home record (62% win rate against all teams), suggesting a matchup-specific psychological edge.
 
@@ -277,27 +299,25 @@ export const articles: Article[] = [
 
 **MI's fortress architecture.** MI's home strength is built on three pillars. First, their powerplay trio of Rohit, Rickelton, and Suryakumar Yadav, who collectively strike at 164 in overs 1-6 at Wankhede. Second, Bumrah's death bowling — his economy of 7.2 in overs 16-20 means MI effectively play with a 15-run cushion that other teams don't have. Third, the combination of Trent Boult (135 kph left-arm swing) and Deepak Chahar (133 kph right-arm seam) gives them the best new-ball partnership in the IPL: since 2024, Boult and Chahar have combined for 22 powerplay wickets at an average of 16.8.
 
-**Can KKR break the curse?** The honest answer: probably not. KKR's injury-depleted bowling attack faces the most batting-friendly powerplay in the IPL at the venue where MI's top order has historically been most dominant. KKR's best chance lies in Cameron Green and Sunil Narine producing match-defining all-round performances, combined with Varun Chakravarthy strangling MI's middle order in overs 7-14 (his economy of 6.8 in the middle overs is among the best in the IPL). Even then, MI's 83% win rate at Wankhede against KKR makes them 65-35 favourites — and that might be generous to the visitors.`,
-  },
-  {
-    id: 7,
-    slug: "barsapara-pitch-report-rr-vs-csk",
-    title: "Barsapara Pitch Report: Guwahati's Batting Paradise Where Hetmyer and Jaiswal Dominate",
-    subtitle: "Barsapara is the IPL's most enigmatic venue — limited data, true bounce, and one clear trend: this is a batting paradise that rewards aggression.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T12:00:00.000Z",
-    readTime: "3 min read",
-    tags: ["pitch-report", "barsapara", "guwahati", "rr", "csk", "ipl-2026", "venue-analysis"],
-    featured: false,
-    matchId: 3,
-    relatedPlayerIds: [7, 20, 10, 21],
-    chartData: [
-      { label: "Jaiswal Fours", value: 13, color: "#3b82f6" },
-      { label: "Hetmyer Sixes", value: 7, color: "#ef4444" },
-      { label: "Avg 1st Innings Score", value: 180, color: "#10b981" },
-    ],
-    content: `Barsapara Stadium in Guwahati is the IPL's most enigmatic venue — a ground with limited data that makes analysts cautious but enough evidence to confirm one clear trend: this is a batting paradise that rewards aggression.
+**Can KKR break the curse?** The honest answer: probably not. KKR's injury-depleted bowling attack faces the most batting-friendly powerplay in the IPL at the venue where MI's top order has historically been most dominant. KKR's best chance lies in Cameron Green and Sunil Narine producing match-defining all-round performances, combined with Varun Chakravarthy strangling MI's middle order in overs 7-14 (his economy of 6.8 in the middle overs is among the best in the IPL). Even then, MI's 83% win rate at Wankhede against KKR makes them 65-35 favourites — and that might be generous to the visitors.
+
+---
+
+## Article 7: Barsapara Pitch Report: Guwahati's Batting Paradise Where Hetmyer and Jaiswal Dominate
+
+**Category:** pitch-report
+**Read time:** 3 min
+**Tags:** pitch-report, barsapara, guwahati, rr, csk, ipl-2026, venue-analysis
+
+### Chart/Table Data
+
+**Chart: Top Run Scorers at Barsapara Stadium in IPL** — Horizontal bar chart showing Jaiswal (13 fours — most at venue), Hetmyer (7 sixes — most at venue), with other leading batters.
+
+**Chart: Average First-Innings Scores at Barsapara by Match** — Bar chart showing all IPL match first-innings totals at this venue, with ~180 average line overlaid.
+
+### Content
+
+Barsapara Stadium in Guwahati is the IPL's most enigmatic venue — a ground with limited data that makes analysts cautious but enough evidence to confirm one clear trend: this is a batting paradise that rewards aggression.
 
 **The data we have.** Barsapara has hosted a limited number of IPL matches, making large-sample conclusions unreliable. What we can say with reasonable confidence: the average first-innings score is approximately 180, placing it in the top tier of IPL venues alongside Chinnaswamy and Wankhede. No first-innings total below 160 has been defended here. The pitch surface is a black cotton soil base that produces true bounce and minimal lateral movement — ideal for batters who trust the surface and play through the line.
 
@@ -309,22 +329,57 @@ export const articles: Article[] = [
 
 **Dew and humidity.** Guwahati sits in the Brahmaputra Valley, where humidity is consistently high (70-80% even in March). Dew is moderate — less extreme than Bengaluru but more persistent than Mumbai. The grass on the outfield at Barsapara tends to retain moisture, which can make the ball slippery for bowlers in the second innings. Teams chasing here have won 57% of evening matches — not as dramatic as Chinnaswamy's 62% but enough to make chasing the preferred option.
 
-**The unpredictability factor.** Small sample sizes breed volatility. With fewer than 15 IPL matches played here, any single performance can skew averages dramatically. What we know is reliable: the surface favours batting, boundaries are hittable, and dew aids chasing. What we don't know: how the pitch behaves in the 18-20 over window under heavy dew, whether the surface deteriorates as the season progresses, and how spinners might exploit rough patches later in the tournament. For March 30, treat this as a 180+ surface where both RR and CSK should back their batters.`,
-  },
-  {
-    id: 8,
-    slug: "rr-vs-csk-match-preview-double-revenge",
-    title: "RR vs CSK Match Preview: The Double Revenge Match — Samson vs His Old Team, Jadeja vs His",
-    subtitle: "The mega trade that sent Samson to CSK and Jadeja to RR collides for the first time. Plus: Dhoni at 44, a 17-year-old impact weapon, and one of the hardest matches to predict in years.",
-    category: "match-preview",
-    author: "CricDNA Insights",
-    publishedAt: "2026-03-23T12:30:00.000Z",
-    readTime: "5 min read",
-    tags: ["match-preview", "rr", "csk", "ipl-2026", "samson", "jadeja", "dhoni", "mega-trade", "barsapara"],
-    featured: false,
-    matchId: 3,
-    relatedPlayerIds: [7, 20, 10, 14, 18, 18, 30],
-    content: `Some IPL matches are defined by tactics. Others are defined by storylines. RR vs CSK on March 30 is defined by both — a match where the two biggest off-season trades collide, where a 44-year-old legend might play his final season, and where the analytics point to a contest that could be decided by two men facing their former teammates for the first time.
+**The unpredictability factor.** Small sample sizes breed volatility. With fewer than 15 IPL matches played here, any single performance can skew averages dramatically. What we know is reliable: the surface favours batting, boundaries are hittable, and dew aids chasing. What we don't know: how the pitch behaves in the 18-20 over window under heavy dew, whether the surface deteriorates as the season progresses, and how spinners might exploit rough patches later in the tournament. For March 30, treat this as a 180+ surface where both RR and CSK should back their batters.
+
+---
+
+## Article 8: RR vs CSK Match Preview: The Double Revenge Match — Samson vs His Old Team, Jadeja vs His
+
+**Category:** match-preview
+**Read time:** 5 min
+**Tags:** match-preview, rr, csk, ipl-2026, samson, jadeja, dhoni, mega-trade, barsapara
+
+### Chart/Table Data
+
+**Table: RR Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Yashasvi Jaiswal | Batter | No |
+| 2 | Riyan Parag (c) | Batter | No |
+| 3 | Shimron Hetmyer | Batter | Yes |
+| 4 | Dhruv Jurel (wk) | WK-Batter | No |
+| 5 | Ravindra Jadeja | All-rounder | No |
+| 6 | Donovan Ferreira | All-rounder | Yes |
+| 7 | Dasun Shanaka | All-rounder | Yes |
+| 8 | Tushar Deshpande | Pacer | No |
+| 9 | Sandeep Sharma | Pacer | No |
+| 10 | Ravi Bishnoi | Spinner | No |
+| 11 | Nandre Burger | Pacer | Yes |
+
+*Impact Player Option: Vaibhav Suryavanshi*
+
+**Table: CSK Probable XI**
+
+| # | Player | Role | Overseas? |
+|---|--------|------|-----------|
+| 1 | Ruturaj Gaikwad (c) | Batter | No |
+| 2 | Sanju Samson (wk) | WK-Batter | No |
+| 3 | Shivam Dube | All-rounder | No |
+| 4 | MS Dhoni | WK-Batter | No |
+| 5 | Ayush Mhatre | Batter | No |
+| 6 | Kartik Sharma | All-rounder | No |
+| 7 | Akeal Hosein | All-rounder | Yes |
+| 8 | Khaleel Ahmed | Pacer | No |
+| 9 | Noor Ahmad | Spinner | Yes |
+| 10 | Rahul Chahar | Spinner | No |
+| 11 | Jamie Overton | Pacer | Yes |
+
+*Impact Player Option: Prashant Veer or Dewald Brevis*
+
+### Content
+
+Some IPL matches are defined by tactics. Others are defined by storylines. RR vs CSK on March 30 is defined by both — a match where the two biggest off-season trades collide, where a 44-year-old legend might play his final season, and where the analytics point to a contest that could be decided by two men facing their former teammates for the first time.
 
 **The Samson-Jadeja swap: the trade that shook the IPL.** The mega trade that sent Sanju Samson from RR to CSK and Ravindra Jadeja from CSK to RR was the most consequential player movement in IPL 2026. For CSK, Samson represents a T20 World Cup Player of the Tournament — a batter who averaged 55.8 with a strike rate of 156 in the 2024 T20 World Cup, making him the most in-form Indian batter entering this IPL. For RR, Jadeja brings 14 years of CSK institutional knowledge — he knows every batter's weakness, every bowling plan, every strategic tendency that CSK's think tank will deploy.
 
@@ -338,48 +393,36 @@ export const articles: Article[] = [
 
 **Impact player possibilities.** RR's trump card is 17-year-old Vaibhav Suryavanshi, the youngest player signed in IPL 2025 history at ₹1.10 Crore. Suryavanshi's domestic T20 SR of 172 makes him an explosive impact option if RR need acceleration in the death overs. CSK may counter with Prashant Veer, whose left-arm unorthodox spin has taken 14 wickets at an economy of 6.8 in domestic T20s — a potential matchup nightmare against RR's right-hand-heavy middle order.
 
-**Prediction.** RR's home advantage at Barsapara (Hetmyer's 7 sixes, Jaiswal's 13 fours at this ground), combined with Jadeja's CSK insider knowledge, gives them a narrow 54-46 edge. But Samson in T20 World Cup form, facing his former team with something to prove, is a wild card that could override any analytical model. This is the most narratively compelling match of the opening weekend — and the hardest to predict.`,
-  },
-  {
-    id: 9,
-    slug: "ipl-2026-power-rankings-all-10-teams",
-    title: "CricDNA Power Rankings: Rating All 10 IPL 2026 Teams by Squad Strength, Matchup Edge, and Title Probability",
-    subtitle: "We score every team across 5 weighted dimensions — batting depth, bowling attack, matchup versatility, captaincy, and overseas balance — to produce a data-driven pre-season ranking.",
-    category: "rankings",
-    author: "CricDNA Editorial",
-    publishedAt: "2026-03-23T13:00:00.000Z",
-    readTime: "6 min read",
-    tags: ["rankings", "ipl-2026", "power-rankings", "squad-analysis", "title-probability", "all-teams"],
-    featured: false,
-    relatedPlayerIds: [13, 2, 3, 1, 11, 8, 9, 10, 14, 7, 20, 5, 6],
-    chartData: [
-      { label: "MI", value: 92.5, color: "#1d4ed8" },
-      { label: "RCB", value: 81.5, color: "#dc2626" },
-      { label: "KKR", value: 80.0, color: "#7c3aed" },
-      { label: "CSK", value: 79.5, color: "#d97706" },
-      { label: "SRH", value: 78.5, color: "#f97316" },
-      { label: "RR", value: 76.0, color: "#ec4899" },
-      { label: "DC", value: 75.5, color: "#0284c7" },
-      { label: "GT", value: 73.0, color: "#059669" },
-      { label: "PBKS", value: 70.5, color: "#dc2626" },
-      { label: "LSG", value: 67.0, color: "#16a34a" },
-    ],
-    dataTable: {
-      headers: ["Rank", "Team", "Batting Depth (30%)", "Bowling Attack (25%)", "Matchup Versatility (20%)", "Captaincy (10%)", "Overseas Balance (15%)", "Total (/100)"],
-      rows: [
-        ["1", "MI", "28.5", "24.0", "18.0", "8.5", "13.5", "92.5"],
-        ["2", "RCB", "27.0", "19.0", "16.0", "7.0", "12.5", "81.5"],
-        ["3", "KKR", "24.0", "18.5", "17.0", "7.5", "13.0", "80.0"],
-        ["4", "CSK", "24.0", "20.0", "15.5", "9.0", "11.0", "79.5"],
-        ["5", "SRH", "26.5", "17.0", "16.5", "6.5", "12.0", "78.5"],
-        ["6", "RR", "25.0", "17.5", "15.0", "7.0", "11.5", "76.0"],
-        ["7", "DC", "22.0", "20.5", "14.5", "7.5", "11.0", "75.5"],
-        ["8", "GT", "20.5", "19.5", "14.0", "8.0", "11.0", "73.0"],
-        ["9", "PBKS", "21.0", "18.0", "13.5", "6.5", "11.5", "70.5"],
-        ["10", "LSG", "19.5", "17.0", "13.0", "7.0", "10.5", "67.0"],
-      ],
-    },
-    content: `Power rankings in cricket are usually vibes-based speculation dressed in punditry. CricDNA's approach is different: we score each team across 5 weighted dimensions — batting depth (30%), bowling attack (25%), matchup versatility (20%), captaincy (10%), and overseas balance (15%) — to produce a composite ranking that strips emotion from the equation. Here's where all 10 IPL 2026 teams stand before a ball is bowled.
+**Prediction.** RR's home advantage at Barsapara (Hetmyer's 7 sixes, Jaiswal's 13 fours at this ground), combined with Jadeja's CSK insider knowledge, gives them a narrow 54-46 edge. But Samson in T20 World Cup form, facing his former team with something to prove, is a wild card that could override any analytical model. This is the most narratively compelling match of the opening weekend — and the hardest to predict.
+
+---
+
+## Article 9: CricDNA Power Rankings: Rating All 10 IPL 2026 Teams by Squad Strength, Matchup Edge, and Title Probability
+
+**Category:** rankings
+**Read time:** 6 min
+**Tags:** rankings, ipl-2026, power-rankings, squad-analysis, title-probability, all-teams
+
+### Chart/Table Data
+
+**Table: CricDNA IPL 2026 Power Rankings**
+
+| Rank | Team | Batting Depth (30%) | Bowling Attack (25%) | Matchup Versatility (20%) | Captaincy (10%) | Overseas Balance (15%) | Total (/100) |
+|------|------|---------------------|----------------------|--------------------------|-----------------|----------------------|---------------|
+| 1 | MI | 28.5 | 24.0 | 18.0 | 8.5 | 13.5 | 92.5 |
+| 2 | KKR | 24.0 | 18.5 | 17.0 | 7.5 | 13.0 | 80.0 |
+| 3 | RCB | 27.0 | 19.0 | 16.0 | 7.0 | 12.5 | 81.5 |
+| 4 | CSK | 24.0 | 20.0 | 15.5 | 9.0 | 11.0 | 79.5 |
+| 5 | SRH | 26.5 | 17.0 | 16.5 | 6.5 | 12.0 | 78.5 |
+| 6 | RR | 25.0 | 17.5 | 15.0 | 7.0 | 11.5 | 76.0 |
+| 7 | DC | 22.0 | 20.5 | 14.5 | 7.5 | 11.0 | 75.5 |
+| 8 | GT | 20.5 | 19.5 | 14.0 | 8.0 | 11.0 | 73.0 |
+| 9 | PBKS | 21.0 | 18.0 | 13.5 | 6.5 | 11.5 | 70.5 |
+| 10 | LSG | 19.5 | 17.0 | 13.0 | 7.0 | 10.5 | 67.0 |
+
+### Content
+
+Power rankings in cricket are usually vibes-based speculation dressed in punditry. CricDNA's approach is different: we score each team across 5 weighted dimensions — batting depth (30%), bowling attack (25%), matchup versatility (20%), captaincy (10%), and overseas balance (15%) — to produce a composite ranking that strips emotion from the equation. Here's where all 10 IPL 2026 teams stand before a ball is bowled.
 
 **#1 — Mumbai Indians (92.5/100)**
 
@@ -419,40 +462,51 @@ PBKS continue their annual tradition of having an exciting squad on paper that u
 
 **#10 — LSG (67.0/100)**
 
-LSG's squad rebuild has left them with the thinnest overall squad in the tournament. Batting depth (19.5/30) and bowling attack (17/25) both rank last or second-last. Their overseas options, while individually talented, don't form a cohesive unit. LSG's season depends almost entirely on whether 2-3 uncapped Indian players break through — a high-variance strategy that makes them hard to rank higher until evidence emerges.`,
-  },
-  {
-    id: 10,
-    slug: "injury-map-14-missing-players-ipl-2026",
-    title: "The Injury Map: How 14 Missing Players Reshape the IPL 2026 Power Balance",
-    subtitle: "KKR lose 3 bowlers for a combined net impact of -7.2. SRH lose their captain. RR lose their most versatile cricketer. Here's the full injury picture and what it means.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-23T13:30:00.000Z",
-    readTime: "5 min read",
-    tags: ["analysis", "injuries", "ipl-2026", "squad-impact", "replacement-analysis", "power-balance"],
-    featured: false,
-    relatedPlayerIds: [6, 2, 19, 17, 26, 30, 13, 11, 3, 15],
-    dataTable: {
-      headers: ["#", "Player", "Team", "Injury", "Duration", "Replacement", "Player Rating", "Replacement Rating", "Net Impact"],
-      rows: [
-        ["1", "Pat Cummins", "SRH", "Back", "Season", "Jaydev Unadkat", "9.2", "6.5", "-2.7"],
-        ["2", "Josh Hazlewood", "RCB", "Achilles", "First 2 games", "Rasikh Salam / Thushara", "8.8", "6.0", "-2.8"],
-        ["3", "Sam Curran", "RR", "Groin", "Season", "Dasun Shanaka", "8.5", "6.2", "-2.3"],
-        ["4", "Harshit Rana", "KKR", "Knee", "Season", "Saurabh Dubey", "7.8", "4.5", "-3.3"],
-        ["5", "Matheesha Pathirana", "KKR", "Calf", "Until mid-April", "Umran Malik (existing)", "8.0", "5.8", "-2.2"],
-        ["6", "Akash Deep", "KKR", "Ruled out", "Season", "Blessing Muzarabani", "7.2", "5.5", "-1.7"],
-        ["7", "Jack Edwards", "SRH", "Foot", "TBD", "Aniket Verma", "6.5", "5.0", "-1.5"],
-        ["8", "Eshan Malinga", "SRH", "Shoulder", "TBD", "Harsh Dubey", "6.0", "4.8", "-1.2"],
-        ["9", "Nathan Ellis", "CSK", "Hamstring", "Season", "Jamie Overton (existing)", "7.5", "7.0", "-0.5"],
-        ["10", "Matthew Short", "CSK", "Thumb", "Early matches", "Ayush Mhatre", "7.0", "5.5", "-1.5"],
-        ["11", "Lockie Ferguson", "—", "TBD", "TBD", "—", "8.5", "—", "—"],
-        ["12", "Mitchell Marsh", "—", "TBD", "TBD", "—", "8.0", "—", "—"],
-        ["13", "Mark Wood", "—", "TBD", "TBD", "—", "8.2", "—", "—"],
-        ["14", "Kagiso Rabada", "—", "TBD", "TBD", "—", "8.8", "—", "—"],
-      ],
-    },
-    content: `Every IPL season is shaped as much by the players who aren't available as by those who are. IPL 2026 is extraordinary in this regard: 14 players of genuine first-choice calibre are either injured, ruled out, or facing delayed starts. The cumulative impact reshapes the power balance in ways that pre-auction analysis couldn't have predicted.
+LSG's squad rebuild has left them with the thinnest overall squad in the tournament. Batting depth (19.5/30) and bowling attack (17/25) both rank last or second-last. Their overseas options, while individually talented, don't form a cohesive unit. LSG's season depends almost entirely on whether 2-3 uncapped Indian players break through — a high-variance strategy that makes them hard to rank higher until evidence emerges.
+
+---
+
+## Article 10: The Injury Map: How 14 Missing Players Reshape the IPL 2026 Power Balance
+
+**Category:** analysis
+**Read time:** 5 min
+**Tags:** analysis, injuries, ipl-2026, squad-impact, replacement-analysis, power-balance
+
+### Chart/Table Data
+
+**Table: IPL 2026 Injury/Unavailability Map**
+
+| # | Player | Team | Injury | Duration | Replacement | Player Rating (1-10) | Replacement Rating (1-10) | Net Impact |
+|---|--------|------|--------|----------|-------------|----------------------|--------------------------|------------|
+| 1 | Pat Cummins | SRH | Back | Season | Jaydev Unadkat | 9.2 | 6.5 | -2.7 |
+| 2 | Josh Hazlewood | RCB | Achilles | First 2 games | Rasikh Salam / Thushara | 8.8 | 6.0 | -2.8 |
+| 3 | Sam Curran | RR | Groin | Season | Dasun Shanaka | 8.5 | 6.2 | -2.3 |
+| 4 | Harshit Rana | KKR | Knee | Season | Saurabh Dubey | 7.8 | 4.5 | -3.3 |
+| 5 | Matheesha Pathirana | KKR | Calf | Until mid-April | Umran Malik (existing) | 8.0 | 5.8 | -2.2 |
+| 6 | Akash Deep | KKR | Ruled out | Season | Blessing Muzarabani | 7.2 | 5.5 | -1.7 |
+| 7 | Jack Edwards | SRH | Foot | TBD | Aniket Verma | 6.5 | 5.0 | -1.5 |
+| 8 | Eshan Malinga | SRH | Shoulder | TBD | Harsh Dubey | 6.0 | 4.8 | -1.2 |
+| 9 | Nathan Ellis | CSK | Hamstring | Season | Jamie Overton (existing) | 7.5 | 7.0 | -0.5 |
+| 10 | Matthew Short | CSK | Thumb | Early matches | Ayush Mhatre | 7.0 | 5.5 | -1.5 |
+| 11 | Lockie Ferguson | — | TBD | TBD | — | 8.5 | — | — |
+| 12 | Mitchell Marsh | — | TBD | TBD | — | 8.0 | — | — |
+| 13 | Mark Wood | — | TBD | TBD | — | 8.2 | — | — |
+| 14 | Kagiso Rabada | — | TBD | TBD | — | 8.8 | — | — |
+
+**Table: Team-by-Team Injury Impact Score**
+
+| Team | Players Out | Combined Rating Lost | Replacement Quality | Net Impact Score | Severity |
+|------|-------------|---------------------|---------------------|-----------------|----------|
+| KKR | 3 | 23.0 | 15.8 | -7.2 | Critical |
+| SRH | 3 | 21.7 | 16.3 | -5.4 | Severe |
+| RR | 1 | 8.5 | 6.2 | -2.3 | Moderate |
+| RCB | 1 | 8.8 | 6.0 | -2.8 | Moderate (temporary) |
+| CSK | 2 | 14.5 | 12.5 | -2.0 | Low |
+| MI | 0 | 0 | 0 | 0 | None |
+
+### Content
+
+Every IPL season is shaped as much by the players who aren't available as by those who are. IPL 2026 is extraordinary in this regard: 14 players of genuine first-choice calibre are either injured, ruled out, or facing delayed starts. The cumulative impact reshapes the power balance in ways that pre-auction analysis couldn't have predicted.
 
 **The methodology.** CricDNA rates every IPL player on a 1-10 scale based on their T20 impact across batting, bowling, and all-round contributions, weighted by recent form and role importance. When a player is injured, we calculate the gap between their rating and their replacement's rating, producing a "Net Impact" score. A net impact of -1.0 is noticeable; -2.0 is significant; -3.0 or worse is potentially season-altering.
 
@@ -468,32 +522,8 @@ LSG's squad rebuild has left them with the thinnest overall squad in the tournam
 
 **MI: The unscathed beneficiaries (Net Impact: 0).** In a season where 5 rival franchises have lost key players, MI enter IPL 2026 with their preferred XI fully fit. Rohit, Bumrah, Boult, SKY, Hardik, Tilak — all available from Match 1. MI's relative advantage isn't just about their own squad strength (which ranks #1 regardless); it's about the diminished competition. With KKR's bowling in ruins (-7.2) and SRH's attack weakened (-5.4), MI's path through the IPL has cleared significantly. Our pre-season model gives MI a 22% title probability — 6 percentage points higher than it would be in a fully-fit scenario.
 
-**The ripple effects.** Injuries don't just affect individual teams — they reshape the entire competitive ecosystem. KKR's weakened bowling makes batting-heavy teams like RCB and SRH more likely to score 200+ when they face them. SRH's leadership void under an inexperienced captain could lead to 2-3 "lost" matches early that prove decisive in playoffs qualification. RR without Curran are a fundamentally different tactical proposition — less flexible, more predictable, more vulnerable in the death overs. The 14 absent players represent a combined player rating of approximately 110 points — the equivalent of removing an entire high-quality IPL team from the tournament. That's the scale of disruption IPL 2026 begins with.`,
-  },
-];
+**The ripple effects.** Injuries don't just affect individual teams — they reshape the entire competitive ecosystem. KKR's weakened bowling makes batting-heavy teams like RCB and SRH more likely to score 200+ when they face them. SRH's leadership void under an inexperienced captain could lead to 2-3 "lost" matches early that prove decisive in playoffs qualification. RR without Curran are a fundamentally different tactical proposition — less flexible, more predictable, more vulnerable in the death overs. The 14 absent players represent a combined player rating of approximately 110 points — the equivalent of removing an entire high-quality IPL team from the tournament. That's the scale of disruption IPL 2026 begins with.
 
-export const analyticsCards: AnalyticsCard[] = [
-  {
-    type: "player",
-    title: "Player of the Day",
-    value: "Abhishek Sharma",
-    description: "94 off 42 balls in pre-season, SRH's No.1-ranked T20I batter arrives in form of his life",
-    playerIds: [28],
-    teamColors: ["#f97316", "#fbbf24"],
-  },
-  {
-    type: "matchup",
-    title: "Matchup to Watch",
-    value: "Kohli vs Cummins-less SRH",
-    description: "Kohli averages 48.3 at Chinnaswamy since 2022. Without Cummins, SRH's powerplay bowling is 23% weaker",
-    playerIds: [1],
-    teamColors: ["#dc2626", "#f97316"],
-  },
-  {
-    type: "stat",
-    title: "Stat of the Day",
-    value: "62%",
-    description: "Win rate for teams batting second in evening matches at Chinnaswamy since 2020. Dew is king.",
-    teamColors: ["#10b981", "#3b82f6"],
-  },
-];
+---
+
+*CricDNA Analytics — Data-driven cricket intelligence. Updated March 23, 2026.*

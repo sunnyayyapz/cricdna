@@ -3,25 +3,47 @@ import { Link, useLocation, useRoute } from "wouter";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, Clock, Calendar, User } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, User, BarChart3, Table2 } from "lucide-react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  ResponsiveContainer,
+  Cell,
+  Tooltip,
+  CartesianGrid,
+} from "recharts";
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
+
+interface ChartData {
+  label: string;
+  value: number;
+  color?: string;
+}
+
+interface DataTable {
+  headers: string[];
+  rows: string[][];
+}
 
 interface Article {
   id: number;
   slug: string;
   title: string;
   subtitle: string;
-  category: "preview" | "analysis" | "player-story" | "rankings" | "breaking" | "opinion";
+  category: "pitch-report" | "toss-report" | "match-preview" | "rankings" | "analysis";
   author: string;
   publishedAt: string;
   readTime: string;
-  imageUrl: string;
-  imageAlt: string;
   tags: string[];
   featured: boolean;
   content: string;
   relatedPlayerIds: number[];
+  chartData?: ChartData[];
+  dataTable?: DataTable;
+  matchId?: number;
 }
 
 interface Player {
@@ -38,19 +60,15 @@ interface Player {
 // ─── Helpers ───────────────────────────────────────────────────────────────────
 
 const categoryColors: Record<string, string> = {
-  preview: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  "pitch-report": "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
+  "toss-report": "bg-amber-500/20 text-amber-400 border-amber-500/30",
+  "match-preview": "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  rankings: "bg-purple-500/20 text-purple-400 border-purple-500/30",
   analysis: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-  "player-story": "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  rankings: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-  breaking: "bg-red-500/20 text-red-400 border-red-500/30",
-  opinion: "bg-gray-500/20 text-gray-400 border-gray-500/30",
 };
 
 function categoryLabel(cat: string) {
-  return cat
-    .split("-")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
+  return cat.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 
 function formatDate(dateStr: string) {
@@ -93,9 +111,9 @@ export default function ArticlePage() {
     return (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-6">
         <Skeleton className="h-8 w-40" />
-        <Skeleton className="w-full aspect-[16/9] rounded-xl" />
         <Skeleton className="h-10 w-3/4" />
         <Skeleton className="h-6 w-1/2" />
+        <Skeleton className="h-48 w-full rounded-xl" />
         <div className="space-y-3">
           {[...Array(8)].map((_, i) => (
             <Skeleton key={i} className="h-4 w-full" />
@@ -142,24 +160,13 @@ export default function ArticlePage() {
         </button>
       </div>
 
-      {/* Hero Image */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="aspect-[16/9] rounded-xl overflow-hidden">
-          <img
-            src={article.imageUrl}
-            alt={article.imageAlt}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
       {/* Article Header */}
-      <article className="max-w-3xl mx-auto px-4 sm:px-6 pt-6">
+      <article className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <span
             className={cn(
               "inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold border",
-              categoryColors[article.category] || categoryColors.opinion
+              categoryColors[article.category] || categoryColors.analysis
             )}
           >
             {categoryLabel(article.category)}
@@ -182,14 +189,103 @@ export default function ArticlePage() {
           {article.title}
         </h1>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
           {article.subtitle}
         </p>
+
+        {/* Chart Data — Recharts BarChart */}
+        {article.chartData && article.chartData.length > 0 && (
+          <div className="bg-card border border-border rounded-xl p-4 mb-6" data-testid="article-chart">
+            <div className="flex items-center gap-2 mb-3">
+              <BarChart3 size={14} className="text-cyan-400" />
+              <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Data Visualization</span>
+            </div>
+            <div className="h-48 sm:h-56">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={article.chartData} margin={{ top: 5, right: 5, bottom: 5, left: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
+                  <XAxis
+                    dataKey="label"
+                    tick={{ fontSize: 11, fill: "#a1a1aa" }}
+                    axisLine={{ stroke: "#3f3f46" }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    tick={{ fontSize: 11, fill: "#a1a1aa" }}
+                    axisLine={{ stroke: "#3f3f46" }}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "#18181b",
+                      border: "1px solid #3f3f46",
+                      borderRadius: "8px",
+                      fontSize: "12px",
+                    }}
+                    labelStyle={{ color: "#a1a1aa" }}
+                    itemStyle={{ color: "#e4e4e7" }}
+                  />
+                  <Bar dataKey="value" radius={[4, 4, 0, 0]}>
+                    {article.chartData.map((entry, idx) => (
+                      <Cell key={idx} fill={entry.color || "#10b981"} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        )}
+
+        {/* Data Table — styled HTML table */}
+        {article.dataTable && article.dataTable.rows.length > 0 && (
+          <div className="bg-card border border-border rounded-xl overflow-hidden mb-6" data-testid="article-data-table">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-accent/30">
+              <Table2 size={14} className="text-amber-400" />
+              <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Data Table</span>
+              <span className="text-[10px] text-muted-foreground/60 ml-auto">{article.dataTable.rows.length} rows</span>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border">
+                    {article.dataTable.headers.map((header, idx) => (
+                      <th
+                        key={idx}
+                        className="px-3 py-2 text-left text-[11px] font-bold text-muted-foreground uppercase tracking-wider whitespace-nowrap"
+                      >
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {article.dataTable.rows.map((row, rowIdx) => (
+                    <tr
+                      key={rowIdx}
+                      className={cn(
+                        "border-b border-border/50 hover:bg-accent/30 transition-colors",
+                        rowIdx % 2 === 0 ? "bg-transparent" : "bg-accent/10"
+                      )}
+                    >
+                      {row.map((cell, cellIdx) => (
+                        <td
+                          key={cellIdx}
+                          className="px-3 py-2 text-xs text-foreground/80 whitespace-nowrap font-mono"
+                        >
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
 
         {/* Article Body */}
         <div className="prose prose-invert max-w-none space-y-5">
           {paragraphs.map((para, idx) => {
-            // Handle bold headers like **1. Mumbai Indians (Title probability: 22.4%)**
             if (para.startsWith("**") && para.includes("**")) {
               const parts = para.split(/\*\*/g);
               return (
@@ -199,6 +295,21 @@ export default function ArticlePage() {
                       <strong key={i} className="text-foreground font-semibold">
                         {part}
                       </strong>
+                    ) : (
+                      <span key={i}>{part}</span>
+                    )
+                  )}
+                </p>
+              );
+            }
+            // Handle italic with *text*
+            if (para.includes("*") && !para.startsWith("**")) {
+              const parts = para.split(/\*/g);
+              return (
+                <p key={idx} className="text-base text-foreground/90 leading-relaxed">
+                  {parts.map((part, i) =>
+                    i % 2 === 1 ? (
+                      <em key={i} className="text-foreground/70">{part}</em>
                     ) : (
                       <span key={i}>{part}</span>
                     )
@@ -272,29 +383,21 @@ export default function ArticlePage() {
             {relatedArticles.map((a) => (
               <Link key={a.id} href={`/article/${a.slug}`}>
                 <a
-                  className="group block rounded-lg border border-border bg-card overflow-hidden hover:border-emerald-500/40 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-0.5 transition-all"
+                  className="group block rounded-lg border border-border bg-card p-4 hover:border-emerald-500/40 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-0.5 transition-all"
                   data-testid={`more-story-${a.slug}`}
                 >
-                  <div className="aspect-[16/9] overflow-hidden">
-                    <img
-                      src={a.imageUrl}
-                      alt={a.imageAlt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-3">
-                    <span
-                      className={cn(
-                        "inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold border mb-1.5",
-                        categoryColors[a.category] || categoryColors.opinion
-                      )}
-                    >
-                      {categoryLabel(a.category)}
-                    </span>
-                    <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-emerald-400 transition-colors">
-                      {a.title}
-                    </h3>
-                  </div>
+                  <span
+                    className={cn(
+                      "inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold border mb-2",
+                      categoryColors[a.category] || categoryColors.analysis
+                    )}
+                  >
+                    {categoryLabel(a.category)}
+                  </span>
+                  <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-emerald-400 transition-colors">
+                    {a.title}
+                  </h3>
+                  <p className="text-muted-foreground/60 text-[11px] mt-1.5">{a.author} · {a.readTime}</p>
                 </a>
               </Link>
             ))}
