@@ -10,6 +10,11 @@ import { articles, analyticsCards } from "./data/articles";
 import { publishLog } from "./data/publishLog";
 import { proIntelligence1 } from "./data/proIntelligence1";
 import { proIntelligence2 } from "./data/proIntelligence2";
+import { venueStats as venueStatsData } from "./data/venueStatsData";
+import { headToHead as headToHeadData } from "./data/headToHeadData";
+import { playerCareerStats as playerCareerData } from "./data/playerCareerStatsData";
+import { tossStats as tossStatsData } from "./data/tossStatsData";
+import { seasonTrends as seasonTrendsData } from "./data/seasonTrendsData";
 
 const proIntelligence: Record<number, any> = { ...proIntelligence1, ...proIntelligence2 };
 
@@ -308,6 +313,105 @@ export async function registerRoutes(
   // GET /api/admin/publish-log — publish history for admin dashboard
   app.get("/api/admin/publish-log", (_req, res) => {
     res.json(publishLog);
+  });
+
+  // ─── Real IPL Stats routes ─────────────────────────────────────────────────
+
+  // GET /api/stats/venues — all venue stats (optional ?venue= filter)
+  app.get("/api/stats/venues", (req, res) => {
+    const venue = (req.query.venue as string)?.toLowerCase();
+    if (venue) {
+      const filtered = venueStatsData.filter((v: any) =>
+        v.venue.toLowerCase().includes(venue) || v.city?.toLowerCase().includes(venue)
+      );
+      return res.json(filtered);
+    }
+    res.json(venueStatsData);
+  });
+
+  // GET /api/stats/venues/:venue — stats for a specific venue (partial match)
+  app.get("/api/stats/venues/:venue", (req, res) => {
+    const query = req.params.venue.toLowerCase();
+    const match = venueStatsData.find(
+      (v: any) => v.venue.toLowerCase().includes(query) || v.city?.toLowerCase().includes(query)
+    );
+    if (!match) {
+      return res.status(404).json({ error: "Venue not found" });
+    }
+    res.json(match);
+  });
+
+  // GET /api/stats/head-to-head — all H2H data (optional ?batter= and ?bowler= filters)
+  app.get("/api/stats/head-to-head", (req, res) => {
+    const batter = (req.query.batter as string)?.toLowerCase();
+    const bowler = (req.query.bowler as string)?.toLowerCase();
+    let result = headToHeadData;
+    if (batter) {
+      result = result.filter((h: any) => h.batter.toLowerCase().includes(batter));
+    }
+    if (bowler) {
+      result = result.filter((h: any) => h.bowler.toLowerCase().includes(bowler));
+    }
+    res.json(result);
+  });
+
+  // GET /api/stats/head-to-head/search — search specific matchup
+  app.get("/api/stats/head-to-head/search", (req, res) => {
+    const batter = (req.query.batter as string)?.toLowerCase();
+    const bowler = (req.query.bowler as string)?.toLowerCase();
+    if (!batter && !bowler) {
+      return res.status(400).json({ error: "Provide at least ?batter= or ?bowler=" });
+    }
+    let result = headToHeadData;
+    if (batter) {
+      result = result.filter((h: any) => h.batter.toLowerCase().includes(batter));
+    }
+    if (bowler) {
+      result = result.filter((h: any) => h.bowler.toLowerCase().includes(bowler));
+    }
+    res.json(result);
+  });
+
+  // GET /api/stats/players/:name — career stats for a player (partial match)
+  app.get("/api/stats/players/:name", (req, res) => {
+    const query = req.params.name.toLowerCase();
+    const exactMatch = Object.entries(playerCareerData).find(
+      ([key]) => key.toLowerCase() === query
+    );
+    if (exactMatch) {
+      return res.json(exactMatch[1]);
+    }
+    const partialMatch = Object.entries(playerCareerData).find(
+      ([key]) => key.toLowerCase().includes(query)
+    );
+    if (partialMatch) {
+      return res.json(partialMatch[1]);
+    }
+    // Return all partial matches
+    const matches = Object.entries(playerCareerData)
+      .filter(([key]) => key.toLowerCase().includes(query))
+      .map(([, val]) => val);
+    if (matches.length === 0) {
+      return res.status(404).json({ error: "Player not found" });
+    }
+    res.json(matches);
+  });
+
+  // GET /api/stats/toss — toss stats (optional ?venue= filter)
+  app.get("/api/stats/toss", (req, res) => {
+    const venue = (req.query.venue as string)?.toLowerCase();
+    if (venue) {
+      const filtered = (tossStatsData.venues || []).filter((v: any) =>
+        v.venue.toLowerCase().includes(venue)
+      );
+      return res.json({ venues: filtered });
+    }
+    res.json(tossStatsData);
+  });
+
+  // GET /api/stats/seasons — all season trends
+  app.get("/api/stats/seasons", (_req, res) => {
+    res.json(seasonTrendsData);
   });
 
   return httpServer;

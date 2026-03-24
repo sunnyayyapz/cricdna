@@ -16,6 +16,8 @@ import MatchesPage from "@/pages/MatchesPage";
 import MatchPreviewPage from "@/pages/MatchPreviewPage";
 import TeamMatchupPage from "@/pages/TeamMatchupPage";
 import AdminPage from "@/pages/AdminPage";
+import MatchupSearchPage from "@/pages/MatchupSearchPage";
+import VenueExplorerPage from "@/pages/VenueExplorerPage";
 
 function AppRouter() {
   return (
@@ -26,6 +28,8 @@ function AppRouter() {
         <Route path="/article/:slug" component={ArticlePage} />
         <Route path="/player/:id" component={PlayerProfilePage} />
         <Route path="/compare" component={ComparePage} />
+        <Route path="/matchups" component={MatchupSearchPage} />
+        <Route path="/venues" component={VenueExplorerPage} />
         <Route path="/matches" component={MatchesPage} />
         <Route path="/matches/:id" component={MatchPreviewPage} />
         <Route path="/matches/:id/matchups" component={TeamMatchupPage} />

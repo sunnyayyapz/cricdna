@@ -48,9 +48,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/explore", label: "Explore" },
+    { href: "/explore", label: "Players" },
     { href: "/matches", label: "Matches" },
-    { href: "/compare", label: "Compare" },
+    { href: "/matchups", label: "Matchups" },
+    { href: "/venues", label: "Venues" },
   ];
 
   return (

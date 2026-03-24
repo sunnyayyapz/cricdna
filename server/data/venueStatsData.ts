@@ -1,0 +1,2206 @@
+export const venueStats = [
+  {
+    "venue": "Eden Gardens",
+    "city": "Kolkata",
+    "total_matches": 77,
+    "avg_first_innings_score": 160.2,
+    "avg_second_innings_score": 147.1,
+    "highest_score": 232,
+    "lowest_score": 49,
+    "bat_first_wins": 30,
+    "bat_second_wins": 47,
+    "bat_first_win_pct": 39.0,
+    "toss_field_pct": 63.6,
+    "powerplay_rpo": 7.28,
+    "middle_rpo": 7.51,
+    "death_rpo": 9.37,
+    "last_5_matches": [
+      {
+        "date": "2019-04-28",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Mumbai Indians",
+        "score1": 232,
+        "score2": 198,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2019-04-25",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Rajasthan Royals",
+        "score1": 175,
+        "score2": 177,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2019-04-19",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kolkata Knight Riders",
+        "score1": 213,
+        "score2": 203,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2019-04-14",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Chennai Super Kings",
+        "score1": 161,
+        "score2": 162,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2019-04-12",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Delhi Capitals",
+        "score1": 178,
+        "score2": 180,
+        "winner": "Delhi Capitals"
+      }
+    ]
+  },
+  {
+    "venue": "Wankhede Stadium",
+    "city": "Mumbai",
+    "total_matches": 73,
+    "avg_first_innings_score": 166.0,
+    "avg_second_innings_score": 154.4,
+    "highest_score": 235,
+    "lowest_score": 67,
+    "bat_first_wins": 36,
+    "bat_second_wins": 37,
+    "bat_first_win_pct": 49.3,
+    "toss_field_pct": 69.9,
+    "powerplay_rpo": 7.1,
+    "middle_rpo": 7.71,
+    "death_rpo": 9.95,
+    "last_5_matches": [
+      {
+        "date": "2019-05-05",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Mumbai Indians",
+        "score1": 133,
+        "score2": 134,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2019-05-02",
+        "team1": "Mumbai Indians",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 162,
+        "score2": 162,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2019-04-15",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Mumbai Indians",
+        "score1": 171,
+        "score2": 172,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2019-04-13",
+        "team1": "Mumbai Indians",
+        "team2": "Rajasthan Royals",
+        "score1": 187,
+        "score2": 188,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2019-04-10",
+        "team1": "Kings XI Punjab",
+        "team2": "Mumbai Indians",
+        "score1": 197,
+        "score2": 198,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  },
+  {
+    "venue": "M Chinnaswamy Stadium",
+    "city": "Bangalore",
+    "total_matches": 65,
+    "avg_first_innings_score": 168.1,
+    "avg_second_innings_score": 145.5,
+    "highest_score": 263,
+    "lowest_score": 2,
+    "bat_first_wins": 26,
+    "bat_second_wins": 37,
+    "bat_first_win_pct": 41.3,
+    "toss_field_pct": 87.7,
+    "powerplay_rpo": 7.07,
+    "middle_rpo": 8.08,
+    "death_rpo": 10.59,
+    "last_5_matches": [
+      {
+        "date": "2017-05-19",
+        "team1": "Mumbai Indians",
+        "team2": "Kolkata Knight Riders",
+        "score1": 107,
+        "score2": 111,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2017-05-17",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Kolkata Knight Riders",
+        "score1": 128,
+        "score2": 48,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2017-05-07",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kolkata Knight Riders",
+        "score1": 158,
+        "score2": 159,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2017-05-05",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kings XI Punjab",
+        "score1": 138,
+        "score2": 119,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2017-04-27",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Gujarat Lions",
+        "score1": 134,
+        "score2": 135,
+        "winner": "Gujarat Lions"
+      }
+    ]
+  },
+  {
+    "venue": "Feroz Shah Kotla",
+    "city": "Delhi",
+    "total_matches": 60,
+    "avg_first_innings_score": 161.6,
+    "avg_second_innings_score": 147.8,
+    "highest_score": 231,
+    "lowest_score": 44,
+    "bat_first_wins": 27,
+    "bat_second_wins": 32,
+    "bat_first_win_pct": 45.8,
+    "toss_field_pct": 56.7,
+    "powerplay_rpo": 7.47,
+    "middle_rpo": 7.45,
+    "death_rpo": 9.52,
+    "last_5_matches": [
+      {
+        "date": "2017-05-14",
+        "team1": "Delhi Daredevils",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 161,
+        "score2": 151,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2017-05-12",
+        "team1": "Delhi Daredevils",
+        "team2": "Rising Pune Supergiant",
+        "score1": 168,
+        "score2": 161,
+        "winner": "Delhi Daredevils"
+      },
+      {
+        "date": "2017-05-06",
+        "team1": "Delhi Daredevils",
+        "team2": "Mumbai Indians",
+        "score1": 212,
+        "score2": 66,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2017-05-04",
+        "team1": "Delhi Daredevils",
+        "team2": "Gujarat Lions",
+        "score1": 208,
+        "score2": 214,
+        "winner": "Delhi Daredevils"
+      },
+      {
+        "date": "2017-05-02",
+        "team1": "Delhi Daredevils",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 185,
+        "score2": 189,
+        "winner": "Delhi Daredevils"
+      }
+    ]
+  },
+  {
+    "venue": "Wankhede Stadium, Mumbai",
+    "city": "Mumbai",
+    "total_matches": 52,
+    "avg_first_innings_score": 176.8,
+    "avg_second_innings_score": 167.7,
+    "highest_score": 234,
+    "lowest_score": 97,
+    "bat_first_wins": 21,
+    "bat_second_wins": 31,
+    "bat_first_win_pct": 40.4,
+    "toss_field_pct": 84.6,
+    "powerplay_rpo": 7.54,
+    "middle_rpo": 8.03,
+    "death_rpo": 10.76,
+    "last_5_matches": [
+      {
+        "date": "2025-05-21",
+        "team1": "Mumbai Indians",
+        "team2": "Delhi Capitals",
+        "score1": 180,
+        "score2": 121,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2025-05-06",
+        "team1": "Mumbai Indians",
+        "team2": "Gujarat Titans",
+        "score1": 155,
+        "score2": 147,
+        "winner": "Gujarat Titans"
+      },
+      {
+        "date": "2025-04-27",
+        "team1": "Mumbai Indians",
+        "team2": "Lucknow Super Giants",
+        "score1": 215,
+        "score2": 161,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2025-04-20",
+        "team1": "Chennai Super Kings",
+        "team2": "Mumbai Indians",
+        "score1": 176,
+        "score2": 177,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2025-04-17",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Mumbai Indians",
+        "score1": 162,
+        "score2": 166,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  },
+  {
+    "venue": "Rajiv Gandhi International Stadium, Uppal",
+    "city": "Hyderabad",
+    "total_matches": 49,
+    "avg_first_innings_score": 156.1,
+    "avg_second_innings_score": 147.0,
+    "highest_score": 223,
+    "lowest_score": 80,
+    "bat_first_wins": 19,
+    "bat_second_wins": 30,
+    "bat_first_win_pct": 38.8,
+    "toss_field_pct": 53.1,
+    "powerplay_rpo": 6.69,
+    "middle_rpo": 7.2,
+    "death_rpo": 9.56,
+    "last_5_matches": [
+      {
+        "date": "2017-05-21",
+        "team1": "Mumbai Indians",
+        "team2": "Rising Pune Supergiant",
+        "score1": 129,
+        "score2": 128,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2017-05-08",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Mumbai Indians",
+        "score1": 138,
+        "score2": 140,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2017-05-06",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Rising Pune Supergiant",
+        "score1": 148,
+        "score2": 136,
+        "winner": "Rising Pune Supergiant"
+      },
+      {
+        "date": "2017-04-30",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Kolkata Knight Riders",
+        "score1": 209,
+        "score2": 161,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2017-04-19",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Delhi Daredevils",
+        "score1": 191,
+        "score2": 176,
+        "winner": "Sunrisers Hyderabad"
+      }
+    ]
+  },
+  {
+    "venue": "MA Chidambaram Stadium, Chepauk",
+    "city": "Chennai",
+    "total_matches": 48,
+    "avg_first_innings_score": 166.0,
+    "avg_second_innings_score": 151.9,
+    "highest_score": 246,
+    "lowest_score": 95,
+    "bat_first_wins": 31,
+    "bat_second_wins": 17,
+    "bat_first_win_pct": 64.6,
+    "toss_field_pct": 29.2,
+    "powerplay_rpo": 7.44,
+    "middle_rpo": 7.56,
+    "death_rpo": 9.48,
+    "last_5_matches": [
+      {
+        "date": "2015-05-10",
+        "team1": "Chennai Super Kings",
+        "team2": "Rajasthan Royals",
+        "score1": 157,
+        "score2": 145,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2015-05-08",
+        "team1": "Chennai Super Kings",
+        "team2": "Mumbai Indians",
+        "score1": 158,
+        "score2": 159,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2015-05-04",
+        "team1": "Chennai Super Kings",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 148,
+        "score2": 124,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2015-04-28",
+        "team1": "Chennai Super Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 134,
+        "score2": 132,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2015-04-25",
+        "team1": "Chennai Super Kings",
+        "team2": "Kings XI Punjab",
+        "score1": 192,
+        "score2": 95,
+        "winner": "Chennai Super Kings"
+      }
+    ]
+  },
+  {
+    "venue": "Sawai Mansingh Stadium",
+    "city": "Jaipur",
+    "total_matches": 47,
+    "avg_first_innings_score": 157.7,
+    "avg_second_innings_score": 145.8,
+    "highest_score": 197,
+    "lowest_score": 60,
+    "bat_first_wins": 15,
+    "bat_second_wins": 32,
+    "bat_first_win_pct": 31.9,
+    "toss_field_pct": 59.6,
+    "powerplay_rpo": 7.03,
+    "middle_rpo": 7.18,
+    "death_rpo": 9.14,
+    "last_5_matches": [
+      {
+        "date": "2019-04-27",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Rajasthan Royals",
+        "score1": 160,
+        "score2": 161,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2019-04-22",
+        "team1": "Rajasthan Royals",
+        "team2": "Delhi Capitals",
+        "score1": 191,
+        "score2": 193,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2019-04-20",
+        "team1": "Mumbai Indians",
+        "team2": "Rajasthan Royals",
+        "score1": 161,
+        "score2": 162,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2019-04-11",
+        "team1": "Rajasthan Royals",
+        "team2": "Chennai Super Kings",
+        "score1": 151,
+        "score2": 155,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2019-04-07",
+        "team1": "Rajasthan Royals",
+        "team2": "Kolkata Knight Riders",
+        "score1": 139,
+        "score2": 140,
+        "winner": "Kolkata Knight Riders"
+      }
+    ]
+  },
+  {
+    "venue": "Dubai International Cricket Stadium",
+    "city": "Unknown",
+    "total_matches": 46,
+    "avg_first_innings_score": 163.8,
+    "avg_second_innings_score": 149.1,
+    "highest_score": 219,
+    "lowest_score": 109,
+    "bat_first_wins": 23,
+    "bat_second_wins": 23,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 58.7,
+    "powerplay_rpo": 7.34,
+    "middle_rpo": 7.26,
+    "death_rpo": 9.77,
+    "last_5_matches": [
+      {
+        "date": "2021-10-15",
+        "team1": "Chennai Super Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 192,
+        "score2": 165,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2021-10-10",
+        "team1": "Delhi Capitals",
+        "team2": "Chennai Super Kings",
+        "score1": 172,
+        "score2": 173,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2021-10-08",
+        "team1": "Delhi Capitals",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 164,
+        "score2": 166,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2021-10-07",
+        "team1": "Chennai Super Kings",
+        "team2": "Punjab Kings",
+        "score1": 134,
+        "score2": 139,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2021-10-04",
+        "team1": "Chennai Super Kings",
+        "team2": "Delhi Capitals",
+        "score1": 136,
+        "score2": 139,
+        "winner": "Delhi Capitals"
+      }
+    ]
+  },
+  {
+    "venue": "Punjab Cricket Association Stadium, Mohali",
+    "city": "Chandigarh",
+    "total_matches": 35,
+    "avg_first_innings_score": 163.3,
+    "avg_second_innings_score": 150.6,
+    "highest_score": 240,
+    "lowest_score": 84,
+    "bat_first_wins": 15,
+    "bat_second_wins": 20,
+    "bat_first_win_pct": 42.9,
+    "toss_field_pct": 60.0,
+    "powerplay_rpo": 7.67,
+    "middle_rpo": 7.54,
+    "death_rpo": 9.63,
+    "last_5_matches": [
+      {
+        "date": "2015-05-16",
+        "team1": "Kings XI Punjab",
+        "team2": "Chennai Super Kings",
+        "score1": 130,
+        "score2": 134,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2015-05-13",
+        "team1": "Kings XI Punjab",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 106,
+        "score2": 84,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2015-05-03",
+        "team1": "Kings XI Punjab",
+        "team2": "Mumbai Indians",
+        "score1": 172,
+        "score2": 149,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2015-04-27",
+        "team1": "Kings XI Punjab",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 150,
+        "score2": 130,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2014-05-25",
+        "team1": "Kings XI Punjab",
+        "team2": "Delhi Daredevils",
+        "score1": 115,
+        "score2": 119,
+        "winner": "Kings XI Punjab"
+      }
+    ]
+  },
+  {
+    "venue": "MA Chidambaram Stadium, Chepauk, Chennai",
+    "city": "Chennai",
+    "total_matches": 34,
+    "avg_first_innings_score": 164.4,
+    "avg_second_innings_score": 151.8,
+    "highest_score": 217,
+    "lowest_score": 101,
+    "bat_first_wins": 16,
+    "bat_second_wins": 18,
+    "bat_first_win_pct": 47.1,
+    "toss_field_pct": 61.8,
+    "powerplay_rpo": 8.02,
+    "middle_rpo": 7.41,
+    "death_rpo": 8.85,
+    "last_5_matches": [
+      {
+        "date": "2025-04-30",
+        "team1": "Chennai Super Kings",
+        "team2": "Punjab Kings",
+        "score1": 190,
+        "score2": 194,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-04-25",
+        "team1": "Chennai Super Kings",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 154,
+        "score2": 155,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2025-04-11",
+        "team1": "Chennai Super Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 103,
+        "score2": 107,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2025-04-05",
+        "team1": "Delhi Capitals",
+        "team2": "Chennai Super Kings",
+        "score1": 183,
+        "score2": 158,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2025-03-28",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Chennai Super Kings",
+        "score1": 196,
+        "score2": 146,
+        "winner": "Royal Challengers Bengaluru"
+      }
+    ]
+  },
+  {
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "city": "Ahmedabad",
+    "total_matches": 33,
+    "avg_first_innings_score": 186.6,
+    "avg_second_innings_score": 170.1,
+    "highest_score": 243,
+    "lowest_score": 89,
+    "bat_first_wins": 16,
+    "bat_second_wins": 17,
+    "bat_first_win_pct": 48.5,
+    "toss_field_pct": 81.8,
+    "powerplay_rpo": 8.46,
+    "middle_rpo": 8.55,
+    "death_rpo": 10.75,
+    "last_5_matches": [
+      {
+        "date": "2025-06-03",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Punjab Kings",
+        "score1": 190,
+        "score2": 184,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-06-01",
+        "team1": "Mumbai Indians",
+        "team2": "Punjab Kings",
+        "score1": 203,
+        "score2": 207,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-05-25",
+        "team1": "Chennai Super Kings",
+        "team2": "Gujarat Titans",
+        "score1": 230,
+        "score2": 147,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2025-05-22",
+        "team1": "Lucknow Super Giants",
+        "team2": "Gujarat Titans",
+        "score1": 235,
+        "score2": 202,
+        "winner": "Lucknow Super Giants"
+      },
+      {
+        "date": "2025-05-02",
+        "team1": "Gujarat Titans",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 224,
+        "score2": 186,
+        "winner": "Gujarat Titans"
+      }
+    ]
+  },
+  {
+    "venue": "Sheikh Zayed Stadium",
+    "city": "Abu Dhabi",
+    "total_matches": 29,
+    "avg_first_innings_score": 158.9,
+    "avg_second_innings_score": 145.6,
+    "highest_score": 206,
+    "lowest_score": 70,
+    "bat_first_wins": 13,
+    "bat_second_wins": 16,
+    "bat_first_win_pct": 44.8,
+    "toss_field_pct": 48.3,
+    "powerplay_rpo": 6.99,
+    "middle_rpo": 7.14,
+    "death_rpo": 9.9,
+    "last_5_matches": [
+      {
+        "date": "2020-11-08",
+        "team1": "Delhi Capitals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 189,
+        "score2": 172,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2020-11-06",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 131,
+        "score2": 132,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2020-11-02",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Delhi Capitals",
+        "score1": 152,
+        "score2": 154,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2020-11-01",
+        "team1": "Kings XI Punjab",
+        "team2": "Chennai Super Kings",
+        "score1": 153,
+        "score2": 154,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2020-10-30",
+        "team1": "Kings XI Punjab",
+        "team2": "Rajasthan Royals",
+        "score1": 185,
+        "score2": 186,
+        "winner": "Rajasthan Royals"
+      }
+    ]
+  },
+  {
+    "venue": "Sharjah Cricket Stadium",
+    "city": "Unknown",
+    "total_matches": 28,
+    "avg_first_innings_score": 159.0,
+    "avg_second_innings_score": 147.5,
+    "highest_score": 228,
+    "lowest_score": 85,
+    "bat_first_wins": 10,
+    "bat_second_wins": 18,
+    "bat_first_win_pct": 35.7,
+    "toss_field_pct": 71.4,
+    "powerplay_rpo": 7.11,
+    "middle_rpo": 7.2,
+    "death_rpo": 9.25,
+    "last_5_matches": [
+      {
+        "date": "2021-10-13",
+        "team1": "Delhi Capitals",
+        "team2": "Kolkata Knight Riders",
+        "score1": 135,
+        "score2": 136,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2021-10-11",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kolkata Knight Riders",
+        "score1": 138,
+        "score2": 139,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2021-10-07",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Rajasthan Royals",
+        "score1": 171,
+        "score2": 85,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2021-10-05",
+        "team1": "Rajasthan Royals",
+        "team2": "Mumbai Indians",
+        "score1": 90,
+        "score2": 94,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2021-10-03",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Punjab Kings",
+        "score1": 164,
+        "score2": 158,
+        "winner": "Royal Challengers Bangalore"
+      }
+    ]
+  },
+  {
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "city": "Delhi",
+    "total_matches": 23,
+    "avg_first_innings_score": 200.3,
+    "avg_second_innings_score": 182.7,
+    "highest_score": 278,
+    "lowest_score": 127,
+    "bat_first_wins": 13,
+    "bat_second_wins": 10,
+    "bat_first_win_pct": 56.5,
+    "toss_field_pct": 78.3,
+    "powerplay_rpo": 9.5,
+    "middle_rpo": 8.6,
+    "death_rpo": 11.59,
+    "last_5_matches": [
+      {
+        "date": "2025-05-25",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Kolkata Knight Riders",
+        "score1": 278,
+        "score2": 168,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2025-05-20",
+        "team1": "Chennai Super Kings",
+        "team2": "Rajasthan Royals",
+        "score1": 187,
+        "score2": 188,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2025-05-18",
+        "team1": "Delhi Capitals",
+        "team2": "Gujarat Titans",
+        "score1": 199,
+        "score2": 205,
+        "winner": "Gujarat Titans"
+      },
+      {
+        "date": "2025-04-29",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Delhi Capitals",
+        "score1": 204,
+        "score2": 190,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2025-04-27",
+        "team1": "Delhi Capitals",
+        "team2": "Royal Challengers Bengaluru",
+        "score1": 162,
+        "score2": 165,
+        "winner": "Royal Challengers Bengaluru"
+      }
+    ]
+  },
+  {
+    "venue": "Eden Gardens, Kolkata",
+    "city": "Kolkata",
+    "total_matches": 23,
+    "avg_first_innings_score": 196.8,
+    "avg_second_innings_score": 175.7,
+    "highest_score": 262,
+    "lowest_score": 7,
+    "bat_first_wins": 12,
+    "bat_second_wins": 10,
+    "bat_first_win_pct": 54.5,
+    "toss_field_pct": 78.3,
+    "powerplay_rpo": 9.06,
+    "middle_rpo": 8.77,
+    "death_rpo": 11.62,
+    "last_5_matches": [
+      {
+        "date": "2025-05-07",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Chennai Super Kings",
+        "score1": 179,
+        "score2": 183,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2025-05-04",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Rajasthan Royals",
+        "score1": 206,
+        "score2": 205,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2025-04-26",
+        "team1": "Punjab Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 201,
+        "score2": 7,
+        "winner": "No result"
+      },
+      {
+        "date": "2025-04-21",
+        "team1": "Gujarat Titans",
+        "team2": "Kolkata Knight Riders",
+        "score1": 198,
+        "score2": 159,
+        "winner": "Gujarat Titans"
+      },
+      {
+        "date": "2025-04-08",
+        "team1": "Lucknow Super Giants",
+        "team2": "Kolkata Knight Riders",
+        "score1": 238,
+        "score2": 234,
+        "winner": "Lucknow Super Giants"
+      }
+    ]
+  },
+  {
+    "venue": "Maharashtra Cricket Association Stadium",
+    "city": "Pune",
+    "total_matches": 22,
+    "avg_first_innings_score": 166.4,
+    "avg_second_innings_score": 152.1,
+    "highest_score": 211,
+    "lowest_score": 73,
+    "bat_first_wins": 8,
+    "bat_second_wins": 14,
+    "bat_first_win_pct": 36.4,
+    "toss_field_pct": 90.9,
+    "powerplay_rpo": 7.43,
+    "middle_rpo": 7.5,
+    "death_rpo": 10.24,
+    "last_5_matches": [
+      {
+        "date": "2018-05-20",
+        "team1": "Kings XI Punjab",
+        "team2": "Chennai Super Kings",
+        "score1": 153,
+        "score2": 159,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2018-05-13",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Chennai Super Kings",
+        "score1": 179,
+        "score2": 180,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2018-05-05",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Chennai Super Kings",
+        "score1": 127,
+        "score2": 128,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2018-04-30",
+        "team1": "Chennai Super Kings",
+        "team2": "Delhi Daredevils",
+        "score1": 211,
+        "score2": 198,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2018-04-28",
+        "team1": "Chennai Super Kings",
+        "team2": "Mumbai Indians",
+        "score1": 169,
+        "score2": 170,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  },
+  {
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "city": "Lucknow",
+    "total_matches": 22,
+    "avg_first_innings_score": 175.4,
+    "avg_second_innings_score": 166.0,
+    "highest_score": 235,
+    "lowest_score": 108,
+    "bat_first_wins": 9,
+    "bat_second_wins": 12,
+    "bat_first_win_pct": 42.9,
+    "toss_field_pct": 72.7,
+    "powerplay_rpo": 7.99,
+    "middle_rpo": 7.88,
+    "death_rpo": 10.12,
+    "last_5_matches": [
+      {
+        "date": "2025-05-27",
+        "team1": "Lucknow Super Giants",
+        "team2": "Royal Challengers Bengaluru",
+        "score1": 227,
+        "score2": 230,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-05-23",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Royal Challengers Bengaluru",
+        "score1": 231,
+        "score2": 189,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2025-05-19",
+        "team1": "Lucknow Super Giants",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 205,
+        "score2": 206,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2025-04-22",
+        "team1": "Lucknow Super Giants",
+        "team2": "Delhi Capitals",
+        "score1": 159,
+        "score2": 161,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2025-04-14",
+        "team1": "Lucknow Super Giants",
+        "team2": "Chennai Super Kings",
+        "score1": 166,
+        "score2": 168,
+        "winner": "Chennai Super Kings"
+      }
+    ]
+  },
+  {
+    "venue": "Dr DY Patil Sports Academy, Mumbai",
+    "city": "Navi Mumbai",
+    "total_matches": 20,
+    "avg_first_innings_score": 170.7,
+    "avg_second_innings_score": 157.9,
+    "highest_score": 216,
+    "lowest_score": 113,
+    "bat_first_wins": 10,
+    "bat_second_wins": 10,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 85.0,
+    "powerplay_rpo": 7.28,
+    "middle_rpo": 8.0,
+    "death_rpo": 9.69,
+    "last_5_matches": [
+      {
+        "date": "2022-05-18",
+        "team1": "Lucknow Super Giants",
+        "team2": "Kolkata Knight Riders",
+        "score1": 210,
+        "score2": 208,
+        "winner": "Lucknow Super Giants"
+      },
+      {
+        "date": "2022-05-16",
+        "team1": "Delhi Capitals",
+        "team2": "Punjab Kings",
+        "score1": 159,
+        "score2": 142,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2022-05-11",
+        "team1": "Rajasthan Royals",
+        "team2": "Delhi Capitals",
+        "score1": 160,
+        "score2": 161,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2022-05-09",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Mumbai Indians",
+        "score1": 165,
+        "score2": 113,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2022-05-08",
+        "team1": "Chennai Super Kings",
+        "team2": "Delhi Capitals",
+        "score1": 208,
+        "score2": 117,
+        "winner": "Chennai Super Kings"
+      }
+    ]
+  },
+  {
+    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+    "city": "Hyderabad",
+    "total_matches": 19,
+    "avg_first_innings_score": 189.4,
+    "avg_second_innings_score": 181.9,
+    "highest_score": 286,
+    "lowest_score": 131,
+    "bat_first_wins": 8,
+    "bat_second_wins": 10,
+    "bat_first_win_pct": 44.4,
+    "toss_field_pct": 57.9,
+    "powerplay_rpo": 8.81,
+    "middle_rpo": 8.58,
+    "death_rpo": 10.73,
+    "last_5_matches": [
+      {
+        "date": "2025-05-05",
+        "team1": "Delhi Capitals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 133,
+        "score2": 0,
+        "winner": "No result"
+      },
+      {
+        "date": "2025-04-23",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Mumbai Indians",
+        "score1": 143,
+        "score2": 146,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2025-04-12",
+        "team1": "Punjab Kings",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 245,
+        "score2": 247,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2025-04-06",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Gujarat Titans",
+        "score1": 152,
+        "score2": 153,
+        "winner": "Gujarat Titans"
+      },
+      {
+        "date": "2025-03-27",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Lucknow Super Giants",
+        "score1": 190,
+        "score2": 193,
+        "winner": "Lucknow Super Giants"
+      }
+    ]
+  },
+  {
+    "venue": "M Chinnaswamy Stadium, Bengaluru",
+    "city": "Bengaluru",
+    "total_matches": 19,
+    "avg_first_innings_score": 189.1,
+    "avg_second_innings_score": 179.8,
+    "highest_score": 287,
+    "lowest_score": 95,
+    "bat_first_wins": 10,
+    "bat_second_wins": 9,
+    "bat_first_win_pct": 52.6,
+    "toss_field_pct": 100.0,
+    "powerplay_rpo": 8.51,
+    "middle_rpo": 8.86,
+    "death_rpo": 10.97,
+    "last_5_matches": [
+      {
+        "date": "2025-05-03",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Chennai Super Kings",
+        "score1": 213,
+        "score2": 211,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-04-24",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Rajasthan Royals",
+        "score1": 205,
+        "score2": 194,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-04-18",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Punjab Kings",
+        "score1": 95,
+        "score2": 98,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-04-10",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Delhi Capitals",
+        "score1": 163,
+        "score2": 169,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2025-04-02",
+        "team1": "Royal Challengers Bengaluru",
+        "team2": "Gujarat Titans",
+        "score1": 169,
+        "score2": 170,
+        "winner": "Gujarat Titans"
+      }
+    ]
+  },
+  {
+    "venue": "Brabourne Stadium, Mumbai",
+    "city": "Mumbai",
+    "total_matches": 17,
+    "avg_first_innings_score": 177.4,
+    "avg_second_innings_score": 165.2,
+    "highest_score": 217,
+    "lowest_score": 68,
+    "bat_first_wins": 8,
+    "bat_second_wins": 9,
+    "bat_first_win_pct": 47.1,
+    "toss_field_pct": 82.4,
+    "powerplay_rpo": 9.03,
+    "middle_rpo": 8.03,
+    "death_rpo": 9.46,
+    "last_5_matches": [
+      {
+        "date": "2022-05-20",
+        "team1": "Chennai Super Kings",
+        "team2": "Rajasthan Royals",
+        "score1": 150,
+        "score2": 151,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2022-05-15",
+        "team1": "Rajasthan Royals",
+        "team2": "Lucknow Super Giants",
+        "score1": 178,
+        "score2": 154,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2022-05-13",
+        "team1": "Punjab Kings",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 209,
+        "score2": 155,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2022-05-06",
+        "team1": "Mumbai Indians",
+        "team2": "Gujarat Titans",
+        "score1": 177,
+        "score2": 172,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2022-05-05",
+        "team1": "Delhi Capitals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 207,
+        "score2": 186,
+        "winner": "Delhi Capitals"
+      }
+    ]
+  },
+  {
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "city": "Jaipur",
+    "total_matches": 17,
+    "avg_first_innings_score": 187.2,
+    "avg_second_innings_score": 171.3,
+    "highest_score": 219,
+    "lowest_score": 59,
+    "bat_first_wins": 8,
+    "bat_second_wins": 9,
+    "bat_first_win_pct": 47.1,
+    "toss_field_pct": 52.9,
+    "powerplay_rpo": 8.1,
+    "middle_rpo": 8.63,
+    "death_rpo": 11.21,
+    "last_5_matches": [
+      {
+        "date": "2025-05-26",
+        "team1": "Mumbai Indians",
+        "team2": "Punjab Kings",
+        "score1": 184,
+        "score2": 187,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-05-24",
+        "team1": "Punjab Kings",
+        "team2": "Delhi Capitals",
+        "score1": 206,
+        "score2": 208,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2025-05-18",
+        "team1": "Punjab Kings",
+        "team2": "Rajasthan Royals",
+        "score1": 219,
+        "score2": 209,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-05-01",
+        "team1": "Mumbai Indians",
+        "team2": "Rajasthan Royals",
+        "score1": 217,
+        "score2": 117,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2025-04-28",
+        "team1": "Gujarat Titans",
+        "team2": "Rajasthan Royals",
+        "score1": 209,
+        "score2": 212,
+        "winner": "Rajasthan Royals"
+      }
+    ]
+  },
+  {
+    "venue": "Dr DY Patil Sports Academy",
+    "city": "Mumbai",
+    "total_matches": 17,
+    "avg_first_innings_score": 146.6,
+    "avg_second_innings_score": 136.3,
+    "highest_score": 190,
+    "lowest_score": 82,
+    "bat_first_wins": 7,
+    "bat_second_wins": 10,
+    "bat_first_win_pct": 41.2,
+    "toss_field_pct": 58.8,
+    "powerplay_rpo": 6.61,
+    "middle_rpo": 6.17,
+    "death_rpo": 9.68,
+    "last_5_matches": [
+      {
+        "date": "2011-05-19",
+        "team1": "Pune Warriors",
+        "team2": "Kolkata Knight Riders",
+        "score1": 118,
+        "score2": 119,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2011-05-16",
+        "team1": "Pune Warriors",
+        "team2": "Deccan Chargers",
+        "score1": 136,
+        "score2": 138,
+        "winner": "Deccan Chargers"
+      },
+      {
+        "date": "2011-05-04",
+        "team1": "Pune Warriors",
+        "team2": "Mumbai Indians",
+        "score1": 160,
+        "score2": 139,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2011-04-27",
+        "team1": "Pune Warriors",
+        "team2": "Chennai Super Kings",
+        "score1": 141,
+        "score2": 145,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2011-04-17",
+        "team1": "Pune Warriors",
+        "team2": "Delhi Daredevils",
+        "score1": 187,
+        "score2": 190,
+        "winner": "Delhi Daredevils"
+      }
+    ]
+  },
+  {
+    "venue": "Subrata Roy Sahara Stadium",
+    "city": "Pune",
+    "total_matches": 16,
+    "avg_first_innings_score": 149.4,
+    "avg_second_innings_score": 133.6,
+    "highest_score": 187,
+    "lowest_score": 99,
+    "bat_first_wins": 10,
+    "bat_second_wins": 6,
+    "bat_first_win_pct": 62.5,
+    "toss_field_pct": 6.2,
+    "powerplay_rpo": 6.41,
+    "middle_rpo": 6.75,
+    "death_rpo": 9.28,
+    "last_5_matches": [
+      {
+        "date": "2013-05-19",
+        "team1": "Pune Warriors",
+        "team2": "Delhi Daredevils",
+        "score1": 172,
+        "score2": 134,
+        "winner": "Pune Warriors"
+      },
+      {
+        "date": "2013-05-11",
+        "team1": "Pune Warriors",
+        "team2": "Mumbai Indians",
+        "score1": 112,
+        "score2": 116,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2013-05-09",
+        "team1": "Pune Warriors",
+        "team2": "Kolkata Knight Riders",
+        "score1": 152,
+        "score2": 106,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2013-05-02",
+        "team1": "Pune Warriors",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 187,
+        "score2": 170,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2013-04-30",
+        "team1": "Pune Warriors",
+        "team2": "Chennai Super Kings",
+        "score1": 164,
+        "score2": 127,
+        "winner": "Chennai Super Kings"
+      }
+    ]
+  },
+  {
+    "venue": "M.Chinnaswamy Stadium",
+    "city": "Bengaluru",
+    "total_matches": 15,
+    "avg_first_innings_score": 173.9,
+    "avg_second_innings_score": 167.9,
+    "highest_score": 218,
+    "lowest_score": 41,
+    "bat_first_wins": 7,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 93.3,
+    "powerplay_rpo": 8.0,
+    "middle_rpo": 8.45,
+    "death_rpo": 11.1,
+    "last_5_matches": [
+      {
+        "date": "2019-05-04",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 175,
+        "score2": 178,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2019-04-30",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Rajasthan Royals",
+        "score1": 62,
+        "score2": 41,
+        "winner": "No result"
+      },
+      {
+        "date": "2019-04-24",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kings XI Punjab",
+        "score1": 202,
+        "score2": 185,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2019-04-21",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Chennai Super Kings",
+        "score1": 161,
+        "score2": 160,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2019-04-07",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Delhi Capitals",
+        "score1": 149,
+        "score2": 152,
+        "winner": "Delhi Capitals"
+      }
+    ]
+  },
+  {
+    "venue": "Rajiv Gandhi International Stadium",
+    "city": "Hyderabad",
+    "total_matches": 15,
+    "avg_first_innings_score": 162.6,
+    "avg_second_innings_score": 146.1,
+    "highest_score": 231,
+    "lowest_score": 96,
+    "bat_first_wins": 8,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 53.3,
+    "toss_field_pct": 66.7,
+    "powerplay_rpo": 7.77,
+    "middle_rpo": 7.44,
+    "death_rpo": 8.79,
+    "last_5_matches": [
+      {
+        "date": "2019-05-12",
+        "team1": "Mumbai Indians",
+        "team2": "Chennai Super Kings",
+        "score1": 149,
+        "score2": 148,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2019-04-29",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Kings XI Punjab",
+        "score1": 212,
+        "score2": 167,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2019-04-21",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 159,
+        "score2": 161,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2019-04-17",
+        "team1": "Chennai Super Kings",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 132,
+        "score2": 137,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2019-04-14",
+        "team1": "Delhi Capitals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 155,
+        "score2": 116,
+        "winner": "Delhi Capitals"
+      }
+    ]
+  },
+  {
+    "venue": "Kingsmead",
+    "city": "Durban",
+    "total_matches": 15,
+    "avg_first_innings_score": 152.0,
+    "avg_second_innings_score": 138.2,
+    "highest_score": 211,
+    "lowest_score": 79,
+    "bat_first_wins": 8,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 53.3,
+    "toss_field_pct": 33.3,
+    "powerplay_rpo": 7.89,
+    "middle_rpo": 6.45,
+    "death_rpo": 8.29,
+    "last_5_matches": [
+      {
+        "date": "2009-05-20",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Rajasthan Royals",
+        "score1": 101,
+        "score2": 102,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2009-05-20",
+        "team1": "Chennai Super Kings",
+        "team2": "Kings XI Punjab",
+        "score1": 116,
+        "score2": 92,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2009-05-14",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Chennai Super Kings",
+        "score1": 129,
+        "score2": 132,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2009-05-14",
+        "team1": "Mumbai Indians",
+        "team2": "Rajasthan Royals",
+        "score1": 145,
+        "score2": 143,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2009-05-13",
+        "team1": "Deccan Chargers",
+        "team2": "Delhi Daredevils",
+        "score1": 173,
+        "score2": 161,
+        "winner": "Delhi Daredevils"
+      }
+    ]
+  },
+  {
+    "venue": "Arun Jaitley Stadium",
+    "city": "Delhi",
+    "total_matches": 14,
+    "avg_first_innings_score": 168.3,
+    "avg_second_innings_score": 155.0,
+    "highest_score": 219,
+    "lowest_score": 115,
+    "bat_first_wins": 7,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 57.1,
+    "powerplay_rpo": 7.59,
+    "middle_rpo": 7.47,
+    "death_rpo": 10.67,
+    "last_5_matches": [
+      {
+        "date": "2019-05-04",
+        "team1": "Rajasthan Royals",
+        "team2": "Delhi Capitals",
+        "score1": 115,
+        "score2": 121,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2019-04-28",
+        "team1": "Delhi Capitals",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 187,
+        "score2": 171,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2019-04-20",
+        "team1": "Kings XI Punjab",
+        "team2": "Delhi Capitals",
+        "score1": 163,
+        "score2": 166,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2019-04-18",
+        "team1": "Mumbai Indians",
+        "team2": "Delhi Capitals",
+        "score1": 168,
+        "score2": 128,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2019-04-04",
+        "team1": "Delhi Capitals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 129,
+        "score2": 131,
+        "winner": "Sunrisers Hyderabad"
+      }
+    ]
+  },
+  {
+    "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+    "city": "Visakhapatnam",
+    "total_matches": 13,
+    "avg_first_innings_score": 157.5,
+    "avg_second_innings_score": 130.7,
+    "highest_score": 206,
+    "lowest_score": 76,
+    "bat_first_wins": 6,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 46.2,
+    "toss_field_pct": 61.5,
+    "powerplay_rpo": 6.65,
+    "middle_rpo": 7.12,
+    "death_rpo": 9.88,
+    "last_5_matches": [
+      {
+        "date": "2019-05-10",
+        "team1": "Delhi Capitals",
+        "team2": "Chennai Super Kings",
+        "score1": 147,
+        "score2": 151,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2019-05-08",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Delhi Capitals",
+        "score1": 162,
+        "score2": 165,
+        "winner": "Delhi Capitals"
+      },
+      {
+        "date": "2016-05-21",
+        "team1": "Rising Pune Supergiants",
+        "team2": "Kings XI Punjab",
+        "score1": 172,
+        "score2": 173,
+        "winner": "Rising Pune Supergiants"
+      },
+      {
+        "date": "2016-05-17",
+        "team1": "Rising Pune Supergiants",
+        "team2": "Delhi Daredevils",
+        "score1": 121,
+        "score2": 76,
+        "winner": "Rising Pune Supergiants"
+      },
+      {
+        "date": "2016-05-15",
+        "team1": "Mumbai Indians",
+        "team2": "Delhi Daredevils",
+        "score1": 206,
+        "score2": 126,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  },
+  {
+    "venue": "Maharashtra Cricket Association Stadium, Pune",
+    "city": "Pune",
+    "total_matches": 13,
+    "avg_first_innings_score": 171.5,
+    "avg_second_innings_score": 144.5,
+    "highest_score": 210,
+    "lowest_score": 82,
+    "bat_first_wins": 10,
+    "bat_second_wins": 3,
+    "bat_first_win_pct": 76.9,
+    "toss_field_pct": 84.6,
+    "powerplay_rpo": 7.71,
+    "middle_rpo": 7.5,
+    "death_rpo": 10.53,
+    "last_5_matches": [
+      {
+        "date": "2022-05-14",
+        "team1": "Kolkata Knight Riders",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 177,
+        "score2": 123,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2022-05-10",
+        "team1": "Gujarat Titans",
+        "team2": "Lucknow Super Giants",
+        "score1": 144,
+        "score2": 82,
+        "winner": "Gujarat Titans"
+      },
+      {
+        "date": "2022-05-07",
+        "team1": "Lucknow Super Giants",
+        "team2": "Kolkata Knight Riders",
+        "score1": 176,
+        "score2": 101,
+        "winner": "Lucknow Super Giants"
+      },
+      {
+        "date": "2022-05-04",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Chennai Super Kings",
+        "score1": 173,
+        "score2": 160,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2022-05-01",
+        "team1": "Chennai Super Kings",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 202,
+        "score2": 189,
+        "winner": "Chennai Super Kings"
+      }
+    ]
+  },
+  {
+    "venue": "SuperSport Park",
+    "city": "Centurion",
+    "total_matches": 12,
+    "avg_first_innings_score": 154.8,
+    "avg_second_innings_score": 149.6,
+    "highest_score": 189,
+    "lowest_score": 105,
+    "bat_first_wins": 4,
+    "bat_second_wins": 8,
+    "bat_first_win_pct": 33.3,
+    "toss_field_pct": 50.0,
+    "powerplay_rpo": 6.55,
+    "middle_rpo": 7.14,
+    "death_rpo": 9.4,
+    "last_5_matches": [
+      {
+        "date": "2009-05-22",
+        "team1": "Delhi Daredevils",
+        "team2": "Deccan Chargers",
+        "score1": 153,
+        "score2": 154,
+        "winner": "Deccan Chargers"
+      },
+      {
+        "date": "2009-05-21",
+        "team1": "Delhi Daredevils",
+        "team2": "Mumbai Indians",
+        "score1": 165,
+        "score2": 166,
+        "winner": "Delhi Daredevils"
+      },
+      {
+        "date": "2009-05-21",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Deccan Chargers",
+        "score1": 170,
+        "score2": 158,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2009-05-18",
+        "team1": "Chennai Super Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 188,
+        "score2": 189,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2009-05-12",
+        "team1": "Royal Challengers Bangalore",
+        "team2": "Kolkata Knight Riders",
+        "score1": 173,
+        "score2": 176,
+        "winner": "Royal Challengers Bangalore"
+      }
+    ]
+  },
+  {
+    "venue": "Sardar Patel Stadium, Motera",
+    "city": "Ahmedabad",
+    "total_matches": 12,
+    "avg_first_innings_score": 163.2,
+    "avg_second_innings_score": 149.0,
+    "highest_score": 201,
+    "lowest_score": 102,
+    "bat_first_wins": 6,
+    "bat_second_wins": 6,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 50.0,
+    "powerplay_rpo": 7.72,
+    "middle_rpo": 7.1,
+    "death_rpo": 9.79,
+    "last_5_matches": [
+      {
+        "date": "2015-04-24",
+        "team1": "Rajasthan Royals",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 130,
+        "score2": 134,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2015-04-21",
+        "team1": "Rajasthan Royals",
+        "team2": "Kings XI Punjab",
+        "score1": 191,
+        "score2": 191,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2015-04-19",
+        "team1": "Rajasthan Royals",
+        "team2": "Chennai Super Kings",
+        "score1": 156,
+        "score2": 157,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2015-04-14",
+        "team1": "Rajasthan Royals",
+        "team2": "Mumbai Indians",
+        "score1": 164,
+        "score2": 165,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2014-05-19",
+        "team1": "Rajasthan Royals",
+        "team2": "Mumbai Indians",
+        "score1": 178,
+        "score2": 153,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  },
+  {
+    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+    "city": "Chandigarh",
+    "total_matches": 11,
+    "avg_first_innings_score": 164.1,
+    "avg_second_innings_score": 158.2,
+    "highest_score": 207,
+    "lowest_score": 67,
+    "bat_first_wins": 5,
+    "bat_second_wins": 6,
+    "bat_first_win_pct": 45.5,
+    "toss_field_pct": 81.8,
+    "powerplay_rpo": 7.42,
+    "middle_rpo": 7.63,
+    "death_rpo": 9.99,
+    "last_5_matches": [
+      {
+        "date": "2017-05-09",
+        "team1": "Kings XI Punjab",
+        "team2": "Kolkata Knight Riders",
+        "score1": 167,
+        "score2": 153,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2017-05-07",
+        "team1": "Kings XI Punjab",
+        "team2": "Gujarat Lions",
+        "score1": 189,
+        "score2": 192,
+        "winner": "Gujarat Lions"
+      },
+      {
+        "date": "2017-04-30",
+        "team1": "Kings XI Punjab",
+        "team2": "Delhi Daredevils",
+        "score1": 67,
+        "score2": 68,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2017-04-28",
+        "team1": "Kings XI Punjab",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 207,
+        "score2": 181,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2016-05-15",
+        "team1": "Kings XI Punjab",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 179,
+        "score2": 180,
+        "winner": "Sunrisers Hyderabad"
+      }
+    ]
+  },
+  {
+    "venue": "Saurashtra Cricket Association Stadium",
+    "city": "Rajkot",
+    "total_matches": 10,
+    "avg_first_innings_score": 168.9,
+    "avg_second_innings_score": 162.7,
+    "highest_score": 213,
+    "lowest_score": 131,
+    "bat_first_wins": 3,
+    "bat_second_wins": 7,
+    "bat_first_win_pct": 30.0,
+    "toss_field_pct": 70.0,
+    "powerplay_rpo": 8.35,
+    "middle_rpo": 7.41,
+    "death_rpo": 9.83,
+    "last_5_matches": [
+      {
+        "date": "2017-04-29",
+        "team1": "Gujarat Lions",
+        "team2": "Mumbai Indians",
+        "score1": 153,
+        "score2": 153,
+        "winner": "Mumbai Indians"
+      },
+      {
+        "date": "2017-04-23",
+        "team1": "Gujarat Lions",
+        "team2": "Kings XI Punjab",
+        "score1": 188,
+        "score2": 162,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2017-04-18",
+        "team1": "Gujarat Lions",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 213,
+        "score2": 192,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2017-04-14",
+        "team1": "Gujarat Lions",
+        "team2": "Rising Pune Supergiant",
+        "score1": 171,
+        "score2": 172,
+        "winner": "Gujarat Lions"
+      },
+      {
+        "date": "2017-04-07",
+        "team1": "Gujarat Lions",
+        "team2": "Kolkata Knight Riders",
+        "score1": 183,
+        "score2": 184,
+        "winner": "Kolkata Knight Riders"
+      }
+    ]
+  },
+  {
+    "venue": "Punjab Cricket Association IS Bindra Stadium",
+    "city": "Chandigarh",
+    "total_matches": 10,
+    "avg_first_innings_score": 175.6,
+    "avg_second_innings_score": 172.0,
+    "highest_score": 197,
+    "lowest_score": 150,
+    "bat_first_wins": 4,
+    "bat_second_wins": 6,
+    "bat_first_win_pct": 40.0,
+    "toss_field_pct": 90.0,
+    "powerplay_rpo": 8.12,
+    "middle_rpo": 8.56,
+    "death_rpo": 9.32,
+    "last_5_matches": [
+      {
+        "date": "2019-05-05",
+        "team1": "Chennai Super Kings",
+        "team2": "Kings XI Punjab",
+        "score1": 170,
+        "score2": 173,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2019-05-03",
+        "team1": "Kings XI Punjab",
+        "team2": "Kolkata Knight Riders",
+        "score1": 183,
+        "score2": 185,
+        "winner": "Kolkata Knight Riders"
+      },
+      {
+        "date": "2019-04-16",
+        "team1": "Kings XI Punjab",
+        "team2": "Rajasthan Royals",
+        "score1": 182,
+        "score2": 170,
+        "winner": "Kings XI Punjab"
+      },
+      {
+        "date": "2019-04-13",
+        "team1": "Kings XI Punjab",
+        "team2": "Royal Challengers Bangalore",
+        "score1": 173,
+        "score2": 174,
+        "winner": "Royal Challengers Bangalore"
+      },
+      {
+        "date": "2019-04-08",
+        "team1": "Sunrisers Hyderabad",
+        "team2": "Kings XI Punjab",
+        "score1": 150,
+        "score2": 151,
+        "winner": "Kings XI Punjab"
+      }
+    ]
+  },
+  {
+    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+    "city": "New Chandigarh",
+    "total_matches": 10,
+    "avg_first_innings_score": 163.0,
+    "avg_second_innings_score": 155.4,
+    "highest_score": 219,
+    "lowest_score": 95,
+    "bat_first_wins": 5,
+    "bat_second_wins": 5,
+    "bat_first_win_pct": 50.0,
+    "toss_field_pct": 70.0,
+    "powerplay_rpo": 8.61,
+    "middle_rpo": 7.28,
+    "death_rpo": 10.18,
+    "last_5_matches": [
+      {
+        "date": "2025-05-29",
+        "team1": "Punjab Kings",
+        "team2": "Royal Challengers Bengaluru",
+        "score1": 101,
+        "score2": 106,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-04-20",
+        "team1": "Punjab Kings",
+        "team2": "Royal Challengers Bengaluru",
+        "score1": 157,
+        "score2": 159,
+        "winner": "Royal Challengers Bengaluru"
+      },
+      {
+        "date": "2025-04-15",
+        "team1": "Punjab Kings",
+        "team2": "Kolkata Knight Riders",
+        "score1": 111,
+        "score2": 95,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-04-08",
+        "team1": "Punjab Kings",
+        "team2": "Chennai Super Kings",
+        "score1": 219,
+        "score2": 201,
+        "winner": "Punjab Kings"
+      },
+      {
+        "date": "2025-04-05",
+        "team1": "Rajasthan Royals",
+        "team2": "Punjab Kings",
+        "score1": 205,
+        "score2": 155,
+        "winner": "Rajasthan Royals"
+      }
+    ]
+  },
+  {
+    "venue": "Brabourne Stadium",
+    "city": "Mumbai",
+    "total_matches": 10,
+    "avg_first_innings_score": 180.4,
+    "avg_second_innings_score": 167.7,
+    "highest_score": 212,
+    "lowest_score": 115,
+    "bat_first_wins": 6,
+    "bat_second_wins": 4,
+    "bat_first_win_pct": 60.0,
+    "toss_field_pct": 40.0,
+    "powerplay_rpo": 8.04,
+    "middle_rpo": 7.71,
+    "death_rpo": 11.21,
+    "last_5_matches": [
+      {
+        "date": "2015-05-16",
+        "team1": "Rajasthan Royals",
+        "team2": "Kolkata Knight Riders",
+        "score1": 199,
+        "score2": 190,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2015-05-07",
+        "team1": "Rajasthan Royals",
+        "team2": "Sunrisers Hyderabad",
+        "score1": 201,
+        "score2": 194,
+        "winner": "Sunrisers Hyderabad"
+      },
+      {
+        "date": "2015-05-03",
+        "team1": "Rajasthan Royals",
+        "team2": "Delhi Daredevils",
+        "score1": 189,
+        "score2": 175,
+        "winner": "Rajasthan Royals"
+      },
+      {
+        "date": "2014-05-28",
+        "team1": "Chennai Super Kings",
+        "team2": "Mumbai Indians",
+        "score1": 173,
+        "score2": 176,
+        "winner": "Chennai Super Kings"
+      },
+      {
+        "date": "2010-04-13",
+        "team1": "Mumbai Indians",
+        "team2": "Delhi Daredevils",
+        "score1": 183,
+        "score2": 144,
+        "winner": "Mumbai Indians"
+      }
+    ]
+  }
+];

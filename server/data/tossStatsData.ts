@@ -1,0 +1,1083 @@
+export const tossStats = {
+  "venues": [
+    {
+      "venue": "Eden Gardens",
+      "matches": 77,
+      "toss_bat_first": {
+        "count": 28,
+        "wins": 12,
+        "win_pct": 42.9
+      },
+      "toss_field_first": {
+        "count": 49,
+        "wins": 31,
+        "win_pct": 63.3
+      },
+      "overall": {
+        "bat_first_wins": 30,
+        "bat_second_wins": 47
+      }
+    },
+    {
+      "venue": "Wankhede Stadium",
+      "matches": 73,
+      "toss_bat_first": {
+        "count": 22,
+        "wins": 11,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 51,
+        "wins": 26,
+        "win_pct": 51.0
+      },
+      "overall": {
+        "bat_first_wins": 36,
+        "bat_second_wins": 37
+      }
+    },
+    {
+      "venue": "M Chinnaswamy Stadium",
+      "matches": 65,
+      "toss_bat_first": {
+        "count": 8,
+        "wins": 3,
+        "win_pct": 37.5
+      },
+      "toss_field_first": {
+        "count": 57,
+        "wins": 32,
+        "win_pct": 56.1
+      },
+      "overall": {
+        "bat_first_wins": 26,
+        "bat_second_wins": 37
+      }
+    },
+    {
+      "venue": "Feroz Shah Kotla",
+      "matches": 60,
+      "toss_bat_first": {
+        "count": 26,
+        "wins": 12,
+        "win_pct": 46.2
+      },
+      "toss_field_first": {
+        "count": 34,
+        "wins": 19,
+        "win_pct": 55.9
+      },
+      "overall": {
+        "bat_first_wins": 27,
+        "bat_second_wins": 32
+      }
+    },
+    {
+      "venue": "Wankhede Stadium, Mumbai",
+      "matches": 52,
+      "toss_bat_first": {
+        "count": 8,
+        "wins": 3,
+        "win_pct": 37.5
+      },
+      "toss_field_first": {
+        "count": 44,
+        "wins": 26,
+        "win_pct": 59.1
+      },
+      "overall": {
+        "bat_first_wins": 21,
+        "bat_second_wins": 31
+      }
+    },
+    {
+      "venue": "Rajiv Gandhi International Stadium, Uppal",
+      "matches": 49,
+      "toss_bat_first": {
+        "count": 23,
+        "wins": 5,
+        "win_pct": 21.7
+      },
+      "toss_field_first": {
+        "count": 26,
+        "wins": 12,
+        "win_pct": 46.2
+      },
+      "overall": {
+        "bat_first_wins": 19,
+        "bat_second_wins": 30
+      }
+    },
+    {
+      "venue": "MA Chidambaram Stadium, Chepauk",
+      "matches": 48,
+      "toss_bat_first": {
+        "count": 34,
+        "wins": 21,
+        "win_pct": 61.8
+      },
+      "toss_field_first": {
+        "count": 14,
+        "wins": 4,
+        "win_pct": 28.6
+      },
+      "overall": {
+        "bat_first_wins": 31,
+        "bat_second_wins": 17
+      }
+    },
+    {
+      "venue": "Sawai Mansingh Stadium",
+      "matches": 47,
+      "toss_bat_first": {
+        "count": 19,
+        "wins": 6,
+        "win_pct": 31.6
+      },
+      "toss_field_first": {
+        "count": 28,
+        "wins": 19,
+        "win_pct": 67.9
+      },
+      "overall": {
+        "bat_first_wins": 15,
+        "bat_second_wins": 32
+      }
+    },
+    {
+      "venue": "Dubai International Cricket Stadium",
+      "matches": 46,
+      "toss_bat_first": {
+        "count": 19,
+        "wins": 7,
+        "win_pct": 36.8
+      },
+      "toss_field_first": {
+        "count": 27,
+        "wins": 11,
+        "win_pct": 40.7
+      },
+      "overall": {
+        "bat_first_wins": 23,
+        "bat_second_wins": 23
+      }
+    },
+    {
+      "venue": "Punjab Cricket Association Stadium, Mohali",
+      "matches": 35,
+      "toss_bat_first": {
+        "count": 14,
+        "wins": 5,
+        "win_pct": 35.7
+      },
+      "toss_field_first": {
+        "count": 21,
+        "wins": 11,
+        "win_pct": 52.4
+      },
+      "overall": {
+        "bat_first_wins": 15,
+        "bat_second_wins": 20
+      }
+    },
+    {
+      "venue": "MA Chidambaram Stadium, Chepauk, Chennai",
+      "matches": 34,
+      "toss_bat_first": {
+        "count": 13,
+        "wins": 6,
+        "win_pct": 46.2
+      },
+      "toss_field_first": {
+        "count": 21,
+        "wins": 11,
+        "win_pct": 52.4
+      },
+      "overall": {
+        "bat_first_wins": 16,
+        "bat_second_wins": 18
+      }
+    },
+    {
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "matches": 33,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 2,
+        "win_pct": 33.3
+      },
+      "toss_field_first": {
+        "count": 27,
+        "wins": 13,
+        "win_pct": 48.1
+      },
+      "overall": {
+        "bat_first_wins": 16,
+        "bat_second_wins": 17
+      }
+    },
+    {
+      "venue": "Sheikh Zayed Stadium",
+      "matches": 29,
+      "toss_bat_first": {
+        "count": 15,
+        "wins": 7,
+        "win_pct": 46.7
+      },
+      "toss_field_first": {
+        "count": 14,
+        "wins": 8,
+        "win_pct": 57.1
+      },
+      "overall": {
+        "bat_first_wins": 13,
+        "bat_second_wins": 16
+      }
+    },
+    {
+      "venue": "Sharjah Cricket Stadium",
+      "matches": 28,
+      "toss_bat_first": {
+        "count": 8,
+        "wins": 3,
+        "win_pct": 37.5
+      },
+      "toss_field_first": {
+        "count": 20,
+        "wins": 13,
+        "win_pct": 65.0
+      },
+      "overall": {
+        "bat_first_wins": 10,
+        "bat_second_wins": 18
+      }
+    },
+    {
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "matches": 23,
+      "toss_bat_first": {
+        "count": 5,
+        "wins": 3,
+        "win_pct": 60.0
+      },
+      "toss_field_first": {
+        "count": 18,
+        "wins": 8,
+        "win_pct": 44.4
+      },
+      "overall": {
+        "bat_first_wins": 13,
+        "bat_second_wins": 10
+      }
+    },
+    {
+      "venue": "Eden Gardens, Kolkata",
+      "matches": 23,
+      "toss_bat_first": {
+        "count": 5,
+        "wins": 1,
+        "win_pct": 20.0
+      },
+      "toss_field_first": {
+        "count": 18,
+        "wins": 7,
+        "win_pct": 38.9
+      },
+      "overall": {
+        "bat_first_wins": 12,
+        "bat_second_wins": 10
+      }
+    },
+    {
+      "venue": "Maharashtra Cricket Association Stadium",
+      "matches": 22,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 1,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 20,
+        "wins": 13,
+        "win_pct": 65.0
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 14
+      }
+    },
+    {
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "matches": 22,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 4,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 16,
+        "wins": 10,
+        "win_pct": 62.5
+      },
+      "overall": {
+        "bat_first_wins": 9,
+        "bat_second_wins": 12
+      }
+    },
+    {
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "matches": 20,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 2,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 17,
+        "wins": 9,
+        "win_pct": 52.9
+      },
+      "overall": {
+        "bat_first_wins": 10,
+        "bat_second_wins": 10
+      }
+    },
+    {
+      "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+      "matches": 19,
+      "toss_bat_first": {
+        "count": 8,
+        "wins": 4,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 11,
+        "wins": 6,
+        "win_pct": 54.5
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 10
+      }
+    },
+    {
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "matches": 19,
+      "toss_bat_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "toss_field_first": {
+        "count": 19,
+        "wins": 9,
+        "win_pct": 47.4
+      },
+      "overall": {
+        "bat_first_wins": 10,
+        "bat_second_wins": 9
+      }
+    },
+    {
+      "venue": "Brabourne Stadium, Mumbai",
+      "matches": 17,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "toss_field_first": {
+        "count": 14,
+        "wins": 7,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 9
+      }
+    },
+    {
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "matches": 17,
+      "toss_bat_first": {
+        "count": 8,
+        "wins": 5,
+        "win_pct": 62.5
+      },
+      "toss_field_first": {
+        "count": 9,
+        "wins": 6,
+        "win_pct": 66.7
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 9
+      }
+    },
+    {
+      "venue": "Dr DY Patil Sports Academy",
+      "matches": 17,
+      "toss_bat_first": {
+        "count": 7,
+        "wins": 3,
+        "win_pct": 42.9
+      },
+      "toss_field_first": {
+        "count": 10,
+        "wins": 6,
+        "win_pct": 60.0
+      },
+      "overall": {
+        "bat_first_wins": 7,
+        "bat_second_wins": 10
+      }
+    },
+    {
+      "venue": "Subrata Roy Sahara Stadium",
+      "matches": 16,
+      "toss_bat_first": {
+        "count": 15,
+        "wins": 9,
+        "win_pct": 60.0
+      },
+      "toss_field_first": {
+        "count": 1,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "overall": {
+        "bat_first_wins": 10,
+        "bat_second_wins": 6
+      }
+    },
+    {
+      "venue": "M.Chinnaswamy Stadium",
+      "matches": 15,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 14,
+        "wins": 7,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 7,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Rajiv Gandhi International Stadium",
+      "matches": 15,
+      "toss_bat_first": {
+        "count": 5,
+        "wins": 1,
+        "win_pct": 20.0
+      },
+      "toss_field_first": {
+        "count": 10,
+        "wins": 3,
+        "win_pct": 30.0
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Kingsmead",
+      "matches": 15,
+      "toss_bat_first": {
+        "count": 10,
+        "wins": 6,
+        "win_pct": 60.0
+      },
+      "toss_field_first": {
+        "count": 5,
+        "wins": 3,
+        "win_pct": 60.0
+      },
+      "overall": {
+        "bat_first_wins": 8,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Arun Jaitley Stadium",
+      "matches": 14,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 3,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 8,
+        "wins": 4,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 7,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+      "matches": 13,
+      "toss_bat_first": {
+        "count": 5,
+        "wins": 2,
+        "win_pct": 40.0
+      },
+      "toss_field_first": {
+        "count": 8,
+        "wins": 4,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 6,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Maharashtra Cricket Association Stadium, Pune",
+      "matches": 13,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 2,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 11,
+        "wins": 3,
+        "win_pct": 27.3
+      },
+      "overall": {
+        "bat_first_wins": 10,
+        "bat_second_wins": 3
+      }
+    },
+    {
+      "venue": "SuperSport Park",
+      "matches": 12,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 3,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 6,
+        "wins": 5,
+        "win_pct": 83.3
+      },
+      "overall": {
+        "bat_first_wins": 4,
+        "bat_second_wins": 8
+      }
+    },
+    {
+      "venue": "Sardar Patel Stadium, Motera",
+      "matches": 12,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 3,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 6,
+        "wins": 3,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 6,
+        "bat_second_wins": 6
+      }
+    },
+    {
+      "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "matches": 11,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 9,
+        "wins": 4,
+        "win_pct": 44.4
+      },
+      "overall": {
+        "bat_first_wins": 5,
+        "bat_second_wins": 6
+      }
+    },
+    {
+      "venue": "Saurashtra Cricket Association Stadium",
+      "matches": 10,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 7,
+        "wins": 4,
+        "win_pct": 57.1
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 7
+      }
+    },
+    {
+      "venue": "Punjab Cricket Association IS Bindra Stadium",
+      "matches": 10,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 9,
+        "wins": 6,
+        "win_pct": 66.7
+      },
+      "overall": {
+        "bat_first_wins": 4,
+        "bat_second_wins": 6
+      }
+    },
+    {
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+      "matches": 10,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 2,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 7,
+        "wins": 4,
+        "win_pct": 57.1
+      },
+      "overall": {
+        "bat_first_wins": 5,
+        "bat_second_wins": 5
+      }
+    },
+    {
+      "venue": "Brabourne Stadium",
+      "matches": 10,
+      "toss_bat_first": {
+        "count": 6,
+        "wins": 4,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 4,
+        "wins": 2,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 6,
+        "bat_second_wins": 4
+      }
+    },
+    {
+      "venue": "Holkar Cricket Stadium",
+      "matches": 9,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 8,
+        "wins": 7,
+        "win_pct": 87.5
+      },
+      "overall": {
+        "bat_first_wins": 1,
+        "bat_second_wins": 8
+      }
+    },
+    {
+      "venue": "MA Chidambaram Stadium",
+      "matches": 9,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 1,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 7,
+        "wins": 4,
+        "win_pct": 57.1
+      },
+      "overall": {
+        "bat_first_wins": 4,
+        "bat_second_wins": 5
+      }
+    },
+    {
+      "venue": "Himachal Pradesh Cricket Association Stadium",
+      "matches": 9,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 8,
+        "wins": 4,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 5,
+        "bat_second_wins": 4
+      }
+    },
+    {
+      "venue": "Zayed Cricket Stadium, Abu Dhabi",
+      "matches": 8,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "toss_field_first": {
+        "count": 5,
+        "wins": 3,
+        "win_pct": 60.0
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 5
+      }
+    },
+    {
+      "venue": "New Wanderers Stadium",
+      "matches": 8,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 6,
+        "wins": 3,
+        "win_pct": 50.0
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 5
+      }
+    },
+    {
+      "venue": "Newlands",
+      "matches": 7,
+      "toss_bat_first": {
+        "count": 4,
+        "wins": 3,
+        "win_pct": 75.0
+      },
+      "toss_field_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "overall": {
+        "bat_first_wins": 5,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "St George's Park",
+      "matches": 7,
+      "toss_bat_first": {
+        "count": 7,
+        "wins": 3,
+        "win_pct": 42.9
+      },
+      "toss_field_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 4
+      }
+    },
+    {
+      "venue": "Barabati Stadium",
+      "matches": 7,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 2,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 5,
+        "wins": 3,
+        "win_pct": 60.0
+      },
+      "overall": {
+        "bat_first_wins": 4,
+        "bat_second_wins": 3
+      }
+    },
+    {
+      "venue": "JSCA International Stadium Complex",
+      "matches": 7,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "toss_field_first": {
+        "count": 4,
+        "wins": 3,
+        "win_pct": 75.0
+      },
+      "overall": {
+        "bat_first_wins": 2,
+        "bat_second_wins": 5
+      }
+    },
+    {
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "matches": 6,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 5,
+        "wins": 1,
+        "win_pct": 20.0
+      },
+      "overall": {
+        "bat_first_wins": 4,
+        "bat_second_wins": 1
+      }
+    },
+    {
+      "venue": "Shaheed Veer Narayan Singh International Stadium",
+      "matches": 6,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "toss_field_first": {
+        "count": 3,
+        "wins": 2,
+        "win_pct": 66.7
+      },
+      "overall": {
+        "bat_first_wins": 2,
+        "bat_second_wins": 4
+      }
+    },
+    {
+      "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+      "matches": 5,
+      "toss_bat_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "toss_field_first": {
+        "count": 5,
+        "wins": 2,
+        "win_pct": 40.0
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "Barsapara Cricket Stadium, Guwahati",
+      "matches": 5,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "toss_field_first": {
+        "count": 4,
+        "wins": 1,
+        "win_pct": 25.0
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "Nehru Stadium",
+      "matches": 5,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 1,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 3,
+        "wins": 1,
+        "win_pct": 33.3
+      },
+      "overall": {
+        "bat_first_wins": 3,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "Green Park",
+      "matches": 4,
+      "toss_bat_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "toss_field_first": {
+        "count": 4,
+        "wins": 4,
+        "win_pct": 100.0
+      },
+      "overall": {
+        "bat_first_wins": 0,
+        "bat_second_wins": 4
+      }
+    },
+    {
+      "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+      "matches": 4,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 2,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "overall": {
+        "bat_first_wins": 2,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "Buffalo Park",
+      "matches": 3,
+      "toss_bat_first": {
+        "count": 3,
+        "wins": 2,
+        "win_pct": 66.7
+      },
+      "toss_field_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "overall": {
+        "bat_first_wins": 2,
+        "bat_second_wins": 1
+      }
+    },
+    {
+      "venue": "De Beers Diamond Oval",
+      "matches": 3,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 1,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "overall": {
+        "bat_first_wins": 1,
+        "bat_second_wins": 2
+      }
+    },
+    {
+      "venue": "Vidarbha Cricket Association Stadium, Jamtha",
+      "matches": 3,
+      "toss_bat_first": {
+        "count": 2,
+        "wins": 1,
+        "win_pct": 50.0
+      },
+      "toss_field_first": {
+        "count": 1,
+        "wins": 0,
+        "win_pct": 0.0
+      },
+      "overall": {
+        "bat_first_wins": 2,
+        "bat_second_wins": 1
+      }
+    },
+    {
+      "venue": "OUTsurance Oval",
+      "matches": 2,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "overall": {
+        "bat_first_wins": 1,
+        "bat_second_wins": 1
+      }
+    },
+    {
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+      "matches": 1,
+      "toss_bat_first": {
+        "count": 1,
+        "wins": 1,
+        "win_pct": 100.0
+      },
+      "toss_field_first": {
+        "count": 0,
+        "wins": 0,
+        "win_pct": null
+      },
+      "overall": {
+        "bat_first_wins": 1,
+        "bat_second_wins": 0
+      }
+    }
+  ],
+  "overall": {
+    "matches": 1169,
+    "toss_bat_first": {
+      "count": 405,
+      "wins": 186,
+      "win_pct": 45.9
+    },
+    "toss_field_first": {
+      "count": 764,
+      "wins": 411,
+      "win_pct": 53.8
+    },
+    "overall": {
+      "bat_first_wins": 534,
+      "bat_second_wins": 627
+    }
+  }
+};
