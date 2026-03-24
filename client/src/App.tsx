@@ -15,6 +15,7 @@ import ComparePage from "@/pages/ComparePage";
 import MatchesPage from "@/pages/MatchesPage";
 import MatchPreviewPage from "@/pages/MatchPreviewPage";
 import TeamMatchupPage from "@/pages/TeamMatchupPage";
+import AdminPage from "@/pages/AdminPage";
 
 function AppRouter() {
   return (
@@ -28,6 +29,7 @@ function AppRouter() {
         <Route path="/matches" component={MatchesPage} />
         <Route path="/matches/:id" component={MatchPreviewPage} />
         <Route path="/matches/:id/matchups" component={TeamMatchupPage} />
+        <Route path="/admin" component={AdminPage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

@@ -7,6 +7,7 @@ import { matchPreviews } from "./data/matchPreviews";
 import { matchups } from "./data/matchups";
 import { deepInsights } from "./data/deepInsights";
 import { articles, analyticsCards } from "./data/articles";
+import { publishLog } from "./data/publishLog";
 import { proIntelligence1 } from "./data/proIntelligence1";
 import { proIntelligence2 } from "./data/proIntelligence2";
 
@@ -302,6 +303,11 @@ export async function registerRoutes(
       return res.status(404).json({ error: "Article not found" });
     }
     res.json(article);
+  });
+
+  // GET /api/admin/publish-log — publish history for admin dashboard
+  app.get("/api/admin/publish-log", (_req, res) => {
+    res.json(publishLog);
   });
 
   return httpServer;
