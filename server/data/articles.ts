@@ -39,344 +39,540 @@ export interface AnalyticsCard {
 export const articles: Article[] = [
   {
     id: 1,
-    slug: "mullanpur-pitch-report-pbks-vs-gt-2026",
-    title: "Mullanpur Pitch Report (PBKS vs GT): The 170 Par That Can Turn Into 190 When Dew Shows Up",
-    subtitle: "New Chandigarh’s new bowl is truer than its reputation — but night games shift the margin toward the chase.",
+    slug: "chinnaswamy-pitch-report-rcb-vs-srh-ipl-2026-opener",
+    title: "Chinnaswamy Pitch Report (RCB vs SRH): When 173 Is Average, 200 Becomes the New ‘Defendable’",
+    subtitle:
+      "Bengaluru’s small boundaries compress variance — it’s not about whether runs come, it’s about when wickets fall.",
     category: "pitch-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["pitch-report", "pbks", "gt", "ipl-2026", "mullanpur", "venue-analysis"],
+    tags: [
+      "pitch-report",
+      "rcb",
+      "srh",
+      "ipl-2026",
+      "chinnaswamy",
+      "venue-analysis",
+    ],
     featured: true,
-    matchId: 4,
-    relatedPlayerIds: [5, 17, 7, 25],
+    matchId: 1,
+    relatedPlayerIds: [1, 3, 6, 8],
     chartData: [
-      { label: `Expected 1st inns (median)`, value: 172, color: `#f59e0b` },
-      { label: `Expected 1st inns (P75 w/ dew)`, value: 190, color: `#8b5cf6` },
-      { label: `Chase advantage (est.)`, value: 54, color: `#10b981` },
+      { label: "IPL avg 1st inns (Chinnaswamy)", value: 173, color: "#f59e0b" },
+      { label: "Realistic par (night game)", value: 190, color: "#8b5cf6" },
+      { label: "200+ probability (model est.)", value: 42, color: "#10b981" },
     ],
     dataTable: {
-      headers: ["Metric", "Mullanpur signal", "What it implies"],
-      rows: [["Typical 1st-innings band", "165–180", "Balanced surface; set batters matter"], ["Dew effect", "Can push comps to 190+", "Fielding second execution noise"], ["Boundary size", "~65–70m", "Clearing is doable; mishits still punished"], ["Best bowling phase", "Overs 1–3", "New-ball wickets move par down ~15"]],
+      headers: ["Signal", "Number", "Why it matters"],
+      rows: [
+        [
+          "Average first-innings score (IPL)",
+          "173",
+          "Baseline already high; anything under 180 is structurally vulnerable",
+        ],
+        [
+          "Highest team total (IPL)",
+          "287/3",
+          "The ceiling is extreme; death overs can behave like a powerplay",
+        ],
+        [
+          "Boundary penalty",
+          "Low",
+          "Mishits clear the rope more often; wicket-taking is the only brake",
+        ],
+        [
+          "Execution phase",
+          "Overs 16–20",
+          "A single 22-run over can flip 10+ win-probability points",
+        ],
+      ],
     },
-    content: `Maharaja Yadavindra Singh International Cricket Stadium (New Chandigarh/Mullanpur) has been the rare new IPL venue that behaves like an adult: decent bounce, predictable carry, and just enough grip for spinners to matter when the ball gets older. The problem for bowlers is that the venue’s environmental variable (dew) can be worth more than the surface variable (pace vs spin) in a night game.
+    content: `M. Chinnaswamy Stadium is cricket’s version of a small court: the geometry shrinks the defensive space, so intent converts into output faster than it does almost anywhere else. The headline number matters because it tells you the baseline before tactics start: the IPL average first-innings score at Chinnaswamy is 173, and the venue’s highest team total is a surreal 287/3. Those two numbers define the distribution. The mean is high, and the tail is enormous.
 
-Par score lives in the 165–180 band, but the distribution is fat-tailed. Recent T20 previews for this ground peg first-innings outcomes around 165–180, with dew often pushing competitive totals beyond 190 when the ball becomes hard to grip. That’s not a contradiction; it’s a volatility story. When the ball is dry, cutters and cross-seam lengths can earn 10–12 dot balls per innings. When dew arrives, those same deliveries become hittable because execution error rises and the outfield speeds up.
+Here’s the key analytic adjustment: at Chinnaswamy, “par” is not a single number — it’s a band that depends on how many wickets you preserve for the last 30 balls. If you reach over 15 with 7 wickets in hand, 190 is not aggressive; it’s merely keeping pace with what this venue can produce in the final phase. If you reach over 15 with 5 wickets in hand, your ceiling falls by roughly 10–15 runs because the set-batter multiplier disappears.
 
-Boundary geometry is not tiny, but it’s not Ahmedabad either. With boundaries generally in the 65–70m range, batters can clear the ropes without needing Chinnaswamy-level timing. The tradeoff is that mishits are more likely to be caught, which makes wicket preservation a bigger part of the expected-runs model. Teams that keep 7 wickets in hand at the 14-over mark can add 55–65 in the last six; teams down to 5 wickets often cap at 40–45.
+Why wickets are the currency: because boundaries are accessible, dot balls aren’t the main source of pressure; dismissals are. The best bowling spells here don’t always look economical — they look disruptive. A powerplay where you take 2 wickets can move expected first-innings output from ~195 down to ~178 even if the run rate stays high, because the death overs become less explosive.
 
-Pace vs spin: early seam, late grip. Mullanpur has shown early assistance for fast bowlers, especially with a new ball that stays upright. The spin value typically rises after over 7 as the pitch starts to scuff, but it’s not a classic turning track. Your most valuable overs are still 1–3 (swing and hard length) and 17–20 (execution).
+RCB vs SRH tactical shape: SRH’s attack is likely to start the season without Pat Cummins, who is expected to miss the early part of IPL 2026 while recovering from a lumbar stress issue, with Ishan Kishan serving as interim captain. On the other side, RCB may be without Josh Hazlewood early as he awaits clearance from Cricket Australia, with the franchise indicating he is likely to miss the start and will travel only when fully cleared. Net effect: both sides may lean more heavily on domestic pace and matchup bowling in the first two games, which usually increases scoring variance.
 
-PBKS vs GT: tactical consequence. PBKS’ power hitters can turn a 48/1 powerplay into a 70/1 powerplay quickly, but their worst-case is a 35/3 start that forces rebuild mode on a ground where rebuilding costs you 10–15 runs at the death. GT’s more controlled batting template tends to travel well on true surfaces; their key is whether they can buy 2 wickets with the hard ball.
-
-Bottom line: plan for 172 as the median first-innings score and 190 as the 75th percentile if dew is visible by innings break — because the last 30 balls can behave like a different sport.`,
+Bottom line: treat 190 as the median “good” first-innings score and 205 as the score that forces a chase to play near-perfectly. In Bengaluru, the pitch is rarely the story — the wicket column is.`,
   },
 
   {
     id: 2,
-    slug: "toss-analysis-pbks-vs-gt-mullanpur-2026",
-    title: "Toss Analysis (PBKS vs GT): When Dew Is the Tie-Breaker, Your Default Should Be to Chase",
-    subtitle: "The coin flip matters most at new venues because captains don’t yet feel the true par — models do.",
+    slug: "toss-analysis-rcb-vs-srh-chinnaswamy-ipl-2026",
+    title: "Toss Analysis (RCB vs SRH): The Chase Is Tempting, But Bengaluru’s True Edge Is Wickets in Hand",
+    subtitle:
+      "Chinnaswamy doesn’t always reward ‘bat second’ — it rewards teams that keep 7 wickets for the last 5 overs.",
     category: "toss-report",
     author: "CricDNA Insights",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "4 min read",
-    tags: ["toss-report", "pbks", "gt", "ipl-2026", "dew", "mullanpur"],
+    tags: ["toss-report", "rcb", "srh", "ipl-2026", "dew", "chinnaswamy"],
     featured: false,
-    matchId: 4,
-    relatedPlayerIds: [5, 17, 30, 12],
+    matchId: 1,
+    relatedPlayerIds: [1, 3, 6, 8],
     chartData: [
-      { label: `Field-first recommended (dew nights)`, value: 58, color: `#3b82f6` },
-      { label: `Bat-first viable (dry nights)`, value: 42, color: `#f59e0b` },
-      { label: `Est. dew WP swing`, value: 6, color: `#10b981` },
+      { label: "Chase preference (model default)", value: 54, color: "#3b82f6" },
+      { label: "Bat-first viable band", value: 46, color: "#f59e0b" },
+      { label: "Target if bat first", value: 200, color: "#8b5cf6" },
     ],
-    content: `At Mullanpur, the most important pre-match question isn’t pace or spin. It’s how wet the ball will be at 9:45 pm. On grounds where the base surface is relatively neutral, dew becomes the dominant variable in the win-probability equation.
+    content: `The toss at Chinnaswamy looks straightforward: short boundaries, fast outfield, and night games that can tilt toward the chase when the ball skids on. But the more predictive framework is not “bat first vs bat second.” It’s “wickets in hand at the death.”
 
-Why chasing is the sensible default: dew increases error for the defending side in two ways. First, slower-ball grip declines, so the expected variation tax you pay at the death rises by roughly 6–10 runs across the last five overs. Second, the outfield quickens, so the same contact quality converts into more boundaries. In a game where the median first-innings total is about 172, donating an extra 10 at the death is a material swing.
+Here’s the model logic: in Bengaluru, the scoring rate is high in both innings because boundary conversion is high. That reduces the structural advantage of knowing the target. Instead, the advantage shifts to the team that can keep their batting depth intact. Reaching over 15 with 7 wickets in hand is worth roughly 10–15 runs compared to reaching over 15 with 5 wickets in hand, because the last 30 balls become a high-frequency boundary phase.
 
-A simple decision rule: if the humidity is high and the outfield looks slick during warm-ups, field first. If it’s dry and breezy, batting first becomes viable because the ball should hold its shape and cutters will bite.
+So what should captains do? If conditions suggest any skidding (even modest dew), chasing becomes the default because a wet ball makes defensive execution noisier, which is the one thing that can keep totals under control. But if the pitch looks hard and dry, batting first can be equally rational — provided you aim above the venue’s average. Chinnaswamy’s IPL average first-innings score is 173; in a season opener, the safe bat-first play is to overshoot that by 20+.
 
-PBKS vs GT roster lens: PBKS generally prefer to chase because their hitters can solve a required rate late; GT tend to be comfortable defending if they have a reliable death bowler and one high-control spinner to own overs 7–14.
+Squad context matters. SRH are expected to start without Pat Cummins, with Ishan Kishan leading early, and RCB are managing Josh Hazlewood’s return timeline. That likely means both sides are slightly less certain about their ideal death-over plans in Match 1 — and uncertainty is a reason to prefer chasing, where you can price the required risk.
 
-Recommendation: if conditions are typical for a North Indian night game — rising humidity after sunset — take the chase. The uncertainty isn’t about par; it’s about execution, and dew makes execution noisier for bowlers.`,
+Recommendation: default to fielding first unless the surface looks unusually dry and abrasive. If you bat first, don’t defend 185 like it’s a fortress. At Chinnaswamy, 200 is the minimum number that asks real questions.`,
   },
 
   {
     id: 3,
-    slug: "pbks-vs-gt-match-preview-2026-analytics",
-    title: "PBKS vs GT Preview: Five Matchups That Decide Whether This Is 170-Par or 195-Par",
-    subtitle: "On neutral pitches, outcomes hinge on who wins the first 18 balls and the last 18 balls.",
+    slug: "rcb-vs-srh-match-preview-ipl-2026-opener-analytics",
+    title: "RCB vs SRH Preview: Five Levers That Decide Whether This Opener Is 195-Par or 225-Par",
+    subtitle:
+      "With both attacks managing injuries, the opener may be decided by who finds two powerplay wickets — and who doesn’t blink at the death.",
     category: "match-preview",
     author: "CricDNA Editorial",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["match-preview", "pbks", "gt", "ipl-2026", "matchups", "probable-xi"],
+    tags: ["match-preview", "rcb", "srh", "ipl-2026", "matchups", "probable-xi"],
     featured: false,
-    matchId: 4,
-    relatedPlayerIds: [5, 25, 17, 12],
+    matchId: 1,
+    relatedPlayerIds: [1, 3, 6, 8, 11],
     dataTable: {
-      headers: ["Lever", "PBKS", "GT", "Win condition"],
-      rows: [["Powerplay", "Boundary surge", "Early wickets", "55/1 vs 40/3 swing ~15 runs"], ["Middle overs", "Boundary per over >1", "Dot-ball squeeze", "Turn 8.0 into 9.0 without wickets"], ["Death overs", "Exploit dew skid", "Execute yorkers", "+10 at death swings game"], ["Fielding", "Save 8+", "Convert catches", "Mishit-catch ground"], ["Toss", "Chase preference", "Defend if dry", "Decision changes with humidity"]],
+      headers: ["Lever", "RCB angle", "SRH angle", "Quant impact"],
+      rows: [
+        [
+          "Powerplay wickets",
+          "Attack stumps early",
+          "Protect top 3",
+          "2 wickets in PP ≈ -12 to -18 runs",
+        ],
+        [
+          "Middle-overs pace-off",
+          "Use cutters into pitch",
+          "Keep boundary rate <1.4/over",
+          "Winning 7–14 ≈ +8 runs",
+        ],
+        [
+          "Death overs",
+          "Hit 18–20 as a 6-ball game",
+          "Avoid wides/no-balls",
+          "One 22-run over swings ~10 WP pts",
+        ],
+        [
+          "Hazlewood/Cummins absences",
+          "More domestic overs",
+          "Interim captain + reshuffle",
+          "Higher variance; execution errors rise",
+        ],
+        [
+          "Fielding value",
+          "Save 8 in ring",
+          "Boundary riding",
+          "At small grounds, 1 drop ≈ 10–15 runs",
+        ],
+      ],
     },
-    content: `A balanced surface like Mullanpur is where T20 becomes most honest: no hiding behind a turning track or a 65m boundary. The winner is usually the team that does the two hard things: keep wickets in the powerplay and execute at the death.
+    content: `The IPL opener at Chinnaswamy is almost always described as “high-scoring.” That’s true, but incomplete. The real question is whether it’s high-scoring with control (195–205) or high-scoring with collapse risk (225-par with a 170 all-out tail). Analytics framing: this match is about wickets, not boundaries.
 
-Probable XIs (projection): PBKS should stack right-left flexibility at the top and aim for 6 bowling options to cover dew risk. GT’s optimal XI is usually bat deep, bowl with control: one powerplay wicket-taker, one middle-overs spinner, and two death specialists.
+1) Powerplay wicket trade. Chinnaswamy’s baseline scoring means both teams will score 45–55 in the powerplay if they keep wickets. The difference is whether they lose 0–1 wickets or 2–3. A two-wicket powerplay can pull an innings down by 12–18 runs because the death-overs ceiling collapses.
 
-Matchup 1: powerplay wickets vs powerplay speed. A 55/1 powerplay tends to imply a 175 finish; a 40/3 powerplay implies about 160. That 15-run swing is the difference between defendable and chaseable.
+2) The Cummins variable (SRH). Pat Cummins is expected to miss the early part of the season while recovering from a lumbar stress issue; SRH’s interim captaincy is with Ishan Kishan. That matters tactically because captaincy is partly “resource allocation” — which bowler owns which phase — and the first week of the IPL is where those allocations are most fragile.
 
-Matchup 2: GT’s control overs vs PBKS’ boundary hunting. Middle overs are where good teams become great teams: turning 7.5 RPO into 8.5 RPO without losing a wicket.
+3) The Hazlewood variable (RCB). Josh Hazlewood is still in a return-to-play program and is likely to miss the start, with RCB stating he will travel only once Cricket Australia clears him. That means RCB’s early overs might be built around domestic pace options rather than their ideal overseas spearhead.
 
-Matchup 3: death overs under dew. If dew is present, yorker accuracy drops and full-toss probability rises — which can add 8–12 runs to the innings with identical intent.
+4) Death overs as a precision contest. At small grounds, one wide is not one run; it’s often two runs because it forces a hittable ball next. The best death overs are not “good lengths” — they are “no gifts.”
 
-Matchup 4: left-right disruption. Teams that create forced bowling changes in the first 8 overs effectively buy themselves 6–8 runs via weaker matchups.
+5) The batting depth bet. In games where 200 is a normal score, depth is insurance against the one inevitable over where you lose 2 wickets. Teams with batting till 8 can rebuild without sacrificing the last phase.
 
-Matchup 5: fielding value. On a ground where mishits can be caught, saving 8 runs in the ring is worth more than it is at tiny venues.
-
-Model read: if this is a dew night, chasing is a structural advantage and the side batting first should aim for 185+. If it’s dry, 172–178 is often enough provided you take two wickets inside the first 4 overs.`,
+Probable XIs (projection): expect both teams to field extra batting depth and at least 6 bowling options to reduce overs of exposure. Model read: if SRH’s top three survive the first 18 balls, the match becomes a chase-favored shootout. If RCB find early wickets, 195 becomes a winning total rather than a starting point.`,
   },
 
   {
     id: 4,
-    slug: "ekana-pitch-report-lsg-vs-dc-2026",
-    title: "Ekana Pitch Report (LSG vs DC): From Spin Trap to 175-Par—Why Lucknow Is No Longer a 150 Game",
-    subtitle: "The surface still rewards spin, but the scoring baseline has crept upward with better batting plans and truer strips.",
+    slug: "wankhede-pitch-report-mi-vs-kkr-ipl-2026-match-2",
+    title: "Wankhede Pitch Report (MI vs KKR): A Coastal Dew Machine Where 180 Can Feel Like 160 in the Chase",
+    subtitle:
+      "Mumbai’s geography turns night games into two-innings puzzles: dry ball early, slippery ball late.",
     category: "pitch-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["pitch-report", "ekana", "lsg", "dc", "ipl-2026", "venue-analysis"],
+    tags: ["pitch-report", "mi", "kkr", "ipl-2026", "wankhede", "venue-analysis"],
     featured: false,
-    matchId: 5,
-    relatedPlayerIds: [4, 22, 30, 26],
+    matchId: 2,
+    relatedPlayerIds: [13, 2, 23, 3],
     chartData: [
-      { label: `Avg 1st inns (T20)`, value: 166, color: `#f59e0b` },
-      { label: `Competitive target`, value: 175, color: `#8b5cf6` },
-      { label: `Middle-overs spin tax (runs)`, value: 10, color: `#10b981` },
+      { label: "Wankhede: field-first wins (T20s)", value: 123, color: "#3b82f6" },
+      { label: "Wankhede: bat-first wins (T20s)", value: 92, color: "#ef4444" },
+      { label: "Dew timing (typical)", value: 20, color: "#8b5cf6" },
     ],
     dataTable: {
-      headers: ["Segment", "Typical run-rate band", "What decides it"],
-      rows: [["Powerplay", "7.5–8.5", "Wickets vs intent"], ["Overs 7–14", "7.0–8.0", "Spin control + boundary size"], ["Death", "10.0–12.0", "Set batters + matchup hunting"], ["Par", "165–175", "Strip selection (red vs black soil)"]],
+      headers: ["Phase", "What the venue does", "Stat signal"],
+      rows: [
+        [
+          "Powerplay (1–6)",
+          "Extra bounce keeps edges in play",
+          "Pace historically dominates wicket share",
+        ],
+        [
+          "Middle overs (7–15)",
+          "Hard lengths work; spinners need grip",
+          "Dew reduces spin control",
+        ],
+        [
+          "Death (16–20)",
+          "Wet ball inflates execution error",
+          "Field-first wins: 123 vs 92",
+        ],
+        [
+          "Chase dynamic",
+          "Skid increases boundary conversion",
+          "Dew usually intensifies after ~8 pm",
+        ],
+      ],
     },
-    content: `Ekana’s early IPL reputation was simple: slow, low, and a graveyard for chasing. Recent venue numbers complicate that story. Analytics takeaway: Lucknow is still spin-relevant, but it’s not automatically low-scoring anymore.
+    content: `Wankhede’s pitch is rarely the only variable. The bigger variable is moisture. The stadium’s coastal location means that as the evening cools, humidity rises and dew can arrive hard enough to change the texture of the ball. One report on Wankhede’s dew dynamics notes that dew typically becomes a factor after the 8 pm mark, and the historical win split reinforces the chase lean: in T20s overall at Wankhede, the team fielding first has won 123 times compared with 92 victories for sides batting first.
 
-The baseline is mid-160s, not mid-140s. Venue data sources peg the average first-innings score at Ekana around the mid-160s in T20s, with year-to-year drift depending on which strip is rolled out.
+What does that mean for par scores? It means the first innings often happens in “normal” conditions and the second innings can happen in “fast” conditions. A 180 first-innings total can behave like a 160 chase if the ball skids and bowlers lose grip on slower balls. This is why Wankhede games can look like they’re accelerating even when the batting intent is unchanged.
 
-Spin remains the control asset. Even on higher-scoring strips, Ekana rewards bowlers who can bowl into the pitch and change pace without losing length. Hold the middle overs to under 8.0 RPO and you buy yourself roughly 10–12 runs of cushion at the death.
+The surface itself: Wankhede’s red-soil pitch tends to offer bounce and carry. That creates a small but real early-overs advantage for fast bowlers who hit the deck — not because the pitch is bowler-friendly, but because it makes batters commit. The flip side is that once the ball gets wet, the same bounce becomes a batting asset because shots travel.
 
-Pace is about angles, not speed. The best plan is hard length with cutters, especially into larger square boundaries.
+MI vs KKR roster lens: KKR are entering the season with a genuine pace squeeze. Reports indicate Akash Deep is ruled out for IPL 2026 with a lumbar stress injury, Harshit Rana is unlikely to feature, and Saurabh Dubey has been signed as a replacement for Akash Deep. That forces KKR to cover high-leverage overs with a thinner set of options — exactly the situation dew punishes.
 
-LSG vs DC: roster fit. LSG’s batting is usually optimized for a chase where set batters manage the middle and explode late. DC’s best outcomes come when their spinners win overs 7–14 and force low-percentage shots.
-
-Bottom line: treat Ekana like a 170-par ground with a spin tax in the middle overs. Win the spin window, and you can make 175 feel like 195.`,
+Bottom line: if you’re pricing this venue, don’t just price “Wankhede is high scoring.” Price “Wankhede is two different games.” Expect a par band around 175–190 in the first innings, but assume the chase can outperform that baseline if dew arrives early.`,
   },
 
   {
     id: 5,
-    slug: "toss-analysis-lsg-vs-dc-ekana-2026",
-    title: "Toss Analysis (LSG vs DC): Bowl First If You Trust Your Spinners, Bat First If You Trust Your Scoreboard",
-    subtitle: "Lucknow’s toss is a game-theory problem: defendable totals exist, but chasing improves when dew flattens spin.",
+    slug: "toss-analysis-mi-vs-kkr-wankhede-ipl-2026",
+    title: "Toss Analysis (MI vs KKR): Field First Isn’t Tradition at Wankhede — It’s Math",
+    subtitle:
+      "The chase advantage is baked into coastal humidity, not superstition.",
     category: "toss-report",
     author: "CricDNA Insights",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "4 min read",
-    tags: ["toss-report", "ekana", "lsg", "dc", "ipl-2026", "dew", "spin"],
+    tags: ["toss-report", "mi", "kkr", "ipl-2026", "wankhede", "dew"],
     featured: false,
-    matchId: 5,
-    relatedPlayerIds: [4, 30, 22, 26],
+    matchId: 2,
+    relatedPlayerIds: [13, 2, 23],
     chartData: [
-      { label: `Field-first recommended (most nights)`, value: 54, color: `#3b82f6` },
-      { label: `Bat-first (dry strip)`, value: 46, color: `#f59e0b` },
-      { label: `Spin value drop w/ dew (runs)`, value: 8, color: `#ef4444` },
+      { label: "Field first (historical win share)", value: 57, color: "#3b82f6" },
+      { label: "Bat first (historical win share)", value: 43, color: "#f59e0b" },
+      { label: "Estimated dew WP swing", value: 6, color: "#10b981" },
     ],
-    content: `Ekana is one of the few IPL venues where both toss decisions can be correct — but not for the same reason.
+    content: `The Wankhede toss is one of the few in cricket where you can justify the decision with a simple sentence: coastal dew increases variance for the defending side. A quantitative anchor: in T20s overall at Wankhede, teams fielding first have won 123 games versus 92 for teams batting first. That’s not a minor lean; it’s a structural tilt.
 
-Why bowling first can work: if your spinners are elite and you have a plan for overs 7–14, you can keep the opponent in the 160–170 band and chase it with the knowledge that the wicket often gets truer later. The key is that later can also mean wetter: dew reduces grip, which reduces spin’s control.
+Mechanism matters. Dew turns the ball slippery, which increases the probability of three costly events: (1) full tosses, (2) overpitched deliveries, and (3) boundary-saving misfields. Each of those costs you more at Wankhede than at larger venues because the boundary is closer and the outfield is quick.
 
-Why batting first can work: if you can post 175+ at Ekana, you create scoreboard pressure because the middle overs are still not a free-hitting zone.
+So the default is to chase. But “default” isn’t “always.” There’s one scenario where batting first is rational: if you believe the pitch will slow (rare at Wankhede) or if your bowling attack is unusually dew-proof (high-pace, low-reliance on cutters and spin). In most IPL contexts, that condition is not met.
 
-Decision rule: if the pitch looks dry and abrasive, bat first and aim 175. If the pitch looks hard and the outfield looks like it will dew, field first because the second innings will be faster.
+MI vs KKR is especially tilted toward chasing because KKR’s pace resources are constrained early in the season. With injuries forcing role changes, you don’t want to be the side trying to defend 180 with a wet ball and a shuffled death plan.
 
-Recommendation: default to fielding first unless the pitch looks visibly dry and used.`,
+Recommendation: field first, and treat anything under 190 as chaseable if you keep 7 wickets for the last 5 overs. Wankhede doesn’t reward conservative scoreboards; it rewards innings that preserve optionality.`,
   },
 
   {
     id: 6,
-    slug: "lsg-vs-dc-match-preview-2026-analytics",
-    title: "LSG vs DC Preview: The Spin Window, the KL/Pant Phase, and the 12-Ball Finish",
-    subtitle: "At Ekana, the most predictive thing is how many wickets you keep for overs 16–20.",
+    slug: "mi-vs-kkr-match-preview-ipl-2026-match-2-analytics",
+    title: "MI vs KKR Preview: The Bumrah Endgame vs KKR’s Injury-Driven Overs Problem",
+    subtitle:
+      "The matchup is less about star power and more about who has 24 ‘safe’ balls at the death.",
     category: "match-preview",
     author: "CricDNA Editorial",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["match-preview", "lsg", "dc", "ipl-2026", "matchups", "ekana"],
+    tags: ["match-preview", "mi", "kkr", "ipl-2026", "matchups", "wankhede"],
     featured: false,
-    matchId: 5,
-    relatedPlayerIds: [22, 4, 30, 26],
+    matchId: 2,
+    relatedPlayerIds: [2, 13, 23, 27],
     dataTable: {
-      headers: ["Phase", "Key KPI", "Why it matters"],
-      rows: [["PP (1–6)", "Lose ≤1 wicket", "Protects death ceiling"], ["Spin window (7–14)", "50–60 runs", "Controls par band"], ["Overs 15–17", "Keep RRR <10.5", "Avoid panic"], ["Death (18–20)", "45+ if 7 wkts", "Set batters monetize pace"]],
+      headers: ["Question", "MI lever", "KKR lever", "Why it swings games"],
+      rows: [
+        [
+          "Death-over control",
+          "Bumrah overs 17–20",
+          "Patchwork overs",
+          "4 elite overs can be worth ~10 runs",
+        ],
+        [
+          "Powerplay risk",
+          "Attack with pace",
+          "Protect top order",
+          "Early wicket = fewer hitters at the death",
+        ],
+        [
+          "Spin under dew",
+          "Use as change-ups",
+          "Lean on control",
+          "Wet ball reduces grip; errors increase",
+        ],
+        [
+          "Fielding",
+          "Boundary riders",
+          "Catching conversion",
+          "At Wankhede, one drop can equal a 12-run swing",
+        ],
+      ],
     },
-    content: `Lucknow games often look calm for 12 overs and then suddenly end in a last-eight-overs avalanche. That’s not chaos; it’s structure. The pitch taxes boundary hitting early, then rewards set batters late.
+    content: `MI vs KKR at Wankhede is a game of leverage: one side tends to have more control in high-leverage overs, the other side is entering the season with reduced control because of injuries.
 
-Probable XIs (projection): expect both teams to prioritize spin depth. Batting depth matters because Ekana chases are rarely clean; you need hitters available when pace returns late.
+The venue sets the terms. Wankhede’s dew dynamics tend to push captains toward chasing, and historical T20 results show fielding-first teams winning more often (123 vs 92). That means the second innings is typically where the match is decided — by who owns the last 24 balls.
 
-Matchup 1: the spin window (7–14). If DC hold overs 7–14 to about 50 runs while taking a wicket, they reduce the opponent’s death-overs ceiling by 10–15 runs.
+MI’s structural edge is that they can plan those 24 balls. If Bumrah is available to bowl two overs at the death, your expected leakage drops materially because you reduce the number of “execution risk” deliveries (the half-volley, the wide yorker) that dew creates.
 
-Matchup 2: KL Rahul’s control vs wicket risk. Rahul’s game is built for managing a spin-heavy middle, but accelerating too early increases dismissal risk.
+KKR’s structural problem is that their early-season pace depth is compromised. Akash Deep has been ruled out of IPL 2026 with a lumbar stress injury, Harshit Rana is unlikely to feature, and Saurabh Dubey has been signed as a replacement for Akash Deep. In addition, reports suggest Matheesha Pathirana is expected to be available only around mid-April. Whether or not you rate each bowler individually, the macro effect is clear: fewer proven options means fewer ways to hide weak overs.
 
-Matchup 3: Pant as variance. Pant can compress the chase by creating a 20-run over, but he can also donate a wicket to the deep square boundary.
+Key matchup: can KKR win the powerplay without losing wickets? If they do, they can “buy” their way through the middle overs and still have hitters for the last phase. If they lose 2 wickets early, their finishing ceiling drops by 10–15 runs — and Wankhede is not forgiving of late-innings ceilings.
 
-Matchup 4: death overs matchups. The most valuable resource is set batters at over 16. Arrive at 16 with 7 wickets and you can target 50+; arrive with 5 and you often cap at 35–40.
-
-Matchup 5: fielding and singles. Because boundaries are harder early, ones and twos matter more.
-
-Model read: expect a 165–175 game. The side that wins the spin window without losing more than one wicket should be favored even if they’re behind the required rate at 10 overs.`,
+Model read: MI gain value by pushing the match into a death-over contest; KKR gain value by making it a powerplay contest (wickets preserved, required rate managed). The team that enters over 16 with 7 wickets wins a disproportionate share of games at this ground.`,
   },
 
   {
     id: 7,
-    slug: "eden-gardens-pitch-report-kkr-vs-srh-2026",
-    title: "Eden Gardens Pitch Report (KKR vs SRH): A 165 Average That Plays Like 180 When Chasing",
-    subtitle: "Kolkata’s short boundaries and humid nights make the second innings disproportionately valuable.",
+    slug: "barsapara-pitch-report-rr-vs-csk-guwahati-ipl-2026-match-3",
+    title: "Barsapara Pitch Report (RR vs CSK): Good Bounce Early, Grip Later — and a Chase Bias When Dew Arrives",
+    subtitle:
+      "Guwahati isn’t a one-note batting track; it’s a timing track: score early, survive middle overs, cash in late.",
     category: "pitch-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["pitch-report", "eden-gardens", "kkr", "srh", "ipl-2026", "venue-analysis"],
+    tags: ["pitch-report", "rr", "csk", "ipl-2026", "guwahati", "barsapara"],
     featured: false,
-    matchId: 6,
-    relatedPlayerIds: [23, 12, 6, 9],
+    matchId: 3,
+    relatedPlayerIds: [10, 14, 7, 21],
     chartData: [
-      { label: `Avg 1st inns`, value: 165, color: `#f59e0b` },
-      { label: `Bat-2nd wins (of 98)`, value: 56, color: `#3b82f6` },
-      { label: `Bat-1st wins (of 98)`, value: 41, color: `#ef4444` },
+      { label: "April humidity (Guwahati avg)", value: 72, color: "#3b82f6" },
+      { label: "April high temp (°F)", value: 89, color: "#f59e0b" },
+      { label: "Chase tilt (qualitative)", value: 55, color: "#10b981" },
     ],
     dataTable: {
-      headers: ["Eden Gardens metric", "Value", "Implication"],
-      rows: [["Avg 1st inns", "~164–169", "Not automatically 200+"], ["Matches (IPL)", "~98", "Large sample"], ["Chase wins", "56", "Structural chase edge"], ["Bat-first wins", "41", "Need 180+ to defend"], ["Runs/over (summary)", "8.52", "Fast outfield + short boundaries"]],
+      headers: ["Venue signal", "What it does", "Concrete anchor"],
+      rows: [
+        [
+          "Early innings",
+          "Good bounce and steady pace",
+          "T20I record includes 237/3 as top total",
+        ],
+        [
+          "Middle overs",
+          "Slight slowdown; spinners gain grip",
+          "Pitch tends to slow as match progresses",
+        ],
+        [
+          "Night factor",
+          "Dew can favor chasing",
+          "April humidity ~72% in Guwahati",
+        ],
+        [
+          "Extremes",
+          "Wide scoring spread",
+          "Lowest recorded T20I total 118",
+        ],
+      ],
     },
-    content: `Eden Gardens is often mislabeled as just a batting paradise. The data says it’s a batting paradise with a spin subplot — and a chasing bias that shows up in the win split.
+    content: `Barsapara Stadium in Guwahati is often treated as a blank canvas because it’s newer to the IPL ecosystem than the legacy venues. But the available evidence points to a clear pitch personality: the wicket offers good bounce and steady pace early, then slows slightly, giving spinners grip in the middle overs, and the outfield can get slick under lights. One venue summary notes that dew under lights often favors the chasing side, and that teams with powerful top orders plus quality spinners tend to succeed here.
 
-Baseline numbers: mid-160s first innings, chase-friendly outcomes. Published venue summaries put the average first-innings score at Eden Gardens around 164–169, with a chase-favored record: teams batting second have won 56 times versus 41 batting first (98 matches) in one widely circulated IPL summary.
+The climate supports that reading. Guwahati in April averages high temperatures around 89°F with humidity around 72%, which is the kind of environment where the ball can pick up moisture later in the evening. In practical terms, that means the first innings can have a “dry-ball” middle overs where spin is more valuable, while the second innings can become a “skid-ball” finishing phase.
 
-Why the second innings plays faster: humidity reduces ball grip and increases skidding pace-on value. On a ground with quick outfield and reachable boundaries, that translates into higher boundary conversion late.
+From a scoring model perspective, this is a 170-par venue with a wide spread. The T20I extremes show that it can host a 237/3 as the highest team total and also produce a 118 all-out. That doesn’t mean “anything can happen.” It means the wicket is sensitive to timing: the same intent can produce different outcomes depending on whether you hit into the early bounce window or the later grip window.
 
-Spin still matters — but as control, not mystery. Eden is not Chennai; you win by controlling length and pace and forcing batters to hit to longer boundaries.
+RR vs CSK tactical angle: both teams will want to identify when the pitch shifts. If the surface starts to slow by over 7, your best batting plan is to keep wickets and take the 7.5–8.0 middle-overs rate — because the death overs are where the venue’s scoring accelerates again.
 
-KKR vs SRH: the team that wins overs 7–12 can flip the game because it dictates how many wickets are available for the last 8 overs.
-
-Bottom line: treat Eden as 168 median par with a chase inflation factor. If you bat first, aim 180; if you chase, be happy with 80–85 after 10 with wickets intact.`,
+Bottom line: treat Barsapara as a three-act game. Act 1 (powerplay) is about exploiting bounce. Act 2 (overs 7–14) is about not losing wickets to grip. Act 3 (death) is about whether the ball is dry enough to defend.`,
   },
 
   {
     id: 8,
-    slug: "toss-analysis-kkr-vs-srh-eden-gardens-2026",
-    title: "Toss Analysis (KKR vs SRH): The Data Says Chase, the Spinners Say ‘Maybe’",
-    subtitle: "Eden’s coin flip is about whether you trust your spinners to beat dew.",
+    slug: "toss-analysis-rr-vs-csk-barsa-para-guwahati-ipl-2026",
+    title: "Toss Analysis (RR vs CSK): Bat First If You Trust Spin, Chase If You Trust the Outfield",
+    subtitle:
+      "Guwahati is a conditional toss: humidity makes chasing attractive, but middle-overs grip can make first-innings scoreboards sticky.",
     category: "toss-report",
     author: "CricDNA Insights",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "4 min read",
-    tags: ["toss-report", "kkr", "srh", "eden-gardens", "ipl-2026", "dew"],
+    tags: ["toss-report", "rr", "csk", "ipl-2026", "guwahati", "dew"],
     featured: false,
-    matchId: 6,
-    relatedPlayerIds: [23, 12, 6, 9],
+    matchId: 3,
+    relatedPlayerIds: [14, 18, 7, 21],
     chartData: [
-      { label: `Default: field first`, value: 55, color: `#3b82f6` },
-      { label: `Bat first (dry strip)`, value: 45, color: `#f59e0b` },
-      { label: `Target if bat first`, value: 180, color: `#8b5cf6` },
+      { label: "Humidity (April avg)", value: 72, color: "#3b82f6" },
+      { label: "Bat-first par band", value: 175, color: "#f59e0b" },
+      { label: "Dew swing (est.)", value: 5, color: "#10b981" },
     ],
-    content: `Eden Gardens’ toss is a tug-of-war between two truths. Truth one: the overall record tilts toward chasing. Truth two: KKR’s identity is built on spin control, which is most valuable with a dry ball.
+    content: `The toss at Barsapara is a “conditions first” decision. The climate gives you the first clue: Guwahati’s April humidity averages around 72%. High humidity is not the same as guaranteed dew, but it increases the probability that the outfield will get slick late.
 
-Chasing edge: with batting-second wins outnumbering batting-first wins (56 vs 41 in a commonly cited IPL summary), the default decision is to field first — especially in humid evening conditions.
+If dew arrives: chasing becomes attractive because bowlers lose grip and the ball skids on. That reduces spin’s control and makes yorker execution harder, which tends to inflate late-innings scoring. In those conditions, the team batting second effectively gets a small efficiency bonus — the same contact turns into more runs.
 
-When batting first is rational: if the surface looks used and dry, and you believe your spinners can defend with the ball gripping, batting first and targeting 180 is sound.
+If dew does not arrive (or is light): batting first becomes rational because the pitch can slow slightly through the middle overs, bringing spinners into the game. That’s where scoreboards get sticky. A 175 first-innings total can play larger if you can control overs 7–14 with spin and protect the boundary.
 
-Recommendation: default to fielding first unless pitch inspection suggests a dry, abrasive strip.`,
+How captains should think: this is not a binary “always chase” venue. It’s a venue where your bowling composition matters. If you have two spinners you trust to bowl overs 7–14 with control, batting first and putting 175 on the board can be a high-equity play. If your bowling leans on cutters and slower balls, you should chase to avoid the wet-ball tax.
+
+Recommendation: default to chasing if the outfield looks even slightly damp at toss time. If it looks dry and the pitch has visible wear, bat first and target 175–185 with 7 wickets in hand for the last five overs.`,
   },
 
   {
     id: 9,
-    slug: "kkr-vs-srh-match-preview-2026-analytics",
-    title: "KKR vs SRH Preview: The Narine/Varun Middle Overs vs SRH’s Finishing Engine",
-    subtitle: "If SRH keep 7 wickets for the last 8 overs, Eden becomes a runway.",
+    slug: "rr-vs-csk-match-preview-ipl-2026-match-3-analytics",
+    title: "RR vs CSK Preview: Curran Out, Ellis Out — Which Team Solves the Overs Math First?",
+    subtitle:
+      "Early-season IPL is a resource-allocation contest: who has enough ‘safe’ overs, and who has to gamble.",
     category: "match-preview",
     author: "CricDNA Editorial",
-    publishedAt: "2026-03-25T13:00:00Z",
+    publishedAt: "2026-03-26T13:00:00Z",
     readTime: "6 min read",
-    tags: ["match-preview", "kkr", "srh", "ipl-2026", "matchups", "eden-gardens"],
+    tags: ["match-preview", "rr", "csk", "ipl-2026", "matchups", "guwahati"],
     featured: false,
-    matchId: 6,
-    relatedPlayerIds: [23, 6, 9, 12],
+    matchId: 3,
+    relatedPlayerIds: [14, 10, 21, 18, 19],
     dataTable: {
-      headers: ["Edge", "KKR lever", "SRH lever", "Why it matters"],
-      rows: [["Middle overs", "Spin squeeze", "Rotate + boundary", "Controls death ceiling"], ["Powerplay", "Wicket preservation", "New-ball strikes", "2 PP wkts swing ~12 runs"], ["Finishing", "Depth", "Klaasen engine", "Raises late boundary rate"], ["Death bowling", "Elite execution", "Dew-proof plans", "Worth ~8 runs"], ["Fielding", "Boundary riders", "Catch conversion", "Mishits are catchable"]],
+      headers: ["Edge", "RR lever", "CSK lever", "Analytic consequence"],
+      rows: [
+        [
+          "Overseas availability",
+          "Curran ruled out; replacement role shift",
+          "Ellis ruled out; replacement timeline",
+          "Fewer ‘bankable’ overs early",
+        ],
+        [
+          "Middle-overs control",
+          "Spin squeeze",
+          "Chepauk-style control travels",
+          "Holding 7–14 under 8 RPO ≈ +10 runs",
+        ],
+        [
+          "Death hitting",
+          "Keep wickets for last 30 balls",
+          "Finish with matchups",
+          "7 wickets at over 15 ≈ +12 runs",
+        ],
+        [
+          "Toss sensitivity",
+          "Chase if dew",
+          "Bat first if grip",
+          "Conditions can swing 5–6 WP pts",
+        ],
+      ],
     },
-    content: `KKR vs SRH is the perfect Eden Gardens match: one side built to control overs 7–14 with spin, the other built to turn overs 13–20 into a hitting contest.
+    content: `RR vs CSK in Guwahati is a classic early-season game: the best XIs on paper are not the XIs that actually show up. Availability changes the math.
 
-Matchup 1: the KKR spin squeeze vs SRH’s intent. If KKR hold the middle overs to under 8.0 RPO while taking one wicket, they reduce SRH’s death-overs ceiling by 10–12 runs.
+For Rajasthan Royals, Sam Curran has been ruled out of IPL 2026 due to a groin issue, with Dasun Shanaka named as his replacement. For Chennai Super Kings, Nathan Ellis has been ruled out after a hamstring injury. These are not just “one player out” updates — they change role allocation. Curran and Ellis are the kinds of players who make overs feel safe: they can cover powerplay or death phases with a clear plan.
 
-Matchup 2: Cummins’ new ball vs KKR’s anchors. A two-wicket powerplay drops expected par from about 180 to about 168.
+That means both teams face a similar problem: where do the high-leverage overs come from? On a pitch like Barsapara — bounce early, grip later, potential dew at night — your overs 17–20 plan matters because conditions can remove the margin for error.
 
-Matchup 3: Klaasen as the multiplier. Klaasen raises the expected value of the whole innings by forcing wider lines and more error.
+Key matchup 1: middle-overs control. If one team can use spin to force a 7.5 RPO middle, they buy themselves 10 runs of cushion — which is often the difference between a defendable 175 and a chaseable 175.
 
-Matchup 4: death bowling under humidity. An elite death bowler is worth about 8 runs in expectation across four overs.
+Key matchup 2: wicket preservation for the death. At venues with late-innings acceleration, arriving at over 15 with 7 wickets in hand is worth ~12 additional runs compared to arriving with 5 wickets. That’s not a stylistic point; it’s structural.
 
-Matchup 5: fielding quality. Eden rewards athletic boundary riders because mishits can land short of the rope.
+Key matchup 3: who benefits more from dew. If the outfield gets slick, chasing becomes easier and defensive bowling becomes noisier. If dew is light, the team with better grip-based bowling (spinners who can attack stumps) gains.
 
-Model read: slight chase bias. SRH are in a good place if they’re within 95 after 10 with two or fewer wickets down.`,
+Model read: this match is less about one superstar and more about whether either team can avoid the “weak-over” problem. When two squads both have forced replacements, the team that finds 24 competent balls at the death usually wins.`,
   },
 
   {
     id: 10,
-    slug: "spencer-johnson-to-csk-what-it-changes-ipl-2026",
-    title: "Spencer Johnson to CSK: A Like-for-Like Replacement That Still Changes the Risk Profile",
-    subtitle: "Ellis out, Johnson in — the raw skill set is similar, but the availability timeline makes it a roster math problem.",
-    category: "analysis",
+    slug: "ipl-2026-opening-weekend-power-rankings-matchups",
+    title: "IPL 2026 Opening-Weekend Power Rankings: A ‘Availability Index’ for Match 1–3",
+    subtitle:
+      "Week 1 is not about who is best — it’s about who is closest to full strength.",
+    category: "rankings",
     author: "CricDNA Analytics",
-    publishedAt: "2026-03-25T13:00:00Z",
-    readTime: "5 min read",
-    tags: ["analysis", "csk", "injury-update", "ipl-2026", "spencer-johnson", "squad"],
+    publishedAt: "2026-03-26T13:00:00Z",
+    readTime: "6 min read",
+    tags: ["rankings", "ipl-2026", "injury-update", "power-rankings", "week-1"],
     featured: false,
-    relatedPlayerIds: [19, 14, 18, 17],
+    relatedPlayerIds: [6, 1, 2, 13, 14],
     chartData: [
-      { label: `Expected join (day of month)`, value: 22, color: `#3b82f6` },
-      { label: `Hamstring recurrence (Ellis)`, value: 1, color: `#ef4444` },
-      { label: `Death-over margin (runs)`, value: 10, color: `#8b5cf6` },
+      { label: "RCB availability index", value: 78, color: "#ef4444" },
+      { label: "SRH availability index", value: 74, color: "#f59e0b" },
+      { label: "MI availability index", value: 86, color: "#3b82f6" },
+      { label: "KKR availability index", value: 68, color: "#8b5cf6" },
+      { label: "RR availability index", value: 72, color: "#10b981" },
+      { label: "CSK availability index", value: 76, color: "#0ea5e9" },
     ],
-    content: `CSK’s overseas fast-bowling depth has been a season-long spreadsheet exercise, and the Nathan Ellis injury makes it more so. ESPNcricinfo reported that CSK have signed Australian left-armer Spencer Johnson as Ellis’ replacement after Ellis suffered a recurrence of a prior hamstring injury, and that Johnson is expected to join only around April 21–23 as he recovers from a back issue.
+    dataTable: {
+      headers: ["Team", "Key availability note", "Week-1 impact"],
+      rows: [
+        [
+          "RCB",
+          "Hazlewood likely to miss start; travels after clearance",
+          "Death plan less defined in Match 1",
+        ],
+        [
+          "SRH",
+          "Cummins out early; Kishan interim captain; Edwards replaced",
+          "Leadership + bowling-phase reallocation",
+        ],
+        [
+          "MI",
+          "No major absences flagged",
+          "Highest stability entering Match 2",
+        ],
+        [
+          "KKR",
+          "Akash Deep out; Harshit doubtful; Pathirana mid-April; Dubey in",
+          "Overs depth hit; higher variance at Wankhede",
+        ],
+        [
+          "RR",
+          "Sam Curran ruled out; Shanaka in",
+          "All-round balance shifts; matchup bowling changes",
+        ],
+        [
+          "CSK",
+          "Nathan Ellis ruled out",
+          "Overseas pace depth reduced early",
+        ],
+      ],
+    },
+    content: `Power rankings in Week 1 should be called what they are: availability rankings. When squads are still being stitched together after the international calendar, the best predictor is not talent — it’s how much of your planned XI actually exists.
 
-Why it’s like-for-like in role, not in certainty: Ellis is a death-overs specialist profile. Johnson offers a different but adjacent toolkit: left-arm angle, skiddy pace, and the ability to change the batter’s sightline.
+Method: an “availability index” from 0–100 that discounts teams for missing high-leverage resources (death bowlers, powerplay strike bowlers, and all-rounders who stabilize the XI). The values are directional rather than official, but they reflect a consistent idea: losing a death-overs specialist is worth more than losing a middle-overs option, and losing a captain can create second-order costs.
 
-But availability is a real cost. A replacement who joins in late April has a different expected contribution than one available from Match 1. Missing even four matches of an elite overseas seamer is roughly 16 overs of high-leverage bowling you need to cover internally. If your next-best death option is average, you can leak 8–12 extra runs per match at the death — the kind of margin that flips close games.
+SRH: Pat Cummins is expected to miss the early part of the season while recovering from a lumbar stress issue; Ishan Kishan will lead as interim captain, with Abhishek Sharma as deputy. SRH also replaced Jack Edwards with David Payne. That’s a double hit: leadership change plus bowling-phase reallocation.
 
-How it changes CSK’s tactical plan: with uncertainty on Johnson’s readiness, CSK may need to front-load their best pace overs early (1–3) and patch the death until the overseas unit stabilizes.
+RCB: Josh Hazlewood is likely to miss the start as he awaits clearance from Cricket Australia; RCB have indicated he will join only when fully cleared. In Week 1, that means a larger share of pace overs will come from domestic options.
 
-Bottom line: Johnson is a reasonable skill replacement for Ellis, but the timeline risk means CSK’s early-season win probability depends disproportionately on whether their domestic pace unit can keep the death overs within a 45-run band.`,
+KKR: this is the clearest availability hit. Akash Deep is ruled out for the season, Harshit Rana is unlikely to feature, and Matheesha Pathirana is expected only around mid-April. KKR have signed Saurabh Dubey as a replacement for Akash Deep. Net: fewer bankable overs, especially in matches that are dew-sensitive.
+
+RR and CSK: both lose specialist role players. RR are without Sam Curran for the season (Dasun Shanaka in), and CSK are without Nathan Ellis due to a hamstring injury.
+
+The analytic takeaway: expect Week 1 to be higher variance than usual. Teams with stable XI construction tend to outperform “better on paper” teams by 5–10 percentage points of win probability in the first 3 games because they make fewer role errors.`,
   },
 ];
 
 export const analyticsCards: AnalyticsCard[] = [
   {
     type: "stat",
-    title: "Dew swing alert",
-    value: "+6 win-probability points",
-    description: "At Mullanpur and Eden, late-evening humidity can shift the chase baseline by ~8–12 runs, translating to a ~6pp edge for the side batting second when totals are in the 170s.",
-    teamColors: ["#2563eb", "#10b981"]
+    title: "Wankhede chase bias",
+    value: "123 vs 92",
+    description:
+      "In T20s overall at Wankhede, teams fielding first have won 123 times vs 92 for teams batting first — a structural tilt driven by coastal dew after ~8 pm.",
+    teamColors: ["#3b82f6", "#f59e0b"],
   },
   {
     type: "matchup",
-    title: "Ekana 'spin window'",
-    value: "Overs 7–14 decide par",
-    description: "Lucknow still taxes boundary hitting in the middle overs; teams that keep 7 wickets for over 16 consistently add 10–15 more at the death.",
-    teamColors: ["#7c3aed", "#f59e0b"]
+    title: "Opening-weekend availability index",
+    value: "Overs depth is the edge",
+    description:
+      "Week 1 tends to reward teams with fewer forced role changes. KKR’s pace injuries and SRH/RCB’s key-quick uncertainties increase variance in Matches 1–2.",
+    teamColors: ["#8b5cf6", "#10b981"],
   },
   {
     type: "player",
-    title: "Roster risk: CSK pace depth",
-    value: "Late-April reinforcement",
-    description: "With Nathan Ellis out and Spencer Johnson projected to join in late April, CSK's early-season death-overs control leans more heavily on domestic pace execution.",
-    playerIds: [19, 17, 18],
-    teamColors: ["#fbbf24", "#0ea5e9"]
-  }
+    title: "SRH captaincy pivot",
+    value: "Kishan leads early",
+    description:
+      "With Pat Cummins expected to miss the first few matches while recuperating from a lumbar stress issue, SRH’s early tactics (powerplay/death allocations) will likely be more conservative.",
+    playerIds: [3, 6],
+    teamColors: ["#f59e0b", "#ef4444"],
+  },
 ];
