@@ -16,7 +16,7 @@ export const publishLog: PublishEntry[] = [
     {
       date: "2026-03-27",
       timestamp: "2026-03-27T13:00:00Z",
-      commitHash: "TBD",
+      commitHash: "13521a0",
       articlesCount: 10,
       articleTitles: ["IPL 2026 Opening Weekend: An Analytics Cheat Sheet for Matches 1\u20133", "Chinnaswamy Pitch Report (RCB vs SRH): Why Par Is a Distribution, Not a Number", "Toss Analysis (RCB vs SRH): Why Captains Chase in Bengaluru", "RCB vs SRH Match Preview: The Matchups That Actually Matter at Chinnaswamy", "Wankhede Pitch Report (MI vs KKR): Why the Last 30 Balls Matter More Here", "Toss Analysis (MI vs KKR): Wankhede Is 50-50 \u2014 So Stop Overweighting the Coin", "MI vs KKR Match Preview: Why the Middle Overs Decide a Venue Built for Finishes", "Barsapara (Guwahati) Pitch Report (RR vs CSK): How to Preview a Venue Without Overfitting", "RR vs CSK Match Preview: The Jadeja Matchups That Can Flip the Middle Overs", "IPL 2026 Power Rankings (Pre-Season Priors): Rank the Options, Not the Names"],
       matchesCovered: ["RCB vs SRH (Mar 28)", "MI vs KKR (Mar 29)", "RR vs CSK (Mar 30)"],
