@@ -38,574 +38,437 @@ export interface AnalyticsCard {
 
 export const articles: Article[] = [
   {
-    id: 1,
-    slug: "ipl-2026-opening-weekend-analytics-cheat-sheet",
-    title: "IPL 2026 Opening Weekend: An Analytics Cheat Sheet for Matches 1\u20133",
-    subtitle: "Three venues, three different games \u2014 and the same underlying math: minimize bad overs, maximize repeatable edges.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
+    "id": 1,
+    "slug": "rcb-vs-srh-preview-chinnaswamy-is-a-death-overs-multiplier",
+    "title": "RCB vs SRH Preview: Chinnaswamy is a Death-Overs Multiplier",
+    "subtitle": "A data-first match preview for IPL 2026 Match 1 in Bengaluru.",
+    "category": "match-preview",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
       "ipl-2026",
-      "opening-weekend",
-      "analytics",
-      "match-preview"
+      "rcb",
+      "srh",
+      "match-1",
+      "preview"
     ],
-    featured: true,
-    content: "IPL 2026 starts with a three-match sample that tells you almost everything about how this season will be won: a boundary-fest in Bengaluru, a dew-influenced coin flip in Mumbai, and a spin-versus-intent test at a neutral Guwahati venue.\n\nIf you want a data-first way to watch opening weekend, don\u2019t ask \u2018who has the stars?\u2019 Ask two quieter questions: (1) which teams can create *optionality* (multiple scoring plans) when Plan A fails, and (2) which bowling attacks can force the opponent into low-percentage shots *before* the death overs.\n\nBelow is a match-by-match analytical cheat sheet built from CricDNA\u2019s venue splits, toss tendencies, and batter-vs-bowler history. The goal isn\u2019t to predict three winners \u2014 it\u2019s to identify the repeatable edges that will compound across a long league phase.\n\n## Match 1: RCB vs SRH (Chinnaswamy) \u2014 variance compression\nAt Bengaluru, the average first-innings score in CricDNA\u2019s venue sample is 189.1, with a powerplay run rate of 8.51 and a death-overs run rate of 10.97. In plain language: you don\u2019t \u2018save it for the end\u2019 here \u2014 the end is already saving itself.\n\n## Match 2: MI vs KKR (Wankhede) \u2014 a venue that rewards chasing intent\nWankhede\u2019s sample trends closer to 176.8 first-innings average, but with a strong chasing lean (bat-second wins: 31 of 52 in the Mumbai-tagged record). The practical edge is not just dew \u2014 it\u2019s the ability to keep boundary access late without reckless risk.\n\n## Match 3: RR vs CSK (Guwahati) \u2014 new ground, old matchups\nWe don\u2019t have a dedicated Barsapara split in CricDNA\u2019s venue table, so treat this match as a game-theory problem: RR\u2019s top order wants high-tempo powerplay acceleration; CSK wants to drag the game into a decision tree where spin and matchups matter.\n\n### The weekend thesis\nOpening weekend is where teams reveal whether they are optimizing for \u2018best XI\u2019 or for \u2018best portfolio\u2019. Watch who can pivot: who has a second gear with bat, and who has a second plan with ball. That adaptability is what analytics loves \u2014 because it tends to persist.",
-    relatedPlayerIds: [
+    "featured": true,
+    "content": "IPL 2026 begins in Bengaluru, and the numbers are not subtle. CricDNA’s venue sample for M Chinnaswamy Stadium has an average first-innings score of 168.1, with death overs scoring at 10.59 runs per over. That combination pushes teams toward one clear principle: treat ‘par’ as a moving target and optimize for *boundary access* rather than preservation.\n\n### What the venue is really saying\nChinnaswamy’s split is a high-variance ground: powerplay scoring is already healthy (7.07 rpo) and it only accelerates late (10.59 rpo). The clean way to think about it is overs 16–20 as a multiplier. If you arrive at the death with wickets, your expected finish balloons.\n\nHistorically, chasing has been a real option here: bat-second wins (37) outnumber bat-first wins (26) in the venue dataset. The toss layer reinforces the same pattern. At this ground, teams have chosen to field first 57 times out of 65 (87.7%), and the win rate when choosing to field first is 56.1%. The implication is not ‘always chase’ — it’s that captains value information and late-innings control.\n\n### RCB vs SRH: the tactical pressure points\nIn a Bengaluru match, batting depth matters less than *overs management*. Bowling sides need a plan to avoid two killers:\n1) a soft 7–8 rpo middle phase that keeps wickets in hand, and\n2) a death phase where set batters can swing at a 10.59 rpo runway.\n\nFor RCB, the most reliable way to create a cushion is to win the powerplay without sacrificing wickets. For SRH, the most reliable way to win is to create two ‘bad overs’ with the ball — a double-wicket over is worth more here than squeezing singles.\n\n### Par score and win model (simple)\nUsing CricDNA’s average first-innings score (168.1) as the baseline, a safer ‘bat first’ target is baseline + 10 to absorb variance. That puts a pragmatic par band at roughly 173–183. Anything below that invites a chase, because bat-second wins already lead historically.\n\n**Prediction lens:** if the toss winner fields first (the historical preference), the team batting first must treat overs 7–15 as a scoring phase, not a holding phase. Chinnaswamy punishes passive middles more than it rewards perfect death hitting.\n",
+    "relatedPlayerIds": [
       1,
-      2,
+      6,
+      8
+    ],
+    "chartData": [
+      {
+        "label": "Avg 1st inns score",
+        "value": 168.1,
+        "color": "#8b5cf6"
+      },
+      {
+        "label": "Powerplay RPO",
+        "value": 7.07,
+        "color": "#10b981"
+      },
+      {
+        "label": "Death overs RPO",
+        "value": 10.59,
+        "color": "#ef4444"
+      }
+    ],
+    "dataTable": {
+      "headers": [
+        "Metric",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Bat first wins",
+          "26"
+        ],
+        [
+          "Bat second wins",
+          "37"
+        ],
+        [
+          "Toss choose field first",
+          "57/65"
+        ],
+        [
+          "Win% when field first after toss",
+          "56.1%"
+        ]
+      ]
+    },
+    "matchId": 1
+  },
+  {
+    "id": 2,
+    "slug": "chinnaswamy-pitch-report-why-the-last-five-overs-decide-everything",
+    "title": "Chinnaswamy Pitch Report: Why the Last Five Overs Decide Everything",
+    "subtitle": "Bengaluru’s phase scoring profile and what it means for batting and bowling plans.",
+    "category": "pitch-report",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "chinnaswamy",
+      "pitch-report",
+      "match-1"
+    ],
+    "featured": false,
+    "content": "The simplest pitch report for Bengaluru is: it rarely stays quiet. CricDNA’s Chinnaswamy sample shows a first-innings average of 168.1, and the scoring curve climbs sharply at the end (10.59 rpo). That’s a classic signature of a ground where true pace and short boundaries combine to reward clean hitting late.\n\n### Phase scoring profile\n- Powerplay: 7.07 rpo — you can start fast without extraordinary risk.\n- Middle overs: 8.08 rpo — still above ‘containment’ levels.\n- Death overs: 10.59 rpo — the real separator.\n\nThe key for teams is that ‘defending’ is not one strategy. Defending 175 requires early wickets; defending 195 requires denying boundary clusters.\n\n### What bowlers should do\nAt high-run-rate venues, the biggest mistake is to bowl as if every over must be defended equally. You should *trade* risk: attack in two windows (powerplay and 13–16) so the death is faced with new batters. Even if you leak a boundary, a wicket reduces the expected end-overs damage because death overs are priced at 10.59 per over.\n\n### What batters should do\nBatters should protect wickets, but only if the innings still carries boundary access. A common failure mode at this venue is a ‘pretty’ 50 off 40 that leaves too much for the finish. The Chinnaswamy curve says your upside is late — the job is to *arrive* at the late overs with options.\n\n### A practical par band\nGiven the venue average (168.1) and the death-overs multiplier, teams batting first should aim for a par band around 173–183. Below that, the historical bat-second edge (37 wins vs 26) turns into a real chasing advantage.\n",
+    "relatedPlayerIds": [
+      1,
+      6,
+      8
+    ],
+    "chartData": [
+      {
+        "label": "Powerplay",
+        "value": 7.07,
+        "color": "#22c55e"
+      },
+      {
+        "label": "Middle overs",
+        "value": 8.08,
+        "color": "#3b82f6"
+      },
+      {
+        "label": "Death overs",
+        "value": 10.59,
+        "color": "#ef4444"
+      }
+    ],
+    "matchId": 1
+  },
+  {
+    "id": 3,
+    "slug": "toss-report-rcb-vs-srh-why-captains-prefer-to-field-first-in-bengaluru",
+    "title": "Toss Report (RCB vs SRH): Why Captains Prefer to Field First in Bengaluru",
+    "subtitle": "The toss decision at Chinnaswamy, quantified.",
+    "category": "toss-report",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "toss",
+      "chinnaswamy",
+      "rcb",
+      "srh"
+    ],
+    "featured": false,
+    "content": "At M Chinnaswamy Stadium, the toss is less about superstition and more about information economics. In CricDNA’s venue-linked toss sample, captains have chosen to field first 57 times out of 65 matches (87.7%).\n\n### Does choosing to field first actually win?\nYes — historically it has been profitable. When teams chose to field first after winning the toss, they won 32 of 57 games, a win rate of 56.1%. For comparison, choosing to bat first after the toss has a 37.5% win rate.\n\n### Why the bias exists\nTwo factors align:\n1) The death overs are expensive (10.59 rpo). If you know your chase number and keep wickets, you can ‘buy’ the end overs.\n2) The venue’s historical distribution leans slightly to chasing (bat-second wins 37 vs bat-first wins 26).\n\n### The decision rule\n- If you have two high-quality death hitters and batting depth, field first. Your chase flexibility is worth more than 10–15 runs.\n- If your bowling attack is built to take early wickets, you can consider batting first — but you must target the upper par band (178+).\n\nFor Match 1, the clean analytics call is simple: if you win the toss, take the option that gives you information and preserves death-overs control — which the historical data frames as **field first**.\n",
+    "relatedPlayerIds": [
+      6,
+      11
+    ],
+    "chartData": [
+      {
+        "label": "Toss: field first chosen (%)",
+        "value": 87.7,
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Win% when field first",
+        "value": 56.1,
+        "color": "#10b981"
+      },
+      {
+        "label": "Win% when bat first",
+        "value": 37.5,
+        "color": "#ef4444"
+      }
+    ],
+    "matchId": 1
+  },
+  {
+    "id": 4,
+    "slug": "mi-vs-kkr-preview-wankhede-rewards-low-friction-chasing",
+    "title": "MI vs KKR Preview: Wankhede Rewards Low-Friction Chasing",
+    "subtitle": "A data-first preview for Match 2 in Mumbai.",
+    "category": "match-preview",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "mi",
+      "kkr",
+      "match-2",
+      "preview"
+    ],
+    "featured": false,
+    "content": "Wankhede games are often described as ‘good batting wickets’, but the better framing is *low friction* cricket. CricDNA’s Wankhede sample shows an average first-innings score of 166.0, and the average second-innings score stays close (154.4), which is what you expect at a venue where chasing doesn’t require miracles.\n\n### The venue profile\nWankhede’s phase run rates are steady: powerplay 7.10, middle 7.71, death 9.95. The lack of a dramatic spike is meaningful — it suggests that teams can win by being consistently ‘good’ rather than needing a single explosive phase.\n\n### MI vs KKR: what matters most\nFor Mumbai Indians, the classic Wankhede advantage is maximizing top-order time. For Kolkata Knight Riders, the challenge is bowling enough ‘disruption overs’ to prevent MI from coasting through 7–15.\n\nToss behaviour at this ground is less extreme than Bengaluru but still leans toward fielding first: 51 of 73 toss winners chose to field (69.9%). The win rate when choosing to field first is 51.0%, basically coin-flip territory — which makes sense because Wankhede is balanced (bat-second wins 37 vs bat-first wins 36).\n\n### Par score\nGiven the 166.0 baseline and a relatively stable scoring curve, a par band of roughly 161–176 is realistic. The key is not only how many runs you score, but *where* you score them. A 55-run powerplay at Wankhede increases win probability more than a late surge, because it reduces the need for high-risk boundary hunting later.\n\n**Prediction lens:** expect the match to be decided by the bowling side’s ability to prevent an ‘easy’ chase. If the chasing team keeps required rate below 9 by over 12, Wankhede usually turns into a finishing tutorial.\n",
+    "relatedPlayerIds": [
+      13,
+      11,
+      3
+    ],
+    "chartData": [
+      {
+        "label": "Avg 1st inns score",
+        "value": 166.0,
+        "color": "#3b82f6"
+      },
+      {
+        "label": "Avg 2nd inns score",
+        "value": 154.4,
+        "color": "#10b981"
+      },
+      {
+        "label": "Death overs RPO",
+        "value": 9.95,
+        "color": "#ef4444"
+      }
+    ],
+    "matchId": 2
+  },
+  {
+    "id": 5,
+    "slug": "wankhede-pitch-report-balanced-scoring-middle-overs-leverage",
+    "title": "Wankhede Pitch Report: Balanced Scoring, Middle-Overs Leverage",
+    "subtitle": "Mumbai’s phase profile and the bowling templates it rewards.",
+    "category": "pitch-report",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "wankhede",
+      "pitch-report",
+      "match-2"
+    ],
+    "featured": false,
+    "content": "Wankhede is not the most extreme batting venue in IPL history, but it is among the most *repeatable*. CricDNA’s sample lists an average first-innings score of 166.0 and a second-innings average of 154.4. That closeness tells you conditions don’t swing wildly across innings.\n\n### Phase scoring\n- Powerplay: 7.10 rpo\n- Middle overs: 7.71 rpo\n- Death overs: 9.95 rpo\n\nUnlike Bengaluru, the death is not a separate sport; it’s simply an extension of solid batting. That changes the bowling plan: you can’t ‘save’ your best bowler for the end if you’re already losing the match in overs 7–12.\n\n### Bowling strategy: win the middle\nBecause middle-overs scoring is 7.71 rpo, any spell that forces dot balls and prevents easy singles creates immediate leverage. The winning template is twofold:\n1) Powerplay wicket to break the top order’s rhythm.\n2) A 2-over middle squeeze where the batting side is forced into higher-risk boundary attempts.\n\n### Batting strategy: keep the game simple\nAt Wankhede, chasing teams should avoid over-optimizing. The venue rewards consistent boundary access, not only late-innings heroics. Set a target of being within 10 runs of the required rate at the halfway mark, then let the 9.95 rpo death phase do its normal work.\n",
+    "relatedPlayerIds": [
+      13,
+      11,
+      3
+    ],
+    "chartData": [
+      {
+        "label": "Powerplay RPO",
+        "value": 7.1,
+        "color": "#22c55e"
+      },
+      {
+        "label": "Middle RPO",
+        "value": 7.71,
+        "color": "#3b82f6"
+      },
+      {
+        "label": "Death RPO",
+        "value": 9.95,
+        "color": "#ef4444"
+      }
+    ],
+    "matchId": 2
+  },
+  {
+    "id": 6,
+    "slug": "toss-report-mi-vs-kkr-when-the-coin-flip-is-actually-neutral",
+    "title": "Toss Report (MI vs KKR): When the Coin Flip is Actually Neutral",
+    "subtitle": "Wankhede toss tendencies and a decision rule for Match 2.",
+    "category": "toss-report",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "toss",
+      "wankhede",
+      "mi",
+      "kkr"
+    ],
+    "featured": false,
+    "content": "The Wankhede toss is often framed as a dew story, but CricDNA’s numbers suggest something more neutral. Toss winners have opted to field first 51 times out of 73 (69.9%), yet the win rates are close: 51.0% when fielding first versus 50.0% when batting first.\n\n### What this means for MI vs KKR\nIf the toss is near-neutral, team composition should decide:\n- If your bowling attack has a strong new-ball pair, consider batting first and aiming for a top-end par.\n- If your batting has superior finishing depth, field first and chase with flexibility.\n\nThe key is to avoid the common error: assuming ‘chase is always better’. Wankhede’s venue record is balanced (bat-first wins 36 vs bat-second wins 37). So the toss should be used to maximize *matchups* rather than blindly choosing an innings.\n",
+    "relatedPlayerIds": [
+      13,
+      11,
+      3
+    ],
+    "chartData": [
+      {
+        "label": "Field first chosen (%)",
+        "value": 69.9,
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Win% field first",
+        "value": 51.0,
+        "color": "#10b981"
+      },
+      {
+        "label": "Win% bat first",
+        "value": 50.0,
+        "color": "#ef4444"
+      }
+    ],
+    "matchId": 2
+  },
+  {
+    "id": 7,
+    "slug": "rr-vs-csk-preview-guwahati-as-a-game-theory-match",
+    "title": "RR vs CSK Preview: Guwahati as a Game-Theory Match",
+    "subtitle": "How to preview a match when the venue identity is still forming.",
+    "category": "match-preview",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "rr",
+      "csk",
+      "match-3",
+      "preview"
+    ],
+    "featured": false,
+    "content": "Match 3 takes IPL 2026 to Guwahati (Barsapara), and CricDNA’s data flags a key constraint: we have limited venue scoring splits here compared to the major IPL grounds. What we *do* have is toss behaviour and the broader lesson that neutral/secondary venues often behave like ‘game theory’ matches — teams win by creating matchup advantages rather than relying on a known pitch identity.\n\n### Toss and innings preference\nIn CricDNA’s Barsapara toss sample (5 matches), captains have chosen to field first 4 times. That’s an 80% preference to chase, but the win rate when fielding first is only 25% (1 win in 4). Small sample warning applies, but it does suggest that blindly copying the ‘chase’ meta may backfire when conditions are not well-understood.\n\n### RR vs CSK: the matchup story\nRajasthan Royals want powerplay acceleration and boundary pressure. Chennai Super Kings traditionally want control: reduce variance, force the opponent into low-percentage options, then win with finishing depth.\n\nWith this venue uncertainty, the most stable edge is role clarity:\n- If RR bat first, they should aim for a score that reduces chasing optionality.\n- If CSK chase, they should aim to keep wickets in hand for a strong finishing burst.\n\n### Analytical prediction\nTreat this match as a ‘decision tree’. The team that forces the opponent to change plans first usually wins. On a less-charted ground, that often comes from bowling plans — one high-impact over (double wicket or a 2-run over) changes how teams price risk.\n",
+    "relatedPlayerIds": [
       7,
+      20,
+      10,
+      18,
+      14
+    ],
+    "chartData": [
+      {
+        "label": "Barsapara: field first chosen (%)",
+        "value": 80.0,
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Win% when field first",
+        "value": 25.0,
+        "color": "#10b981"
+      },
+      {
+        "label": "Matches in sample",
+        "value": 5,
+        "color": "#3b82f6"
+      }
+    ],
+    "matchId": 3
+  },
+  {
+    "id": 8,
+    "slug": "ipl-2026-meta-preview-win-the-venue-map-win-the-tournament",
+    "title": "IPL 2026 Meta Preview: Win the Venue Map, Win the Tournament",
+    "subtitle": "A season-wide analytics lens before Match 1.",
+    "category": "analysis",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
+      "ipl-2026",
+      "strategy",
+      "analytics",
+      "venues"
+    ],
+    "featured": false,
+    "content": "Before the first ball of IPL 2026, the most useful forecasting tool is not a league table — it’s a venue map. CricDNA’s venue dataset shows how dramatically run environments can change across grounds.\n\n### Three venues, three scoring curves\n- Chinnaswamy (Bengaluru): avg first-innings 168.1, death overs 10.59 rpo.\n- Wankhede (Mumbai): avg first-innings 166.0, death overs 9.95 rpo.\n- (Smaller sample) Barsapara (Guwahati): toss preference suggests chasing is chosen often, but results are mixed.\n\nThe strategic takeaway: *one size does not fit all*. Teams that keep the same batting order and the same bowling-over allocation at every venue are effectively giving away expected value.\n\n### The CricDNA ‘two bad overs’ heuristic\nIn T20, matches swing when the fielding side creates two overs that massively underperform expectation (wickets + dots) or the batting side creates two overs that massively outperform expectation (boundary clusters). High-scoring venues make the ‘batting cluster’ easier; balanced venues make the ‘bowling squeeze’ more valuable.\n\n### What to watch in Week 1\n1) Do teams treat middle overs as a scoring phase at high-run-rate venues? (Bengaluru says they should.)\n2) Do teams use their best bowler before the death to buy wickets? (Because death is expensive.)\n3) Do captains adjust toss decisions by venue rather than using a blanket chase preference?\n\nIPL 2026 will be won by the teams that convert venue information into repeatable plans — not by the teams that rely on one magical innings.\n",
+    "relatedPlayerIds": [
+      1,
       13,
       18
     ],
-    chartData: [
+    "chartData": [
       {
-        label: "Chinnaswamy avg 1st inns",
-        value: 189.1,
-        color: "#8b5cf6"
+        "label": "Chinnaswamy death RPO",
+        "value": 10.59,
+        "color": "#ef4444"
       },
       {
-        label: "Wankhede avg 1st inns",
-        value: 176.8,
-        color: "#10b981"
+        "label": "Wankhede death RPO",
+        "value": 9.95,
+        "color": "#f97316"
       },
       {
-        label: "Chasing bias (Wankhede bat-2 wins)",
-        value: 59.6,
-        color: "#f59e0b"
+        "label": "Chinnaswamy avg 1st inns",
+        "value": 168.1,
+        "color": "#8b5cf6"
       }
-    ],
-    dataTable: {
-      headers: [
-        "Match",
-        "Key edge",
-        "What to watch in 5 overs"
-      ],
-      rows: [
-        [
-          "RCB vs SRH",
-          "Boundary access early + late",
-          "Powerplay wickets vs run rate"
-        ],
-        [
-          "MI vs KKR",
-          "Chasing calibration",
-          "Can KKR bat deep enough to attack at 16-20?"
-        ],
-        [
-          "RR vs CSK",
-          "Matchups and spin control",
-          "RR intent vs CSK squeeze overs"
-        ]
-      ]
-    }
+    ]
   },
   {
-    id: 2,
-    slug: "chinnaswamy-pitch-report-rcb-vs-srh-ipl-2026",
-    title: "Chinnaswamy Pitch Report (RCB vs SRH): Why Par Is a Distribution, Not a Number",
-    subtitle: "At Bengaluru, the run rate is a baseline; wicket-timing is the variable that decides outcomes.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "pitch-report",
-      "rcb",
-      "srh",
-      "chinnaswamy",
-      "ipl-2026"
-    ],
-    featured: false,
-    content: "The Chinnaswamy isn\u2019t a pitch you \u2018read\u2019 \u2014 it\u2019s a pitch you *price*. The ground shrinks error bars. When run rates are structurally high, the real contest becomes wicket-timing and matchup sequencing.\n\nCricDNA\u2019s venue record for **M Chinnaswamy Stadium, Bengaluru** shows an average first-innings score of **189.1** across **19** matches, with a powerplay run rate of **8.51** and a death-overs run rate of **10.97**. If you\u2019re defending anything under ~185, you\u2019re betting on wickets, not control.\n\n### Phase model\nChinnaswamy\u2019s middle overs (7\u201315) still tick at **8.86 rpo** in the dataset \u2014 which matters because it collapses the traditional \u2018hold back for the death\u2019 plan. Bowling teams need wicket-taking options through the middle, or the chase becomes a smooth curve.\n\n### What a \u2018par\u2019 score really means\nPar isn\u2019t a number; it\u2019s a distribution. On a ground with a historical high score of **287**, the tail outcomes matter. Analytics tells you to build totals that protect you from a 10.8\u201311.5 rpo finishing burst.\n\n### Tactical note\nIf you win the toss, CricDNA\u2019s toss table at Chinnaswamy shows teams chose to field first **57 of 65** times, and the win rate when fielding first sits at **56.1%**. Chasing isn\u2019t guaranteed \u2014 but it is the dominant strategic preference because it gives you clarity on risk.\n\n### CricDNA call\nExpect both sides to treat powerplay wickets as the currency. The team that keeps its top three intact through 8 overs will usually post the only total that matters: the one that forces the opponent to take low-percentage shots earlier than planned.",
-    relatedPlayerIds: [
-      1,
-      6,
-      8,
-      9
-    ],
-    chartData: [
-      {
-        label: "Avg 1st inns",
-        value: 189.1,
-        color: "#8b5cf6"
-      },
-      {
-        label: "Powerplay rpo",
-        value: 8.51,
-        color: "#10b981"
-      },
-      {
-        label: "Death rpo",
-        value: 10.97,
-        color: "#ef4444"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Metric",
-        "Value",
-        "Implication"
-      ],
-      rows: [
-        [
-          "Matches (sample)",
-          "19",
-          "Small sample; think tendencies not laws"
-        ],
-        [
-          "Avg 1st inns",
-          "189.1",
-          "180 is below mean; 200 is a safer target"
-        ],
-        [
-          "Toss: field first % (historical)",
-          "100%",
-          "Teams overwhelmingly prefer chasing in this dataset"
-        ]
-      ]
-    },
-    matchId: 1
-  },
-  {
-    id: 3,
-    slug: "toss-analysis-rcb-vs-srh-chinnaswamy-ipl-2026",
-    title: "Toss Analysis (RCB vs SRH): Why Captains Chase in Bengaluru",
-    subtitle: "Fielding first is the default because it buys clarity in a venue that punishes uncertainty.",
-    category: "toss-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "toss-report",
-      "rcb",
-      "srh",
-      "chinnaswamy",
-      "ipl-2026"
-    ],
-    featured: false,
-    content: "At some venues, the toss is noise. At Bengaluru, the toss is information \u2014 not because it guarantees a win, but because it dictates the optimal strategy tree.\n\nCricDNA\u2019s Chinnaswamy toss profile: **65 matches**, with teams choosing to **field first 57 times** (87.7%). When captains field first, they\u2019ve won **32** of those **57** games (56.1%). When they bat first, it\u2019s **3 wins in 8** (37.5%).\n\n### The analytics logic\nChasing gives you a real-time risk meter. On a high-scoring ground, you want to know whether you\u2019re in a 9.5 rpo game or an 11 rpo game *before* you spend your wicket resources.\n\n### What changes the decision\nIf you believe your bowling attack can create powerplay wickets (swing/left-arm angles/elite death skills), batting first becomes more attractive because you can defend with scoreboard pressure. Without that wicket-taking edge, defending feels like trying to stop a tide with a spreadsheet.\n\n### CricDNA call\nExpect the toss winner to field, unless they think they can \u2018win two phases\u2019 with the ball (powerplay + death). If they can\u2019t, chasing is the rational default because it narrows uncertainty \u2014 and uncertainty is the real opponent in a Chinnaswamy match.",
-    relatedPlayerIds: [
-      1,
-      6
-    ],
-    chartData: [
-      {
-        label: "Toss: chose field first",
-        value: 57,
-        color: "#10b981"
-      },
-      {
-        label: "Toss: chose bat first",
-        value: 8,
-        color: "#f59e0b"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Decision",
-        "Count",
-        "Win %"
-      ],
-      rows: [
-        [
-          "Field first",
-          "57",
-          "56.1%"
-        ],
-        [
-          "Bat first",
-          "8",
-          "37.5%"
-        ]
-      ]
-    },
-    matchId: 1
-  },
-  {
-    id: 4,
-    slug: "rcb-vs-srh-match-preview-key-matchups-ipl-2026",
-    title: "RCB vs SRH Match Preview: The Matchups That Actually Matter at Chinnaswamy",
-    subtitle: "In a high-run venue, the winner is usually the side that creates wicket pressure without losing boundary control.",
-    category: "match-preview",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "match-preview",
-      "rcb",
-      "srh",
+    "id": 9,
+    "slug": "trending-stat-chinnaswamys-death-overs-run-at-1059-rpo",
+    "title": "Trending Stat: Chinnaswamy’s Death Overs Run at 10.59 RPO",
+    "subtitle": "One number that explains why Bengaluru games explode late.",
+    "category": "analysis",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
       "ipl-2026",
-      "chinnaswamy"
+      "trending-stat",
+      "chinnaswamy",
+      "death-overs"
     ],
-    featured: false,
-    content: "RCB vs SRH at Chinnaswamy is a match where \u2018form\u2019 is less predictive than \u2018fit\u2019. The ground amplifies boundary-hitters, but it also punishes line-and-length bowlers who rely on mistake-induction.\n\n### Matchup to watch: Kohli vs Bhuvneshwar\nCricDNA\u2019s batter-vs-bowler history has **V Kohli** scoring **129 off 91** balls against **B Kumar**, striking at **141.76**, but with **4 dismissals**. That\u2019s the shape of a high-value matchup: runs flow, but the wicket is on the table.\n\n### What RCB wants\nRCB\u2019s best path is to turn the powerplay into a platform without surrendering a collapse probability. On this ground, 45/1 can be \u2018better\u2019 than 60/3 \u2014 because wicket scarcity is what drives 200+.\n\n### What SRH wants\nSRH will try to steal overs by forcing right-handers into tough angles and then cashing in at the death. The team that wins the middle overs without losing too much boundary access usually controls the chase.\n\n### CricDNA call\nThis game will be decided by one question: can the bowling side force two wickets before the 10-over mark? At Chinnaswamy, that\u2019s often the difference between a normal big score and a truly unchaseable one.",
-    relatedPlayerIds: [
-      1,
+    "featured": false,
+    "content": "If you want one trending stat to anchor opening day, start with this: Chinnaswamy’s death overs have historically scored at 10.59 runs per over in CricDNA’s venue sample.\n\nThat number is a strategic signal. A death phase priced at 10.59 means:\n- defending teams need wickets before the 16th over, not ‘good execution’ at the end,\n- batting teams should preserve boundary hitters for the finish, and\n- captains should think of overs 13–16 as the wicket-buying window.\n\nFor Match 1, the simplest watchpoint is whether the fielding side can take at least one wicket between overs 13 and 16. If not, the expected finish at this venue is brutal.\n",
+    "relatedPlayerIds": [
       6,
-      8,
-      9,
-      12
-    ],
-    chartData: [
-      {
-        label: "Kohli vs B Kumar strike rate",
-        value: 141.76,
-        color: "#10b981"
-      },
-      {
-        label: "Dismissals in matchup",
-        value: 4,
-        color: "#ef4444"
-      },
-      {
-        label: "Dot ball %",
-        value: 44,
-        color: "#f59e0b"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Matchup",
-        "Balls",
-        "Runs",
-        "SR",
-        "Dismissals"
-      ],
-      rows: [
-        [
-          "Kohli vs B Kumar",
-          "91",
-          "129",
-          "141.76",
-          "4"
-        ]
-      ]
-    },
-    matchId: 1
+      1
+    ]
   },
   {
-    id: 5,
-    slug: "wankhede-pitch-report-mi-vs-kkr-ipl-2026",
-    title: "Wankhede Pitch Report (MI vs KKR): Why the Last 30 Balls Matter More Here",
-    subtitle: "Mumbai rewards batting depth; the death overs are where totals become defendable or disposable.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "pitch-report",
-      "mi",
-      "kkr",
-      "wankhede",
-      "ipl-2026"
-    ],
-    featured: false,
-    content: "Wankhede is the rare IPL venue where the expected value of aggression rises as the game progresses. That\u2019s not romantic \u2014 it\u2019s arithmetic.\n\nCricDNA\u2019s Wankhede (Mumbai-tagged) record shows an average first-innings score of **176.8** across **52** matches, with a powerplay run rate of **7.54**, middle-overs run rate of **8.03**, and death-overs run rate of **10.76**. If you bat deep, your finishing ceiling is real.\n\n### What a \u2018good\u2019 1st innings looks like\nAt Wankhede, the difference between 175 and 190 is not just 15 runs \u2014 it\u2019s the point at which a chasing team needs a risky over. Analytics says you aim for a total that forces at least one low-probability decision in overs 13\u201317.\n\n### Bowling strategy\nBecause death overs inflate, you need to earn overs \u2018below par\u2019 earlier: swing up front, hard lengths through the middle, and matchups that increase dot-ball percentage.\n\n### CricDNA call\nExpect both captains to treat 180 as a baseline and 195 as an advantage. The side with the better 16\u201320 overs batting depth should be the team with the highest win probability swing in the final 30 balls.",
-    relatedPlayerIds: [
-      2,
-      13,
-      23
-    ],
-    chartData: [
-      {
-        label: "Avg 1st inns",
-        value: 176.8,
-        color: "#8b5cf6"
-      },
-      {
-        label: "Middle rpo",
-        value: 8.03,
-        color: "#10b981"
-      },
-      {
-        label: "Death rpo",
-        value: 10.76,
-        color: "#ef4444"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Phase",
-        "RPO",
-        "Interpretation"
-      ],
-      rows: [
-        [
-          "Powerplay (1-6)",
-          "7.54",
-          "Not a slog-fest; build wickets-in-hand"
-        ],
-        [
-          "Middle (7-15)",
-          "8.03",
-          "Boundary access matters; avoid dot-ball clusters"
-        ],
-        [
-          "Death (16-20)",
-          "10.76",
-          "Finishing skill converts depth into wins"
-        ]
-      ]
-    },
-    matchId: 2
-  },
-  {
-    id: 6,
-    slug: "toss-analysis-mi-vs-kkr-wankhede-ipl-2026",
-    title: "Toss Analysis (MI vs KKR): Wankhede Is 50-50 \u2014 So Stop Overweighting the Coin",
-    subtitle: "The numbers say the toss is near-neutral; the real edge is creating rare low-scoring overs.",
-    category: "toss-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "toss-report",
-      "mi",
-      "kkr",
-      "wankhede",
-      "ipl-2026"
-    ],
-    featured: false,
-    content: "Wankhede\u2019s toss narrative is often simplified to \u2018dew\u2019. The data says something subtler: captains still prefer to chase, but the win edge is close to neutral \u2014 meaning execution beats the coin.\n\nIn CricDNA\u2019s Wankhede toss table (73 matches), teams chose to field first **51** times and won **26** of them (51.0%). Teams batting first won **11** of **22** (50.0%). That\u2019s almost a perfect split.\n\n### So why do captains still chase?\nBecause chasing is a risk-management tool. It reduces uncertainty about required run rate and lets you time your aggression to conditions.\n\n### When batting first is optimal\nIf you believe your bowling attack can hold the death overs below the venue\u2019s inflated baseline (CricDNA\u2019s death rpo at the Mumbai-tagged record is 10.76), setting a target becomes attractive: you can force the chasing team to take risk earlier.\n\n### CricDNA call\nThe toss won\u2019t decide this game. The decisive lever will be whether either side can manufacture two \u2018cheap\u2019 overs (an over under 6 rpo, or a wicket-maiden style over) across the middle. At Wankhede, those overs are rare \u2014 and therefore valuable.",
-    relatedPlayerIds: [
-      2,
-      13,
-      23
-    ],
-    chartData: [
-      {
-        label: "Field first win %",
-        value: 51,
-        color: "#10b981"
-      },
-      {
-        label: "Bat first win %",
-        value: 50,
-        color: "#f59e0b"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Decision",
-        "Count",
-        "Win %"
-      ],
-      rows: [
-        [
-          "Field first",
-          "51",
-          "51.0%"
-        ],
-        [
-          "Bat first",
-          "22",
-          "50.0%"
-        ]
-      ]
-    },
-    matchId: 2
-  },
-  {
-    id: 7,
-    slug: "mi-vs-kkr-match-preview-ipl-2026-wankhede",
-    title: "MI vs KKR Match Preview: Why the Middle Overs Decide a Venue Built for Finishes",
-    subtitle: "Wankhede inflates the death overs; the side that wins overs 7\u201312 often controls the endgame.",
-    category: "match-preview",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "match-preview",
-      "mi",
-      "kkr",
+    "id": 10,
+    "slug": "fantasy-predictions-opening-weekend-picks-using-venue-math",
+    "title": "Fantasy & Predictions: Opening Weekend Picks Using Venue Math",
+    "subtitle": "A role-based fantasy approach for Matches 1–2.",
+    "category": "analysis",
+    "author": "CricDNA Analytics",
+    "publishedAt": "2026-03-28T13:00:00Z",
+    "readTime": "4 min read",
+    "tags": [
       "ipl-2026",
-      "wankhede"
+      "fantasy",
+      "predictions",
+      "opening-weekend"
     ],
-    featured: false,
-    content: "MI vs KKR is a clash of styles: MI\u2019s historical blueprint is to win the last five overs with bat and ball; KKR\u2019s best version wins the middle overs through spin control and matchup pressure.\n\n### The Wankhede constraint\nOn this venue, the death overs inflate toward 10.76 rpo in CricDNA\u2019s record. That makes \u2018having the better death bowler\u2019 a larger edge than usual \u2014 because the baseline is already high.\n\n### What MI wants\nMI\u2019s ideal script: keep wickets in hand through 12, then cash in. The analytics logic is simple: a team with depth can turn a 155/4 at 15 overs into 195 \u2014 and 195 is where chasing becomes psychologically expensive.\n\n### What KKR wants\nKKR\u2019s best path is to turn the game into a sequence of uncomfortable decisions for MI\u2019s batters: spin into the pitch, pace off, deny the short boundary pockets. If they can keep the required run rate climbing by 0.3\u20130.5 each over, the last two overs become forced error territory.\n\n### CricDNA call\nWatch overs 7\u201312. If KKR can win that phase without losing wicket-taking threat, they can neutralize Wankhede\u2019s finishing bias. If they can\u2019t, the venue will do half of MI\u2019s work for them.",
-    relatedPlayerIds: [
-      2,
+    "featured": false,
+    "content": "Fantasy teams are often built on reputation. A better approach is to build on *role + venue*. For opening weekend, CricDNA’s venue profiles suggest two templates.\n\n### Template A: High-run venue (Bengaluru)\nAt Chinnaswamy, late overs are high-value (10.59 rpo). Prioritize:\n- top-3 batters (more balls faced in a fast environment),\n- death-overs bowlers who can take wickets (because wickets are worth more than economy),\n- one finishing hitter if chasing.\n\n### Template B: Balanced venue (Mumbai)\nAt Wankhede, scoring is steady and second-innings scoring stays close to first (154.4). Prioritize:\n- all-rounders who contribute across phases,\n- powerplay bowlers (early wickets shift the game),\n- a reliable anchor who can bat through.\n\n### Captain/VC heuristic\nPick captaincy based on who is most likely to face the most deliveries (top-order batters) or bowl the most high-leverage overs (new ball + death). At venues where death scoring is elevated, death wickets are the single best upside bet.\n\n**Prediction lens:** For Match 1, chasing sides get an inherent data advantage, so stack batters from the team batting second if you can. For Match 2, stack roles: powerplay wicket-takers and top-order run volume.\n",
+    "relatedPlayerIds": [
+      1,
       3,
       11,
       13,
-      23,
-      27
-    ],
-    matchId: 2
-  },
-  {
-    id: 8,
-    slug: "barsapara-guwahati-pitch-report-rr-vs-csk-ipl-2026",
-    title: "Barsapara (Guwahati) Pitch Report (RR vs CSK): How to Preview a Venue Without Overfitting",
-    subtitle: "When venue history is thin, lean on phase control and matchup math \u2014 the edges that travel.",
-    category: "pitch-report",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "pitch-report",
-      "rr",
-      "csk",
-      "guwahati",
-      "ipl-2026"
-    ],
-    featured: false,
-    content: "RR vs CSK is being played at Barsapara Stadium, Guwahati \u2014 and CricDNA\u2019s venue dataset doesn\u2019t include a dedicated Barsapara split. That\u2019s a feature, not a bug: uncertainty forces you to focus on *portable* truths.\n\nPortable truth #1: teams that control the middle overs control T20 games. Portable truth #2: in a new-ish venue, toss decisions tend to mirror what captains believe about their own squad more than what the ground \u2018is\u2019.\n\n### A practical way to think about \u2018par\u2019 here\nInstead of chasing a mythical venue par score, build a par score from phases: powerplay intent without collapses, middle overs without dot-ball clusters, and a death overs plan that doesn\u2019t rely on low-percentage hitting.\n\n### Squad fit\nRR\u2019s ceiling is their top-order tempo; CSK\u2019s edge is their ability to create matchup pressure with spin and then win the game with experience at the margins.\n\n### CricDNA call\nTreat the first innings as information-gathering. The side that adapts fastest \u2014 lengths, pace, matchups, batting gears \u2014 will gain an edge bigger than any pre-game \u2018pitch report\u2019 could offer.",
-    relatedPlayerIds: [
-      7,
-      10,
-      14,
-      18,
-      20,
-      25
-    ],
-    matchId: 3
-  },
-  {
-    id: 9,
-    slug: "rr-vs-csk-match-preview-jadeja-matchups-ipl-2026",
-    title: "RR vs CSK Match Preview: The Jadeja Matchups That Can Flip the Middle Overs",
-    subtitle: "Jadeja doesn\u2019t just take wickets; he changes what opponents think is a good shot.",
-    category: "match-preview",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "match-preview",
-      "rr",
-      "csk",
-      "ipl-2026",
-      "matchups"
-    ],
-    featured: false,
-    content: "If Chinnaswamy is about run rate and Wankhede is about finishing, RR vs CSK is about matchups. CSK\u2019s advantage has often been their ability to create \u2018bad overs\u2019 for opponents \u2014 overs where the expected value of hitting drops.\n\n### Matchup 1: Buttler vs Jadeja\nCricDNA\u2019s batter-vs-bowler history: **JC Buttler** has **70 off 53** against **RA Jadeja** (SR 132.08) with **2 dismissals**. That\u2019s not dominance; it\u2019s negotiation.\n\n### Matchup 2: Samson vs Jadeja\n**SV Samson** against **RA Jadeja**: **82 off 63** (SR 130.16) with **3 dismissals** \u2014 plus a heavy six-hitting profile. The risk is visible: Samson can break an over, but Jadeja can also buy a wicket.\n\n### What RR wants\nRR wants to keep the right-hand/left-hand mix flexible so CSK can\u2019t lock in one spin plan. If RR is forced into predictable sequencing, the middle overs become a squeeze.\n\n### What CSK wants\nCSK will try to \u2018price\u2019 RR\u2019s aggression: offer a shot that looks available, but increases dismissal probability. That\u2019s the invisible art analytics tries to quantify.\n\n### CricDNA call\nThe decisive battle is whether RR can maintain boundary access in overs 7\u201315 without donating wickets. If they can, they\u2019ll turn this into a 200 chase game. If they can\u2019t, CSK will turn it into a 165 grind \u2014 and win in the margins.",
-    relatedPlayerIds: [
-      7,
-      10,
-      14,
-      18,
-      20,
-      25
-    ],
-    chartData: [
-      {
-        label: "Buttler SR vs Jadeja",
-        value: 132.08,
-        color: "#10b981"
-      },
-      {
-        label: "Samson SR vs Jadeja",
-        value: 130.16,
-        color: "#8b5cf6"
-      },
-      {
-        label: "Dismissals (combined)",
-        value: 5,
-        color: "#ef4444"
-      }
-    ],
-    dataTable: {
-      headers: [
-        "Matchup",
-        "Balls",
-        "Runs",
-        "SR",
-        "Dismissals"
-      ],
-      rows: [
-        [
-          "Buttler vs Jadeja",
-          "53",
-          "70",
-          "132.08",
-          "2"
-        ],
-        [
-          "Samson vs Jadeja",
-          "63",
-          "82",
-          "130.16",
-          "3"
-        ]
-      ]
-    },
-    matchId: 3
-  },
-  {
-    id: 10,
-    slug: "ipl-2026-pre-season-power-rankings-priors",
-    title: "IPL 2026 Power Rankings (Pre-Season Priors): Rank the Options, Not the Names",
-    subtitle: "Before ball one, rank squads by optionality: depth, variety, and repeatable phase control.",
-    category: "rankings",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-03-27T13:00:00Z",
-    readTime: "4 min read",
-    tags: [
-      "rankings",
-      "ipl-2026",
-      "power-rankings",
-      "analysis"
-    ],
-    featured: false,
-    content: "Power rankings before ball one are always wrong \u2014 which is why they\u2019re useful. They capture your priors, and priors are what you update when reality arrives.\n\nThis is a CricDNA-style pre-season ranking built on one principle: in T20, **options** beat **specialists** across a long season. Batting depth creates insurance against variance; bowling variety creates leverage against matchups.\n\n### How to read these ranks\nThey are not \u2018best XI\u2019 lists. They are *portfolio* scores: how many different game states can a squad win? Can they defend 160? Can they chase 210? Can they win when a star has an off night?\n\n### The opening-weekend watchlist\nUse matches 1\u20133 as your first update step. If a team shows (a) middle-overs control and (b) a repeatable death plan, their title probability should move immediately \u2014 even if they lose a close game.\n\n### CricDNA call\nAfter opening weekend, update aggressively. Early-season narratives are cheap; early-season signal about roles, sequencing, and phase control is not.",
-    relatedPlayerIds: [
-      1,
-      2,
-      6,
-      14,
-      18
-    ],
-    dataTable: {
-      headers: [
-        "Tier",
-        "Teams (prior)",
-        "Why"
-      ],
-      rows: [
-        [
-          "Tier 1",
-          "MI, CSK",
-          "Depth + role clarity tends to travel"
-        ],
-        [
-          "Tier 2",
-          "RCB, SRH, KKR",
-          "High ceiling; need phase control to stabilize"
-        ],
-        [
-          "Tier 3",
-          "RR, GT, DC, LSG, PBKS",
-          "More variance; need early role-definition"
-        ]
-      ]
-    }
+      6
+    ]
   }
-];
-
+] as Article[];
 
 export const analyticsCards: AnalyticsCard[] = [
   {
-    type: "stat",
-    title: "Opening weekend is a three-venue stress test",
-    value: "Matches 1–3",
-    description: "Bengaluru rewards boundary access, Mumbai rewards finishing depth, and Guwahati rewards matchup discipline.",
+    "type": "stat",
+    "title": "Chinnaswamy par band",
+    "value": "173–183",
+    "description": "Using venue average + variance buffer for Match 1."
   },
   {
-    type: "matchup",
-    title: "Kohli vs Bhuvneshwar (historical)",
-    value: "SR 141.8 | 4 outs",
-    description: "Runs flow, but the wicket is on the table — a classic high-value powerplay battle.",
-    playerIds: [1],
+    "type": "stat",
+    "title": "Wankhede toss neutrality",
+    "value": "51.0%",
+    "description": "Win% when choosing to field first after winning toss at Wankhede."
   },
   {
-    type: "player",
-    title: "Death overs inflate at both big venues",
-    value: "10+ rpo",
-    description: "If you bat deep, your ceiling rises; if you bowl well late, your leverage is bigger than usual.",
-    playerIds: [2,18],
+    "type": "stat",
+    "title": "Barsapara sample size",
+    "value": "5",
+    "description": "Small-sample warning for Guwahati venue inference."
   },
-];
+  {
+    "type": "player",
+    "title": "Virat Kohli focus",
+    "value": "Top-order run volume",
+    "description": "At high-run venues, balls faced matters as much as strike rate.",
+    "playerIds": [
+      1
+    ]
+  }
+] as AnalyticsCard[];
