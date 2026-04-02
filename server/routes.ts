@@ -186,9 +186,10 @@ export async function registerRoutes(
     res.json(schedule);
   });
 
-  // GET /api/schedule/upcoming — Matches from today onwards
+  // GET /api/schedule/upcoming — Today's matches and future only
   app.get("/api/schedule/upcoming", (_req, res) => {
-    const today = "2026-03-22";
+    const now = new Date();
+    const today = now.toISOString().split("T")[0];
     const upcoming = schedule.filter((m) => m.date >= today);
     res.json(upcoming);
   });
