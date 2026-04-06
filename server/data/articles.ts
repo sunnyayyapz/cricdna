@@ -14,346 +14,275 @@ export interface AnalyticsCard {
 
 export const articles: Article[] = [
   {
-    "id": 1,
-    "slug": "dc-vs-mi-recap-rizvi-chase-phase-control",
-    "title": "DC vs MI recap: Rizvi masters the chase through phase control",
-    "subtitle": "Delhi chase 162 with 11 balls to spare as MI fade in the middle overs",
-    "category": "analysis",
-    "author": "CricDNA Analytics",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "DC",
-      "MI",
-      "Rizvi",
-      "SKY",
-      "recap"
-    ],
-    "featured": true,
-    "content": "Delhi Capitals made it two-from-two by chasing down 162 and beating Mumbai Indians by six wickets in Delhi. The scoreline (DC 164/4 in 18.1 overs) tells you the chase was controlled, but the story was really about how DC managed risk through phases.\n\nMumbai’s 162/6 was built around Suryakumar Yadav’s 51 off 36. On a surface that never looked like a 200+ wicket, MI’s middle-overs intent was right, but their boundary cadence dipped after the powerplay. DC’s Mukesh Kumar (2/26 in 3 overs) was the standout enforcer: hard lengths into the pitch, minimal pace-on freebies, and just enough variation to stop SKY from lining him up.\n\nWhen DC began the chase, the first checkpoint was simply survival. Once they settled, the gears shifted through one long partnership that eliminated Mumbai’s biggest weapon: pressure. Sameer Rizvi’s 90 off 51 was the defining innings. The key wasn’t just the strike rate; it was the shot map. He went straight when the ball was full, accessed square boundaries when MI dragged length, and avoided the low-percentage cross-batted heaves until the required rate was under control.\n\nMumbai did have a small opening to pull the game back when DC were searching for the finishing blows. Deepak Chahar’s 1/20 was a rare spell that forced DC to reset. But with wickets in hand, DC simply waited for the soft over and cashed it.\n\nWhat this match reinforced is a simple early-season truth: chasing teams are winning because they are playing to information. DC read par as 155–165, kept the required rate below 9, and never let MI’s death options matter. For MI, the takeaway is equally clear—162 is defendable only if the middle overs produce at least one 12–15 run over to create separation.",
-    "relatedPlayerIds": [
-      3,
-      4,
-      11,
-      13
-    ],
-    "chartData": [
-      {
-        "label": "Powerplay run-rate",
-        "value": 8.1,
-        "color": "#1E88E5"
-      },
-      {
-        "label": "Middle overs run-rate",
-        "value": 7.6,
-        "color": "#43A047"
-      },
-      {
-        "label": "Death overs run-rate",
-        "value": 9.4,
-        "color": "#F4511E"
-      }
-    ],
-    "dataTable": {
-      "headers": [
-        "Team",
-        "Score",
-        "Overs",
-        "Key innings"
-      ],
-      "rows": [
-        [
-          "MI",
-          "162/6",
-          "20.0",
-          "Suryakumar 51 (36)"
-        ],
-        [
-          "DC",
-          "164/4",
-          "18.1",
-          "Sameer Rizvi 90 (51)"
-        ]
-      ]
-    },
-    "matchId": 8
+    id: 1,
+    slug: "rcb-vs-csk-recap-rcb-250-chinnaswamy",
+    title: "RCB vs CSK: 250/3 sets up 43-run win as Chinnaswamy turns into a finishing clinic",
+    subtitle: "Patidar\u2013David acceleration and early CSK collapse decided the game in phases.",
+    category: "analysis",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["IPL 2026", "RCB", "CSK", "Match Recap", "Batting Depth"],
+    featured: true,
+    content: `
+Royal Challengers Bengaluru put out a statement night at the M. Chinnaswamy Stadium: 250/3, relentless boundary-hunting, and enough separation early in the chase to turn the last ten overs into damage control.
+
+Chennai Super Kings’ decision to field first never looked irrational on a ground where totals routinely get hunted down, but it did assume they could control phases. They couldn’t. RCB’s build was modern T20: stable base, then a long finishing window. Phil Salt’s 46 off 30 got the powerplay moving, Devdutt Padikkal’s 50 off 29 kept the scoring rate above 12 without the innings stalling, and the closer pair of Rajat Patidar (48* off 19) and Tim David (70* off 25) turned a “big” total into an “unfair” one.
+
+The most decisive part wasn’t just the raw 250; it was how the innings segmented. The Patidar–Padikkal 58 off 21 removed any mid-innings squeeze, and the Patidar–David 99 off 35 made the last five overs feel like the match’s entire margin.
+
+CSK’s chase never reset after the first three overs. Six batters fell for single-digit scores, and the top order collapsed before the innings had a shape. The late counterpunches from Sarfaraz Khan (50 off 25), Prashan Veer (43 off 29) and Jamie Overton (37 off 16) made the scoreline look closer than the process.
+
+Bhuvneshwar Kumar’s 3/41 was the control point: wickets plus overs that forced CSK to swing earlier than ideal. With support from Jacob Duffy and Krunal Pandya, RCB never had to protect a par total; they were defending an excess.
+
+Tactically, this match underlined two season themes: (1) Chinnaswamy is a “batting first is fine if you don’t leave runs late” venue, and (2) chasing 12+ for 20 overs is not a chase, it’s a 120-ball heist. RCB made sure CSK needed a heist.
+
+What it means: RCB’s top-order depth gives them multiple scoring templates, and their wicket-taking in the powerplay keeps games from becoming pure shootouts. CSK, meanwhile, can’t afford a third straight start-of-innings collapse; they’ll need earlier intent and better matchup planning against swing and hard lengths.
+`,
+    relatedPlayerIds: [1, 10, 16, 29, 14],
+    chartData: [{"label": "RCB total", "value": 250, "color": "#D71920"}, {"label": "CSK chase", "value": 207, "color": "#F7D117"}],
+    dataTable: {"headers": ["RCB key scores", "Figures"], "rows": [["Tim David", "70* (25)"], ["Devdutt Padikkal", "50 (29)"], ["Rajat Patidar", "48* (19)"], ["Phil Salt", "46 (30)"], ["Bhuvneshwar Kumar", "3/41"], ["Jacob Duffy", "2 wkts"], ["Krunal Pandya", "2 wkts"]]},
+    matchId: 11,
   },
   {
-    "id": 2,
-    "slug": "gt-vs-rr-recap-jurel-bishnoi-wickets-win-close",
-    "title": "GT vs RR recap: Jurel’s tempo, Bishnoi’s wickets, Royals hold on",
-    "subtitle": "Six-run win in Ahmedabad built on an anchor innings and wicket-timing",
-    "category": "analysis",
-    "author": "CricDNA Insights",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "GT",
-      "RR",
-      "Jurel",
-      "Bishnoi",
-      "recap"
-    ],
-    "featured": false,
-    "content": "Rajasthan Royals edged Gujarat Titans by six runs in Ahmedabad in a game that was decided by two moments: RR’s late-innings acceleration to reach 210/6, and their ability to take wickets without offering release balls in the final five overs.\n\nRR’s 210/6 was anchored by Dhruv Jurel’s 75 off 42. Jurel’s value wasn’t just volume; it was tempo management. He kept the innings ahead of the par rate through the middle overs, which meant RR could attack the death without needing reckless swings. Gujarat’s Kagiso Rabada (2/42) got wickets, but he also absorbed the overs that could have become 14–16 run bursts.\n\nIn reply, GT’s 204/8 shows they were never truly out of it. Sai Sudharsan’s 73 off 44 kept the chase alive, especially by rotating strike when RR held the square boundaries. But the chase always required someone to provide a 10-ball, 25-run spike at the back end—and that never arrived.\n\nRavi Bishnoi’s 4/41 was the difference-maker. On paper, 41 runs looks expensive. Contextually, it was gold: he took wickets at the exact times GT were building. Every time Gujarat stitched together a partnership, Bishnoi forced a reset with a breakthrough. That forced GT’s hitters into a higher-risk endgame where timing windows shrink.\n\nFrom a tactical lens, RR’s batting template is becoming clear: build to 85–95 at the halfway mark with wickets intact, then take one match-up bowler out at the death. Their bowling template is equally defined: take pace off on good length, and keep the stumps in play so that set batters can’t set for one zone.\n\nFor GT, the early lesson is about second-gear hitting. 204 is a strong chase, but when you’re chasing 210+ you need at least one phase where the required rate is attacked, not managed. In Ahmedabad, Gujarat managed brilliantly—just not aggressively enough.",
-    "relatedPlayerIds": [
-      17,
-      20,
-      7
-    ],
-    "chartData": [
-      {
-        "label": "Target",
-        "value": 210,
-        "color": "#6D4C41"
-      },
-      {
-        "label": "Chase",
-        "value": 204,
-        "color": "#00897B"
-      }
-    ],
-    "dataTable": {
-      "headers": [
-        "Team",
-        "Score",
-        "Overs",
-        "Top score"
-      ],
-      "rows": [
-        [
-          "RR",
-          "210/6",
-          "20.0",
-          "Dhruv Jurel 75 (42)"
-        ],
-        [
-          "GT",
-          "204/8",
-          "20.0",
-          "Sai Sudharsan 73 (44)"
-        ]
-      ]
-    },
-    "matchId": 9
+    id: 2,
+    slug: "srh-vs-lsg-recap-one-ball-chase",
+    title: "SRH vs LSG: One-ball finish highlights why chase control beats chaos",
+    subtitle: "LSG win by 5 wickets (1 ball left) \u2014 the chase was about wicket preservation and sequence bowling.",
+    category: "analysis",
+    author: "CricDNA Insights",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["IPL 2026", "SRH", "LSG", "Chase Strategy"],
+    featured: false,
+    content: `
+Lucknow Super Giants edged Sunrisers Hyderabad by five wickets at Hyderabad, with one ball remaining — a result that reinforced how thin the margins are when venues reward six-hitting but also punish one bad over.
+
+Without full ball-by-ball context, the key takeaway is structural: LSG’s chase management got them home despite the pressure of a late finish. In these games, the winning side usually does two things better than the opponent: it protects wickets through the middle overs and preserves a finishing option for the last 24 balls.
+
+For SRH, the recurring question is whether their run-making comes in the right order. Their batting is built for surges — Travis Head and Abhishek Sharma can change the powerplay in 18 balls — but a five-wicket defeat suggests they either left runs late or didn’t have enough scoreboard “paranoia” at the death.
+
+For LSG, the value is clarity: if Pant anchors and the hitters around him keep the required rate under control, they don’t need a perfect chase. They need a chase that never spikes.
+
+The practical lesson for both teams is matchup discipline. On batting-friendly grounds, bowling plans must be less about “good balls” and more about “good sequences”: two dots to buy a slower ball, or a wide yorker only after you’ve moved the batter’s feet. The teams that sequence well win the one-ball games.
+`,
+    relatedPlayerIds: [4, 6, 8, 9],
+    matchId: 10,
   },
   {
-    "id": 3,
-    "slug": "ipl-2026-april-4-doubleheader-takeaways-phase-control",
-    "title": "April 4 takeaways: why phase control is winning early IPL 2026",
-    "subtitle": "Two matches, one theme: manage risk, then attack with resources",
-    "category": "analysis",
-    "author": "CricDNA Editorial",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "IPL 2026",
-      "trends",
-      "chasing"
-    ],
-    "featured": false,
-    "content": "Saturday’s double-header delivered a clean read on what the first week of IPL 2026 is quietly rewarding: phase control beats highlight overs.\n\nIn Delhi, Mumbai Indians posted 162/6 and still lost with 11 balls unused. The match wasn’t a collapse; it was a slow bleed. DC kept Mumbai’s middle overs from ever becoming a platform and then chased with a single dominant innings (Sameer Rizvi 90 off 51) that kept the required rate in a “manageable” range throughout.\n\nIn Ahmedabad, the tempo was louder. 210 played 204, and Gujarat were within one big over of winning. Yet the story was similar: Rajasthan’s innings was built on one anchor (Dhruv Jurel 75 off 42) keeping the run rate ahead early so the death could be attacked; Gujarat’s chase was built on one anchor (Sai Sudharsan 73 off 44) but lacked the late spike. The separator was wickets—Ravi Bishnoi’s four strikes ensured the chase never became a simple equation.\n\nAcross the two matches, three signals matter for upcoming previews:\n\n1) Wickets in hand at the 12-over mark are more valuable than being 10 runs above par. Both winning teams preserved resources, then accelerated. \n2) “Expensive” wicket-taking spells are still match-winning. Bishnoi conceded 41 but removed momentum. \n3) Chasing teams are winning because they convert information into pacing. When par is 160–170, teams are comfortable taking the game deep.\n\nFor fantasy and tactical watchers, the actionable takeaway is to prioritise players who influence phase transitions: middle-overs wicket takers (Bishnoi-type roles) and top-four batters who can both anchor and access boundaries without needing risk.\n\nAs the tournament moves into venues with clearer personality—Hyderabad’s hit-the-deck pace and Bengaluru’s fast outfield—expect teams to lean even harder into this “manage, then explode” rhythm. The side that forces the opponent to play two gears at once will keep winning.",
-    "relatedPlayerIds": [
-      3,
-      13,
-      17,
-      23
-    ]
+    id: 3,
+    slug: "ipl-2026-nrr-early-shape",
+    title: "IPL 2026: Early NRR patterns are already creating \u201cmargin pressure\u201d teams",
+    subtitle: "RCB\u2019s +2.501 and CSK\u2019s -2.517 show why one blowout changes April strategy.",
+    category: "rankings",
+    author: "CricDNA Editorial",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["IPL 2026", "Points Table", "NRR", "Strategy"],
+    featured: false,
+    content: `
+The early IPL table is noisy, but it still reveals something useful: net run rate is already being shaped by “batting depth wins” rather than one-off cameos. After RCB’s 43-run win over CSK, Bengaluru sit on four points with a net run rate of +2.501, ahead of three other unbeaten sides on four points.
+
+At this stage, points are binary; NRR is the story. Massive first-innings totals (like 250/3) are NRR multipliers because they create two advantages: they push the opposition into high-risk strokes early, and they allow bowlers to attack stumps with protection behind.
+
+The bottom is equally instructive. CSK are winless after three games and have sunk to -2.517 NRR. That is not just “three losses” — it’s “three losses with damage.” When NRR gets this negative in April, it forces a team to chase not just wins but margins later.
+
+Strategically, early-season NRR shapes decision-making. Teams with strong NRR can play slightly more conservatively in tight chases; teams with weak NRR start making ‘net run’ choices — promoting hitters, accelerating earlier, taking on higher variance.
+
+If you want a simple projection: the top four after two weeks are rarely the final four, but the teams that bank NRR through dominant wins are the ones that can survive a mid-season wobble.
+`,
+    relatedPlayerIds: [],
+    chartData: [{"label": "RCB NRR", "value": 2.501, "color": "#D71920"}, {"label": "CSK NRR", "value": -2.517, "color": "#F7D117"}, {"label": "RR NRR", "value": 2.233, "color": "#254AA5"}],
   },
   {
-    "id": 4,
-    "slug": "srh-vs-lsg-pitch-report-hyderabad-par-185-chasing-edge",
-    "title": "SRH vs LSG pitch report: Hyderabad rewards depth and death overs",
-    "subtitle": "Rajiv Gandhi Stadium profiles point to 175–185 as par, 190 as safe",
-    "category": "pitch-report",
-    "author": "CricDNA Analytics",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "SRH",
-      "LSG",
-      "Hyderabad",
-      "pitch"
-    ],
-    "featured": false,
-    "content": "The surface at Hyderabad has historically been a high-scoring venue with a strong chasing bias. In the venue dataset, Rajiv Gandhi International Stadium averages 166.9 in the first innings and 160.7 in the second, with chasing sides winning 59.7% of games (37 of 62). The scoring profile is consistent across phases: powerplay run rate 7.34, middle overs 7.60, death overs 9.46.\n\nFor Sunrisers Hyderabad vs Lucknow Super Giants, this points to a simple pitch thesis: if the pitch is its usual true-paced Hyderabad strip, anything under 180 is “chaseable”, and 190+ becomes the comfort zone.\n\nWhat should batters look for? The Hyderabad numbers suggest boundary hitting is most profitable at the death, not necessarily in the first six overs. That means top orders can be slightly conservative early—6.5–7.5 an over is fine—if they preserve wickets and keep the set batters for overs 16–20.\n\nFrom a bowling standpoint, this venue punishes pace-on at the backend. Death overs at 9.46 means you must either own a high-quality yorker option or take pace off into the pitch. For LSG, that places extra value on their best execution quicks. For SRH, it places value on spinners who can win the 7–15 window to offset the inevitable late surge.\n\nTactically, SRH’s ideal plan is to maximise their top-order matchup advantage: Travis Head and Heinrich Klaasen are at their best when they don’t have to force the rate early. LSG’s plan should be to create a wicket-cluster between overs 5–10 to prevent SRH from carrying batters into the death.\n\nIf you want a number: par first-innings score is around 175–185. Anything above 190 should be defended only if the bowling side has an above-average death package and can control the wide yorker channel.",
-    "relatedPlayerIds": [
-      8,
-      9,
-      22
-    ]
+    id: 4,
+    slug: "kkr-vs-pbks-pitch-report-eden-2026",
+    title: "KKR vs PBKS pitch report: Eden Gardens is a finishing venue \u2014 plan for the last 5 overs",
+    subtitle: "Eden\u2019s phase scoring and chase bias point to a 185+ baseline and a death-overs skills test.",
+    category: "pitch-report",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["KKR", "PBKS", "Eden Gardens", "Pitch Report"],
+    featured: false,
+    content: `
+Eden Gardens has always rewarded tempo, but the recent data shows a venue that is even more explicitly phase-driven. Across 77 IPL matches at Eden Gardens, the average first-innings score is 160.2 and teams chasing win more often (47 vs 30). That aligns with toss behaviour: sides choose to field first about 63.6% of the time.
+
+For KKR vs PBKS, that points to a simple blueprint: if you’re bowling first, you want to keep the powerplay under 45 without losing your best death options; if you’re batting first, you need a ‘par plus’ total, because the venue has historically favoured chases.
+
+What should the pitch play like? The run-rate by phase at Eden (powerplay 7.28, middle 7.51, death 9.37) suggests the wicket doesn’t dramatically slow; it asks bowlers to survive the last five overs. Expect cutters and wide yorkers from the 16th over onwards, and a premium on boundary-side fielding.
+
+Matchup lens:
+- PBKS’ pace options need length discipline to Rinku Singh’s leg-side power; anything back-of-a-length without pace-off becomes a slot ball here.
+- KKR’s Varun Chakravarthy can be the middle-overs governor if he forces PBKS to hit straight rather than square.
+
+Par score call: 185 is a baseline. Anything above 200 is a game you can defend if you take wickets in the first six.
+`,
+    relatedPlayerIds: [27, 23],
   },
   {
-    "id": 5,
-    "slug": "srh-vs-lsg-toss-report-bowl-first-is-the-default",
-    "title": "SRH vs LSG toss report: bowl first is the default at Hyderabad",
-    "subtitle": "History says captains field first and chase with clarity",
-    "category": "toss-report",
-    "author": "CricDNA Insights",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "SRH",
-      "LSG",
-      "toss",
-      "Hyderabad"
-    ],
-    "featured": false,
-    "content": "At Hyderabad, the toss is rarely a simple “bat first” call. The venue toss data shows teams choose to field first 66.1% of the time (41 of 62), and those teams win 58.5% of their matches. That’s a strong signal that chasing is not just popular—it’s been profitable.\n\nFor SRH vs LSG, the toss decision should be anchored to one question: do you trust your death bowling? If you don’t, the better play is to chase, because you get a precise target and can pace the chase through the long middle period.\n\nIf a team wins the toss and fields first, the early objective should be to keep the batting side under 50 in the powerplay without leaking free boundaries. Hyderabad’s powerplay run rate (7.34) suggests you can “win” the first six overs without being spectacular—two wickets or a quiet 38–42 can tilt the innings.\n\nIf a team is forced to bat first, the template is about wickets. A 175–185 score is defendable only if you keep 7+ wickets intact at the 12-over mark so the death can be attacked. Otherwise you risk a 165–175 total that looks fine on paper but feels short once the ball skids on.\n\nWeather and dew can still swing the call, but even without that, the numbers make the toss decision clear: fielding first has been the historical edge at this venue.\n\nCricDNA call: win the toss, bowl first. If you bat first, aim for 190 and treat 180 as the minimum competitive benchmark.",
-    "relatedPlayerIds": [
-      8,
-      9,
-      22
-    ]
+    id: 5,
+    slug: "kkr-vs-pbks-toss-report-eden-2026",
+    title: "KKR vs PBKS toss report: Why Eden captains keep choosing to field first",
+    subtitle: "Our dataset shows a strong field-first preference and better win rate when chasing at Eden.",
+    category: "toss-report",
+    author: "CricDNA Insights",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["KKR", "PBKS", "Toss", "Eden Gardens"],
+    featured: false,
+    content: `
+At Eden Gardens, the toss is less superstition and more math. In 77 recorded matches at Eden Gardens in our dataset, captains chose to field first 49 times versus 28 choosing to bat first. The win-rate also tilts toward fielding first (63.3% vs 42.9%).
+
+For KKR vs PBKS, that means one likely decision: if you win the toss, you field. The question then becomes how you allocate overs so the chase stays under control.
+
+If KKR bowl first:
+- Use Bumrah-style logic even without Bumrah: protect your best ‘hard length’ over for overs 3-4 when the batter wants to ramp the rate.
+- Keep Varun Chakravarthy for the 7-14 window; Eden’s middle-overs run rate is still high, so the only way to win is to take wickets, not just contain.
+
+If PBKS bowl first:
+- Sequence pace-off balls at the death; Eden’s death RPO (9.37) is a warning that predictable yorkers get hit.
+
+If you’re forced to bat first, 55+ in the powerplay is almost mandatory. Eden is a chase venue; leaving 15 runs for the last five overs is a losing trade.
+`,
+    relatedPlayerIds: [23, 27],
   },
   {
-    "id": 6,
-    "slug": "srh-vs-lsg-match-preview-head-klaasen-vs-rahul-control",
-    "title": "SRH vs LSG match preview: Head and Klaasen vs Rahul’s control model",
-    "subtitle": "Explosiveness vs structure in a venue that loves chases",
-    "category": "match-preview",
-    "author": "CricDNA Editorial",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "SRH",
-      "LSG",
-      "preview"
-    ],
-    "featured": false,
-    "content": "Sunrisers Hyderabad vs Lucknow Super Giants sets up as a matchup between explosive top-order intent and structured phase bowling.\n\nHyderabad’s batting ceiling is obvious: Travis Head can turn the powerplay into a mismatch, and Heinrich Klaasen is one of the most damaging spin-hitters in the league when the field spreads. The strategic goal for SRH should be to create at least one “break” over in the powerplay—an over that goes for 15+—and then consolidate until Klaasen can launch at the death.\n\nLucknow’s best response is to drag the game into the middle overs and hunt wickets. Hyderabad’s venue profile suggests the middle overs are not slow (7.60 rpo), but they are controllable if you can bowl into the pitch and protect the straight boundary.\n\nFor LSG’s batting, the key is avoiding a chase where they require 11+ an over from over 13 onwards. Hyderabad’s chasing bias is strong; to beat it you either set 195+ or you take wickets. If LSG chase, they should plan to be within 10 runs of par at every checkpoint: 45–50 after 6, 95–105 after 12, and no more than 55 needed off the last five.\n\nPlayer focus:\n- Head (SRH) is the volatility lever; if he gets 35 off 20, SRH are on track for 190.\n- Klaasen (SRH) is the finisher; the match is won or lost by how many balls he faces after over 14.\n- KL Rahul (LSG) is the stabiliser. In a high-scoring venue, his value is preserving wickets and ensuring the hitters have time.\n\nCricDNA prediction: this is a chasing venue and a chasing matchup. The side that wins the toss and fields, then keeps the opponent under 185, will control the game.",
-    "relatedPlayerIds": [
-      8,
-      9,
-      22,
-      28
-    ]
+    id: 6,
+    slug: "kkr-vs-pbks-match-preview-eden-2026",
+    title: "KKR vs PBKS match preview: Eden\u2019s chase bias meets PBKS momentum",
+    subtitle: "The game will likely swing in overs 7-15: wickets, not dots, decide Eden matches.",
+    category: "match-preview",
+    author: "CricDNA Editorial",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["KKR", "PBKS", "Preview", "Matchups"],
+    featured: false,
+    content: `
+Punjab Kings arrive with momentum; KKR arrive needing a cleaner template. On current season form, PBKS have banked wins by protecting their chase structure, while KKR’s early losses have come from giving away one decisive phase.
+
+The Eden Gardens context pushes this game toward a familiar pattern: powerplay aggression followed by middle-overs wicket protection. If PBKS keep wickets in hand through 12 overs, their finishing options can erase most required rates at Eden.
+
+For KKR, two levers matter:
+1) Make the powerplay overs “two-paced” with pace-off and hard lengths. Eden is a boundary venue; you can’t win by bowling ‘good lines’ alone.
+2) Get Varun Chakravarthy bowling to the set batters, not the new batters. His value is in breaking partnerships, not in ‘quiet overs’.
+
+Key matchups to watch:
+- Rinku Singh vs PBKS death bowling: if Rinku gets 20 balls, KKR’s ceiling jumps.
+- Varun Chakravarthy vs Shreyas Iyer-style anchors (PBKS’s middle): if Varun creates dots, PBKS are forced into high-risk sweeps.
+
+Prediction lens: whichever team wins the “overs 7-15” wicket battle wins. Eden rarely allows you to defend without middle-overs breakthroughs.
+`,
+    relatedPlayerIds: [23, 27],
   },
   {
-    "id": 7,
-    "slug": "rcb-vs-csk-pitch-report-chinnaswamy-par-190",
-    "title": "RCB vs CSK pitch report: Chinnaswamy is an innings-structure test",
-    "subtitle": "Keep wickets for the death; 190 is the working par",
-    "category": "pitch-report",
-    "author": "CricDNA Analytics",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "RCB",
-      "CSK",
-      "Bengaluru",
-      "pitch"
-    ],
-    "featured": false,
-    "content": "Bengaluru’s M. Chinnaswamy Stadium is a venue where the default setting is aggression. The venue dataset has an average first-innings score of 169.3 and second-innings score of 161.5 across 90 matches. Teams chasing have won 57.8% of games (52 of 90).\n\nThe phase scoring numbers explain why: powerplay 7.75 rpo, middle overs 7.84, and death overs 9.82. In other words, it rarely “slows down”. Even if bowlers survive the powerplay, the death overs inflate totals.\n\nFor RCB vs CSK, the pitch report is simple: expect value for timing and straight hitting, and expect bowlers to rely on deception rather than pace. If the pitch is dry, spinners who can change pace and hit hard lengths can still win middle overs, but anything fractionally full disappears.\n\nA practical par range at Chinnaswamy is 180–195 depending on dew. 170 is not safe unless you have an exceptional wicket-taking attack.\n\nKey tactical note: because both middle and death overs are expensive, batting sides should not over-attack the first six overs. The venue doesn’t demand 60 in the powerplay; it demands wickets in hand for the overs where 10–12 rpo is “normal”.\n\nCricDNA call: if you bat first, structure the innings to be 55–60 after 6 with 1 wicket down, 110–120 after 12, then explode late. That produces the kind of 190 total that forces the chasing side to take risks earlier than they want.",
-    "relatedPlayerIds": [
-      1,
-      10,
-      14,
-      16
-    ]
+    id: 7,
+    slug: "ipl-2026-phase-batting-template",
+    title: "IPL 2026: The phase-batting template that\u2019s beating \u201cperfect technique\u201d",
+    subtitle: "Aggressive powerplays + preserved finishers is the new stable strategy \u2014 depth enables risk.",
+    category: "analysis",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["Strategy", "Batting", "Powerplay", "Death Overs"],
+    featured: false,
+    content: `
+The biggest tactical shift in early IPL 2026 is not a new shot; it’s the acceptance that the powerplay is no longer “set up” time. Teams are treating it as a scoring phase that must reach 55-60 even when wickets fall.
+
+That makes finishing depth more valuable than ever. RCB’s 250/3 against CSK is a case study: the top order didn’t need to bat till the 18th because the lower-middle order could start at 200 strike rate. When you have that depth, you can take higher-variance options earlier.
+
+The counter-argument is volatility: aggressive powerplays can create collapses. But the early table suggests teams are choosing volatility because it buys them two things: net run rate buffers and less dependence on the toss.
+
+If you’re building a winning template, it looks like this:
+- Powerplay: attack one side of the ground; accept 1-2 wickets.
+- Middle: protect the set batter; hit spin straight.
+- Death: keep one hitter unused until over 16.
+
+Expect the teams with the deepest 7-8 batting to separate by mid-season.
+`,
+    relatedPlayerIds: [1, 16, 29, 10],
   },
   {
-    "id": 8,
-    "slug": "rcb-vs-csk-toss-report-chase-helps-but-edge-is-narrow",
-    "title": "RCB vs CSK toss report: chasing helps, but execution matters more",
-    "subtitle": "A mild chasing edge; dew can turn it into a big one",
-    "category": "toss-report",
-    "author": "CricDNA Insights",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "RCB",
-      "CSK",
-      "toss"
-    ],
-    "featured": false,
-    "content": "The toss at Chinnaswamy often follows the “field first” trend, but the edge is narrower than some other venues because both innings score quickly. The toss stats show teams choose to field first 64.4% of the time (58 of 90), and those teams win 55.2% of matches.\n\nFor RCB vs CSK, that implies a mild advantage to chasing, not a guarantee. The deciding factor is usually dew and execution: if the ball gets wet, yorkers become harder to land and slower balls become easier to pick.\n\nSo what is the optimal toss call?\n- If there is visible dew potential or a very light breeze, field first.\n- If conditions are dry and you have a disciplined bowling unit, batting first and posting 190+ can still be the better pressure play.\n\nRegardless of decision, the first six overs are crucial for the bowling side. Chinnaswamy’s powerplay run rate (7.75) suggests “par containment” is possible if you take pace off and protect the hard lengths. But if you concede 60+ without wickets, you are defending a venue that offers no natural slowdown.\n\nCricDNA call: win the toss, bowl first—unless your batting lineup is clearly stronger than the opponent and you back yourself to post 200.",
-    "relatedPlayerIds": [
-      1,
-      10,
-      14,
-      16
-    ]
+    id: 8,
+    slug: "ipl-venues-eden-vs-delhi-run-scoring",
+    title: "IPL venues: Eden vs Arun Jaitley \u2014 same run-fest, different captaincy problems",
+    subtitle: "Both are high-scoring, but the chase/defend trade-offs differ sharply by phase scoring.",
+    category: "analysis",
+    author: "CricDNA Insights",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["Venues", "Eden Gardens", "Arun Jaitley", "Tactics"],
+    featured: false,
+    content: `
+Venue analysis is the easiest way to make pre-match decisions less emotional. Compare Eden Gardens and Arun Jaitley Stadium in our dataset and you get two “high-scoring” grounds with different risk profiles.
+
+Eden Gardens (sample 77 matches) has an average first-innings score of 160.2, while Arun Jaitley (sample 23 matches for the Delhi-labeled venue) sits higher at 200.3. But the more important split is in the death overs: Eden’s death RPO is 9.37; Arun Jaitley’s is 11.59. Both are brutal, but Delhi is borderline unbowlable if you miss your wide yorker.
+
+So the practical implication:
+- Eden rewards chasing; build a chase plan.
+- Delhi rewards batting depth; build a defendable excess.
+
+If you’re a captain choosing between batting and bowling first, your question should be: do I trust my death bowling more than my batting depth? The data says that’s the real toss decision.
+`,
+    relatedPlayerIds: [],
+    chartData: [{"label": "Eden avg 1st inns", "value": 160.2, "color": "#6A1B9A"}, {"label": "Delhi avg 1st inns", "value": 200.3, "color": "#1B5E20"}],
   },
   {
-    "id": 9,
-    "slug": "rcb-vs-csk-match-preview-kohli-salt-vs-gaikwad-bridge",
-    "title": "RCB vs CSK match preview: Kohli/Salt power vs Gaikwad’s bridge role",
-    "subtitle": "Top-two output and wicket clusters decide at Chinnaswamy",
-    "category": "match-preview",
-    "author": "CricDNA Editorial",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "RCB",
-      "CSK",
-      "preview"
-    ],
-    "featured": false,
-    "content": "Royal Challengers Bengaluru vs Chennai Super Kings is the kind of fixture where strategy is secondary to matchup control.\n\nRCB’s blueprint is built around top-order volume. Virat Kohli remains their control batter: if he bats through 15 overs at a run-a-ball-plus tempo, the hitters can push the innings beyond 190. Phil Salt is the chaos lever who can win the powerplay outright.\n\nCSK’s blueprint is usually about depth and spin matchups, but at Chinnaswamy the game shifts: you need boundary-hitters who can clear the straight and long-off zones. That’s why Ruturaj Gaikwad’s role is so important—he has to bridge the innings so that CSK aren’t asking too much of finishers.\n\nBowling matchups that matter:\n- If Bumrah-like execution existed for either team, it would be decisive at this venue. In reality, Chinnaswamy is about which attack can create wickets in clusters, because dot-ball pressure is hard to sustain.\n- Spinners who bowl into the pitch and vary pace can still win overs 7–12, especially if batters are forced to hit against the turn.\n\nGame model:\n1) Keep wickets in hand.\n2) Take one bowler out at the death.\n3) In the chase, never let the required rate rise above 10.5.\n\nCricDNA prediction: the team that wins the toss and fields first gains the first advantage, but the match will swing on which side’s top two batters collectively score 90+ runs. If Kohli and Salt fire, RCB can separate; if Gaikwad anchors and CSK’s hitters get 30-ball cameos, CSK stay in it.",
-    "relatedPlayerIds": [
-      1,
-      10,
-      14,
-      16,
-      29
-    ]
+    id: 9,
+    slug: "ipl-2026-avoiding-powerplay-collapses",
+    title: "Avoiding powerplay collapses: why intent sequencing matters more than technique",
+    subtitle: "Collapses happen when roles overlap; aligned tempos create stability even at high scoring rates.",
+    category: "analysis",
+    author: "CricDNA Editorial",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["Batting", "Powerplay", "Role Clarity", "Risk"],
+    featured: false,
+    content: `
+Early-season collapses are not “bad batting”; they’re often bad intent sequencing. CSK’s chase against RCB is a reminder that if your top order plays three different tempos, you get a collapse that looks like panic.
+
+A better model is tempo alignment:
+- One batter attacks the hard-length zone.
+- One batter plays the “strike rotation plus one boundary per over” role.
+- The third batter is the insurance policy who can still hit 160+ if needed.
+
+When teams lose multiple wickets inside the first three overs, it’s usually because all three batters tried to do the same job: hit over the top against a new ball that is still doing enough.
+
+The coaching takeaway is simple: the best way to avoid collapse is not “play straighter.” It’s “decide the risk windows before the innings starts.”
+`,
+    relatedPlayerIds: [14, 10, 1],
   },
   {
-    "id": 10,
-    "slug": "ipl-2026-week-one-trends-chasing-middle-overs-wickets",
-    "title": "IPL 2026 week one: chasing logic and the return of middle-overs wickets",
-    "subtitle": "Information advantage is shaping tactics; death execution remains king",
-    "category": "analysis",
-    "author": "CricDNA Analytics",
-    "publishedAt": "2026-04-05",
-    "readTime": "6 min",
-    "tags": [
-      "IPL 2026",
-      "strategy",
-      "analytics"
-    ],
-    "featured": false,
-    "content": "After the first nine matches of IPL 2026, the most consistent pattern is not a team or a player—it’s a decision. Teams are leaning into chasing, and the early results suggest it’s still the higher-percentage play.\n\nWhy? Because modern T20 has become a game of “information advantage”. When you know the target, you can distribute risk precisely. You don’t need to win every over; you need to win the right two overs.\n\nThe two matches on 4 April were a perfect illustration. In Delhi, a target of 162 was chased with 11 balls spare because Delhi never let the required rate drift into panic. In Ahmedabad, Gujarat fell six short chasing 210 because they were always one wicket behind the chase—they kept the rate in range but lost the ability to produce a finishing surge.\n\nThe second emerging trend is the rising value of wicket-taking in the middle overs. Even if a bowler concedes 9–10 an over, taking wickets between overs 7–15 changes the endgame. It forces new batters to start in the most tactically complex phase of the innings, when fields are spread and bowlers can hide their best options.\n\nFinally, venue personality is going to matter more as the schedule moves. Hyderabad and Bengaluru are both venues with historically strong chasing edges and high death-over scoring. That pushes captains toward bowling-first decisions and places a premium on death execution.\n\nCricDNA’s early-season checklist for winning games:\n- Preserve wickets until over 12.\n- Identify the one bowler you can target at the death.\n- In chases, keep the required rate below 9.5 until the final five.\n\nThe teams that can play this “two-phase” model—manage, then explode—will set the early pace. The teams that try to win the game in the first six overs will keep discovering that T20 punishes impatience more than it punishes caution.",
-    "relatedPlayerIds": [
-      2,
-      23,
-      26
-    ]
-  }
-] as Article[];
+    id: 10,
+    slug: "ipl-2026-season-checkpoint-week-2",
+    title: "IPL 2026 season checkpoint: Why April margins decide May pressure",
+    subtitle: "Unbeaten starts are useful, but flexible templates and middle-overs wickets decide the finalists.",
+    category: "analysis",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-06",
+    readTime: "6 min",
+    tags: ["Season", "Playoffs", "NRR", "Trends"],
+    featured: false,
+    content: `
+A week into IPL 2026, four teams have already created separation: unbeaten starts plus net run rate. The season is still young, but the playoff maths never changes.
+
+Historically, 16 points is the soft qualification line, 18 points is safer. That means a team that starts 0-3 has already spent its margin for error: it must win roughly two out of every three games from here just to get back to the bubble.
+
+But the real battle is the “middle nine” games. This is where squads with deeper bowling rotations and flexible batting orders bank points while others burn energy solving the same problems.
+
+Watch for these indicators over the next two weeks:
+- Teams that can win both batting-first and chasing games.
+- Teams that take wickets in overs 7-15 (middle-overs control).
+- Teams that protect net run rate in losses.
+
+If you want one early prediction: the finalists will be the teams that can win ugly. April is for winning pretty; May is for surviving.
+`,
+    relatedPlayerIds: [],
+  },
+];
 
 export const analyticsCards: AnalyticsCard[] = [
-  {
-    "type": "matchup",
-    "title": "Hyderabad chasing edge",
-    "value": "59.7%",
-    "description": "Chasing sides have won 37 of 62 matches at Rajiv Gandhi International Stadium (venue dataset).",
-    "teamColors": [
-      "#F05A28",
-      "#005BAC"
-    ]
-  },
-  {
-    "type": "matchup",
-    "title": "Chinnaswamy chase rate",
-    "value": "57.8%",
-    "description": "Teams batting second have won 52 of 90 matches at M. Chinnaswamy Stadium (venue dataset).",
-    "teamColors": [
-      "#E4002B",
-      "#FFD54F"
-    ]
-  },
-  {
-    "type": "player",
-    "title": "Players in focus today",
-    "value": "Kohli, Klaasen, Rahul",
-    "description": "Game models lean on control anchors plus one high-impact hitter at the death.",
-    "playerIds": [
-      1,
-      9,
-      22
-    ]
-  }
-] as AnalyticsCard[];
+  {"type": "matchup", "title": "Tonight: KKR vs PBKS", "value": "Eden Gardens", "description": "Chase-friendly venue; overs 7-15 wickets decide the matchup.", "playerIds": [23, 27], "teamColors": ["#3A225D", "#D71920"]},
+  {"type": "stat", "title": "RCB batting peak", "value": "250/3", "description": "RCB\u2019s innings vs CSK showcased finishing depth and phase acceleration.", "teamColors": ["#D71920", "#F7D117"]},
+  {"type": "player", "title": "Finisher spotlight", "value": "Tim David 70* (25)", "description": "High-impact death-overs hitting set up RCB\u2019s 43-run cushion.", "playerIds": [16], "teamColors": ["#D71920"]},
+];
