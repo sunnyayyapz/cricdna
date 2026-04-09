@@ -15,445 +15,467 @@ export interface AnalyticsCard {
 export const articles: Article[] = [
   {
     id: 1,
-    slug: "rr-vs-mi-match-13-recap-jaiswal-77-rain-11-overs",
-    title: "RR vs MI (Match 13) recap: Jaiswal’s 77* turns an 11-over shootout into a statement win",
-    subtitle: "Rajasthan posted 150/3 in 11 overs and strangled Mumbai’s chase to win by 27 — a reminder that powerplay clarity beats ‘normal-innings’ thinking.",
+    slug: "dc-vs-gt-match-14-recap-last-ball-thriller-rahul-92-gill-70",
+    title: "DC vs GT (Match 14) recap: a 1-run finish built on two powerplays and one decision",
+    subtitle: "GT made 210/4, DC finished 209/8 — and the difference was how each side ‘used’ the last 12 balls.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
-    readTime: "6 min",
-    tags: ["IPL 2026", "RR", "MI", "Match 13", "Guwahati"],
+    publishedAt: "2026-04-09",
+    readTime: "7 min",
+    tags: ["IPL 2026", "DC", "GT", "Match 14", "Delhi"],
     featured: true,
     content: `
-Rajasthan Royals beat Mumbai Indians by 27 runs in a rain-shortened 11-over match at Guwahati, finishing with 150/3 and then restricting MI to 123/9. The scoreline is simple; the lesson is not. Short games punish teams that try to play “T20 in miniature”. They reward the side that commits earliest to a boundary-first plan, then defends it with wicket pressure.
+Gujarat Titans beat Delhi Capitals by 1 run in Match 14 at the Arun Jaitley Stadium after defending 210/4 against 209/8. The headline is a last-ball run-out and a missed chance in the final over, but the match was shaped much earlier — by the way GT won the first six overs with the bat, and by how DC’s chase went from “in control” to “counting singles”.
 
-RR’s innings was built around one unbroken idea: win the first 20 balls. Yashasvi Jaiswal stayed unbeaten on 77 off 32, striking 10 fours and 4 sixes, and Vaibhav Sooryavanshi added 39 off 14 with five sixes. Mumbai did get wickets — AM Ghazanfar finished with 2/21 — but in 11 overs you can’t trade wickets for run-rate unless you take them in clusters. RR’s 150/3 implied a run-rate of 13.64; that effectively forced MI to chase at 13.73 from ball one.
+Start with the tempo of GT’s innings. They finished at 10.50 runs per over with only four wickets down, which is the most efficient profile you can produce on a ground where boundaries are always in play. The innings had three pillars: Jos Buttler’s 52, Shubman Gill’s 70 (45), and Washington Sundar’s 55. That’s not just three fifties; it’s three distinct gears. Buttler’s burst ensured the powerplay never felt like “testing the pitch”. Gill then handled the middle overs by keeping the boundary frequency stable, and Sundar closed by turning “good overs” into “11-run overs”.
 
-Mumbai’s chase never stabilised. Their two highest scorers were Sherfane Rutherford (25 off 8) and Naman Dhir (25 off 13), but the top order couldn’t launch. Rohit Sharma made 5, Suryakumar Yadav 6, and Hardik Pandya 9; when a chase needs 151 from 66 balls, you can’t afford “settling in” overs at the top. RR’s bowling plan was classic short-format discipline: hard lengths, pace-off into the pitch, and a relentless search for wickets.
+Delhi’s best response with the ball came via Mukesh Kumar (2/55) and the middle-over slowdown led by spinners, but the bigger issue was that GT never had a collapse window. Four wickets in 20 overs means you don’t have to rebuild, you only have to keep trading risks for boundaries.
 
-The wicket-takers tell the story. Nandre Burger went 2/21, Ravi Bishnoi 2/25, and Sandeep Sharma 2/26. That’s six wickets spread across three roles: early-overs pace, middle-overs control, and end-overs execution. Mumbai ended 123/9, meaning they lost almost a wicket per over; at that rate, the chase collapses even if one batter lands a cameo.
+Then came DC’s chase, and for 8 overs it looked set up perfectly. KL Rahul produced a classic chase-setter: 92 off 52, with Pathum Nissanka adding 41 (24) in an opening stand of 76 in 8.1 overs. In most games, that start wins you the match because it converts a 211 target into a “normal” chase.
 
-Three takeaways.
+The hinge moment was the period immediately after Nissanka fell. Suddenly DC needed a bridge: two overs of smart rotation while one of the set batters re-accelerates. Instead, DC bled wickets and lost tempo, and that forced a late-innings equation where every dot ball became a mini-disaster.
 
-1) In reduced-overs cricket, “par” is a moving target. RR treated 150 as reachable and played like it. MI’s bowling, even when taking wickets, did not reduce RR’s boundary options.
+Yet DC still almost got there. David Miller’s 41* off 20 dragged the chase back into the “winnable” lane, and the final over became a decision-making test more than a skill test. With 2 needed off the last 2 balls, the safest plan is simple: guarantee contact, take the single if it’s there, and back yourself to finish. When teams lose close games, they usually don’t lose because they lacked a boundary option; they lose because they turned a high-probability single into a low-probability hit.
 
-2) Chases require one anchor and one accelerator — even in 11 overs. Mumbai never established either. Their best scoring bursts came after they were already behind the rate.
+For GT, two names summarise the win: Rashid Khan’s 3/17 (the overs that broke the chase’s rhythm), and Prasidh Krishna’s composure at the death. For DC, Rahul’s 92 is proof that their batting ceiling is high — but the match also shows that chases of 200+ are rarely about the best innings; they are about the quiet two-over passage when the rate tries to trick you into panic.
 
-3) Wickets are the only currency that consistently lowers an opponent’s scoring ceiling in a shootout. RR defended 151 not by protecting boundaries alone, but by constantly resetting the chase with dismissals.
-
-RR moved further up the table momentum-wise; MI were left with a tactical question: in shortened games, who are the two batters you want facing 70% of the balls? Until that answer is clear, chaos will keep finding them.
+GT leave Delhi with momentum and a blueprint: attack early, don’t collapse, and keep one elite middle-over wicket-taker in play. DC leave with a simpler reminder: in 210 chases, you don’t need a miracle at the end if you protect your bridge in the middle.
 `,
-    relatedPlayerIds: [7, 2, 3, 11, 13],
-    matchId: 13,
+    relatedPlayerIds: [22, 5, 12, 25, 17],
+    matchId: 14,
     chartData: [
-      { label: "RR", value: 150, color: "#E91E63" },
-      { label: "MI", value: 123, color: "#1E88E5" }
+      { label: "GT", value: 210, color: "#1E88E5" },
+      { label: "DC", value: 209, color: "#EF5350" }
     ],
     dataTable: {
-      headers: ["Key performers", "Figure"],
+      headers: ["Key moments", "Figure"],
       rows: [
-        ["Yashasvi Jaiswal", "77* (32)"],
-        ["Vaibhav Sooryavanshi", "39 (14)"],
-        ["Nandre Burger", "2/21"],
-        ["Ravi Bishnoi", "2/25"],
-        ["Sandeep Sharma", "2/26"],
-        ["AM Ghazanfar (MI)", "2/21"],
-        ["Top MI scorers", "Rutherford 25 (8), Dhir 25 (13)"],
-        ["Result", "RR won by 27 runs (11 overs each)"],
+        ["GT total", "210/4 (20)"],
+        ["DC total", "209/8 (20)"],
+        ["Result", "GT won by 1 run"],
+        ["Top DC scorer", "KL Rahul 92 (52)"],
+        ["Top GT scorers", "Gill 70 (45), Sundar 55, Buttler 52"],
+        ["Best spell", "Rashid Khan 3/17"],
+        ["Venue", "Arun Jaitley Stadium, Delhi"],
       ]
     }
   },
   {
     id: 2,
-    slug: "rr-vs-mi-match-13-recap-why-mi-top-order-couldnt-launch",
-    title: "Why MI couldn’t launch in Match 13: losing the first 3.2 overs twice",
-    subtitle: "In an 11-over chase, the powerplay is not a phase — it’s the match. RR won it with wickets and forced MI into low-percentage shots.",
+    slug: "dc-vs-gt-match-14-analysis-why-the-bridge-overs-mattered",
+    title: "DC vs GT: the ‘bridge overs’ that decide 200+ chases",
+    subtitle: "After a flying start, DC needed two calm overs. Instead, GT’s middle-over pressure turned the chase into a boundary-or-bust finish.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "6 min",
-    tags: ["IPL 2026", "RR", "MI", "Powerplay", "Tactics"],
+    tags: ["IPL 2026", "DC", "GT", "Chase", "Tactics"],
     featured: false,
     content: `
-Mumbai’s loss to Rajasthan in Guwahati looked like a pure batting failure: 123/9 chasing 151 in 11 overs. But the pattern is more specific. MI effectively lost the game twice — once with the ball inside RR’s first 3.2 overs, and once with the bat inside their own first 3.2 overs.
+A 1-run match is tempting to explain with one last-ball moment, but Match 14 was decided in a quieter section: the overs immediately after DC’s opening partnership ended.
 
-Start with the format. When a match is reduced to 11 overs, the powerplay scales down (3.2 overs) and becomes disproportionately valuable. A team’s goal is no longer “be 50/1 after 6”. It’s closer to “be 55/0 after 3.2”. That’s how RR played: Jaiswal and Sooryavanshi treated every ball as a boundary opportunity, lifting RR to a platform that made 150 feel inevitable.
+DC’s chase began in the ideal way for a 211 target. KL Rahul (92 off 52) and Pathum Nissanka (41 off 24) stacked early boundaries and ran hard enough to keep the required rate flat. With 76 up inside 8.1 overs, the chase had already neutralised one of the hardest parts of big run hunts: you don’t want to be “behind the game” and also “down wickets”.
 
-MI’s bowling didn’t create a braking mechanism. They did take wickets later — AM Ghazanfar’s 2/21 was their best return — but those dismissals arrived after the opening pair had already converted the early overs into a scoreboard advantage. In short games, late wickets don’t matter unless they also remove boundary hitters. Otherwise, the run-rate remains inflated.
+Then the chase entered what CricDNA calls the bridge. These are the two or three overs after a set partnership breaks, when a team must decide whether to:
 
-Then MI batted, and the same early-overs deficit reappeared. The chase needed 151 from 66 balls: a required rate of 13.73. Losing Rohit Sharma (5) and Suryakumar Yadav (6) early meant that MI’s middle order had to attempt “double acceleration”: first to recover from wickets, then to beat the rate. That leads to a predictable sequence — a few boundaries, then a forced shot, then another wicket.
+1) consolidate (minimise risk, rebuild a pair, keep wickets), or
+2) maintain tempo (keep hunting boundaries so the endgame isn’t impossible).
 
-Even the cameos show the constraint. Sherfane Rutherford’s 25 off 8 and Naman Dhir’s 25 off 13 were productive, but they came inside an innings that kept shedding wickets. Rajasthan’s bowlers were not chasing dot balls; they were chasing dismissals. Burger (2/21), Bishnoi (2/25), and Sandeep (2/26) collectively made sure MI never had a set pair long enough to plan an over.
+The best chases do both: they rotate enough to settle the new batter, but they still cash in one boundary every over to prevent the equation from ballooning.
 
-From a process perspective, MI need a “short-game trigger”. In reduced-overs chases, teams should pre-commit roles:
+GT’s strength is that they force opponents to choose. Rashid Khan’s 3/17 is not just a “great figure”; it’s a statement of control. When a bowler removes batters and also reduces boundary probability, the chasing side is pushed into lower-percentage shots. That’s how collapses begin: not with a bad shot, but with a shot that was forced by the previous 12 balls.
 
-• One batter is authorised to take 70% boundary shots for 15 balls, regardless of risk.
-• One batter is responsible for strike rotation plus selective targeting (usually the weaker bowler).
+DC’s middle overs showed the classic symptoms of a broken bridge:
 
-MI’s top order has the talent for it, but the commitment has to be explicit. If you hesitate, the rate dictates your options. And if the rate dictates your options, the field dictates your dismissal.
+• singles stop feeling like progress;
+• batters start targeting the safest boundary zones rather than the weakest matchups;
+• the set batter is asked to “cover” for the new batter’s settling time;
+• dots accumulate, and the required rate spikes.
 
-The cleanest summary: RR’s batting made 150. RR’s bowling made 151 feel like 175 by ensuring MI’s innings never had stability. In short games, stability is not “calm”. It’s “two batters, one plan.”
+Even with all that, DC nearly won because David Miller’s 41* off 20 created a late burst. But late bursts are expensive because they require perfect execution under maximum pressure.
+
+The actionable lesson for DC is role clarity. If Rahul is your chase engine, the next player’s job is not to out-hit him; it’s to keep the strike moving and buy him balls against the best matchup. If your bridge batter scores 10 off 8 with two sharp twos, it changes the final over from “need 15” to “need 9”.
+
+For GT, the blueprint is repeatable and travels: let the powerplay batters attack, keep Gill as the stabiliser, and then defend with one wicket-taker who owns the bridge. The scoreline says “1 run”. The tactics say “two overs”.
 `,
-    relatedPlayerIds: [7, 3, 11, 13],
-    matchId: 13,
+    relatedPlayerIds: [22, 12, 5, 25],
+    matchId: 14,
     chartData: [
-      { label: "Required RPO", value: 13.73, color: "#F4511E" },
-      { label: "MI actual RPO", value: 11.18, color: "#1E88E5" }
-    ]
-  },
-  {
-    id: 3,
-    slug: "rr-vs-mi-match-13-recap-bowling-map-burger-bishnoi-sandeep",
-    title: "Burger, Bishnoi, Sandeep: RR’s three-lane defence plan that closed Match 13",
-    subtitle: "You don’t defend 151 in 11 overs by ‘holding’ runs. You defend it by taking wickets across phases — RR did it with pace, control, and end-over discipline.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
-    readTime: "6 min",
-    tags: ["IPL 2026", "RR", "Bowling", "MI", "Match 13"],
-    featured: false,
-    content: `
-RR’s victory over MI in Guwahati will be remembered for the batting — Jaiswal’s 77* and a 150/3 total in just 11 overs. But the more repeatable part is how Rajasthan defended it. When games shrink, bowling plans can’t be reactive. RR’s plan was structured across lanes: pace in the first over window, spin control in the middle, and a clean finishing over.
-
-Lane one: early wickets. MI required 13.73 per over from the start. That means the opening overs are about disruption, not economy. RR’s quicks and hard-length options attacked the stumps and forced big swings at balls that weren’t quite there. The result was a chase that never had a stable base.
-
-Lane two: middle-overs control with wicket threat. In short chases, spin isn’t only for run control; it’s for “mis-hit creation”. Ravi Bishnoi’s 2/25 was expensive on a per-over basis, but that’s irrelevant when his job is to remove set batters and break partnerships. MI lost wickets at a rate that prevented them from ever lining up matchups.
-
-Lane three: calm finishing. When a side needs 35 from the final over, the bowling side is already winning. RR ensured it stayed that way by continuing to hunt wickets rather than slipping into defensive lines. Burger’s 2/21 and Sandeep’s 2/26 meant MI were effectively batting with a tail long before the last over.
-
-It’s worth noting the symmetry: MI’s best bowling return was AM Ghazanfar’s 2/21, but those wickets did not change RR’s boundary access because Jaiswal stayed. RR’s wickets, in contrast, removed MI’s boundary access because they removed the players most capable of it early.
-
-For future reduced-overs matches, this is the blueprint:
-
-1) Pick one bowler to own the first 8 balls — attack, accept risk.
-2) Pick one wicket-taking option for balls 9–36 — make the batter hit against the spin.
-3) Pick one “closeout” bowler for the last over — back your best execution.
-
-RR did all three. MI, chasing 151, needed one batter to play a perfect innings. RR’s bowling made sure no one even got the chance.
-`,
-    relatedPlayerIds: [7, 23],
-    matchId: 13,
+      { label: "Powerplay intent", value: 1, color: "#43A047" },
+      { label: "Bridge overs control", value: 1, color: "#1E88E5" },
+      { label: "Death overs pressure", value: 1, color: "#F4511E" }
+    ],
     dataTable: {
-      headers: ["RR wicket-takers", "Return"],
+      headers: ["Chase roles", "What it means"],
       rows: [
-        ["Nandre Burger", "2/21"],
-        ["Ravi Bishnoi", "2/25"],
-        ["Sandeep Sharma", "2/26"],
-        ["Result", "MI 123/9 (11)"],
+        ["Engine", "High boundary % + strike management"],
+        ["Bridge", "Low dots, fast singles, protect wickets"],
+        ["Finisher", "Convert 12-ball windows without panic"],
       ]
     }
   },
   {
-    id: 4,
-    slug: "dc-vs-gt-match-14-preview-arun-jaitley-high-run-rate",
-    title: "DC vs GT (Match 14) preview: Delhi’s run-fest venue meets Gujarat’s need for control",
-    subtitle: "Arun Jaitley Stadium’s recent scoring profile screams ‘boundary game’ — and it puts a premium on bowling plans, not just names.",
-    category: "match-preview",
+    id: 3,
+    slug: "dc-vs-gt-match-14-analysis-rashid-khan-overs",
+    title: "Rashid Khan’s 3/17: the spell that made 210 defendable",
+    subtitle: "Even on a boundary-heavy Delhi surface, elite middle-over spin creates the only thing chases fear: uncertainty.",
+    category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "6 min",
-    tags: ["IPL 2026", "DC", "GT", "Match 14", "Arun Jaitley Stadium"],
+    tags: ["IPL 2026", "GT", "Rashid Khan", "Spin", "Match 14"],
     featured: false,
     content: `
-Match 14 brings Delhi Capitals and Gujarat Titans to Arun Jaitley Stadium, a ground that has leaned hard into big totals in recent seasons. Venue numbers in our dataset show an average first-innings score of 200.3 and death-overs scoring of 11.59 runs per over — the kind of profile that turns “good” death bowling into a survival skill.
+Delhi is rarely a venue where teams feel safe defending 200+, because batters can “win” with one 18-run over. Match 14 flipped that assumption because GT had a bowler who changed the chase’s psychology.
 
-Delhi will feel comfortable in that environment because they can build a chase or set a target with multiple hitters. Gujarat, meanwhile, come in needing their first points and, more importantly, needing a defensive plan that works when the boundary is easy to find.
+Rashid Khan finished with 3/17. Numbers alone don’t explain his value; the context does. In a chase led by a set opener like KL Rahul, the most dangerous moment for the bowling side is the transition into the middle overs, when the batter begins to line up matchups and plan two overs ahead.
 
-The venue tells us two practical things.
+Rashid prevents planning.
 
-First, you don’t win here by ‘starting slow’. The powerplay run rate at this venue is 9.5, and the middle overs still go at 8.6. That means even the “quiet” phase is productive. Teams that try to play conservative cricket often discover they are 15 short.
+The most important currency in a high chase is certainty: batters want to know which balls they can hit for four, which bowler they can hold back for, and which fielders they can exploit. Rashid’s pace changes and angles reduce certainty, which increases dot balls and forces batters into “pre-meditated” shots.
 
-Second, toss decisions are not as clear-cut as the narrative suggests. Our toss dataset for Arun Jaitley Stadium, Delhi shows 23 matches with 13 wins batting first and 10 wins batting second. Captains still choose to field first often, but the outcomes aren’t overwhelmingly chase-favoured.
+Here’s why the spell mattered even when Rahul still scored 92:
 
-So what should each side optimise?
+1) It attacked the partnership structure. DC’s best route was “Rahul + one stable partner”. Rashid took away partners.
+2) It created wicket pressure without gifting release balls. Many middle-over spells take wickets but leak boundaries. Rashid did the opposite.
+3) It shifted the chase’s finish. DC ended up needing a high-pressure final over rather than a controlled final three overs.
 
-For DC: maximise batting depth. On a ground where death overs can go at 11.6, having a No. 7 who can hit changes your ceiling because you can attack from over 12 without fearing collapse.
+At venue level, Delhi historically rewards chasing because the second innings often benefits from dew and a visible target. That’s why the toss decision here is usually to field. But even on chase-friendly grounds, the relationship is still simple: chasing is easiest when you lose few wickets. Rashid ensured DC couldn’t keep wickets intact.
 
-For GT: define overs of control. A common mistake at high-scoring venues is spreading your best bowlers across the innings. Instead, GT should identify two “squeeze overs” in the middle where they can take pace off or use their best matchups to create dots. Dot balls are rare here — which makes every dot valuable.
+For GT, the tactical takeaway is squad design. If your home games are likely to be 190+ battles, one Rashid-type spell is worth more than a sixth batter. It reduces the opponent’s “minimum winning requirement” from 10 an over to 12 an over for three overs — and that’s the difference between calm and chaos.
 
-Key matchup lens: if Shubman Gill plays, he’s the kind of batter who can make a 200 chase feel normal. DC’s counter is to deny his acceleration window — not necessarily by getting him out, but by preventing the ‘two boundaries in an over’ pattern that breaks bowling plans.
-
-CricDNA call: expect 190+ to be a par score, and expect the winner to be the side that executes the last four overs better, not the side that wins the powerplay.
+For DC, the adjustment is to identify and neutralise the bridge bowler early. Against Rashid-type threats, the best option is often not to attack him; it’s to ensure the other end never delivers a dot-ball over. Big chases aren’t won by taking down the best bowler. They’re won by never giving him a partner.
 `,
-    relatedPlayerIds: [5, 30, 26, 22, 12],
+    relatedPlayerIds: [12, 22, 5],
     matchId: 14,
     chartData: [
-      { label: "Avg 1st inns", value: 200.3, color: "#43A047" },
-      { label: "Avg 2nd inns", value: 182.7, color: "#1E88E5" },
-      { label: "Death RPO", value: 11.59, color: "#F4511E" }
+      { label: "Rashid economy", value: 4.25, color: "#5E35B1" },
+      { label: "Match run rate", value: 10.48, color: "#9E9E9E" }
+    ]
+  },
+  {
+    id: 4,
+    slug: "kkr-vs-lsg-match-15-preview-eden-gardens-run-rate-chase-bias",
+    title: "KKR vs LSG (Match 15) preview: Eden Gardens rewards depth, not just power",
+    subtitle: "With Eden’s chasing edge and strong death scoring history, the game may hinge on who has the cleaner last-5-overs batting plan.",
+    category: "match-preview",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-09",
+    readTime: "6 min",
+    tags: ["IPL 2026", "KKR", "LSG", "Eden Gardens", "Match 15"],
+    featured: false,
+    content: `
+Match 15 brings Kolkata Knight Riders and Lucknow Super Giants to Eden Gardens, a venue that has historically leaned toward chasing. In our venue dataset, Eden’s average first-innings score is 160.2 and the average second-innings score is 147.1 across 77 matches, with teams batting second winning 47 of those games (61%).
+
+That split doesn’t mean “bat second and win”. It means captains are rewarded for maximising information: dew, pitch pace, and boundary dimensions become easier to read in the chase. The second-innings win rate also aligns with toss behaviour: at Eden, teams choose to field after winning the toss 63.6% of the time.
+
+So what should each side prioritise?
+
+For KKR, the first objective is clarity in the powerplay. Eden’s powerplay run rate in the dataset is 7.28 runs per over — not a blanket “flat track” number — which suggests early overs can be a little sticky if bowlers hit hard lengths. The big scoring comes later: the death overs run rate is 9.37. That makes two things valuable: having wickets in hand at over 15, and having boundary hitters in slots 5-7.
+
+For LSG, the pathway is similar but with a different emphasis: they often rely on one batter to carry a chase, and at Eden that can be dangerous because the venue invites bowling changes and matchups. The better plan is to keep two batters set through overs 10-15 so the death overs become a “finish”, not a “rescue”.
+
+Tactically, this match could be defined by two head-to-head patterns in our matchup data:
+
+• Rohit Sharma vs Sunil Narine: Rohit has scored 143 off 134 balls against Narine with 8 dismissals, a strike rate of 106.72 and a high dot-ball percentage of 40.3. If LSG’s top order faces Narine-style control early, they must avoid getting pinned.
+• Virat Kohli vs Narine is a different story (173 off 134, SR 129.10, 4 dismissals). The lesson: elite batters can be neutralised, but only if you force dots.
+
+The match should produce a clear toss recommendation: field first. Eden’s toss stats show teams that field first after winning the toss have won 63.3% of those matches (31 wins from 49).
+
+Expect a game where the first innings target “feels” par at 165 but is actually vulnerable if the chasing team keeps wickets. At Eden, it’s rarely about the biggest total; it’s about the best 6-ball sequences in overs 16-20.
+`,
+    relatedPlayerIds: [23, 13, 22, 4],
+    matchId: 15,
+    chartData: [
+      { label: "Eden avg 1st inns", value: 160.2, color: "#6D4C41" },
+      { label: "Eden avg 2nd inns", value: 147.1, color: "#1E88E5" },
+      { label: "Chasing win%", value: 61.0, color: "#43A047" }
     ],
     dataTable: {
-      headers: ["Arun Jaitley (Delhi) venue snapshot", "Value"],
+      headers: ["Eden Gardens (IPL)", "Value"],
       rows: [
-        ["Matches (dataset)", "23"],
-        ["Avg 1st inns", "200.3"],
-        ["Avg 2nd inns", "182.7"],
-        ["Powerplay RPO", "9.5"],
-        ["Middle RPO", "8.6"],
-        ["Death RPO", "11.59"],
-        ["Bat 1st win%", "56.5%"],
+        ["Matches", "77"],
+        ["Batting 2nd wins", "47"],
+        ["Batting 1st wins", "30"],
+        ["Toss: field first %", "63.6%"],
+        ["Death overs RPO", "9.37"],
       ]
     }
   },
   {
     id: 5,
-    slug: "kkr-vs-lsg-match-15-preview-eden-chase-bias",
-    title: "KKR vs LSG (Match 15) preview: Eden’s chase bias vs LSG’s history of closing tight games",
-    subtitle: "Eden Gardens trends still point to the chase — but KKR’s best route is to own the death overs with wickets in hand.",
-    category: "match-preview",
+    slug: "kkr-vs-lsg-match-15-pitch-report-eden-gardens-what-par-looks-like",
+    title: "KKR vs LSG pitch report: Eden Gardens par score and phase scoring map",
+    subtitle: "Historically, Eden’s scoring curve rises late — teams that keep wickets can add 55–65 in the final 5.",
+    category: "pitch-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
-    readTime: "6 min",
-    tags: ["IPL 2026", "KKR", "LSG", "Match 15", "Eden Gardens"],
+    publishedAt: "2026-04-09",
+    readTime: "5 min",
+    tags: ["IPL 2026", "Pitch report", "Eden Gardens", "KKR", "LSG"],
     featured: false,
     content: `
-Match 15 at Eden Gardens is one of those fixtures where the venue almost acts like an extra team. Our Eden dataset shows 77 matches with 47 wins for teams batting second and an average first-innings score of 160.2. The scoring pattern is also revealing: the death overs score at 9.37 per over, materially higher than the powerplay (7.28).
+Eden Gardens is often described as a “good batting surface”, but the data shows a more specific truth: it’s a venue where run-scoring accelerates if you preserve options for the final phase.
 
-That shapes strategy for both Kolkata Knight Riders and Lucknow Super Giants.
+In our venue dataset (77 IPL matches at Eden), the average first-innings score is 160.2 and the average second-innings score is 147.1. That gap isn’t only about chasing advantage — it also hints that teams batting first can misread what a strong total looks like, especially if the pitch slows early.
 
-If you win the toss at Eden, there’s a strong historical argument for bowling first. Teams have chosen to field first 63.6% of the time in our venue dataset, and the outcome distribution supports that preference. Even the toss-specific subset in our toss dataset for “Eden Gardens, Kolkata” shows batting first hasn’t been especially rewarding (toss-bat-first wins: 1 from 5).
+The phase run rates tell the story. Eden’s powerplay run rate is 7.28, middle overs run rate is 7.51, and death overs run rate jumps to 9.37. The jump from middle to death is where matches flip: you can be “fine” at 90/2 after 12 and still end at 175 if you have hitters and a clear boundary plan.
 
-But fixtures are not won by trend charts alone. The more actionable piece is how you construct an innings here. Eden rewards teams that keep wickets for the last five overs, because that’s where the run-rate jumps. If you’re 70/3 after 10, you can still end at 165. If you’re 70/5, you probably end at 145.
+What does par look like for KKR vs LSG?
 
-So for KKR, the question is simple: who carries the innings to over 15 with resources intact? For LSG, the question is about matchups — which bowlers can deny KKR the death-overs jump by taking wickets between overs 11 and 15.
+• If batting first, 170 should be considered a defendable benchmark.
+• 155–165 is competitive only if your bowling attack can create wicket pressure in the middle.
+• Anything below 150 is vulnerable because Eden has a history of chase success.
 
-A micro-lens from our head-to-head dataset: Rohit Sharma has historically struggled against Sunil Narine (143 runs from 134 balls but dismissed 8 times). That’s not directly KKR vs LSG, but it’s a reminder of what Narine-type bowling does at Eden: it turns boundary hitters into risk managers.
+Bowling considerations:
 
-CricDNA call: expect the winning side to be the one that turns overs 11–15 into wicket-taking overs. At Eden, if you only “contain”, you’re usually one over short.
+Because Eden’s late scoring is high, the death overs are rarely about yorkers alone — they’re about variations and boundary protection. Teams that defend well at Eden usually:
+
+1) keep one over of their best death bowler for over 19 or 20,
+2) use spin in the middle not just to contain but to take wickets,
+3) force batters to hit “straight” into the longer pockets rather than allowing free access square.
+
+A quick look at Eden’s last five IPL matches in the dataset includes a 232/0 and multiple 200+ totals — which is a reminder that when pitches are flat here, they can be extremely flat.
+
+Bottom line: treat overs 16–20 as the scoring engine. If you’re batting first, build toward it. If you’re chasing, keep wickets and trust the venue’s late-scoring profile.
 `,
-    relatedPlayerIds: [23, 27, 22, 3, 13],
+    relatedPlayerIds: [23, 22, 13, 3],
     matchId: 15,
     chartData: [
-      { label: "Bat 2nd wins", value: 47, color: "#1E88E5" },
-      { label: "Bat 1st wins", value: 30, color: "#999999" }
+      { label: "Powerplay RPO", value: 7.28, color: "#42A5F5" },
+      { label: "Middle RPO", value: 7.51, color: "#7E57C2" },
+      { label: "Death RPO", value: 9.37, color: "#EF5350" }
+    ]
+  },
+  {
+    id: 6,
+    slug: "kkr-vs-lsg-match-15-toss-report-eden-gardens-field-first",
+    title: "KKR vs LSG toss report: Eden’s numbers still say ‘field first’",
+    subtitle: "Across 77 matches, teams batting second have won 61%. Toss winners who field first win 63.3% at Eden.",
+    category: "toss-report",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-09",
+    readTime: "4 min",
+    tags: ["IPL 2026", "Toss report", "Eden Gardens", "KKR", "LSG"],
+    featured: false,
+    content: `
+If you like simple toss rules, Eden Gardens is one of the few IPL venues that still offers one: field first.
+
+From our venue dataset, teams batting second have won 47 of 77 matches at Eden (61%). That historical lean is echoed by captain behaviour: teams choose to field after winning the toss 63.6% of the time.
+
+The toss-specific win rates strengthen the case. In our toss dataset for Eden Gardens:
+
+• Toss winners who bat first: 28 times, 12 wins (42.9%).
+• Toss winners who field first: 49 times, 31 wins (63.3%).
+
+Those splits don’t guarantee a result, but they strongly suggest that information and conditions matter here. Eden evenings can bring dew, and even without heavy dew, chasing gives captains a clearer sense of whether the surface is slowing. It also allows more precise bowling matchups because you know what you’re defending.
+
+So what should captains do if they win the toss in Match 15?
+
+Recommendation: field first.
+
+Secondary recommendation (if forced to bat first): aim for 170+ and keep wickets for the final 5 overs. Eden’s death-overs run rate in the dataset is 9.37, which implies that strong finishes are common.
+
+In other words, the toss at Eden is not about “batting-friendly” labels. It’s about controlling the game’s most volatile phase: the last 30 balls. Chasing gives you the best chance to time that phase correctly.
+`,
+    relatedPlayerIds: [23, 22, 13],
+    matchId: 15,
+    chartData: [
+      { label: "Toss bat first win%", value: 42.9, color: "#8D6E63" },
+      { label: "Toss field first win%", value: 63.3, color: "#43A047" }
     ],
     dataTable: {
-      headers: ["Eden Gardens snapshot", "Value"],
+      headers: ["Eden toss decision", "Count", "Wins", "Win%"],
       rows: [
-        ["Matches", "77"],
-        ["Avg 1st inns", "160.2"],
-        ["Avg 2nd inns", "147.1"],
-        ["Powerplay RPO", "7.28"],
-        ["Death RPO", "9.37"],
-        ["Field first (toss choice)", "63.6%"],
+        ["Bat first", "28", "12", "42.9"],
+        ["Field first", "49", "31", "63.3"],
       ]
     }
   },
   {
-    id: 6,
-    slug: "rr-vs-rcb-match-16-preview-bats-first-mindset-barsapara",
-    title: "RR vs RCB (Match 16) preview: after the 11-over chaos, who brings the ‘full-innings’ discipline?",
-    subtitle: "Barsapara hosted an 11-over slugfest; the next game at the venue demands a different skill — pacing 20 overs without losing intent.",
+    id: 7,
+    slug: "rr-vs-rcb-match-16-preview-gawahati-reduced-overs-variance",
+    title: "RR vs RCB (Match 16) preview: Guwahati brings variance — plan for chaos",
+    subtitle: "After an 11-over match here, expect captains to chase flexibility: shorter boundaries, weather risk, and powerplay decisions.",
     category: "match-preview",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "6 min",
-    tags: ["IPL 2026", "RR", "RCB", "Match 16", "Guwahati"],
+    tags: ["IPL 2026", "RR", "RCB", "Guwahati", "Match 16"],
     featured: false,
     content: `
-Rajasthan Royals return to Barsapara in Guwahati for Match 16 against Royal Challengers Bengaluru. The venue’s last impression was Match 13’s rain-cut 11-over shootout — but the tactical demands of a 20-over match are different. The core question for both sides is: can you keep the same intent while adding innings structure?
+Rajasthan Royals and Royal Challengers Bengaluru meet again in Guwahati, a venue that has already produced weather-influenced cricket this week. When venues carry rain risk, tactical flexibility becomes the key resource: you need to know how you’ll play if the game becomes 15 overs, 12 overs, or even 7.
 
-RR come in with confidence after smashing 150/3 in 11 overs against MI and then taking wickets throughout the chase. RCB arrive as a team that typically plays best when their top three create a dominant first 10 overs and their bowlers can defend with scoreboard pressure.
+We don’t have the same deep venue sample for Guwahati as for Eden in our dataset, but we can still build a planning framework for Match 16.
 
-From a game-model view:
+1) Define your reduced-overs batters.
 
-• RR’s edge is boundary acceleration. Jaiswal’s unbeaten 77 from 32 shows how quickly they can access a ceiling score when the surface is true.
+If the match is shortened, the priority shifts from “batting depth” to “boundary density”. RR have already demonstrated this in Guwahati, where a clear early boundary plan allowed them to post 150 in 11 overs in the previous match at this venue. RCB’s challenge is different: they often rely on top-order structure. In shortened games, structure is less valuable than permission.
 
-• RCB’s edge is stability plus finishing. If Virat Kohli anchors the first half, it frees hitters around him to attack matchups without panic.
+2) Make the toss decision about risk.
 
-A matchup lens from our head-to-head dataset: Kohli has generally handled spin from Ravindra Jadeja well (179 off 160 balls, only 3 dismissals). That’s a proxy indicator: when Kohli is allowed to settle into spin, he can keep the innings moving without high-risk shots — which is exactly what you need in a full 20-over innings.
+If rain is forecast, captains sometimes prefer batting first to avoid DLS uncertainty. But batting second also gives you clarity on what’s required. The toss call should be based on the radar, not tradition.
 
-Because we don’t have a Barsapara venue profile in our local dataset, we’ll keep the preview grounded in what is repeatable across venues: the winner is often the team that maintains wicket resources through overs 7–15. RR’s batting is explosive; RCB’s challenge is to force them into a “two-down by over 6” position where the middle overs become about rebuilding.
+3) Use bowlers as wicket assets, not economy assets.
 
-CricDNA call: whichever side wins the wicket column in overs 7–12 is likely to win the match. This is the phase that decides whether a total becomes 165 or 195.
+In short formats, defending a total is about resetting the chase. That means bowlers who can take wickets in the first over window and in the final over window are more valuable than “middle-over squeeze” bowlers.
+
+Matchups matter too. From our batter-bowler dataset:
+
+Virat Kohli has historically handled Ravindra Jadeja well (179 runs off 160 balls, SR 111.87, 3 dismissals), which is a reminder that even “control” bowlers can be neutralised if the batter knows the release points.
+
+Key question for Match 16: can RCB create two boundary hitters who face 70% of the balls in a shortened chase? If they can, they’re dangerous. If they can’t, RR’s wicket pressure — especially through disciplined hard lengths and spin in the middle — will tilt the game.
+
+Expect a match where the most important pre-game work is not the XI announcement, but the plan for an interruption. The team that pre-commits its roles will look calm. The team that improvises will look rushed.
 `,
-    relatedPlayerIds: [7, 1, 29, 2, 18],
+    relatedPlayerIds: [7, 1, 29, 18],
     matchId: 16,
     chartData: [
-      { label: "RR score (11 overs, M13)", value: 150, color: "#E91E63" },
-      { label: "Scaled to 20 overs", value: 273, color: "#999999" }
-    ]
-  },
-  {
-    id: 7,
-    slug: "arun-jaitley-stadium-delhi-is-a-death-overs-lab",
-    title: "Arun Jaitley Stadium is a death-overs lab: why 16–20 decides more games here",
-    subtitle: "With death overs scoring at 11.59 in our dataset, the last 24 balls are where plans either hold or shatter.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
-    readTime: "6 min",
-    tags: ["IPL 2026", "Arun Jaitley Stadium", "Death overs", "Strategy"],
-    featured: false,
-    content: `
-Some venues reward a “safe start” approach. Arun Jaitley Stadium rewards the opposite: build an innings that lets you hit hard at the end. The raw numbers in our venue dataset are stark — average first-innings score 200.3, and death-overs scoring at 11.59 runs per over. That’s not just high; it’s structurally high. It means the last five overs contribute a disproportionately large share of the total.
-
-Why does that matter? Because most teams still plan their innings like a generic T20 template: powerplay acceleration, middle-over consolidation, then finishing. At Delhi, consolidation can become a trap. If you “bank” too many balls in overs 7–15, you might find that even a good finish only gets you to par.
-
-A better model for this ground is:
-
-1) Powerplay: score, but don’t over-commit. The venue powerplay run-rate is already 9.5; you can get 55 without taking reckless risks.
-
-2) Overs 7–15: target a single bowler. Instead of taking 8–9 off everyone, identify the one matchup you can hit for 12–14 and force the bowling side to change plans. At Delhi, disrupting bowling rotations is often more valuable than “keeping wickets”.
-
-3) Overs 16–20: hit with depth. A death rate of 11.6 means you can add 55–60 late — but only if you have hitters available. That pushes selection logic toward batting depth and all-round options.
-
-For bowlers, the response is equally specific. “Good yorkers” are not enough because the surface rewards even decent contact. You need variation sequences: hard-length into the pitch, slower balls that land in the same spot as your hard ball, and wide-yorker lines that force the batter to hit into the longer boundary.
-
-This is why DC vs GT in Match 14 is so interesting: both sides will likely have enough batting to get close to 200. The outcome will be decided by two overs: one squeeze over in the middle, and one execution over at the death.
-
-CricDNA lens: if a team finishes 20 overs with more than six dot balls in the last five overs, they’ve probably won the match. At Delhi, dots are wickets in disguise.
-`,
-    relatedPlayerIds: [30, 26, 12, 19],
-    chartData: [
-      { label: "Powerplay RPO", value: 9.5, color: "#1E88E5" },
-      { label: "Middle RPO", value: 8.6, color: "#43A047" },
-      { label: "Death RPO", value: 11.59, color: "#F4511E" }
+      { label: "Risk: rain/interruptions", value: 8, color: "#90A4AE" },
+      { label: "Value of wickets", value: 9, color: "#EF5350" },
+      { label: "Value of flexibility", value: 9, color: "#43A047" }
     ]
   },
   {
     id: 8,
-    slug: "eden-gardens-why-chasing-is-still-the-default",
-    title: "Eden Gardens: why chasing is still the default call (and when you should ignore it)",
-    subtitle: "Chasing has won 47 of 77 games in our dataset — but the ‘why’ matters more than the headline.",
-    category: "analysis",
+    slug: "pbks-vs-srh-match-17-preview-new-chandigarh-par-score",
+    title: "PBKS vs SRH (Match 17) preview: target the death overs at New Chandigarh",
+    subtitle: "If the venue plays to its recent trend, finishing skill and bowling variations will decide the final 24 balls.",
+    category: "match-preview",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "6 min",
-    tags: ["IPL 2026", "Eden Gardens", "Toss", "Strategy"],
+    tags: ["IPL 2026", "PBKS", "SRH", "New Chandigarh", "Match 17"],
     featured: false,
     content: `
-Eden Gardens has been one of the clearest “chase venues” in the league: 47 wins batting second vs 30 batting first in our dataset, with teams opting to field first 63.6% of the time. It’s tempting to reduce that to dew and call it a day. But the more tactical explanation is that Eden gives captains two advantages when chasing: information and a death-overs runway.
+Punjab Kings vs Sunrisers Hyderabad at New Chandigarh should be a classic “who closes better?” contest. While each venue has its own personality, modern IPL results often compress into one deciding factor: can your batting add 50+ in the last five overs without losing too many wickets, and can your bowling stop the opponent from doing the same?
 
-Information is obvious — knowing the target helps batters select risk. The less obvious piece is how Eden’s scoring phases work. The venue’s death-overs scoring is 9.37 runs per over, meaning the best time to score is late. Chasing teams can hold wickets, keep the rate in touch, and then surge.
+New Chandigarh has seen a range of totals in recent years, but the broad template holds: preserve wickets through the middle and keep your best variations for the death.
 
-That suggests a specific batting plan when chasing:
+For PBKS, the key is matching SRH’s likely boundary pace. SRH are built around aggressive middle-order hitting; when they win, they usually win by converting overs 13–20 into a barrage. PBKS must therefore identify the “kill overs” — the two overs when Klaasen-type hitters arrive — and ensure those overs are bowled by their best matchup bowlers.
 
-• Build to over 14 with wickets. Eden’s middle-overs rate (7.51) is not slow, so you don’t have to force the pace early.
-• Identify the “pivot over” where you start targeting one bowler to break the chase open.
-• Keep one boundary hitter set for overs 17–20.
+For SRH, the challenge is to avoid becoming too boundary-dependent early. If PBKS can take two early wickets, it forces SRH into a rebuild, and that can reduce the number of balls their finishers face. In T20 cricket, the finisher’s best friend is time.
 
-When should you ignore the chase bias? Two situations.
+From our player career dataset, Heinrich Klaasen (a key SRH finisher) is known for accelerating late, and profiles like that tend to thrive when the innings is stable at over 12. Conversely, if SRH are 70/3 at the same stage, the finisher becomes a rescue act rather than a closer.
 
-1) If your bowling attack is built for defence: multiple wicket-takers plus a death specialist. In that case, batting first can be fine because you can turn a 165 into a scoreboard squeeze.
+Toss considerations: if there’s any dew, captains will lean towards chasing, because it reduces grip for spinners and makes yorkers harder to land. If conditions are dry, batting first can be fine — but then you must over-invest in the last five overs.
 
-2) If the pitch is visibly slowing. Eden can sometimes start true and then grip later; if you think the surface will deteriorate, batting first can protect you.
-
-For Match 15 (KKR vs LSG), the venue suggests a chase-heavy decision. But both teams should really plan for the same truth: the match will swing in the last five overs. The team that arrives there with options, not hope, will win.
+Expect a game where the “par” score is less important than the distribution of runs. A 175 with 60 in the last five is harder to chase than a 185 with 40 in the last five, because it signals finishing skill and forces panic.
 `,
-    relatedPlayerIds: [23, 27, 22],
+    relatedPlayerIds: [9, 6, 17],
+    matchId: 17,
     chartData: [
-      { label: "Bat 2nd wins", value: 47, color: "#1E88E5" },
-      { label: "Bat 1st wins", value: 30, color: "#999999" }
-    ],
-    dataTable: {
-      headers: ["Eden Gardens (dataset)", "Value"],
-      rows: [
-        ["Matches", "77"],
-        ["Avg 1st inns", "160.2"],
-        ["Bat 2nd wins", "47"],
-        ["Toss: field first", "63.6%"],
-        ["Death RPO", "9.37"],
-      ]
-    }
+      { label: "Last 5 overs importance", value: 10, color: "#EF5350" },
+      { label: "Wickets in hand", value: 9, color: "#43A047" },
+      { label: "Variations", value: 8, color: "#7E57C2" }
+    ]
   },
   {
     id: 9,
-    slug: "matchups-that-matter-narine-vs-rohit-example",
-    title: "Matchups that matter: why one bowler can quietly reshape a chase",
-    subtitle: "A single head-to-head pattern can change shot selection. The key is using it as a ‘plan’, not a ‘prediction’.",
+    slug: "matchups-kohli-vs-narine-and-rohit-vs-narine-what-the-numbers-say",
+    title: "Matchup watch: Kohli vs Narine is playable; Rohit vs Narine is a trap",
+    subtitle: "The same bowler can mean two different problems — strike rotation vs dot-ball pressure.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "6 min",
-    tags: ["IPL 2026", "Matchups", "Head-to-head", "Strategy"],
+    tags: ["IPL 2026", "Matchups", "Kohli", "Narine", "Rohit"],
     featured: false,
     content: `
-Fans love head-to-head stats because they feel like certainty. Teams use them differently: as planning signals. The difference matters. A matchup number should not tell you “who will win”. It should tell you “where the risk is”.
+Sunil Narine remains one of the IPL’s most matchup-driven bowlers. Against some batters, he creates dots; against others, he simply forces a safer scoring lane. Two head-to-head lines from our dataset show why this matters.
 
-Take an example from our head-to-head dataset: Rohit Sharma vs Sunil Narine. Rohit has scored 143 runs from 134 balls against Narine, but has been dismissed 8 times. That’s a low average (17.88) despite a decent strike rate (106.72). The practical message isn’t “Rohit can’t bat against Narine”. It’s that Narine creates wicket risk while still being hard to hit for big runs.
+Rohit Sharma vs Sunil Narine:
 
-How does that translate into tactics?
+Rohit has scored 143 runs off 134 balls against Narine but has been dismissed 8 times. His strike rate in the matchup is 106.72 and the dot-ball percentage is 40.3. That combination is dangerous in T20s. A strike rate around 107 means the batter is not “winning” the matchup, and eight dismissals means the risk cost is high.
 
-If you’re the batting side: you may decide to reduce exposure. That could mean using a left-right pair, sending a different batter to take the matchup, or simply planning that Rohit’s job is to rotate rather than attack.
+Virat Kohli vs Sunil Narine tells a different story:
 
-If you’re the bowling side: you can use the matchup as a pressure tool. Bowl Narine early enough that the batter can’t “wait him out”, and set fields that tempt the lofted shot.
+Kohli has scored 173 off 134 balls with 4 dismissals, a strike rate of 129.10, and a dot-ball percentage of 34.3. He’s not smashing Narine, but he’s staying alive and keeping the chase on track.
 
-The best teams build these micro-plans around venue context. Eden Gardens, for example, rewards wicket-taking in the middle because the death overs are naturally faster. If you can buy two wickets between overs 7 and 12 via a matchup bowler, you often take 15–20 runs off the opponent’s ceiling.
+What does this mean tactically?
 
-The caution: head-to-head numbers are often shaped by small samples or conditions. That’s why the right use is “decision support”, not prophecy. Use it to decide who bowls which over, or which batter targets which bowler — and then adapt when the game shows you something new.
+• For teams batting against Narine, the primary objective is to reduce dot balls. Narine becomes lethal when the batter feels forced to manufacture a boundary.
+• For batters who struggle (like Rohit in this matchup), the safest plan is to “win” Narine with singles and accept that boundaries may come elsewhere.
+• For batters who manage him (like Kohli), you can absorb his overs while your partner attacks the other end.
 
-CricDNA view: the best matchup is the one you can repeat. If a bowler consistently forces a batter into low-control shots, the rest of the fielding side gets easier jobs.
+This is why matchups are more than strike rate. A 120 strike rate with low dismissal risk can be a winning matchup if it allows the other end to attack. A 140 strike rate with high dismissal risk can still lose you the game if it keeps resetting partnerships.
+
+In a venue like Eden Gardens, where chasing is historically strong and the death overs score quickly, the middle-over dot ball is the real enemy. Narine’s best skill is not turn. It’s the ability to make batters stand still.
+
+If Match 15 becomes a chase, watch who Narine bowls to, and watch who is willing to take the “boring” single. The batter who takes five singles off Narine may be the one who wins the match.
 `,
-    relatedPlayerIds: [13, 23],
+    relatedPlayerIds: [1, 13, 23],
+    chartData: [
+      { label: "Rohit SR vs Narine", value: 106.72, color: "#EF5350" },
+      { label: "Kohli SR vs Narine", value: 129.10, color: "#43A047" },
+      { label: "Rohit dismissals", value: 8, color: "#EF5350" },
+      { label: "Kohli dismissals", value: 4, color: "#43A047" }
+    ],
     dataTable: {
-      headers: ["Example (head-to-head)", "Value"],
+      headers: ["Batter vs Narine", "Balls", "Runs", "Dismissals", "SR", "Dot%"],
       rows: [
-        ["Rohit vs Narine", "143 runs off 134 balls"],
-        ["Dismissals", "8"],
-        ["Strike rate", "106.72"],
-        ["Average", "17.88"],
-        ["Dot ball %", "40.3%"],
+        ["Rohit Sharma", "134", "143", "8", "106.72", "40.3"],
+        ["Virat Kohli", "134", "173", "4", "129.10", "34.3"],
       ]
     }
   },
   {
     id: 10,
-    slug: "ipl-2026-early-season-what-small-samples-can-still-tell-us",
-    title: "IPL 2026 early-season lens: what small samples can still tell us (and what they can’t)",
-    subtitle: "After two weeks, you can’t crown a champion — but you can spot the teams with repeatable process edges.",
+    slug: "ipl-2026-season-lesson-why-200-plus-totals-are-still-defendable",
+    title: "IPL 2026 trendline: 200+ totals are back — but only if you own the middle",
+    subtitle: "The season’s early games show that ‘flat pitches’ don’t remove bowling skill; they change where bowling matters.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-08",
+    publishedAt: "2026-04-09",
     readTime: "7 min",
-    tags: ["IPL 2026", "Analysis", "Strategy", "Trends"],
+    tags: ["IPL 2026", "Trends", "T20 strategy", "Middle overs"],
     featured: false,
     content: `
-The first two weeks of an IPL season create a familiar analytics trap: loud scorelines and small samples. An 11-over game produces a 150/3 and suddenly everyone is “the best batting unit”. A 250/3 happens and every bowler is “washed”. Reality is slower.
+The IPL’s modern scoring era creates a common belief: if the pitch is good and the boundary is short, 200 is never enough. Match 14 challenged that belief. Gujarat Titans defended 210/4 and won by 1 run, largely because they owned the middle of the chase with Rashid Khan’s 3/17.
 
-So what can we trust early?
+That’s the new reality of 200+ cricket: totals are still defendable, but not with “containment”. They’re defendable with disruption.
 
-1) Role clarity. Teams that know who attacks, who stabilises, and who finishes look coherent even when they lose. Role clarity is visible in batting order decisions and in bowling allocation — who gets overs 17 and 19, who bowls the first over, who is held for matchups.
+On high-scoring surfaces, the powerplay is often a wash. Both teams can score 55–65. The differentiator becomes the middle overs (7–15), when batters want to manage risk and bowlers want to create errors. If you have a bowler who can take wickets without feeding boundaries, you can turn a 10-an-over chase into a 12-an-over chase for three overs. That’s enough to force panic.
 
-2) Wicket-taking capacity. Wickets translate across venues and conditions. RR’s win over MI in Match 13 is a good illustration: even in a shortened chase where boundaries are easier, wickets kept arriving (MI 123/9). That’s a repeatable edge.
+There’s also a batting-side mirror lesson. If your chase is led by an opener like KL Rahul, the most important job of the rest of the lineup is to protect the innings structure. Big chases aren’t won by one hero. They’re won by two stable partnerships that allow the finisher to face 12–15 balls without needing a miracle.
 
-3) Venue adaptation. The best sides don’t play “their game” everywhere — they play the venue’s game. Delhi’s Arun Jaitley Stadium is a late-overs run engine (death overs 11.59), while Eden is a chase-biased venue with late scoring (death overs 9.37). Teams that adapt early collect points before the rest of the league adjusts.
+Venue effects matter too. Eden Gardens, for example, has a death-overs run rate of 9.37 in our dataset and a strong historical tilt toward chasing (61% wins batting second). That suggests 200s will be more common — but it also implies bowlers must know which phase to target.
 
-What should we avoid concluding?
+So what is the “new defendable” formula?
 
-• Net run rate narratives based on one extreme match.
-• “Player is out of form” verdicts based on two innings.
-• Bowling quality judgments from one high-scoring venue.
+1) Batting side: score 50+ in the final five with wickets in hand.
+2) Bowling side: carry one wicket-taking option into overs 7–15 and treat that as your winning window.
+3) Fielding side: be ruthless on singles in overs 17–20. When games go to the wire, one saved run often becomes the margin.
 
-A better question is: does a team’s plan make sense for the venue and the match situation? In shortened games, that means pre-committed aggression. In high-scoring venues, that means bowling plans that create dots and wickets rather than hoping the ball holds.
-
-CricDNA takeaway: the table is noisy in week two, but process is already visible. Track the teams that win their key phase — powerplay with the bat, middle overs with wickets, death overs with execution. Those are the edges that survive the long season.
+In IPL 2026, the best teams won’t be those who only hit 200. They’ll be the teams who understand that the match doesn’t end at 200 — it begins there.
 `,
-    relatedPlayerIds: [7, 30, 23, 2]
+    relatedPlayerIds: [12, 22, 5, 23],
+    chartData: [
+      { label: "Defendable if: own middle", value: 1, color: "#43A047" },
+      { label: "Not defendable if: only contain", value: 1, color: "#EF5350" }
+    ]
   }
 ];
 
 export const analyticsCards: AnalyticsCard[] = [
   {
+    type: "match",
+    title: "Match 14 result",
+    value: "GT won by 1 run",
+    description: "Gujarat Titans defended 210/4 against Delhi Capitals’ 209/8 in Delhi.",
+    teamColors: ["#1E88E5", "#EF5350"]
+  },
+  {
     type: "player",
-    title: "Player of the day",
-    value: "Yashasvi Jaiswal — 77* (32)",
-    description: "A 240+ strike-rate innings in a reduced-overs match that turned ‘par’ into ‘pressure’.",
-    playerIds: [7]
+    title: "Innings of the day",
+    value: "KL Rahul 92 (52)",
+    description: "Rahul’s 92 kept a 211 chase alive deep into the final over.",
+    playerIds: [22]
   },
   {
     type: "stat",
-    title: "Venue watch: Arun Jaitley Stadium (Delhi)",
-    value: "Avg 1st inns 200.3",
-    description: "High scoring through the innings, with death overs at 11.59 RPO in our dataset — expect 190+ to be par.",
-    teamColors: ["#1E88E5", "#43A047", "#F4511E"]
-  },
-  {
-    type: "matchup",
-    title: "Matchup lens",
-    value: "Rohit vs Narine: 8 dismissals",
-    description: "Head-to-head numbers aren’t prophecy, but they highlight where wicket-risk can reshape a chase.",
-    playerIds: [13, 23],
-    teamColors: ["#512DA8", "#1E88E5"]
+    title: "Eden toss edge",
+    value: "Field first: 63.3% win",
+    description: "At Eden Gardens, toss winners who field first win 31 of 49 (63.3%) in our dataset.",
+    teamColors: ["#43A047", "#8D6E63"]
   }
 ];
