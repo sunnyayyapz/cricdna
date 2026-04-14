@@ -8,469 +8,272 @@ export interface Article {
   chartData?: ChartData[]; dataTable?: DataTable; matchId?: number;
 }
 export interface AnalyticsCard {
-  type: "player" | "matchup" | "stat";
-  title: string;
-  value: string;
-  description: string;
-  playerIds?: number[];
-  teamColors?: string[];
+  type: "player" | "matchup" | "stat"; title: string; value: string;
+  description: string; playerIds?: number[]; teamColors?: string[];
 }
 
 export const articles: Article[] = [
   {
     id: 1,
-    slug: "mi-vs-rcb-match-20-recap-salt-78-patidar-53-240-222-wankhede",
-    title: "MI vs RCB (Match 20) recap: 240 at Wankhede and RCB still had overs to spare",
-    subtitle: "Phil Salt’s 78 set up 240/4, and RCB’s bowling held its nerve as MI finished 222/5 — an 18-run win in a game where every ‘good’ over mattered.",
+    slug: "srh-vs-rr-match-21-recap-debut-pace-blows-away-a-top-table-chase",
+    title: "SRH vs RR (Match 21) recap: Debut pace blows away a top-table chase",
+    subtitle: "Ishan Kishan\u2019s 91 powered 216/6, then Praful Hinge and Sakib Hussain took 8 wickets between them to bowl RR out for 159.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "7 min",
-    tags: ["IPL 2026", "MI", "RCB", "Match 20", "Wankhede"],
+    publishedAt: "2026-04-14",
+    readTime: "6 min",
+    tags: ["IPL 2026", "SRH", "RR", "Match 21", "Hyderabad"],
     featured: true,
     content: `
-RCB’s season has a clear tell: when their top order gets the first eight overs right, they turn games into pace chases for the opposition. Match 20 at Wankhede was the cleanest version of that script. Bengaluru made 240/4 and still had enough control to beat Mumbai’s 222/5 by 18 runs.
+Sunrisers Hyderabad’s season needed a statement, and they got one in Match 21: 216/6 and then a full dismantling of a table-topping Rajasthan Royals chase.
 
-### The innings that broke the par-score
-Wankhede is a ground where teams have historically chased well, but “chaseable” only applies up to a point. Venue history in CricDNA’s dataset has Wankhede’s average first-innings score at 160.6, with bat-first and bat-second wins almost split (36 vs 37). In that context, 240 isn’t just above par — it’s the kind of total that forces the chasing side to play every over as a powerplay.
+### The score that mattered wasn’t 216 — it was the shape of 216
+A total of 216/6 is obviously big, but what made it strategically brutal was that SRH didn’t ‘all-in’ early. They still had wickets in hand to hit through the death.
 
-RCB’s powerplay (71/0 inside six overs, per the match notes available in public score summaries) mattered because it wasn’t reckless. It was boundary-first intent with wicket-security. Phil Salt’s 78 off 36 was the innings’ accelerator, but the more important structural piece was the platform: no early damage means you can spend the middle overs hunting matchups rather than repairing.
+Ishan Kishan’s Ishan Kishan 91 (44) set the tone: boundary density without surrendering the innings. And once the platform existed, SRH’s middle/death-overs hitting ensured the Royals’ bowlers never got a phase where they could relax.
 
-Rajat Patidar’s 53 off 20 then did what elite No.3/4 hitters do in 240 games: he turned a strong start into a ceiling. The innings moved from “good 200” to “we might get 240” in about 12 balls.
+### A debut spell that changed the match in 11 balls
+Rajasthan’s chase never got breathing room because SRH’s new-ball execution did the opposite of ‘contain’: it attacked stumps and forced top-order strokes before the surface truly settled.
 
-### Why Mumbai’s chase still fell short
-Mumbai did a lot right. They scored 222, and a 222 chase usually wins at many venues. But against 240, you can’t afford any phase that merely keeps up.
+Debutant Praful Hinge was the catalyst, finishing with Praful Hinge 4/34 & Sakib Hussain 4/24. That’s the match: four wickets up front means the required rate becomes irrelevant — you’re no longer chasing a number, you’re chasing survival.
 
-The chase also had an obvious shape: the required rate stayed above 11 for almost the entire innings. Once the equation stays that steep, the chasing team becomes vulnerable to even one quiet over or one wicket that slows the next over. That’s exactly where RCB’s attack found control — not by bowling dot-ball spells, but by making Mumbai “work” for boundaries.
+### Rajasthan’s only way back — and why it still wasn’t enough
+To RR’s credit, they found a lifeline through a single partnership and counterpunching in the middle overs, but the chase had already lost too many wickets.
 
-### What to take forward
-For RCB, the takeaway is repeatable: maximize the first-innings ceiling at small grounds, then defend by winning the “errors” game. For Mumbai, the lesson is harsher: in 230+ chases, you need at least one batter who can produce a 20-ball 60 without needing a set platform.
-
-**CricDNA call:** this wasn’t decided by a single moment. It was decided by which side converted powerplay momentum into an end-overs advantage — and RCB did it twice.
-`,
-    relatedPlayerIds: [16, 1, 29, 13, 2, 3],
-    matchId: 20,
-    chartData: [
-      { label: "RCB", value: 240, color: "#D32F2F" },
-      { label: "MI", value: 222, color: "#1E88E5" }
-    ],
-    dataTable: {
-      headers: ["Match 20", "Key detail"],
-      rows: [
-        ["Result", "RCB won by 18 runs"],
-        ["RCB", "240/4 (20)"],
-        ["MI", "222/5 (20)"],
-        ["Player of the Match", "Phil Salt 78 (36)"],
-        ["Venue lens", "Wankhede avg 1st inns 160.6; wins split 36 (bat 1st) vs 37 (bat 2nd)"],
-        ["Toss lens", "At Wankhede, field-first after winning toss has 51.0% win rate (26/51)" ]
-      ]
-    }
+**CricDNA read:** this win was built on one simple trade: SRH spent pace and aggression early to buy the right to defend 216 like a 240.
+    `,
+    relatedPlayerIds: [28, 9, 7, 18],
+    matchId: 21,
+    chartData: [{"label": "SRH", "value": 216, "color": "#F57C00"}, {"label": "RR", "value": 159, "color": "#1565C0"}],
+    dataTable: {"headers": ["Match 21", "Detail"], "rows": [["Result", "SRH won by 57 runs"], ["SRH", "216/6"], ["RR", "159"], ["PoM", "Praful Hinge"]]},
   },
   {
     id: 2,
-    slug: "lsg-vs-gt-match-19-recap-165-chase-ekana-7w-win",
-    title: "LSG vs GT (Match 19) recap: GT’s 7-wicket chase showed the value of keeping wickets for the last five",
-    subtitle: "LSG’s 164/8 looked workable at Ekana, but GT reached 165/3 in 18.4 overs — a chase built on low-risk accumulation and a late shift to boundary mode.",
+    slug: "rr-s-159-chase-collapse-the-danger-of-intent-without-innings-control",
+    title: "RR\u2019s 159 chase collapse: the danger of \u201cintent\u201d without innings control",
+    subtitle: "On a surface good enough for 216, RR still needed adaptability \u2014 the reset never came after early wickets.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "6 min",
-    tags: ["IPL 2026", "LSG", "GT", "Match 19", "Lucknow", "Ekana"],
+    publishedAt: "2026-04-14",
+    readTime: "7 min",
+    tags: ["IPL 2026", "RR", "SRH", "chase strategy"],
     featured: false,
     content: `
-Lucknow’s Ekana has a reputation for making teams earn their boundaries, so totals between 160 and 175 often sit in the “hard but defendable” range. In Match 19, LSG got to 164/8 — and Gujarat still made the chase look smoother than the scoreboard usually allows.
+Rajasthan Royals losing a game isn’t a shock; the manner of the loss is. Being skittled for 159 while chasing 217 is not just a bad chase — it’s a structural warning.
 
-GT won by 7 wickets, getting 165/3 in 18.4 overs. That margin matters because it signals control: the chase never became a last-over lottery.
+### Collapses are decision-making failures, not pitch failures
+SRH scored 216, so the surface clearly offered value for shots. The collapse was decision-making under early seam and then the inability to reset risk once wickets fell.
 
-### Why 164/8 wasn’t enough
-A total of 164 can be fine, but the “/8” is the tell. In most T20 innings, losing 8 wickets costs you optionality. It reduces the number of risk-free overs you can take in the middle, and it often forces batters to leave 10–15 runs on the table at the death.
+### The hidden cost: losing the matchups
+When you’re 4-5 down early, you can’t choose matchups; matchups choose you. Even a strong middle-order partnership can’t revive the chase if the tail is exposed too soon.
 
-Ekana’s venue profile in CricDNA’s dataset underscores the point: it’s a lower-scoring ground than the pure batting venues, with an average first-innings score of 148.6. But that doesn’t mean you can coast. It means every additional 8–10 runs is valuable because the chase equation stays manageable for longer.
-
-### How GT structured the chase
-Gujarat’s chase finishing at 18.4 overs with 7 wickets in hand suggests a specific pattern: enough early stability to avoid “rate panic”, then a decisive late push.
-
-In tricky venues, the best chases usually look boring for 12 overs. That’s not a criticism — it’s a design. Wickets in hand convert into better options in the last five overs, because the set batter can take on higher-variance shots without the fear of collapse.
-
-### What this means for both teams
-For LSG, the immediate question is phase planning. At home, you want to be the side that defines the pace of the game. If you end at 164/8, you’ve implicitly handed the opposition a clear chase: don’t lose early wickets, and the target will be reachable.
-
-For GT, this win reinforces a durable identity: they can win away games by adapting their tempo to the venue rather than forcing a single batting model.
-
-**CricDNA call:** in low- to mid-scoring games, “wickets saved” can be as valuable as “boundaries hit”. Gujarat won the wicket-economy battle, and the scoreboard followed.
-`,
-    relatedPlayerIds: [5, 12, 17],
-    matchId: 19,
-    chartData: [
-      { label: "LSG", value: 164, color: "#00ACC1" },
-      { label: "GT", value: 165, color: "#1A237E" }
-    ],
-    dataTable: {
-      headers: ["Match 19", "Key detail"],
-      rows: [
-        ["Result", "GT won by 7 wickets"],
-        ["LSG", "164/8 (20)"],
-        ["GT", "165/3 (18.4)"],
-        ["Venue lens", "Ekana avg 1st inns score 148.6"],
-        ["Why it mattered", "LSG used 8 wickets; GT used 3 — more finishing options" ]
-      ]
-    }
+**CricDNA read:** RR didn’t lose because 217 was too much. They lost because they treated a collapse like a normal chase.
+    `,
+    relatedPlayerIds: [7, 18, 20, 12],
   },
   {
     id: 3,
-    slug: "match-20-micro-battle-salt-vs-bumrah-powerplay-logic",
-    title: "Match 20 micro-battle: why ‘survive Bumrah’ isn’t enough at Wankhede",
-    subtitle: "When the average first-innings score is ~160, a single elite over can’t pull a 240 game back. The real question becomes: who wins the non-elite overs?",
+    slug: "kishan-s-91-and-the-structured-216-what-srh-finally-got-right",
+    title: "Kishan\u2019s 91 and the \u201cstructured 216\u201d: what SRH finally got right",
+    subtitle: "A captain\u2019s innings that kept wickets in hand and made 216 defendable once the new ball struck.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
+    publishedAt: "2026-04-14",
     readTime: "6 min",
-    tags: ["IPL 2026", "Match 20", "MI", "RCB", "Bumrah", "Salt"],
+    tags: ["IPL 2026", "SRH", "Ishan Kishan", "batting phases"],
     featured: false,
     content: `
-The instinctive story from MI vs RCB (Match 20) will be “too many runs, not enough Bumrah.” But that framing is incomplete in modern IPL games at small grounds.
+When SRH put up 216/6, the headline number was loud. The more important bit was how calmly they got there.
 
-Wankhede’s historical average first-innings score in CricDNA’s dataset is 160.6. That’s already a strong scoring environment. Yet RCB went to 240/4. That gap is too big to attribute to one bowler’s impact — even if that bowler is Jasprit Bumrah.
+### Kishan’s 91 as a phase-winning innings
+Ishan Kishan’s Ishan Kishan 91 (44) won phases: powerplay acceleration, middle-overs dot-ball reduction, and a death-overs setup with wickets in hand.
 
-### The structural problem: innings are won in the middle overs now
-In 240 games, the batting side can absorb 4–6 balls of high-quality bowling because the rest of the innings provides enough boundary volume. That’s why “survive Bumrah” is no longer a complete plan.
+### Why 216 was defendable
+Hyderabad can be chase-friendly, but chases still rely on a stable top order. By taking early wickets, SRH turned a chasing venue into a pressure cooker.
 
-The winning teams separate themselves in the overs where the field is spread, the bowler isn’t a specialist, and the batter is set. Those are the overs where a 7-ball 18 becomes “normal”, and the run rate climbs without feeling like a slog.
-
-### Why Salt mattered beyond the highlights
-Phil Salt’s 78 off 36 isn’t just a strike-rate event; it changes the opposition’s bowling map. A fast-starting opener forces the defending captain to consider early spin, defensive fields, and more aggressive bowling changes. Each adjustment usually costs something — either a matchup you’d rather avoid later, or an over you’d rather keep for the death.
-
-### What Mumbai need to shift
-Mumbai’s dataset profile at Wankhede shows a near-even split between batting first and chasing wins (36 vs 37). That tells you the venue isn’t “unfair” — it’s high-scoring but balanced.
-
-So the fix isn’t to pray for 140 games. It’s to build plans for 200+ games: deeper batting that can maintain 10+ rpo without hero shots, and bowling strategies that minimize the number of ‘free’ overs.
-
-**CricDNA call:** elite overs are table stakes. The league is decided by what happens in the overs teams *expect* to be safe.
-`,
-    relatedPlayerIds: [2, 16],
-    dataTable: {
-      headers: ["Wankhede reality check", "Number"],
-      rows: [
-        ["Avg 1st inns score", "160.6"],
-        ["Bat 1st wins", "36"],
-        ["Bat 2nd wins", "37"],
-        ["Match 20 RCB", "240/4"],
-        ["Match 20 MI", "222/5" ]
-      ]
-    }
+**CricDNA read:** this wasn’t a 216 built on chaos. It was a 216 built on structure — and that’s why it survived.
+    `,
+    relatedPlayerIds: [9, 28],
   },
   {
     id: 4,
-    slug: "match-19-why-wickets-are-currency-at-ekana",
-    title: "Match 19 tactical note: at Ekana, wickets are currency, not just risk",
-    subtitle: "LSG’s 164/8 left them no second-gear at the end; GT’s 165/3 showed how ‘quiet’ overs become a weapon when you keep depth.",
-    category: "analysis",
+    slug: "csk-vs-kkr-match-22-pitch-report-chepauk-tempo-spin-and-a-par-score-that-keeps-rising",
+    title: "CSK vs KKR (Match 22) pitch report: Chepauk tempo, spin, and a par-score that keeps rising",
+    subtitle: "Chepauk still rewards spin and discipline, but the \u201csafe\u201d first-innings number is higher than its reputation suggests.",
+    category: "pitch-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "6 min",
-    tags: ["IPL 2026", "Match 19", "LSG", "GT", "Ekana", "tactics"],
+    publishedAt: "2026-04-14",
+    readTime: "7 min",
+    tags: ["IPL 2026", "CSK", "KKR", "Chepauk", "pitch"],
     featured: false,
     content: `
-Ekana games can tempt teams into the wrong conclusion. Because the average first-innings score in CricDNA’s dataset is 148.6, sides assume “we only need 160.” That’s true — but it hides the more important point: the path to 160 matters as much as the number.
+Match 22 at Chepauk is the kind of fixture where the toss can lie to you. The ground is famous for grip and spin, but modern IPL nights increasingly produce 170–190 par scores and late-innings boundary spikes.
 
-LSG reached 164/8. Gujarat reached 165/3. Both are mid-160 totals, but one is fragile and one is flexible.
+### Pitch expectations
+CricDNA venue file: total matches 48, average 1st innings 166.0, bat-first win % 64.6, and toss teams field first 29.2% of the time.
 
-### The wicket-flexibility model
-When you have 6–7 wickets left at the start of the death overs, you can choose: target a specific bowler, pick a specific pocket, or take two overs to set up one big over.
+Chepauk’s key tactical idea is tempo: teams that go too hard too early often stall in the middle overs, while teams that leave too much for the end risk getting strangled by spin.
 
-When you have 2–3 wickets left at the death, you can’t choose. You have to protect the tail. That protection usually costs you boundary attempts and turns “good balls” into “dots”.
-
-That’s why wickets are currency at Ekana. The ground reduces boundary frequency; your substitute for boundaries is *optionality*. Optionality comes from depth.
-
-### How to apply this going forward
-LSG’s batting can still win at home, but they need clearer risk windows: one batter commits to a high-variance over against the fifth bowler, while the other holds shape. GT’s chase indicates they already play this way — they kept enough wickets to flip tempo late.
-
-**CricDNA call:** at lower-scoring venues, preserve wickets early not because you’re afraid — because it buys you the right to attack later.
-`,
-    relatedPlayerIds: [5, 12],
-    chartData: [
-      { label: "LSG wickets used", value: 8, color: "#00ACC1" },
-      { label: "GT wickets used", value: 3, color: "#1A237E" }
-    ]
+**CricDNA call:** if dew is light, bat first and aim 175+. If dew is heavy, chasing becomes viable — but only with wickets in hand at 12 overs.
+    `,
+    relatedPlayerIds: [10, 23],
   },
   {
     id: 5,
-    slug: "srh-vs-rr-match-21-preview-ekana-lessons-uppal",
-    title: "SRH vs RR (Match 21) preview: Uppal rewards clear phase plans — not constant hitting",
-    subtitle: "Hyderabad’s venue data shows chasing edges, but the real separator is middle-overs control. RR’s balance meets SRH’s ceiling in a matchup that can swing fast.",
-    category: "match-preview",
+    slug: "csk-vs-kkr-match-22-toss-report-dew-vs-spin-is-the-real-call-at-chepauk",
+    title: "CSK vs KKR (Match 22) toss report: dew vs spin is the real call at Chepauk",
+    subtitle: "The default \u201cbowl first\u201d instinct can backfire in Chennai if the pitch stays dry and the ball grips.",
+    category: "toss-report",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "7 min",
-    tags: ["IPL 2026", "SRH", "RR", "Match 21", "Hyderabad"],
+    publishedAt: "2026-04-14",
+    readTime: "6 min",
+    tags: ["IPL 2026", "CSK", "KKR", "toss", "Chepauk"],
     featured: false,
     content: `
-Match 21 takes us to Hyderabad: Sunrisers Hyderabad vs Rajasthan Royals at the Rajiv Gandhi International Stadium.
+Chepauk is one of the rare IPL venues where the toss doesn’t automatically dictate a single decision — but it still shapes the game.
 
-The venue profile in CricDNA’s dataset suggests a mild chasing bias. At Rajiv Gandhi International Stadium, Uppal (49 matches), the average first-innings score is 158.5 and the average second-innings score is 148.6. In simple terms: it isn’t a flat 200 venue, but it punishes teams that lose control in the middle.
+### What teams usually choose
+CricDNA venue file: total matches 48, average 1st innings 166.0, bat-first win % 64.6, and toss teams field first 29.2% of the time.
 
-### How the venue usually plays
-The common pattern at Uppal is a powerplay where you can score, a middle phase where the ball grips just enough to force mistakes, and a death phase where set batters can still cash in.
+Historically, captains like to field first because chasing gives clarity. At Chepauk, that logic collides with an older truth: if the surface dries, batting second can feel like hitting on a different pitch.
 
-That means both SRH and RR have a planning question: do you try to win the game in the first eight overs, or do you build for an 18-over innings where wickets in hand decide the last five?
-
-### Matchups to watch
-- **SRH top order vs RR powerplay bowling:** SRH’s best path is early boundaries, but it has to come without the “all-out attack” collapses that leave them 3 down by the 9th.
-- **RR’s middle overs vs SRH’s spin/hold bowlers:** If RR can keep 7+ wickets for the last five, they’ll be hard to contain.
-
-### Toss approach
-Toss data for Rajiv Gandhi International Stadium, Uppal shows that teams choosing to field first after winning the toss have won 52.3% (23 wins from 44). That’s a small edge, but meaningful — especially if dew arrives.
-
-**CricDNA call:** this is a venue where 180 can win, but only if the batting innings is structured. Expect the smarter middle-overs team to take it.
-`,
-    relatedPlayerIds: [28, 7, 8, 25],
-    matchId: 21,
-    dataTable: {
-      headers: ["Hyderabad venue lens", "Value"],
-      rows: [
-        ["Matches (dataset)", "49"],
-        ["Avg 1st inns", "158.5"],
-        ["Avg 2nd inns", "148.6"],
-        ["Toss: field-first win%", "52.3% (23/44)" ]
-      ]
-    }
+**CricDNA call:** the toss choice should be based on dew expectation, not habit.
+    `,
+    relatedPlayerIds: [10, 23],
   },
   {
     id: 6,
-    slug: "csk-vs-kkr-match-22-preview-chepauk-control-game",
-    title: "CSK vs KKR (Match 22) preview: Chepauk is a control game — and both sides can play it",
-    subtitle: "Chennai’s average first-innings score sits in the mid-150s in CricDNA’s dataset, with a historical edge to chasing. Expect a spin-and-angles match rather than a pure boundary race.",
+    slug: "csk-vs-kkr-match-22-preview-the-middle-overs-match-hidden-inside-the-rivalry",
+    title: "CSK vs KKR (Match 22) preview: the middle-overs match hidden inside the rivalry",
+    subtitle: "Chepauk will reward the side that controls overs 7\u201315 \u2014 with spin, strike rotation, and low-error batting.",
     category: "match-preview",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
+    publishedAt: "2026-04-14",
     readTime: "7 min",
-    tags: ["IPL 2026", "CSK", "KKR", "Match 22", "Chepauk"],
+    tags: ["IPL 2026", "CSK", "KKR", "Match 22", "preview"],
     featured: false,
     content: `
-Match 22 is a marquee at MA Chidambaram Stadium, Chepauk: Chennai Super Kings vs Kolkata Knight Riders.
+Match 22 is a classic contrast: Chennai’s home conditions and spin control vs Kolkata’s need for a clean batting template.
 
-Chepauk’s venue profile in CricDNA’s dataset (48 matches) captures why this ground feels different. The average first-innings score is 153.8, average second-innings score is 144.5, and teams have won more often chasing (30 bat-second wins vs 18 batting-first).
+### A simple matchup lens
+If KKR allow CSK to reach the 10-over mark with only one wicket down, Chennai can set up a finishing burst. If KKR strike twice early, Chepauk becomes a ‘spin chase’ where every dot ball grows in value.
 
-### The tactical shape
-At Chepauk, batting isn’t only about shots — it’s about *sequencing*. The teams that win here typically do three things:
-1) protect wickets in the middle,
-2) manufacture boundary opportunities late,
-3) bowl cutters/spin into the pitch with fields that tempt the wrong hit.
+### One data matchup to watch
+In CricDNA’s batter-vs-bowler table, V Kohli has scored 179 runs off 160 balls vs RA Jadeja at a strike rate of 111.87 with 3 dismissals — a reminder that even elite batters can be managed with the right matchups.
 
-### What decides CSK vs KKR
-- **Spin matchups:** both teams can stack spin overs. The side that forces the opponent to attack the *wrong* bowler will win the middle.
-- **Powerplay discipline:** you don’t need 70/0 here. You need a platform that keeps your best hitters alive for overs 15–20.
-
-### Toss approach
-Chepauk’s toss stats in CricDNA’s dataset show a strong edge for fielding first: teams choosing to field first after winning the toss have won 69.7% (23/33). That’s massive for a venue that can slow down — and it reflects how hard it can be to judge a par score.
-
-**CricDNA call:** expect a 165–175 par feel, and a match decided by who makes fewer “ego shots” against the spin.
-`,
-    relatedPlayerIds: [14, 18, 23],
-    matchId: 22,
-    chartData: [
-      { label: "Chepauk avg 1st inns", value: 153.8, color: "#FFB300" },
-      { label: "Chepauk avg 2nd inns", value: 144.5, color: "#43A047" }
-    ],
-    dataTable: {
-      headers: ["Chepauk (dataset)", "Number"],
-      rows: [
-        ["Matches", "48"],
-        ["Avg 1st inns", "153.8"],
-        ["Avg 2nd inns", "144.5"],
-        ["Bat 1st wins", "18"],
-        ["Bat 2nd wins", "30"],
-        ["Toss: field-first win%", "69.7% (23/33)" ]
-      ]
-    }
+**CricDNA call:** this is a “who plays the middle overs better” match — not a pure hitting contest.
+    `,
+    relatedPlayerIds: [18, 1, 23],
   },
   {
     id: 7,
-    slug: "rcb-vs-lsg-match-23-preview-chinnaswamy-pace-of-game",
-    title: "RCB vs LSG (Match 23) preview: at Chinnaswamy, the first eight overs decide what ‘par’ means",
-    subtitle: "Bengaluru is the classic high-variance venue — short boundaries, fast outfield, and totals that swing quickly if the powerplay slips.",
-    category: "match-preview",
+    slug: "venue-driven-ipl-why-the-same-team-plays-like-two-different-teams-in-one-season",
+    title: "Venue-driven IPL: why the same team plays like two different teams in one season",
+    subtitle: "Using CricDNA\u2019s venue file to explain why par scores and phase scoring change match scripts.",
+    category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "7 min",
-    tags: ["IPL 2026", "RCB", "LSG", "Match 23", "Bengaluru"],
+    publishedAt: "2026-04-14",
+    readTime: "6 min",
+    tags: ["IPL 2026", "venues", "strategy", "data"],
     featured: false,
     content: `
-RCB barely have time to breathe after a 240 game, because Match 23 takes them back to Bengaluru to face Lucknow Super Giants.
+A week of IPL 2026 has reinforced a simple truth: venues aren’t just backdrops, they are strategy engines.
 
-Chinnaswamy’s venue profile in CricDNA’s dataset explains why teams treat it like a different sport. Over 65 matches, the average first-innings score is 169.7 and the average second-innings score is 159.5. The highest total in the dataset at this venue is 263.
+### What the venue file says
+Across CricDNA’s venue dataset, bat-second wins dominate at some grounds, while others reward batting first. That difference changes captaincy: risk tolerance, bowling changes, even which all-rounder you pick.
 
-### The venue rule: you can’t “wait to attack”
-At Chinnaswamy, a conservative 42/1 powerplay is often a losing position, not because it’s “bad”, but because it caps your ceiling. You usually need to reach the 10-over mark with scoring options still open.
+### A practical shortcut
+Before every match, identify average first-innings score, bat-first win percentage, and death-overs run rate. That triad tells you the match script the ground usually rewards.
 
-### Matchups to watch
-- **RCB’s top order vs LSG’s new ball:** RCB will want another fast start, because their batting becomes extremely hard to contain when the ball is hard.
-- **LSG’s response after Match 19:** after being chased down, LSG’s key will be wicket-preservation. In Bengaluru, depth matters even more because every batter is a boundary threat.
-
-### Toss approach
-Chinnaswamy toss stats in CricDNA’s dataset show teams choosing to field first after winning the toss have won 55.4% (31/56). With potential dew and the challenge of defending 190+, chasing often becomes the preferred choice.
-
-**CricDNA call:** expect a 190–205 par feel, but the team that wins the powerplay *without losing 2+ wickets* will control the match’s pace.
-`,
-    relatedPlayerIds: [1, 16, 22],
-    matchId: 23,
-    chartData: [
-      { label: "Chinnaswamy avg 1st inns", value: 169.7, color: "#D32F2F" },
-      { label: "Chinnaswamy avg 2nd inns", value: 159.5, color: "#1E88E5" }
-    ],
-    dataTable: {
-      headers: ["Chinnaswamy (dataset)", "Value"],
-      rows: [
-        ["Matches", "65"],
-        ["Avg 1st inns", "169.7"],
-        ["Avg 2nd inns", "159.5"],
-        ["Highest total (dataset)", "263"],
-        ["Toss: field-first win%", "55.4% (31/56)" ]
-      ]
-    }
+**CricDNA takeaway:** smart teams don’t just pick their XI — they pick the match plan that the ground usually rewards.
+    `,
+    relatedPlayerIds: [2, 6, 12],
   },
   {
     id: 8,
-    slug: "rankings-watch-rcb-top-order-mi-chase-signal",
-    title: "Rankings watch: RCB’s top-order surge vs MI’s chase ceiling",
-    subtitle: "Early-season narratives aren’t tables yet, but patterns show up fast: RCB are maximizing powerplays, while MI are being forced into 12+ required-rate chases.",
-    category: "rankings",
+    slug: "early-season-batting-trends-role-clarity-beats-form-in-the-first-20-matches",
+    title: "Early-season batting trends: role clarity beats \u201cform\u201d in the first 20 matches",
+    subtitle: "Why phases matter more than raw tallies, and how teams can stop building duplicate batting lineups.",
+    category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "6 min",
-    tags: ["IPL 2026", "rankings", "RCB", "MI", "trend"],
+    publishedAt: "2026-04-14",
+    readTime: "7 min",
+    tags: ["IPL 2026", "batting", "phases", "analysis"],
     featured: false,
     content: `
-It’s still early enough in IPL 2026 that points tables can lie. But the underlying patterns don’t.
+The Orange Cap race is fun, but the deeper story is role clarity. Early-season run tallies are noisy; role execution is more predictive.
 
-### RCB: ceiling-first batting
-Match 20 is the clearest example: 240/4 at Wankhede, driven by a dominant powerplay and a mid-innings acceleration. When RCB win the first eight overs without losing 2+ wickets, they effectively move the “par” line up by 15–25 runs.
+### The three batter roles that win IPL seasons
+Powerplay ceiling hitter, middle-overs stabilizer, and death-overs finisher. Most teams lose balance by picking duplicates.
 
-That’s a rankings-level edge because it travels. A batting model built on early dominance reduces pressure on the death overs and makes their bowling plans simpler.
-
-### MI: chases getting steeper
-Mumbai’s issue isn’t batting quality — it’s the *equations* they’re being forced into. Chasing 240 meant playing 20 overs at 12 an over. Even an excellent innings (222/5) ends as a loss.
-
-In the long season, teams that repeatedly face 11–12 required rates tend to burn wickets and lose optionality. That shows up later as inconsistent finishes.
-
-### The venue context matters
-Wankhede is historically balanced in CricDNA’s dataset (36 bat-first wins, 37 chasing wins). So when a game becomes one-sided there, it’s rarely “pitch randomness.” It’s usually execution — and in Match 20, RCB executed more overs at an elite level.
-
-**CricDNA call:** if these shapes continue for a week, RCB will look like a top-two side on underlying performance, while MI will need either better powerplay bowling or more top-order volatility to change match equations.
-`,
-    relatedPlayerIds: [1, 16, 13],
-    dataTable: {
-      headers: ["Trend", "What it means"],
-      rows: [
-        ["RCB: ceiling-first starts", "More 200+ totals; simpler defenses"],
-        ["MI: steep chase equations", "Higher wicket pressure; more variance"],
-        ["Wankhede context", "Historically balanced: 36 bat-1st wins vs 37 chases" ]
-      ]
-    }
+**CricDNA takeaway:** the cap races are outputs. Roles are inputs.
+    `,
+    relatedPlayerIds: [1, 5, 25],
   },
   {
     id: 9,
-    slug: "analytics-note-toss-biases-wankhede-chepauk-hyderabad",
-    title: "Analytics note: three venues, three different toss incentives",
-    subtitle: "Wankhede is near-neutral, Chepauk heavily favors field-first, and Hyderabad offers a smaller chasing edge — meaning ‘always chase’ is the wrong heuristic.",
+    slug: "toss-strategy-101-combining-venue-history-with-team-habits-for-better-decisions",
+    title: "Toss strategy 101: combining venue history with team habits for better decisions",
+    subtitle: "How to use CricDNA toss and venue datasets to remove guesswork from bat/field calls.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
+    publishedAt: "2026-04-14",
     readTime: "6 min",
-    tags: ["IPL 2026", "toss", "venue analysis", "Wankhede", "Chepauk", "Hyderabad"],
+    tags: ["IPL 2026", "toss", "strategy"],
     featured: false,
     content: `
-One of the biggest strategic leaks in IPL decision-making is treating the toss as a generic “choose to chase” moment. CricDNA’s toss dataset shows why that’s too simple.
+The fastest way to lose an IPL season is to treat the toss as trivia. In a league where margins are thin, the toss is a tactical lever.
 
-### Wankhede: close to neutral
-At Wankhede Stadium (73 matches in the toss dataset), fielding first after winning the toss has a 51.0% win rate (26/51). That’s basically neutral — suggesting team strength and execution dominate.
+### What the toss dataset is good for
+Combine team toss habits with venue bat-first win rates to get a decision map.
 
-### Chepauk: a strong field-first edge
-At MA Chidambaram Stadium, Chepauk (48 matches), field-first after winning the toss has a 69.7% win rate (23/33). That’s a major incentive to chase because par scores are hard to judge, and conditions can change.
-
-### Hyderabad: a smaller chasing lean
-At Rajiv Gandhi International Stadium, Uppal (44 toss decisions captured), field-first win rate is 52.3% (23/44). That’s an edge, but not enough to override team composition or matchups.
-
-### The practical takeaway
-The toss should be a venue-specific decision:
-- If you’re at Chepauk, chasing is often the default unless you have an exceptional spin batting plan.
-- At Wankhede, pick the option that fits your lineup.
-- At Hyderabad, use dew/conditions as the tie-breaker.
-
-**CricDNA call:** teams that treat toss decisions as venue-specific gain small advantages that compound across a season.
-`,
-    relatedPlayerIds: [2, 18],
-    chartData: [
-      { label: "Wankhede field-first win%", value: 51.0, color: "#1E88E5" },
-      { label: "Hyderabad field-first win%", value: 52.3, color: "#FB8C00" },
-      { label: "Chepauk field-first win%", value: 69.7, color: "#43A047" }
-    ]
+**CricDNA takeaway:** toss + venue tendencies should decide your match plan before ball one.
+    `,
+    relatedPlayerIds: [11, 30, 2],
   },
   {
     id: 10,
-    slug: "player-focus-patidar-finishers-shape-the-modern-ipl",
-    title: "Player focus: why modern IPL ‘finishers’ are often No.3/4 hitters like Patidar",
-    subtitle: "Match 20’s decisive burst came before the death overs. In high-scoring games, the best ‘finishing’ can happen in overs 12–16.",
+    slug: "phase-discipline-the-repeatable-skill-that-separates-contenders-from-chaos-teams",
+    title: "Phase discipline: the repeatable skill that separates contenders from chaos teams",
+    subtitle: "A tactical framework to read any match: powerplay structure, middle-overs intent, and death-overs execution.",
     category: "analysis",
     author: "CricDNA Analytics",
-    publishedAt: "2026-04-13",
-    readTime: "6 min",
-    tags: ["IPL 2026", "batting", "Patidar", "RCB", "tactics"],
+    publishedAt: "2026-04-14",
+    readTime: "7 min",
+    tags: ["IPL 2026", "tactics", "phases"],
     featured: false,
     content: `
-The word “finisher” still makes people picture a last-five-overs specialist. But Match 20 at Wankhede reminds us that in 220–240 games, finishing can happen earlier.
+Most IPL analysis focuses on totals and stars. The season is usually decided by “phase discipline”: how teams manage powerplay risk, middle-overs dot balls, and death overs execution.
 
-RCB’s 240/4 was built on two kinds of innings: Phil Salt’s powerplay launch, and the mid-innings detonation from Rajat Patidar (53 off 20). Patidar’s burst came in the phase where bowlers expect to stabilize — overs 12 to 16 — and that’s why it was so valuable.
+### Phase discipline in one sentence
+Win one phase hard, don’t lose the other two.
 
-### Why No.3/4 hitters matter more now
-When the powerplay is strong, No.3/4 batters inherit the game’s biggest leverage moment: the ball is still hard enough to hit, but the field is back enough that singles are available. If you can hit boundaries *and* rotate, the run rate climbs without extra risk.
-
-That’s also why the “middle overs” are no longer a quiet zone. They’re the phase where you can set up the death overs without needing a miracle.
-
-### What teams should look for
-In recruitment terms, the modern finisher profile includes:
-- boundary range against pace-off,
-- the ability to start fast (first 10 balls),
-- low dot-ball impact when fields are spread.
-
-### The ripple effect
-When a team has that kind of hitter at 3/4, it reduces late-innings pressure. It also changes bowling behavior: captains are forced to bring their best bowlers back earlier, which can weaken the death.
-
-**CricDNA call:** Patidar-style impact is a format cheat code. The best finishers are often the ones who finish the match *before* it reaches the last four overs.
-`,
-    relatedPlayerIds: [29, 16],
-    dataTable: {
-      headers: ["What changed", "Why it matters"],
-      rows: [
-        ["Finishing moves earlier", "Decisive runs can be overs 12–16"],
-        ["No.3/4 leverage", "Hard ball + spread field = high control"],
-        ["Match 20 example", "RCB 240/4 powered by Salt (PP) + Patidar (middle)" ]
-      ]
-    }
-  }
+**CricDNA takeaway:** IPL is not 20 overs of chaos — it’s 20 overs of phase decisions.
+    `,
+    relatedPlayerIds: [2, 6, 17, 19],
+  },
 ];
 
 export const analyticsCards: AnalyticsCard[] = [
   {
     type: "matchup",
-    title: "Wankhede wasn’t the decider — ceiling was",
-    value: "RCB 240/4, MI 222/5",
-    description: "Wankhede’s dataset average first-innings score is 160.6, but Match 20 blew past it. In 230+ games, the team that creates ‘free’ overs usually wins.",
-    teamColors: ["#D32F2F", "#1E88E5"]
-  },
-  {
-    type: "stat",
-    title: "Chepauk toss edge",
-    value: "69.7%",
-    description: "At MA Chidambaram Stadium (Chepauk), teams choosing to field first after winning the toss have won 69.7% (23/33) in CricDNA’s dataset.",
-    teamColors: ["#FFB300", "#43A047"]
+    title: "Match 22 at Chepauk",
+    value: "CSK vs KKR",
+    description: "Middle-overs control will decide this: spin matchup management vs risk-managed strike rotation.",
+    playerIds: [10, 23],
+    teamColors: ["#F9C74F", "#6A1B9A"],
   },
   {
     type: "player",
-    title: "Player of the day",
-    value: "Phil Salt — 78 (36)",
-    description: "Salt’s powerplay launch set up 240/4, turning a balanced Wankhede into a pace-chase for MI.",
-    playerIds: [16],
-    teamColors: ["#D32F2F"]
-  }
+    title: "Debut impact (Match 21)",
+    value: "Hinge 4/34, Sakib 4/24",
+    description: "SRH’s new-ball aggression bought them the right to defend 216 like a 240.",
+    playerIds: [28, 9],
+  },
+  {
+    type: "stat",
+    title: "Chepauk venue snapshot",
+    value: "Avg 1st inns 166.0",
+    description: "Use venue tendencies as a pre-toss decision map: par score + bat-first win % + death-overs run rate.",
+  },
 ];
