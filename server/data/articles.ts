@@ -15,9 +15,9 @@ export interface AnalyticsCard {
 export const articles: Article[] = [
   {
     id: 1,
-    slug: "rcb-vs-lsg-match-23-recap-146-wasnt-defendable-in-bengaluru-but-rcb-made-it-feel-like-120",
-    title: "RCB vs LSG (Match 23) recap: 146 wasn’t defendable in Bengaluru — but RCB made it feel like 120",
-    subtitle: "Rasikh Salam Dar’s 4/24 set up a 5-wicket win as RCB chased 147 in 15.1 overs (149/5 vs 146 all out).",
+    slug: "ipl-2026-match-23-rcb-vs-lsg-recap-146-was-never-a-chinnaswamy-total",
+    title: "IPL 2026 Match 23 (RCB vs LSG) recap: 146 was never a Chinnaswamy total — RCB kept it simple",
+    subtitle: "RCB chased 147 in 15.1 overs (149/5) after bowling LSG out for 146 on April 15 in Bengaluru.",
     category: "analysis",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
@@ -25,557 +25,450 @@ export const articles: Article[] = [
     tags: ["IPL 2026", "RCB", "LSG", "Match 23", "Bengaluru"],
     featured: true,
     content: `
-Match 23 at the M. Chinnaswamy Stadium followed a pattern that Bengaluru fans have come to expect: the game was decided less by one big batting innings and more by whether the bowling side could force a below-par target.
+RCB’s five-wicket win over LSG in Bengaluru looked routine on the scoreboard: **LSG 146 all out**, **RCB 149/5 in 15.1 overs**. But the real story was how comfortably Bengaluru’s conditions let RCB play the low-risk version of a chase.
 
-Royal Challengers Bengaluru did exactly that. After opting to field, they dismissed Lucknow Super Giants for **146** and then cruised to **149/5 in 15.1 overs**, winning by five wickets with **29 balls to spare**.
+### Why 146 was always behind the venue
+CricDNA’s venue dataset for **M. Chinnaswamy Stadium** pegs the **average first-innings score at 168.1**. A 146 target is not just “below par” — it’s the sort of number that removes the need for risk in the middle overs.
 
-### Why 146 was always chasing the game at this venue
-CricDNA’s venue dataset for **M Chinnaswamy Stadium** lists **65 total matches** with an **average first-innings score of 168.1** and a **death-overs run rate of 10.59**. That context matters: a 146 target is not just “below par” — it’s a total that gives the chasing side permission to keep risk low for longer.
+There’s also a structural bias towards chasing. In CricDNA’s toss dataset for Chinnaswamy, teams have chosen to field first in **57 of 65** games, and that decision has produced a **56.1% win rate**. When captains behave the same way for years, it’s usually because the ground offers repeatable patterns.
 
-The other key Bengaluru lever is the toss. CricDNA’s toss dataset for **M Chinnaswamy Stadium** shows teams choosing to field first in **57 of 65** matches, with a **56.1% win rate** when doing so. In other words: teams at this ground don’t just chase because it’s fashionable — they chase because it usually keeps them in control.
+### The bowling: making the innings end early
+A side doesn’t get bowled out for 146 at a high-scoring venue unless the bowling side keeps attacking the stumps and the set batters.
 
-### The bowling blueprint: wickets, not just dots
-LSG’s innings never stabilised because wickets arrived in clusters.
+The innings shape mattered more than one individual spell. LSG never built the 35–45 ball partnership that usually stabilises the middle overs in T20s — which means the final phase becomes “all swing, no insurance.” That is exactly when wickets tumble.
 
-- **Rasikh Salam Dar: 4/24** — the spell that shaped the scorecard.
-- **Bhuvneshwar Kumar: 3/27** — control up top and damage late.
-- **Krunal Pandya: 2/38** — wicket-taking in the middle overs.
+### The chase: powerplay intent, then no drama
+RCB’s chase was a template for sub-160 targets:
 
-When a side is bowled out for 146, it’s almost always because they failed to build a “second gear” partnership through overs 7–15. Even if you have a couple of solid knocks, you’re forced into a finish where hitters must go hard from ball one. That’s exactly the kind of finishing pressure Bengaluru bowling units tend to thrive on.
+1) Win the powerplay with intent.
+2) Avoid collapses (singles count when the asking rate is under control).
+3) Keep wickets for a short finish.
 
-### The chase: aggressive powerplay, conservative finish
-RCB’s chase was close to ideal: win the powerplay hard, then manage the rest.
+The key advantage of a 147 chase is that even a quiet over doesn’t hurt. You can rotate strike, wait for the bowler you want, and still close the match with overs to spare.
 
-**Virat Kohli’s 49 off 34** provided the anchor, but it also did something more important: it ensured that the required rate never climbed into a panic zone.
+### What it signals for RCB’s home games
+If you’re RCB, the simplest route to controlling home matches is bowling oppositions below the venue’s natural scoring band. On a ground where the historical average first innings sits around 168, pulling opponents down into the mid-140s forces them to play a “perfect” bowling innings to defend — and that’s rare.
 
-Even after Kohli fell short of fifty, the chase stayed in “process mode” — short partnerships, quick singles, and just enough boundary contact to shut the door.
-
-### What this means for RCB’s season
-A 149 chase at Bengaluru is not normally the headline. The headline is **how** you got it: by turning the opposition’s 20 overs into a wicket hunt.
-
-If RCB keep winning the “target-setting” battle at Chinnaswamy — pushing opponents below the 160–175 band that this venue naturally supports — their batting depth becomes a luxury rather than a necessity.
-
+That’s the cleanest takeaway from Match 23: RCB didn’t need a spectacular chase. They just needed to make sure the game never became chaotic.
     `,
     relatedPlayerIds: [1, 22, 29],
     matchId: 23,
     chartData: [
-      { label: "LSG", value: 146, color: "#1E88E5" },
-      { label: "RCB", value: 149, color: "#D32F2F" }
-    ],
-    dataTable: {
-      headers: ["Match 23", "Detail"],
-      rows: [
-        ["Result", "RCB won by 5 wickets (29 balls remaining)"],
-        ["LSG", "146 all out"],
-        ["RCB", "149/5 (15.1)"],
-        ["Top RCB batter", "Virat Kohli 49 (34)"],
-        ["Top RCB bowler", "Rasikh Salam Dar 4/24"],
-        ["Venue", "M. Chinnaswamy Stadium, Bengaluru" ]
-      ]
-    }
-  },
-  {
-    id: 2,
-    slug: "rcb-vs-lsg-match-23-tactical-recap-the-toss-decision-was-the-first-wicket",
-    title: "RCB vs LSG (Match 23) tactical recap: the toss decision was the first wicket",
-    subtitle: "Chinnaswamy data says fielding first is the default; RCB followed the venue’s script and cashed in.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-04-16",
-    readTime: "6 min",
-    tags: ["IPL 2026", "toss", "RCB", "LSG", "Chinnaswamy"],
-    featured: false,
-    content: `
-Match 23 didn’t need a complicated narrative: Royal Challengers Bengaluru chose to bowl, dismissed Lucknow Super Giants for 146, and finished the chase at 149/5 with nearly five overs in hand.
-
-But the most repeatable part of the win wasn’t a particular over or a particular shot. It was the **decision to field first**, which aligned perfectly with what the ground has historically rewarded.
-
-### What the numbers say about Chinnaswamy and the toss
-CricDNA’s toss dataset for **M Chinnaswamy Stadium** records **65 matches**, with teams choosing to field first in **57** of them. That preference is not cosmetic: field-first sides have won **32 of those 57** games, a **56.1% win rate**.
-
-Compare that to batting-first after winning the toss: only **8** teams chose it, and they won **3** (a **37.5% win rate**). If you want a one-line summary of Bengaluru strategy, it’s this: the venue tends to reward captains who remove uncertainty by chasing.
-
-### Why chasing reduces risk here
-CricDNA’s venue dataset lists an **average first-innings score of 168.1** at **M Chinnaswamy Stadium**, and a high-scoring finishing profile with a **death-overs run rate of 10.59**.
-
-Those are classic chasing-friendly indicators:
-- the ceiling is high, so you can lose a wicket or two and still keep pace,
-- the finish is fast, so 40 off 24 (or 30 off 18) is rarely “impossible”,
-- and the outfield/pitch combination usually allows boundary access without reckless shot selection.
-
-### RCB’s bowling: how a “good” 146 was created
-It’s easy to say “146 is too low.” The better question is: how did RCB make it low?
-
-LSG were pushed into a pattern of “start, stall, rebuild, lose wickets.” That’s the bowling template RCB should aim to repeat:
-- take wickets early enough that the opposition can’t use overs 7–15 as a platform,
-- force hitters to enter before the set batters can control the tempo,
-- and make the last five overs a scramble rather than a launchpad.
-
-The match figures underline it: **Rasikh Salam Dar 4/24**, **Bhuvneshwar Kumar 3/27**, and **Krunal Pandya 2/38**.
-
-### The chase: the most important phase was the first six overs
-Once 146 was on the board, the only way to let LSG back in was to start slowly and let the required run rate turn into a conversation.
-
-RCB avoided that through early intent, with **Virat Kohli’s 49 off 34** setting the pace and keeping risk manageable for the middle order.
-
-### CricDNA takeaway
-At Chinnaswamy, “win the toss and chase” is not lazy thinking — it’s evidence-based. If RCB continue to combine that decision with wicket-taking bowling spells, they can win games even on nights when the batting doesn’t need to go superhuman.
-
-    `,
-    relatedPlayerIds: [1, 22],
-    matchId: 23,
-    chartData: [
-      { label: "Toss: field first", value: 57, color: "#2E7D32" },
-      { label: "Toss: bat first", value: 8, color: "#C62828" }
-    ],
-    dataTable: {
-      headers: ["Chinnaswamy toss outcomes", "Value"],
-      rows: [
-        ["Matches in dataset", "65"],
-        ["Field first (count)", "57"],
-        ["Field first win %", "56.1%"],
-        ["Bat first (count)", "8"],
-        ["Bat first win %", "37.5%" ]
-      ]
-    }
-  },
-  {
-    id: 3,
-    slug: "rcb-vs-lsg-match-23-phase-story-where-lsg-lost-20-25-runs-without-noticing",
-    title: "RCB vs LSG (Match 23) phase story: where LSG lost 20–25 runs without noticing",
-    subtitle: "In Bengaluru, you can’t ‘save’ the death overs if you’re losing wickets through the middle.",
-    category: "analysis",
-    author: "CricDNA Analytics",
-    publishedAt: "2026-04-16",
-    readTime: "6 min",
-    tags: ["IPL 2026", "phase analysis", "LSG", "RCB"],
-    featured: false,
-    content: `
-A total of 146 at Bengaluru is usually explained with one word: wickets.
-
-Lucknow Super Giants weren’t short of intent — they were short of continuity. They were bowled out for **146**, and that meant they never got to enjoy the one thing this venue promises: a high-speed finish.
-
-### Bengaluru’s scoring profile is built for late acceleration
-CricDNA’s venue dataset for **M Chinnaswamy Stadium** shows a clear scoring curve:
-- **Powerplay run rate: 7.07**
-- **Middle-overs run rate: 8.08**
-- **Death-overs run rate: 10.59**
-
-The key here is the last number. A 10.59 death run rate means the ground naturally supports boundary conversion late in the innings. So why did LSG still end at 146?
-
-Because death-overs acceleration only works if you reach it with enough wickets.
-
-### The hidden tax: rebuilding costs more than dots
-In T20 innings, the most expensive overs are not always maiden overs. They are the “rebuild overs” where batters are trying to survive, re-set, and then re-accelerate.
-
-LSG’s innings had too many of those. The bowling figures tell you how the innings kept restarting:
-- **Rasikh Salam Dar 4/24** meant multiple entry points for new batters.
-- **Bhuvneshwar Kumar 3/27** ensured the innings didn’t settle even late.
-
-Every new batter needs 6–10 balls to find the pace of the pitch and the bowler plan. Across 7 or 8 dismissals, that’s easily 20+ balls of “settling time.” At Bengaluru, 20 balls at a conservative rate is a 20–30 run penalty.
-
-### What RCB did well: they didn’t overthink the middle overs
-A lot of sides at Chinnaswamy chase wickets with too much pace, too many variations, and then bleed runs.
-
-RCB found a better balance: enough control to keep singles manageable, and enough aggression to keep dismissals coming. That is why a below-par 146 did not even become a defendable 165-style story.
-
-### CricDNA takeaway
-LSG’s failure wasn’t just “they didn’t hit enough sixes.” The failure was structural: they couldn’t carry wickets into a venue where the last five overs are designed to be an advantage.
-
-If LSG want to post competitive totals in Bengaluru, the template is simple: keep wickets intact through overs 7–15, then use the venue’s 10.59 death RPO to create the surge.
-
-    `,
-    relatedPlayerIds: [1, 4, 22],
-    matchId: 23,
-    chartData: [
-      { label: "Powerplay RPO", value: 7.07, color: "#1565C0" },
-      { label: "Middle RPO", value: 8.08, color: "#6A1B9A" },
-      { label: "Death RPO", value: 10.59, color: "#C62828" }
+      { label: "Chinnaswamy avg 1st inns", value: 168.1, color: "#1f77b4" },
+      { label: "LSG total", value: 146, color: "#d62728" }
     ]
   },
   {
+    id: 2,
+    slug: "ipl-2026-match-22-csk-vs-kkr-recap-192-5-was-too-much-at-chepauk",
+    title: "IPL 2026 Match 22 (CSK vs KKR) recap: 192/5 was always too much — Chepauk asked KKR to be perfect",
+    subtitle: "CSK made 192/5 and held KKR to 160/7 in Chennai, winning by 32 runs.",
+    category: "analysis",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-16",
+    readTime: "7 min",
+    tags: ["IPL 2026", "CSK", "KKR", "Chepauk"],
+    featured: false,
+    content: `
+Some wins are built in the first innings. CSK’s **192/5** in Chennai pushed the game into a narrow corridor for KKR — and when the chase ended at **160/7**, CSK walked away with a **32-run** result.
+
+### The Chepauk baseline: why 190+ is a power score
+CricDNA’s venue numbers for **M. A. Chidambaram Stadium, Chennai** set an **average first-innings score of 161.2**. That’s important: if the venue’s “normal” is low 160s, then 190+ isn’t just good — it forces the chasing side to play an innings that exceeds the venue’s usual rhythm.
+
+In practical terms, a 190 chase at Chepauk requires:
+- Above-average powerplay tempo.
+- A middle overs plan that beats control bowling.
+- A death-overs finish that still has wickets in hand.
+
+Most teams miss at least one of those.
+
+### Match shape: when a chase is asked to be brave too early
+KKR’s chase ending at 160/7 suggests the same pattern that often shows up at Chennai: the chase asks batters to attack spin and medium pace *earlier than they want to*. When you take risks before you are set, you donate wickets.
+
+### The small tactical detail: making overs 7–15 “expensive enough”
+At Chepauk, the easiest place to defend is the middle. Even if you concede 7–8 per over, you’re still squeezing the chase if the required rate is already above venue average.
+
+That’s why CSK’s first innings mattered so much: by getting well ahead of the venue’s 161 baseline, CSK could bowl for control without feeling they needed constant wickets.
+
+### What CSK can bank going forward
+The blueprint is clear:
+- If CSK can consistently post 175–195 at Chennai, their bowling only needs to be disciplined, not magical.
+- Opponents are pushed into high-risk shot-making against fields set for mistakes.
+
+Chepauk rewards teams that set the game’s tempo in innings one. CSK did that, and the rest followed.
+    `,
+    relatedPlayerIds: [14, 18, 10],
+    matchId: 22,
+    chartData: [
+      { label: "Chepauk avg 1st inns", value: 161.2, color: "#1f77b4" },
+      { label: "CSK 1st inns", value: 192, color: "#2ca02c" },
+      { label: "KKR chase", value: 160, color: "#d62728" }
+    ]
+  },
+  {
+    id: 3,
+    slug: "bengaluru-chases-why-chinnaswamy-captains-keep-fielding-first",
+    title: "Bengaluru chases: why Chinnaswamy captains keep fielding first (and why it keeps working)",
+    subtitle: "The numbers show a persistent preference to chase at Bengaluru — and a small but real win-rate edge.",
+    category: "analysis",
+    author: "CricDNA Analytics",
+    publishedAt: "2026-04-16",
+    readTime: "6 min",
+    tags: ["IPL 2026", "Venue trends", "RCB", "Chinnaswamy"],
+    featured: false,
+    content: `
+Bengaluru is one of the IPL’s most predictable venues in one specific way: captains almost always choose to field first.
+
+CricDNA’s toss dataset for **M. Chinnaswamy Stadium** shows teams have chosen to field in **57 of 65** matches, and the chasing decision has produced a **56.1% win rate**. That’s not a massive edge — but in a league where margins are thin, it’s enough to influence behaviour.
+
+### It’s not only dew — it’s the scoring profile
+CricDNA’s venue dataset pegs Chinnaswamy’s **average first-innings score at 168.1** and the **death-overs run rate at 10.59**. That second number is the tell.
+
+A high death-overs run rate does two things:
+- It makes “par” totals fragile (you can lose 25–30 runs in two overs).
+- It makes chasing simpler, because you can plan for a late surge even if the middle overs slow down.
+
+### The tactical benefit: bowling to a known number
+When you chase, you get clarity. That clarity changes the batting’s risk model:
+- If the required rate is below 8, you can play for strike rotation.
+- You can target specific bowlers instead of forcing shots against your toughest match-ups.
+
+For the fielding side, it’s also easier to bowl at this venue when you *don’t* have to protect 180+. 160–170 is defendable only if you win several micro-battles.
+
+### What this means for IPL 2026 games here
+Unless teams start preparing radically different surfaces, the incentives stay the same:
+- Captains will keep choosing to chase.
+- First-innings sides will be pushed to aim above the 168 average.
+
+The important nuance: chasing isn’t “guaranteed.” It’s just the option that gives the most repeatable plan, especially when the venue’s late-overs scoring is naturally explosive.
+    `,
+    relatedPlayerIds: [1, 13, 11],
+    chartData: [
+      { label: "Field first decisions", value: 57, color: "#9467bd" },
+      { label: "Bat first decisions", value: 8, color: "#8c564b" }
+    ],
+    dataTable: {
+      headers: ["Venue", "Matches", "Avg 1st inns", "Field-first win%"],
+      rows: [["M. Chinnaswamy Stadium", "65", "168.1", "56.1%"]]
+    }
+  },
+  {
     id: 4,
-    slug: "mi-vs-pbks-match-24-preview-wankhede-will-punish-mistakes-but-not-the-toss",
-    title: "MI vs PBKS (Match 24) preview: Wankhede will punish mistakes, but not the toss",
-    subtitle: "Wankhede’s bat-first and bat-second records are nearly even; execution matters more than the coin.",
+    slug: "preview-dc-vs-mi-arun-jaitley-stadium-pace-off-and-short-boundaries",
+    title: "DC vs MI preview: Delhi’s small boundaries, big tempo — and the powerplay that could decide it",
+    subtitle: "At Arun Jaitley Stadium, early momentum matters: a fast-scoring venue with a meaningful chasing tilt.",
     category: "match-preview",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
     readTime: "6 min",
-    tags: ["IPL 2026", "MI", "PBKS", "Match 24", "Wankhede"],
+    tags: ["IPL 2026", "DC", "MI", "Delhi"],
     featured: false,
     content: `
-Match 24 brings Punjab Kings to Wankhede to face Mumbai Indians in one of the season’s most revealing tests: a high-trust batting venue where “plans” only work if the execution is precise.
+This DC vs MI match-up is built for speed. Delhi’s Arun Jaitley Stadium historically rewards clean hitting and quick starts, and the venue numbers suggest that teams who control the powerplay often control the game.
 
-Punjab arrive unbeaten (with one no-result) and have looked like a side with clear roles. Mumbai, meanwhile, are still searching for a repeatable template.
+CricDNA’s venue dataset for **Arun Jaitley Stadium, Delhi** lists **85 total matches**, with an **average first-innings score of 166.1**. That’s a strong batting base — but it doesn’t mean totals automatically defend. The chase average is also high, and teams often back themselves to find a finish.
 
-### What Wankhede historically rewards
-CricDNA’s venue dataset for **Wankhede Stadium** lists **73 matches** with an **average first-innings score of 168.0** and a strong finishing profile: **death-overs run rate 10.76**.
+### What the venue tells us to watch
+Delhi’s venue profile is best understood in phases.
 
-That combination usually creates two truths:
-1) anything under 165 is fragile, and
-2) bowlers must win by creating errors, not by “containing”.
+- **Powerplay scoring** tends to be brisk: a fast start is “normal,” not exceptional.
+- **Death overs** can swing games quickly — a 20-run over isn’t rare if yorkers miss.
 
-### The toss isn’t the advantage most people think it is
-Wankhede often gets described as a chasing ground, but CricDNA’s toss dataset suggests it’s far more balanced.
+That’s why the first six overs are critical: you want to score without losing too many wickets, because wicket insurance is what unlocks your finish.
 
-For **Wankhede Stadium, Mumbai** (52 matches in the dataset), teams that field first after winning the toss have won **59.1%** of the time (26 wins from 44). Teams that bat first after winning the toss have won **37.5%** (3 wins from 8), which mostly reflects captain preference rather than an absolute truth.
+### DC’s path: turn middle overs into a squeeze
+On high-scoring grounds, the team that fields well and bowls the *least bad* overs 7–15 often wins. DC can target that phase: slow the game down, force MI to take risks, and then attack the stumps at the death.
 
-Zooming out to **Wankhede Stadium** (73 matches), the overall win split is almost even: **bat first 36 wins, bat second 37 wins**.
+### MI’s path: boundary pressure, then match-ups
+MI’s squads typically lean on stacked batting and late overs muscle. On this ground, the plan is clear: keep boundary pressure constant so the required rate never dips for DC.
 
-So the real separator isn’t chase vs set — it’s powerplay intent, middle-overs wicket management, and death-overs execution.
+### CricDNA keys
+1) **Powerplay wickets** are worth extra on fast venues — they reduce the opponent’s finishing ceiling.
+2) If you’re batting first, aim above the venue’s **166.1** baseline.
+3) If you’re chasing, keep wickets for overs 16–20. Delhi rewards teams that can hit after absorbing a quiet over.
 
-### Match-up lens: what MI must fix vs PBKS
-Punjab have been ruthless when given a target they can control. Mumbai’s best chance is to:
-- attack PBKS’s top order early (two wickets in the powerplay changes the whole innings),
-- keep a specialist for overs 16–20 (Wankhede’s 10.76 death RPO means “one bad over” can be 20+),
-- and bat with clarity: aim 55–60 in the powerplay, then preserve wickets for the final 5.
-
-### CricDNA call to watch
-If this becomes a 190+ game, it will be decided by who hits fewer “false shots” under pace at the death.
-
-If it becomes a 165–175 game, it will be decided by who loses fewer wickets in overs 7–15.
-
+Expect a match where the “best” innings isn’t about one player making 90, but about a top 3 that gets you ahead of the rate while preserving wickets.
     `,
-    relatedPlayerIds: [2, 11, 13, 17],
-    matchId: 24,
+    relatedPlayerIds: [4, 2, 13],
     chartData: [
-      { label: "Wankhede avg 1st inns", value: 168.0, color: "#F57C00" },
-      { label: "Wankhede death RPO", value: 10.76, color: "#C62828" }
-    ],
-    dataTable: {
-      headers: ["Wankhede snapshot", "Value"],
-      rows: [
-        ["Matches", "73"],
-        ["Avg 1st inns", "168.0"],
-        ["Bat first wins", "36"],
-        ["Bat second wins", "37"],
-        ["Death RPO", "10.76" ]
-      ]
-    }
+      { label: "Delhi avg 1st inns", value: 166.1, color: "#1f77b4" },
+      { label: "Target to aim for", value: 180, color: "#2ca02c" }
+    ]
   },
   {
     id: 5,
-    slug: "mi-vs-pbks-match-24-pitch-report-wankhede-pace-carry-and-a-fast-finish",
-    title: "MI vs PBKS (Match 24) pitch report: Wankhede’s ‘par’ is a moving target",
-    subtitle: "With a 10.76 death-overs run rate in CricDNA’s dataset, the last five overs often decide everything.",
+    slug: "pitch-report-delhi-arun-jaitley-stadium-what-a-par-score-looks-like",
+    title: "Pitch report: Arun Jaitley Stadium, Delhi — what a par score looks like (and why 175 isn’t safe)",
+    subtitle: "Delhi is a run-friendly venue with a high first-innings average and enough chasing comfort to keep captains aggressive.",
     category: "pitch-report",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
-    readTime: "5 min",
-    tags: ["IPL 2026", "pitch report", "Wankhede", "MI", "PBKS"],
+    readTime: "6 min",
+    tags: ["IPL 2026", "Pitch report", "Delhi"],
     featured: false,
     content: `
-Wankhede pitches can look “good for batting” in a generic sense, but CricDNA’s venue data shows something more specific: this ground is a finishing venue.
+Arun Jaitley Stadium often looks like a “batting wicket” on TV, but the more accurate description is *a tempo wicket*: the game moves quickly, and mistakes are punished immediately.
 
-In CricDNA’s dataset, **Wankhede Stadium** has an **average first-innings score of 168.0** across **73 matches**. That’s healthy, but it’s not the headline.
+CricDNA’s venue dataset lists **85 matches** here, with an **average first-innings score of 166.1**. In modern IPL terms, that means:
+- 160 is rarely enough.
+- 170 is competitive.
+- 180+ is where you begin to feel control.
 
-The headline is the scoring speed by phase: **death-overs run rate 10.76**. When the last five overs naturally run at nearly 11 an over, the difference between 175 and 195 is often just two overs of execution.
+### Phase-by-phase: why the wicket plays fast
+Delhi rewards batters in two ways:
+1) The ball comes on nicely early, which makes powerplay boundary-hitting reliable.
+2) The outfield tends to be quick, so “good shots” turn into fours.
 
-### What type of bowling survives here
-At Wankhede, bowlers survive by being accurate with their best ball, not by cycling through a bag of tricks.
+Bowling plans that succeed here are usually simple:
+- Protect the straight boundary.
+- Bowl hard lengths into the pitch to force mishits.
+- Keep your yorker plan ready for the death.
 
-In practical terms:
-- hit the hard length early (don’t offer slot pace),
-- protect the straight boundary late,
-- and keep at least one over of your best death bowler for the 19th.
+### What a par score should be
+Using the venue average as a base, a good rule of thumb is to add 10–15 runs for “winning comfort.”
 
-### What batters should plan for
-Batters should expect pace-on value, but they still have to respect early movement and bounce.
+That puts a practical par band around **175–185**, especially if you don’t have elite death bowling.
 
-A good Wankhede innings often looks like:
-- powerplay: 45–55 with one wicket or fewer,
-- overs 7–15: avoid the “two down and stuck” situation,
-- death: target 55–65 if you have wickets.
+### What captains should do at the toss
+Even on good batting pitches, the chase can be attractive if you trust your batting depth. The safest strategy is still: take the option that gives you the clearest plan (and Delhi often rewards the side that executes match-ups with the most discipline).
 
-### Par score guidance for Match 24
-Using the venue average (168) and the death scoring profile (10.76), CricDNA’s practical par bands for Match 24 are:
-- **bat first: 175–185 feels defendable**,
-- **190+ is a strong total**,
-- **under 165 needs exceptional powerplay bowling to hold**.
-
+If you bat first, don’t aim for “not losing.” Aim for a number that forces the chase to be brave.
     `,
-    relatedPlayerIds: [2, 17, 11],
-    matchId: 24,
+    relatedPlayerIds: [4, 13, 11],
     chartData: [
-      { label: "Powerplay RPO", value: 7.5, color: "#1565C0" },
-      { label: "Middle RPO", value: 8.5, color: "#6A1B9A" },
-      { label: "Death RPO", value: 10.76, color: "#C62828" }
+      { label: "Venue avg 1st inns", value: 166.1, color: "#1f77b4" },
+      { label: "Strong par band (low)", value: 175, color: "#ff7f0e" },
+      { label: "Strong par band (high)", value: 185, color: "#2ca02c" }
     ]
   },
   {
     id: 6,
-    slug: "mi-vs-pbks-match-24-toss-report-why-fielding-first-is-common-but-not-mandatory",
-    title: "MI vs PBKS (Match 24) toss report: why fielding first is common, but not mandatory",
-    subtitle: "Wankhede’s historical win split is basically even; captain preference tilts the toss trend.",
+    slug: "toss-report-delhi-why-fielding-first-is-often-the-default",
+    title: "Toss report: Delhi — why fielding first is often the default, and when to bat anyway",
+    subtitle: "Toss choices are rarely random: the venue’s scoring profile and late-overs volatility push captains to chase.",
     category: "toss-report",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
     readTime: "5 min",
-    tags: ["IPL 2026", "toss", "Wankhede", "strategy"],
+    tags: ["IPL 2026", "Toss report", "Delhi"],
     featured: false,
     content: `
-If you ask five captains what to do at Wankhede, three will say “bowl first” as if it’s a law.
+In IPL planning meetings, “what do you do if you win the toss?” is usually answered with a shrug. In Delhi, it’s answered with a plan.
 
-CricDNA’s data suggests it’s not a law — it’s a preference.
+CricDNA’s venue dataset suggests the ground plays fast, with an **average first-innings score of 166.1**. On fast-scoring venues, captains often prefer to chase because it reduces uncertainty: you know whether 8.5 an over is good or bad from ball one.
 
-### What CricDNA’s toss dataset shows
-For **Wankhede Stadium, Mumbai** (52 matches), teams that won the toss chose to field first **44** times and won **26** of those games — a **59.1%** win rate.
+### Why chasing is appealing in high-tempo games
+Chasing gives you two big advantages:
+- **Risk calibration:** you can rotate strike until the match-up you want arrives.
+- **Death overs clarity:** you know exactly how many you need, so you can hold hitters back.
 
-Teams that chose to bat first did so only **8** times and won **3** (a **37.5%** win rate). The sample size is smaller, but the more important point is choice frequency: captains overwhelmingly *prefer* to chase.
+### When batting first can still be the smarter call
+There are two common reasons to bat first even on chase-friendly grounds:
+1) You have a bowling unit that defends well at the death.
+2) You expect the surface to slow, making timing harder later.
 
-### The bigger picture: outcomes are nearly 50/50
-CricDNA’s venue dataset for **Wankhede Stadium** (73 matches) shows the overall win split is essentially even: **bat first wins 36, bat second wins 37**.
+The strategic point is simple: fielding first is the “default” only if you believe conditions won’t worsen for batting.
 
-That tells us something useful:
-- the venue is high scoring, but not one-directional,
-- and if you bat first well (i.e., carry wickets to the death), you can win.
+### A practical toss heuristic
+- If you believe **180+** is on the table, batting first can be a power play.
+- If you think the pitch is a flat 165–175 surface, chasing keeps you in control.
 
-### Practical toss advice for Match 24
-If you win the toss at Wankhede, choose based on your bowling resources:
-- If you have two reliable death bowlers: bowling first is attractive because you can control the finishing overs.
-- If your bowling is thin at the death: batting first can protect you, because you can put scoreboard pressure on the chase.
-
-Either way, the game will be decided by execution at the death — Wankhede’s run rate there is too high for “average” overs.
-
+On this ground, the best teams don’t just follow convention — they follow their best route to overs 16–20 with wickets in hand.
     `,
-    relatedPlayerIds: [2, 17, 11, 13],
-    matchId: 24,
-    chartData: [
-      { label: "Toss: field first", value: 44, color: "#2E7D32" },
-      { label: "Toss: bat first", value: 8, color: "#C62828" }
-    ],
+    relatedPlayerIds: [13, 4, 11],
     dataTable: {
-      headers: ["Wankhede (Mumbai) toss choices", "Value"],
-      rows: [
-        ["Matches in dataset", "52"],
-        ["Field first (count)", "44"],
-        ["Field first win %", "59.1%"],
-        ["Bat first (count)", "8"],
-        ["Bat first win %", "37.5%" ]
-      ]
+      headers: ["Venue", "Matches", "Avg 1st inns"],
+      rows: [["Arun Jaitley Stadium, Delhi", "85", "166.1"]]
     }
   },
   {
     id: 7,
-    slug: "kohli-orange-cap-structure-why-rcb-can-afford-a-moderate-powerplay-when-he-starts-fast",
-    title: "Kohli and the Orange Cap race: why RCB can afford a ‘moderate’ powerplay when he starts fast",
-    subtitle: "India TV reported Kohli leading with 228 runs; the bigger story is how that stabilises RCB’s chase model.",
+    slug: "season-trend-why-ipl-venues-with-high-death-rates-create-chaos",
+    title: "Season trend watch: why high death-overs run rates create chaos (and how teams can plan for it)",
+    subtitle: "Death-overs scoring is the IPL’s biggest volatility driver — it can flatten “good” bowling spells.",
     category: "analysis",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
-    readTime: "6 min",
-    tags: ["IPL 2026", "Orange Cap", "Virat Kohli", "RCB"],
+    readTime: "7 min",
+    tags: ["IPL 2026", "Analysis", "Strategy"],
     featured: false,
     content: `
-The early-season Orange Cap conversation is often treated like trivia. But in IPL 2026, the run-leader list is already shaping team strategies.
+If you want one statistic that explains why IPL games swing late, use death-overs run rate. When overs 16–20 are naturally expensive at a venue, a match can flip even if the bowling side has “won” the first 15 overs.
 
-According to India TV’s Match 23 update, **Virat Kohli is the current Orange Cap holder with 228 runs in five matches**.
+CricDNA’s venue dataset gives a clean example: **Chinnaswamy Stadium’s death-overs run rate is 10.59**. That one number changes tactics:
+- Captains hold overs from their best death bowlers, sometimes at the cost of the middle.
+- Batting sides keep hitters in reserve, even if they lose a wicket early.
+- Fielding sides set conservative fields because one miss becomes four.
 
-Whether you treat that as a headline or not, it has a tactical consequence: when Kohli is consistently producing 35–60 runs at a healthy strike rate, RCB’s batting can play the game from the front.
+### The hidden cost: good plans become fragile
+On a 10.5+ death-rate ground, a “good” over (8 runs) is actually a win. But it’s also hard to produce five good overs in a row. One missed yorker can undo 12 balls of discipline.
 
-### Why this matters more for chases than for first-innings totals
-When chasing, the hardest thing to manage is not a “high required rate.” It’s uncertainty. One early wicket can turn a comfortable chase into a spiral.
+That fragility pushes teams into two extremes:
+1) **All-in attack** (hunt wickets, accept runs).
+2) **All-in control** (protect boundaries, hope for errors).
 
-An in-form opener reduces uncertainty by doing two things:
-1) removing the powerplay risk (you don’t need to gamble to keep up), and
-2) ensuring the middle order enters with a simple target: stay ahead of the rate, don’t collapse.
+### What smart teams do differently
+The best teams build death plans in layers:
+- One specialist for overs 16 and 18.
+- One “hard length” bowler who can survive if yorkers miss.
+- A batting order that can accelerate without needing 25 balls of set time.
 
-Match 23 was a clean example. Chasing 147, RCB didn’t need to chase boundaries for 20 overs. They just needed a powerplay foundation, and Kohli’s 49 off 34 delivered exactly that.
+### A useful mental model
+Instead of asking, “Are we a good death team?”, ask:
+- Can we defend one bad over?
+- Can we still score if the opponent nails two yorker overs?
 
-### The underrated skill: keeping the chase ‘boring’
-In a season where 200+ scores have been common, it’s tempting to evaluate batting only by strike rate.
-
-But for winning chases, “boring” is a skill. Boring means:
-- the required run rate never spikes,
-- the opposition can’t force rash shots,
-- and the chase ends with overs to spare.
-
-That is how RCB finished Match 23: 149/5 in 15.1 overs.
-
-### What to watch next
-If Kohli stays in this form band, RCB’s line-up becomes modular:
-- If the pitch is flat, others can attack while he anchors.
-- If the pitch is two-paced, he can bat deeper and protect the chase.
-
-Either way, a run-leader at the top changes the entire risk profile of the innings.
-
+That’s why high-death-rate venues create chaos: they amplify small execution errors into 15-run swings.
     `,
-    relatedPlayerIds: [1, 29, 16],
+    relatedPlayerIds: [2, 19, 18],
     chartData: [
-      { label: "Kohli runs (reported)", value: 228, color: "#D32F2F" },
-      { label: "5 matches", value: 5, color: "#455A64" }
+      { label: "Chinnaswamy death RPO", value: 10.59, color: "#d62728" },
+      { label: "Eden Gardens death RPO", value: 9.37, color: "#1f77b4" }
     ]
   },
   {
     id: 8,
-    slug: "wankhede-isnt-just-a-batters-ground-its-a-death-overs-ground",
-    title: "Wankhede isn’t just a batter’s ground — it’s a death-overs ground",
-    subtitle: "CricDNA’s dataset shows 10.76 runs per over at the death, which changes how you should value bowlers.",
+    slug: "player-spotlight-virat-kohli-anchors-and-tempo-in-chases",
+    title: "Player spotlight: Virat Kohli chases — why anchoring is still a weapon when the par score is clear",
+    subtitle: "On chase-friendly grounds, a top-order anchor can reduce risk without reducing scoring.",
     category: "analysis",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
     readTime: "6 min",
-    tags: ["IPL 2026", "Wankhede", "death overs", "analysis"],
+    tags: ["IPL 2026", "Virat Kohli", "Chasing"],
     featured: false,
     content: `
-When people say “Wankhede is good for batting,” they usually mean one thing: the ball comes on and boundaries are accessible.
+Modern T20 discourse often treats anchoring as a problem. But anchoring only becomes a problem when it’s passive. When the target is known, an anchor can be the safest way to keep the chase on rails.
 
-CricDNA’s venue data supports that, but it also adds a sharper insight: Wankhede is specifically a **death-overs accelerator**.
+Match 23 in Bengaluru was a good example. With **147 to chase**, RCB never needed a “perfect” over. The job was to avoid giving the bowling side belief.
 
-Across **73 matches**, CricDNA records an **average first-innings score of 168.0** at **Wankhede Stadium** — healthy, but not outrageous.
+### Why anchors matter more in chases than in first innings
+In a first innings, you have uncertainty — you don’t know if 165 will be enough. That uncertainty tempts batters into “insurance” shots.
 
-The standout number is the **death-overs run rate of 10.76**. At almost 11 an over, the last five overs are not a bonus phase; they are where most totals are defined.
+In a chase, the target is fixed. If the required rate is manageable, an anchor can:
+- Reduce collapse risk by valuing singles.
+- Preserve hitters for overs 16–20.
+- Force the bowling side to defend every over without the cushion of wickets.
 
-### Why this changes bowling strategy
-In many venues, teams can survive a slightly loose 18th over because the surface slows down.
+### The venue effect
+At a ground like Chinnaswamy (avg first innings **168.1**, death RPO **10.59**), a chase is often about timing your boundary bursts. You don’t have to be reckless early because the venue itself supplies late acceleration.
 
-At Wankhede, a loose over is a scoreboard event.
+### The real anchor KPI
+Anchors shouldn’t be judged by strike rate in isolation. The better question is: did they keep the required rate below the opposition’s comfort level?
 
-That means teams should value:
-- yorker accuracy,
-- wide yorker execution,
-- slower-ball control (without losing length),
-- and boundary-protection field settings.
+If the required rate stays flat while wickets are preserved, the chase becomes inevitable.
 
-### Why wickets matter even more than economy
-In a venue where boundaries are common, economy can mislead.
-
-A bowler who goes for 9.5 an over but takes two wickets in overs 16–20 can be more valuable than a bowler who goes for 8.5 and takes none.
-
-The reason is simple: wickets reduce boundary attempts. They force new batters to re-calibrate, which is the only way to slow down an inherently fast finish.
-
-### How to read Match 24 through this lens
-For MI vs PBKS, look for one question:
-
-Which side has more “death resources” they trust?
-
-If MI can close with Bumrah-like control, they can defend even a slightly below-par score.
-
-If PBKS can keep wickets in hand, they can turn 160 into 190 very quickly.
-
+That’s why Kohli-style innings still matter in IPL 2026: anchoring is not about going slow. It’s about making the match boring for the bowling team.
     `,
-    relatedPlayerIds: [2, 17, 19],
-    chartData: [
-      { label: "Avg 1st inns", value: 168.0, color: "#F57C00" },
-      { label: "Death RPO", value: 10.76, color: "#C62828" },
-      { label: "Bat-second wins", value: 37, color: "#2E7D32" }
-    ]
+    relatedPlayerIds: [1, 13, 3]
   },
   {
     id: 9,
-    slug: "bengaluru-scoring-model-why-168-is-average-but-150-can-still-win",
-    title: "Bengaluru scoring model: why 168 is average, but 150 can still win",
-    subtitle: "The venue is high-scoring, yet chasing teams win more often — if bowling creates collapses.",
+    slug: "preview-rcb-home-template-how-to-bowl-first-and-win-the-game-by-over-10",
+    title: "RCB’s home template: how to bowl first and win the game by over 10",
+    subtitle: "On high-scoring grounds, the fastest route to control is making the opposition bat under pressure early.",
     category: "analysis",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
     readTime: "6 min",
-    tags: ["IPL 2026", "Bengaluru", "scoring", "analysis"],
+    tags: ["IPL 2026", "RCB", "Strategy", "Bengaluru"],
     featured: false,
     content: `
-The most common mistake fans make about Bengaluru is assuming every match must be a 200+ shootout.
+The simplest way to win at Bengaluru isn’t to score 210. It’s to make sure the opposition never gets there.
 
-CricDNA’s venue dataset for **M Chinnaswamy Stadium** shows an **average first-innings score of 168.1** across **65 matches**. That is high, but it’s also a mean — it includes collapses and low totals.
+CricDNA’s venue data shows Chinnaswamy has an **average first-innings score of 168.1**. That number creates a psychological trap for batting first: teams feel they must start fast, because everyone assumes big totals are mandatory.
 
-Match 23 was a reminder of the second part: Lucknow Super Giants were dismissed for 146.
+### The bowling-first advantage
+When you bowl first, you can do two things:
+- Attack early with boundary-protection fields that still keep catchers in play.
+- Use the score pressure later (the batting side feels they’re behind even at 80/1).
 
-### Why low totals happen even on high-scoring grounds
-High-scoring grounds do not remove risk; they amplify mistakes.
+On this ground, the “win by over 10” idea is real. If you can keep the opposition to a run rate that points to 155–165, you’ve already won the major strategic battle.
 
-At Chinnaswamy, the run rate rises through the innings (death at 10.59), so batting sides often plan for a late surge.
+### What Match 23 reinforced
+LSG’s 146 all out was an extreme version of the plan working. But the principle is repeatable:
+- Take wickets during the acceleration attempt.
+- Avoid the one over that gives away 25.
 
-But that plan collapses if wickets fall through the middle. New batters arriving every few overs can’t access the death-overs scoring ceiling, because they spend too many balls “finding” their shots.
+### What opponents should change
+Teams batting first at Bengaluru should stop chasing a fantasy number and instead focus on innings shape:
+- Get to 50/1 or 55/1 without panic.
+- Build a partnership through overs 7–15.
+- Save the all-out attack for overs 16–20.
 
-### The venue’s chasing bias is real
-The toss data reinforces it.
-
-In CricDNA’s toss dataset, teams chose to field first in **57 of 65** Chinnaswamy matches and won **56.1%** of those games.
-
-That preference exists because chasing reduces uncertainty: you know whether 168 is enough, whether 185 is needed, and how hard you must push early.
-
-### What this means for team-building
-Bengaluru doesn’t just reward big hitters. It rewards:
-- one top-order batter who can play at 140–160 strike rate without collapsing,
-- and a bowling unit that can create collapses rather than “contain”.
-
-That is how 150-ish chases (and 150-ish defenses) remain possible here.
-
-    `,
-    relatedPlayerIds: [1, 16, 29],
-    chartData: [
-      { label: "Avg 1st inns", value: 168.1, color: "#F57C00" },
-      { label: "Bat-second wins", value: 37, color: "#2E7D32" },
-      { label: "Bat-first wins", value: 26, color: "#C62828" }
-    ]
+If you skip the partnership phase, the venue doesn’t rescue you — it amplifies the collapse.
+    `
+    ,
+    relatedPlayerIds: [1, 2, 11]
   },
   {
     id: 10,
-    slug: "ipl-2026-table-watch-why-nrr-will-matter-early-this-season",
-    title: "IPL 2026 table watch: why NRR will matter early this season",
-    subtitle: "Big-margin wins like RCB’s Match 23 chase can reshape the table before mid-season.",
-    category: "analysis",
+    slug: "rankings-power-scores-why-venue-adjusted-par-matters-more-than-raw-totals",
+    title: "Rankings idea: why venue-adjusted par matters more than raw totals (and how to read IPL scorelines)",
+    subtitle: "A 170 in Chennai can be ‘bigger’ than a 190 in Bengaluru. Context turns totals into meaning.",
+    category: "rankings",
     author: "CricDNA Analytics",
     publishedAt: "2026-04-16",
-    readTime: "6 min",
-    tags: ["IPL 2026", "points table", "NRR", "analysis"],
+    readTime: "7 min",
+    tags: ["IPL 2026", "Rankings", "Venue-adjusted"],
     featured: false,
     content: `
-Early-season points tables are noisy, but net run rate (NRR) can start influencing the story much sooner than people expect.
+One of the easiest ways to misread IPL form is to treat all totals as equal. They aren’t. A score has meaning only relative to the venue that produced it.
 
-After Match 23, multiple outlets noted that RCB moved to the top of the table. India TV’s update reported **RCB on 8 points (4 wins from 5) with NRR 1.503**, with Rajasthan Royals also on 8 points but behind on NRR.
+CricDNA’s venue dataset highlights the difference clearly:
+- **Chennai (M. A. Chidambaram Stadium)** average first innings: **161.2**.
+- **Bengaluru (M. Chinnaswamy Stadium)** average first innings: **168.1**.
 
-Regardless of the exact ordering on any given day, the mechanism is clear: big-margin wins are NRR multipliers.
+A 175 in Chennai is +13.8 above the venue average. A 175 in Bengaluru is only +6.9. That doesn’t make the Bengaluru 175 bad — it just means it’s less “dominant.”
 
-### Why Match 23 was an NRR-style win
-RCB didn’t just win; they compressed the game.
+### Why this matters for rankings and power scores
+Venue-adjustment improves two ranking questions:
+1) Which batting line-ups are truly outscoring conditions?
+2) Which bowling attacks are truly suppressing scoring?
 
-They bowled LSG out for 146 and finished the chase at 149/5 in 15.1 overs — a win with **29 balls remaining**.
+Without adjustment, teams that play more games on high-scoring grounds can look better than they are.
 
-In NRR terms, chasing quickly matters because it increases your “runs per over” in the tournament calculation. Wins by five wickets are not equal; a five-wicket win with 29 balls left is far more valuable than a five-wicket win in the last over.
+### A simple venue-adjusted lens for fans
+When you see a scoreline, do this:
+- Find the venue average.
+- Calculate the margin above or below it.
+- Interpret the match through that margin.
 
-### Why this will matter for teams in the mid-pack
-Most teams will cluster around similar points for the first half of the league stage.
+By that lens, CSK’s **192/5** in Chennai (Match 22) is an enormous first-innings performance: +30.8 above venue average. Meanwhile, LSG’s 146 in Bengaluru (Match 23) is -22.1 below.
 
-When that happens, NRR becomes the difference between:
-- sitting 2nd vs 5th,
-- needing one win vs needing two,
-- and “control your destiny” vs “depend on other results.”
-
-### CricDNA takeaway
-Treat early big wins like assets. They don’t just add two points — they add future flexibility.
-
-Teams that chase efficiently, avoid collapses, and defend with wickets (rather than economy alone) build an NRR cushion that pays off when the season gets tight.
-
+That’s why these two scorelines feel so different: the venue turns them from numbers into outcomes.
     `,
-    relatedPlayerIds: [1, 29, 17],
-    chartData: [
-      { label: "RCB points (reported)", value: 8, color: "#D32F2F" },
-      { label: "RCB NRR (reported)", value: 1.503, color: "#1565C0" }
-    ]
+    relatedPlayerIds: [14, 1, 18],
+    dataTable: {
+      headers: ["Venue", "Avg 1st inns", "Example score", "Above/Below avg"],
+      rows: [
+        ["Chennai", "161.2", "192", "+30.8"],
+        ["Bengaluru", "168.1", "146", "-22.1"]
+      ]
+    }
   }
 ];
 
 export const analyticsCards: AnalyticsCard[] = [
   {
-    type: "matchup",
-    title: "Match 23: RCB vs LSG",
-    value: "RCB won by 5 wkts",
-    description: "RCB chased 147 in 15.1 overs after bowling LSG out for 146; Kohli 49, Rasikh 4/24.",
-    playerIds: [1, 22]
+    type: "stat",
+    title: "Chinnaswamy chase bias",
+    value: "Field-first 57/65",
+    description: "Teams have chosen to field first in 57 of 65 matches at Bengaluru, with a 56.1% win rate when doing so.",
+    teamColors: ["#C8102E", "#0057B8"]
   },
   {
-    type: "stat",
-    title: "Venue watch: Wankhede death overs",
-    value: "10.76 RPO",
-    description: "CricDNA venue data flags Wankhede as a finishing venue; death-overs scoring is the key skill in Match 24.",
-    teamColors: ["#005DAA", "#D71920"]
+    type: "matchup",
+    title: "Delhi par score",
+    value: "175–185",
+    description: "With an average first-innings score of 166.1 at Arun Jaitley Stadium, teams batting first should target 175–185 for control.",
+    teamColors: ["#2563EB", "#1E3A8A"]
   },
   {
     type: "player",
-    title: "Orange Cap tracker",
-    value: "Kohli 228 runs (reported)",
-    description: "Match 23 roundup reported Kohli leading the run charts with 228 in 5 matches; his starts are shaping RCB’s chase model.",
-    playerIds: [1]
+    title: "Anchor value in chases",
+    value: "Keep RRR flat",
+    description: "In manageable chases, anchoring is about keeping the required rate stable while preserving wickets for the finish.",
+    playerIds: [1, 13]
   }
 ];
