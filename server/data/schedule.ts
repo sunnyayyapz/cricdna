@@ -41,7 +41,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "RR",
     "awayTeam": "CSK",
-    "venue": "Barsapara Stadium, Guwahati",
+    "venue": "ACA Stadium, Guwahati",
     "status": "upcoming"
   },
   {
@@ -52,7 +52,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "PBKS",
     "awayTeam": "GT",
-    "venue": "PCA MYS International Stadium, New Chandigarh",
+    "venue": "New International Cricket Stadium, New Chandigarh",
     "status": "upcoming"
   },
   {
@@ -63,7 +63,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "LSG",
     "awayTeam": "DC",
-    "venue": "BRSABV Ekana Stadium, Lucknow",
+    "venue": "Ekana Cricket Stadium, Lucknow",
     "status": "upcoming"
   },
   {
@@ -85,7 +85,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "CSK",
     "awayTeam": "PBKS",
-    "venue": "M. A. Chidambaram Stadium, Chennai",
+    "venue": "MA Chidambaram Stadium, Chennai",
     "status": "upcoming"
   },
   {
@@ -118,7 +118,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "15:30 IST",
     "homeTeam": "SRH",
     "awayTeam": "LSG",
-    "venue": "Rajiv Gandhi International Cricket Stadium, Hyderabad",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
     "status": "upcoming"
   },
   {
@@ -151,7 +151,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "RR",
     "awayTeam": "MI",
-    "venue": "Barsapara Stadium, Guwahati",
+    "venue": "ACA Stadium, Guwahati",
     "status": "upcoming"
   },
   {
@@ -184,7 +184,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "RR",
     "awayTeam": "RCB",
-    "venue": "Barsapara Stadium, Guwahati",
+    "venue": "ACA Stadium, Guwahati",
     "status": "upcoming"
   },
   {
@@ -195,7 +195,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "15:30 IST",
     "homeTeam": "PBKS",
     "awayTeam": "SRH",
-    "venue": "PCA MYS International Stadium, New Chandigarh",
+    "venue": "New International Cricket Stadium, New Chandigarh",
     "status": "upcoming"
   },
   {
@@ -206,7 +206,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "19:30 IST",
     "homeTeam": "CSK",
     "awayTeam": "DC",
-    "venue": "M. A. Chidambaram Stadium, Chennai",
+    "venue": "MA Chidambaram Stadium, Chennai",
     "status": "upcoming"
   },
   {
@@ -217,7 +217,7 @@ export const schedule: ScheduleMatch[] = [
     "time": "15:30 IST",
     "homeTeam": "LSG",
     "awayTeam": "GT",
-    "venue": "BRSABV Ekana Stadium, Lucknow",
+    "venue": "Ekana Cricket Stadium, Lucknow",
     "status": "upcoming"
   },
   {
@@ -229,6 +229,556 @@ export const schedule: ScheduleMatch[] = [
     "homeTeam": "MI",
     "awayTeam": "RCB",
     "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 21,
+    "matchNumber": 21,
+    "date": "2026-04-13",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "RR",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 22,
+    "matchNumber": 22,
+    "date": "2026-04-14",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "CSK",
+    "awayTeam": "KKR",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "status": "upcoming"
+  },
+  {
+    "id": 23,
+    "matchNumber": 23,
+    "date": "2026-04-15",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "RCB",
+    "awayTeam": "LSG",
+    "venue": "M. Chinnaswamy Stadium, Bengaluru",
+    "status": "upcoming"
+  },
+  {
+    "id": 24,
+    "matchNumber": 24,
+    "date": "2026-04-16",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "MI",
+    "awayTeam": "PBKS",
+    "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 25,
+    "matchNumber": 25,
+    "date": "2026-04-17",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "KKR",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 26,
+    "matchNumber": 26,
+    "date": "2026-04-18",
+    "day": "Saturday",
+    "time": "15:30 IST",
+    "homeTeam": "RCB",
+    "awayTeam": "DC",
+    "venue": "M. Chinnaswamy Stadium, Bengaluru",
+    "status": "upcoming"
+  },
+  {
+    "id": 27,
+    "matchNumber": 27,
+    "date": "2026-04-18",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "CSK",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 28,
+    "matchNumber": 28,
+    "date": "2026-04-19",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "KKR",
+    "awayTeam": "RR",
+    "venue": "Eden Gardens, Kolkata",
+    "status": "upcoming"
+  },
+  {
+    "id": 29,
+    "matchNumber": 29,
+    "date": "2026-04-19",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "PBKS",
+    "awayTeam": "LSG",
+    "venue": "New International Cricket Stadium, New Chandigarh",
+    "status": "upcoming"
+  },
+  {
+    "id": 30,
+    "matchNumber": 30,
+    "date": "2026-04-20",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "MI",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 31,
+    "matchNumber": 31,
+    "date": "2026-04-21",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "DC",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 32,
+    "matchNumber": 32,
+    "date": "2026-04-22",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "LSG",
+    "awayTeam": "RR",
+    "venue": "Ekana Cricket Stadium, Lucknow",
+    "status": "upcoming"
+  },
+  {
+    "id": 33,
+    "matchNumber": 33,
+    "date": "2026-04-23",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "MI",
+    "awayTeam": "CSK",
+    "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 34,
+    "matchNumber": 34,
+    "date": "2026-04-24",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "RCB",
+    "awayTeam": "GT",
+    "venue": "M. Chinnaswamy Stadium, Bengaluru",
+    "status": "upcoming"
+  },
+  {
+    "id": 35,
+    "matchNumber": 35,
+    "date": "2026-04-25",
+    "day": "Saturday",
+    "time": "15:30 IST",
+    "homeTeam": "DC",
+    "awayTeam": "PBKS",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "status": "upcoming"
+  },
+  {
+    "id": 36,
+    "matchNumber": 36,
+    "date": "2026-04-25",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "RR",
+    "awayTeam": "SRH",
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 37,
+    "matchNumber": 37,
+    "date": "2026-04-26",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "CSK",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 38,
+    "matchNumber": 38,
+    "date": "2026-04-26",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "LSG",
+    "awayTeam": "KKR",
+    "venue": "Ekana Cricket Stadium, Lucknow",
+    "status": "upcoming"
+  },
+  {
+    "id": 39,
+    "matchNumber": 39,
+    "date": "2026-04-27",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "DC",
+    "awayTeam": "RCB",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "status": "upcoming"
+  },
+  {
+    "id": 40,
+    "matchNumber": 40,
+    "date": "2026-04-28",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "PBKS",
+    "awayTeam": "RR",
+    "venue": "New International Cricket Stadium, New Chandigarh",
+    "status": "upcoming"
+  },
+  {
+    "id": 41,
+    "matchNumber": 41,
+    "date": "2026-04-29",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "MI",
+    "awayTeam": "SRH",
+    "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 42,
+    "matchNumber": 42,
+    "date": "2026-04-30",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "RCB",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 43,
+    "matchNumber": 43,
+    "date": "2026-05-01",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "RR",
+    "awayTeam": "DC",
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 44,
+    "matchNumber": 44,
+    "date": "2026-05-02",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "CSK",
+    "awayTeam": "MI",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "status": "upcoming"
+  },
+  {
+    "id": 45,
+    "matchNumber": 45,
+    "date": "2026-05-03",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "KKR",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 46,
+    "matchNumber": 46,
+    "date": "2026-05-03",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "PBKS",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 47,
+    "matchNumber": 47,
+    "date": "2026-05-04",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "MI",
+    "awayTeam": "LSG",
+    "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 48,
+    "matchNumber": 48,
+    "date": "2026-05-05",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "DC",
+    "awayTeam": "CSK",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "status": "upcoming"
+  },
+  {
+    "id": 49,
+    "matchNumber": 49,
+    "date": "2026-05-06",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "PBKS",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 50,
+    "matchNumber": 50,
+    "date": "2026-05-07",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "LSG",
+    "awayTeam": "RCB",
+    "venue": "Ekana Cricket Stadium, Lucknow",
+    "status": "upcoming"
+  },
+  {
+    "id": 51,
+    "matchNumber": 51,
+    "date": "2026-05-08",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "DC",
+    "awayTeam": "KKR",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "status": "upcoming"
+  },
+  {
+    "id": 52,
+    "matchNumber": 52,
+    "date": "2026-05-09",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "RR",
+    "awayTeam": "GT",
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 53,
+    "matchNumber": 53,
+    "date": "2026-05-10",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "CSK",
+    "awayTeam": "LSG",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "status": "upcoming"
+  },
+  {
+    "id": 54,
+    "matchNumber": 54,
+    "date": "2026-05-10",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "RCB",
+    "awayTeam": "MI",
+    "venue": "Nava Raipur Cricket Stadium, Raipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 55,
+    "matchNumber": 55,
+    "date": "2026-05-11",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "PBKS",
+    "awayTeam": "DC",
+    "venue": "HPCA Cricket Stadium, Dharamshala",
+    "status": "upcoming"
+  },
+  {
+    "id": 56,
+    "matchNumber": 56,
+    "date": "2026-05-12",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "GT",
+    "awayTeam": "SRH",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 57,
+    "matchNumber": 57,
+    "date": "2026-05-13",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "RCB",
+    "awayTeam": "KKR",
+    "venue": "Nava Raipur Cricket Stadium, Raipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 58,
+    "matchNumber": 58,
+    "date": "2026-05-14",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "PBKS",
+    "awayTeam": "MI",
+    "venue": "HPCA Cricket Stadium, Dharamshala",
+    "status": "upcoming"
+  },
+  {
+    "id": 59,
+    "matchNumber": 59,
+    "date": "2026-05-15",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "LSG",
+    "awayTeam": "CSK",
+    "venue": "Ekana Cricket Stadium, Lucknow",
+    "status": "upcoming"
+  },
+  {
+    "id": 60,
+    "matchNumber": 60,
+    "date": "2026-05-16",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "KKR",
+    "awayTeam": "GT",
+    "venue": "Eden Gardens, Kolkata",
+    "status": "upcoming"
+  },
+  {
+    "id": 61,
+    "matchNumber": 61,
+    "date": "2026-05-17",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "PBKS",
+    "awayTeam": "RCB",
+    "venue": "HPCA Cricket Stadium, Dharamshala",
+    "status": "upcoming"
+  },
+  {
+    "id": 62,
+    "matchNumber": 62,
+    "date": "2026-05-17",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "DC",
+    "awayTeam": "RR",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "status": "upcoming"
+  },
+  {
+    "id": 63,
+    "matchNumber": 63,
+    "date": "2026-05-18",
+    "day": "Monday",
+    "time": "19:30 IST",
+    "homeTeam": "CSK",
+    "awayTeam": "SRH",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "status": "upcoming"
+  },
+  {
+    "id": 64,
+    "matchNumber": 64,
+    "date": "2026-05-19",
+    "day": "Tuesday",
+    "time": "19:30 IST",
+    "homeTeam": "RR",
+    "awayTeam": "LSG",
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "status": "upcoming"
+  },
+  {
+    "id": 65,
+    "matchNumber": 65,
+    "date": "2026-05-20",
+    "day": "Wednesday",
+    "time": "19:30 IST",
+    "homeTeam": "KKR",
+    "awayTeam": "MI",
+    "venue": "Eden Gardens, Kolkata",
+    "status": "upcoming"
+  },
+  {
+    "id": 66,
+    "matchNumber": 66,
+    "date": "2026-05-21",
+    "day": "Thursday",
+    "time": "19:30 IST",
+    "homeTeam": "CSK",
+    "awayTeam": "GT",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "status": "upcoming"
+  },
+  {
+    "id": 67,
+    "matchNumber": 67,
+    "date": "2026-05-22",
+    "day": "Friday",
+    "time": "19:30 IST",
+    "homeTeam": "SRH",
+    "awayTeam": "RCB",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "upcoming"
+  },
+  {
+    "id": 68,
+    "matchNumber": 68,
+    "date": "2026-05-23",
+    "day": "Saturday",
+    "time": "19:30 IST",
+    "homeTeam": "LSG",
+    "awayTeam": "PBKS",
+    "venue": "Ekana Cricket Stadium, Lucknow",
+    "status": "upcoming"
+  },
+  {
+    "id": 69,
+    "matchNumber": 69,
+    "date": "2026-05-24",
+    "day": "Sunday",
+    "time": "15:30 IST",
+    "homeTeam": "MI",
+    "awayTeam": "RR",
+    "venue": "Wankhede Stadium, Mumbai",
+    "status": "upcoming"
+  },
+  {
+    "id": 70,
+    "matchNumber": 70,
+    "date": "2026-05-24",
+    "day": "Sunday",
+    "time": "19:30 IST",
+    "homeTeam": "KKR",
+    "awayTeam": "DC",
+    "venue": "Eden Gardens, Kolkata",
     "status": "upcoming"
   }
 ];
